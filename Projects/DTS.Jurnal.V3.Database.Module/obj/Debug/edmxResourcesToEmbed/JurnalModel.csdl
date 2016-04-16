@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="JurnalModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="JurnalEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Interventions" EntityType="JurnalModel.Intervention" />
+    <EntitySet Name="Patients" EntityType="JurnalModel.Patient" />
+    <EntitySet Name="Users" EntityType="JurnalModel.User" />
+    <EntitySet Name="Works" EntityType="JurnalModel.Work" />
+    <AssociationSet Name="FK_PatientIntervention" Association="JurnalModel.FK_PatientIntervention">
+      <End Role="Patients" EntitySet="Patients" />
+      <End Role="Interventions" EntitySet="Interventions" />
+    </AssociationSet>
+    <EntitySet Name="Locations" EntityType="JurnalModel.Location" />
+    <AssociationSet Name="UserPatient" Association="JurnalModel.UserPatient">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Patient" EntitySet="Patients" />
+    </AssociationSet>
+    <AssociationSet Name="WorkIntervention" Association="JurnalModel.WorkIntervention">
+      <End EntitySet="Works" Role="Work" />
+      <End EntitySet="Interventions" Role="Intervention" />
+    </AssociationSet>
+    <AssociationSet Name="LocationIntervention" Association="JurnalModel.LocationIntervention">
+      <End EntitySet="Locations" Role="Location" />
+      <End EntitySet="Interventions" Role="Intervention" />
+    </AssociationSet>
+    <EntitySet Name="Macs" EntityType="JurnalModel.Mac" />
+    <AssociationSet Name="UserMac" Association="JurnalModel.UserMac">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Mac" EntitySet="Macs" />
+    </AssociationSet>
+    <EntitySet Name="Areas" EntityType="JurnalModel.Area" />
+    <AssociationSet Name="AreaIntervention" Association="JurnalModel.AreaIntervention">
+      <End Role="Intervention" EntitySet="Interventions" />
+      <End Role="Area" EntitySet="Areas" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Intervention">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Duration" Type="Int64" Nullable="false" />
+    <Property Name="Start" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="End" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Revenue" Type="Double" Nullable="false" />
+    <Property Name="Patient_Id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Patient" Relationship="JurnalModel.FK_PatientIntervention" FromRole="Interventions" ToRole="Patients" />
+    <Property Type="Boolean" Name="IsSelected" />
+    <NavigationProperty Name="Work" Relationship="JurnalModel.WorkIntervention" FromRole="Intervention" ToRole="Work" />
+    <NavigationProperty Name="Location" Relationship="JurnalModel.LocationIntervention" FromRole="Intervention" ToRole="Location" />
+    <NavigationProperty Name="Area" Relationship="JurnalModel.AreaIntervention" FromRole="Intervention" ToRole="Area" />
+    <Property Type="Double" Name="Remainder" Nullable="false" />
+    <Property Type="Boolean" Name="Payed" Nullable="false" />
+    <Property Type="Boolean" Name="WasExported" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Patient">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="4000" Unicode="true" FixedLength="false" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="4000" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Interventions" Relationship="JurnalModel.FK_PatientIntervention" FromRole="Patients" ToRole="Interventions" />
+    <NavigationProperty Name="User" Relationship="JurnalModel.UserPatient" FromRole="Patient" ToRole="User" />
+    <Property Type="String" Name="Address" />
+    <Property Type="DateTime" Name="BirthDate" />
+    <Property Type="String" Name="City" />
+    <Property Type="String" Name="Country" />
+    <Property Type="String" Name="Street" />
+    <Property Type="String" Name="Block" />
+    <Property Type="String" Name="StreetNo" />
+    <Property Type="String" Name="Job" />
+    <Property Type="String" Name="Ocupation" />
+    <Property Type="String" Name="Phone" />
+    <Property Type="String" Name="Email" />
+    <Property Type="String" Name="Brush" />
+    <Property Type="String" Name="NewlyAdded" />
+    <Property Type="Boolean" Name="WasExported" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="4000" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Patients" Relationship="JurnalModel.UserPatient" FromRole="User" ToRole="Patient" />
+    <NavigationProperty Name="Macs" Relationship="JurnalModel.UserMac" FromRole="User" ToRole="Mac" />
+  </EntityType>
+  <EntityType Name="Work">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="4000" Unicode="true" FixedLength="false" />
+    <Property Name="Cost" Type="Double" Nullable="false" />
+    <NavigationProperty Name="Interventions" Relationship="JurnalModel.WorkIntervention" FromRole="Work" ToRole="Intervention" />
+    <Property Type="Boolean" Name="WasDeleted" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_PatientIntervention">
+    <End Role="Patients" Type="JurnalModel.Patient" Multiplicity="1" />
+    <End Role="Interventions" Type="JurnalModel.Intervention" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Patients">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Interventions">
+        <PropertyRef Name="Patient_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Location">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" Nullable="false" />
+    <NavigationProperty Name="Interventions" Relationship="JurnalModel.LocationIntervention" FromRole="Location" ToRole="Intervention" />
+    <Property Type="Boolean" Name="WasDeleted" Nullable="false" />
+  </EntityType>
+  <Association Name="UserPatient">
+    <End Type="JurnalModel.User" Role="User" Multiplicity="1" />
+    <End Type="JurnalModel.Patient" Role="Patient" Multiplicity="*" />
+  </Association>
+  <Association Name="WorkIntervention">
+    <End Type="JurnalModel.Work" Multiplicity="0..1" Role="Work" />
+    <End Type="JurnalModel.Intervention" Multiplicity="*" Role="Intervention" />
+  </Association>
+  <Association Name="LocationIntervention">
+    <End Type="JurnalModel.Location" Multiplicity="0..1" Role="Location" />
+    <End Type="JurnalModel.Intervention" Multiplicity="*" Role="Intervention" />
+  </Association>
+  <EntityType Name="Mac">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="User" Relationship="JurnalModel.UserMac" FromRole="Mac" ToRole="User" />
+    <Property Type="String" Name="macId" Nullable="false" />
+  </EntityType>
+  <Association Name="UserMac">
+    <End Type="JurnalModel.User" Role="User" Multiplicity="1" />
+    <End Type="JurnalModel.Mac" Role="Mac" Multiplicity="*" />
+  </Association>
+  <EntityType Name="Area">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" Nullable="false" />
+    <Property Type="Boolean" Name="WasDeleted" Nullable="false" />
+    <NavigationProperty Name="Interventions" Relationship="JurnalModel.AreaIntervention" FromRole="Area" ToRole="Intervention" />
+  </EntityType>
+  <Association Name="AreaIntervention">
+    <End Type="JurnalModel.Intervention" Role="Intervention" Multiplicity="*" />
+    <End Type="JurnalModel.Area" Role="Area" Multiplicity="0..1" />
+  </Association>
+</Schema>

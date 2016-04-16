@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="DSA.Common.Infrastructure.Icos.SubmitIcon"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Viewbox>
+            <Canvas Name="svg7103" Width="64" Height="64">
+                <Canvas Name="layer1">
+                    <Canvas Name="g7140">
+                        <Canvas Name="g7142">
+                            <Canvas Name="g7148">
+                                <Canvas.RenderTransform>
+                                    <TranslateTransform X="26" Y="24"/>
+                                </Canvas.RenderTransform>
+                                <Path Name="path" Grid.Row="0" Data="M317.74997,173.43729 C315.99997,173.68729 314.87257,174.58874 315.00006,176.37385 315.12504,178.12367 316.25753,179.97973 317.62504,180.125 320.56306,180.43711 321.4041,176.94851 323.51453,174.01754 325.0163,171.93189 327.14069,168.66285 331.26572,165.95584 330.70291,164.95583 330.06524,165.19852 329.19011,165.19852 328.65428,165.19852 325.61898,167.3819 322.98287,170.31196 321.31363,172.16734 319.09592,175.29695 318.68789,176.0619 318.12534,174.99946 317.74997,173.43729&#xd;&#xa;317.74997,173.43729 z" 
+                                          Fill="White"   Height="16" 
+                                          Margin="0" Stretch="Uniform" StrokeThickness="0" 
+                                          VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            </Canvas>
+                        </Canvas>
+                    </Canvas>
+                </Canvas>
+            </Canvas>
+        </Viewbox>
+    </Grid>
+</UserControl>

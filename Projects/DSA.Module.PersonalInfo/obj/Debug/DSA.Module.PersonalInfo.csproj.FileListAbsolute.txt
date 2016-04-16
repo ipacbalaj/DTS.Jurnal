@@ -1,0 +1,441 @@
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.csprojResolveAssemblyReference.cache
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PersonalInfoScreen\PersonalInfoScreenView.baml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PersonalInfoScreen\PersonalInfoScreenView.g.cs
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo_MarkupCompile.cache
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.g.resources
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Module.PersonalInfo.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Module.PersonalInfo.pdb
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.pdb
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Xpf.Core.v12.2.Extensions.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Infrastructure.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Data.v12.2.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Xpf.Core.v12.2.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Infrastructure.pdb
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.Prism.pdb
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.Prism.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Data.v12.2.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Xpf.Core.v12.2.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\PatientInformationView.baml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\PatientInformationView.g.cs
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo_MarkupCompile.lref
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Database.Model.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Database.Model.pdb
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Printing.v12.2.Core.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Utils.v12.2.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Utils.v12.2.UI.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Xpf.Grid.v12.2.Core.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Xpf.Grid.v12.2.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Xpf.Grid.v12.2.Extensions.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Xpf.Printing.v12.2.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Xpf.Scheduler.v12.2.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Xpf.Themes.DXStyle.v12.2.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Xpf.Themes.MetropolisDark.v12.2.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Xpf.Themes.MetropolisLight.v12.2.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.XtraBars.v12.2.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.XtraEditors.v12.2.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.XtraGrid.v12.2.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.XtraLayout.v12.2.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Printing.v12.2.Core.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Utils.v12.2.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Utils.v12.2.UI.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Xpf.Grid.v12.2.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Xpf.Grid.v12.2.Core.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Xpf.Printing.v12.2.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.XtraBars.v12.2.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.XtraEditors.v12.2.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.XtraGrid.v12.2.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.XtraLayout.v12.2.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Controls.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Controls.pdb
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Module.PersonalInfo.dll
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Module.PersonalInfo.pdb
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Controls.dll
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Infrastructure.dll
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Database.Model.dll
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Controls.pdb
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Infrastructure.pdb
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Database.Model.pdb
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.Prism.pdb
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.Prism.xml
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.csprojResolveAssemblyReference.cache
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\PatientInformationView.baml
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\PatientInformationView.g.cs
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PersonalInfoScreen\PersonalInfoScreenView.g.cs
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo_MarkupCompile.cache
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo_MarkupCompile.lref
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PersonalInfoScreen\PersonalInfoScreenView.baml
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.g.resources
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.dll
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.pdb
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Module.PersonalInfo.dll
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Module.PersonalInfo.pdb
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Controls.dll
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Infrastructure.dll
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Database.Model.dll
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.Prism.dll
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.Unity.dll
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Controls.pdb
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Infrastructure.pdb
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Database.Model.pdb
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.Prism.pdb
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.Prism.xml
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.Unity.xml
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.csprojResolveAssemblyReference.cache
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\PatientInformationView.baml
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\PatientInformationView.g.cs
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PersonalInfoScreen\PersonalInfoScreenView.g.cs
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo_MarkupCompile.cache
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo_MarkupCompile.lref
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PersonalInfoScreen\PersonalInfoScreenView.baml
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.g.resources
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.dll
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.pdb
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\EditPatient\EditPatientView.baml
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\EditPatient\EditPatientView.g.cs
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.csprojResolveAssemblyReference.cache
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\EditPatient\EditPatientView.baml
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\PatientInformationView.baml
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\EditPatient\EditPatientView.g.cs
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\PatientInformationView.g.cs
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PersonalInfoScreen\PersonalInfoScreenView.g.cs
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo_MarkupCompile.cache
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo_MarkupCompile.lref
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Module.PersonalInfo.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Module.PersonalInfo.pdb
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Data.v12.2.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Printing.v12.2.Core.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Utils.v12.2.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Utils.v12.2.UI.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Xpf.Core.v12.2.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Xpf.Core.v12.2.Extensions.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Xpf.Grid.v12.2.Core.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Xpf.Grid.v12.2.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Xpf.Grid.v12.2.Extensions.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Xpf.Printing.v12.2.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Xpf.Scheduler.v12.2.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Xpf.Themes.DXStyle.v12.2.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Xpf.Themes.MetropolisDark.v12.2.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Xpf.Themes.MetropolisLight.v12.2.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.XtraBars.v12.2.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.XtraEditors.v12.2.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.XtraGrid.v12.2.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.XtraLayout.v12.2.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Controls.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Infrastructure.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Database.Model.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.Prism.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.Unity.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\System.Windows.Interactivity.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Controls.pdb
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Infrastructure.pdb
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Database.Model.pdb
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Data.v12.2.xml
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Printing.v12.2.Core.xml
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Utils.v12.2.xml
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Utils.v12.2.UI.xml
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Xpf.Core.v12.2.xml
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Xpf.Grid.v12.2.xml
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Xpf.Grid.v12.2.Core.xml
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Xpf.Printing.v12.2.xml
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.XtraBars.v12.2.xml
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.XtraEditors.v12.2.xml
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.XtraGrid.v12.2.xml
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.XtraLayout.v12.2.xml
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.Prism.pdb
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.Prism.xml
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.Unity.xml
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\System.Windows.Interactivity.xml
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\de\System.Windows.Interactivity.resources.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\en\System.Windows.Interactivity.resources.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\es\System.Windows.Interactivity.resources.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\it\System.Windows.Interactivity.resources.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PersonalInfoScreen\PersonalInfoScreenView.baml
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.g.resources
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.pdb
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Module.PersonalInfo.dll
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Module.PersonalInfo.pdb
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Controls.dll
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Infrastructure.dll
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Database.Model.dll
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.Prism.dll
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.Unity.dll
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\System.Windows.Interactivity.dll
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Controls.pdb
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Infrastructure.pdb
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Database.Model.pdb
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Data.v12.2.xml
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Printing.v12.2.Core.xml
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Utils.v12.2.xml
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Utils.v12.2.UI.xml
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Xpf.Core.v12.2.xml
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Xpf.Grid.v12.2.xml
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Xpf.Grid.v12.2.Core.xml
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Xpf.Printing.v12.2.xml
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.XtraBars.v12.2.xml
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.XtraEditors.v12.2.xml
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.XtraGrid.v12.2.xml
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.XtraLayout.v12.2.xml
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.Prism.pdb
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.Prism.xml
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.Unity.xml
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\System.Windows.Interactivity.xml
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\de\System.Windows.Interactivity.resources.dll
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\en\System.Windows.Interactivity.resources.dll
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\es\System.Windows.Interactivity.resources.dll
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\it\System.Windows.Interactivity.resources.dll
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.csprojResolveAssemblyReference.cache
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\EditPatient\EditPatientView.baml
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\PatientInformationView.baml
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\EditPatient\EditPatientView.g.cs
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\PatientInformationView.g.cs
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PersonalInfoScreen\PersonalInfoScreenView.g.cs
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo_MarkupCompile.cache
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo_MarkupCompile.lref
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PersonalInfoScreen\PersonalInfoScreenView.baml
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.g.resources
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.dll
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.pdb
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Module.PersonalInfo.dll
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Module.PersonalInfo.pdb
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Controls.dll
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Infrastructure.dll
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Database.Model.dll
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Controls.pdb
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Infrastructure.pdb
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Database.Model.pdb
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.Prism.pdb
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.Prism.xml
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.csprojResolveAssemblyReference.cache
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\EditPatient\EditPatientView.baml
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\PatientInformationView.baml
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\EditPatient\EditPatientView.g.cs
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\PatientInformationView.g.cs
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PersonalInfoScreen\PersonalInfoScreenView.g.cs
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo_MarkupCompile.cache
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo_MarkupCompile.lref
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PersonalInfoScreen\PersonalInfoScreenView.baml
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.g.resources
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.dll
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.pdb
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\log4net.dll
+D:\c#\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Module.PersonalInfo.dll
+D:\c#\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Module.PersonalInfo.pdb
+D:\c#\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Controls.dll
+D:\c#\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Infrastructure.dll
+D:\c#\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Database.Model.dll
+D:\c#\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\log4net.dll
+D:\c#\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Controls.pdb
+D:\c#\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Infrastructure.pdb
+D:\c#\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Database.Model.pdb
+D:\c#\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.Prism.pdb
+D:\c#\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.Prism.xml
+D:\c#\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\c#\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\Microsoft.Practices.Unity.xml
+D:\c#\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.csprojResolveAssemblyReference.cache
+D:\c#\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\EditPatient\EditPatientView.baml
+D:\c#\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\PatientInformationView.baml
+D:\c#\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\EditPatient\EditPatientView.g.cs
+D:\c#\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\PatientInformationView.g.cs
+D:\c#\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PersonalInfoScreen\PersonalInfoScreenView.g.cs
+D:\c#\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\c#\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo_MarkupCompile.cache
+D:\c#\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo_MarkupCompile.lref
+D:\c#\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PersonalInfoScreen\PersonalInfoScreenView.baml
+D:\c#\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.g.resources
+D:\c#\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.dll
+D:\c#\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.pdb
+C:\Users\ionut\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Module.PersonalInfo.dll
+C:\Users\ionut\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Module.PersonalInfo.pdb
+C:\Users\ionut\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Controls.dll
+C:\Users\ionut\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Infrastructure.dll
+C:\Users\ionut\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Database.Model.dll
+C:\Users\ionut\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\log4net.dll
+C:\Users\ionut\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Controls.pdb
+C:\Users\ionut\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Infrastructure.pdb
+C:\Users\ionut\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Database.Model.pdb
+C:\Users\ionut\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.csprojResolveAssemblyReference.cache
+C:\Users\ionut\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\EditPatient\EditPatientView.baml
+C:\Users\ionut\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\PatientInformationView.baml
+C:\Users\ionut\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\EditPatient\EditPatientView.g.cs
+C:\Users\ionut\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\PatientInformationView.g.cs
+C:\Users\ionut\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PersonalInfoScreen\PersonalInfoScreenView.g.cs
+C:\Users\ionut\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\ionut\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo_MarkupCompile.cache
+C:\Users\ionut\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo_MarkupCompile.lref
+C:\Users\ionut\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PersonalInfoScreen\PersonalInfoScreenView.baml
+C:\Users\ionut\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.g.resources
+C:\Users\ionut\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.dll
+C:\Users\ionut\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.pdb
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Module.PersonalInfo.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Module.PersonalInfo.pdb
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Controls.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Infrastructure.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Database.Model.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\log4net.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Controls.pdb
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Infrastructure.pdb
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Database.Model.pdb
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Data.v12.2.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Printing.v12.2.Core.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Utils.v12.2.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Utils.v12.2.UI.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Xpf.Core.v12.2.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Xpf.Grid.v12.2.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Xpf.Grid.v12.2.Core.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Xpf.Printing.v12.2.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.XtraBars.v12.2.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.XtraEditors.v12.2.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.XtraGrid.v12.2.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.XtraLayout.v12.2.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.csprojResolveAssemblyReference.cache
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\EditPatient\EditPatientView.baml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\PatientInformationView.baml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\EditPatient\EditPatientView.g.cs
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\PatientInformationView.g.cs
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PersonalInfoScreen\PersonalInfoScreenView.g.cs
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo_MarkupCompile.cache
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo_MarkupCompile.lref
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\PersonalInfoScreen\PersonalInfoScreenView.baml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.g.resources
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.pdb
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.csprojResolveAssemblyReference.cache
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\EditPatient\EditPatientView.baml
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\PatientInformationView.baml
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\EditPatient\EditPatientView.g.cs
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\PatientInformationView.g.cs
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\obj\Debug\PersonalInfoScreen\PersonalInfoScreenView.g.cs
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo_MarkupCompile.cache
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo_MarkupCompile.lref
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.dll
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.pdb
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Module.PersonalInfo.dll
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Module.PersonalInfo.pdb
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Controls.dll
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Infrastructure.dll
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\bin\Debug\DTS.Jurnal.V3.Database.Module.dll
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\bin\Debug\System.Windows.Interactivity.dll
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Controls.pdb
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Infrastructure.pdb
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Data.v12.2.xml
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Printing.v12.2.Core.xml
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Utils.v12.2.xml
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Utils.v12.2.UI.xml
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Xpf.Core.v12.2.xml
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Xpf.Grid.v12.2.xml
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Xpf.Grid.v12.2.Core.xml
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.Xpf.Printing.v12.2.xml
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.XtraBars.v12.2.xml
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.XtraEditors.v12.2.xml
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.XtraGrid.v12.2.xml
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\bin\Debug\DevExpress.XtraLayout.v12.2.xml
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\bin\Debug\DTS.Jurnal.V3.Database.Module.pdb
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\bin\Debug\System.Windows.Interactivity.xml
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\bin\Debug\de\System.Windows.Interactivity.resources.dll
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\bin\Debug\en\System.Windows.Interactivity.resources.dll
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\bin\Debug\es\System.Windows.Interactivity.resources.dll
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\bin\Debug\it\System.Windows.Interactivity.resources.dll
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\obj\Debug\PersonalInfoScreen\PersonalInfoScreenView.baml
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.g.resources
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.csprojResolveAssemblyReference.cache
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\EditPatient\EditPatientView.baml
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\PatientInformationView.baml
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\EditPatient\EditPatientView.g.cs
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\PatientInformationView.g.cs
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo_MarkupCompile.cache
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Module.PersonalInfo.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Module.PersonalInfo.pdb
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Controls.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Infrastructure.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Database.Model.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalInfo\bin\Debug\DTS.Jurnal.V3.Database.Module.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalInfo\bin\Debug\System.Windows.Interactivity.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Controls.pdb
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Infrastructure.pdb
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Database.Model.pdb
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalInfo\bin\Debug\DTS.Jurnal.V3.Database.Module.pdb
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalInfo\bin\Debug\System.Windows.Interactivity.xml
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalInfo\bin\Debug\de\System.Windows.Interactivity.resources.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalInfo\bin\Debug\en\System.Windows.Interactivity.resources.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalInfo\bin\Debug\es\System.Windows.Interactivity.resources.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalInfo\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalInfo\bin\Debug\it\System.Windows.Interactivity.resources.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalInfo\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalInfo\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalInfo\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalInfo\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalInfo\obj\Debug\PersonalInfoScreen\PersonalInfoScreenView.g.cs
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalInfo\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo_MarkupCompile.lref
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalInfo\obj\Debug\PersonalInfoScreen\PersonalInfoScreenView.baml
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.g.resources
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.pdb

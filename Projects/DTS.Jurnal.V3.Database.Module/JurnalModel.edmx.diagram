@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8b018223467c46ba8dcb34e9e2be901f" Name="Diagram1" ZoomLevel="85">
+        <EntityTypeShape EntityType="JurnalModel.Intervention" Width="1.5" PointX="3.75" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="JurnalModel.Patient" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="JurnalModel.User" Width="1.5" PointX="2.25" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="JurnalModel.Work" Width="1.5" PointX="6.375" PointY="0.5" IsExpanded="true" />
+        <AssociationConnector Association="JurnalModel.FK_PatientIntervention" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="JurnalModel.Location" Width="1.5" PointX="9.375" PointY="2.375" />
+        <AssociationConnector Association="JurnalModel.UserPatient" />
+        <AssociationConnector Association="JurnalModel.WorkIntervention" />
+        <AssociationConnector Association="JurnalModel.LocationIntervention" />
+        <EntityTypeShape EntityType="JurnalModel.Mac" Width="1.5" PointX="5.375" PointY="5.25" />
+        <AssociationConnector Association="JurnalModel.UserMac" />
+        <EntityTypeShape EntityType="JurnalModel.Area" Width="1.5" PointX="8.25" PointY="5" />
+        <AssociationConnector Association="JurnalModel.AreaIntervention" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

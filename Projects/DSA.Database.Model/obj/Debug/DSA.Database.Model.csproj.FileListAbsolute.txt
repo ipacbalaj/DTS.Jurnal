@@ -1,0 +1,55 @@
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Database.Model\bin\Debug\DSA.Database.Model.dll.config
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Database.Model\bin\Debug\DSA.Database.Model.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Database.Model\bin\Debug\DSA.Database.Model.pdb
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Database.Model\bin\Debug\DevExpress.XtraBars.v12.2.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Database.Model\bin\Debug\DSA.Common.Infrastructure.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Database.Model\bin\Debug\log4net.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Database.Model\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Database.Model\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Database.Model\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Database.Model\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Database.Model\bin\Debug\DevExpress.Utils.v12.2.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Database.Model\bin\Debug\DevExpress.XtraEditors.v12.2.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Database.Model\bin\Debug\DevExpress.Data.v12.2.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Database.Model\bin\Debug\DevExpress.Printing.v12.2.Core.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Database.Model\bin\Debug\DSA.Common.Infrastructure.pdb
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Database.Model\bin\Debug\DevExpress.XtraBars.v12.2.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Database.Model\bin\Debug\Microsoft.Practices.Prism.pdb
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Database.Model\bin\Debug\Microsoft.Practices.Prism.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Database.Model\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Database.Model\bin\Debug\DevExpress.Utils.v12.2.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Database.Model\bin\Debug\DevExpress.XtraEditors.v12.2.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Database.Model\bin\Debug\DevExpress.Data.v12.2.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Database.Model\bin\Debug\DevExpress.Printing.v12.2.Core.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Database.Model\obj\Debug\DSA.Database.Model.csprojResolveAssemblyReference.cache
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Database.Model\obj\Debug\DSA.Database.Model.csproj.ResolveComReference.cache
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Database.Model\obj\Debug\DSA.Database.Model.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Database.Model\obj\Debug\DSA.Database.Model.pdb
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Database.Model\obj\Debug\DSA.Database.Model.csprojResolveAssemblyReference.cache
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Database.Model\obj\Debug\DSA.Database.Model.csproj.ResolveComReference.cache
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Database.Model\bin\Debug\DSA.Database.Model.dll.config
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Database.Model\bin\Debug\DSA.Database.Model.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Database.Model\bin\Debug\DSA.Database.Model.pdb
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Database.Model\bin\Debug\DevExpress.XtraBars.v12.2.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Database.Model\bin\Debug\DSA.Common.Infrastructure.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Database.Model\bin\Debug\log4net.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Database.Model\bin\Debug\Microsoft.Practices.Prism.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Database.Model\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Database.Model\bin\Debug\Newtonsoft.Json.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Database.Model\bin\Debug\Microsoft.Practices.Unity.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Database.Model\bin\Debug\DevExpress.Utils.v12.2.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Database.Model\bin\Debug\DevExpress.XtraEditors.v12.2.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Database.Model\bin\Debug\DevExpress.Data.v12.2.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Database.Model\bin\Debug\DevExpress.Printing.v12.2.Core.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Database.Model\bin\Debug\DSA.Common.Infrastructure.pdb
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Database.Model\bin\Debug\DevExpress.XtraBars.v12.2.xml
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Database.Model\bin\Debug\Microsoft.Practices.Prism.pdb
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Database.Model\bin\Debug\Microsoft.Practices.Prism.xml
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Database.Model\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Database.Model\bin\Debug\Microsoft.Practices.Unity.xml
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Database.Model\bin\Debug\DevExpress.Utils.v12.2.xml
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Database.Model\bin\Debug\DevExpress.XtraEditors.v12.2.xml
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Database.Model\bin\Debug\DevExpress.Data.v12.2.xml
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Database.Model\bin\Debug\DevExpress.Printing.v12.2.Core.xml
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Database.Model\obj\Debug\DSA.Database.Model.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Database.Model\obj\Debug\DSA.Database.Model.pdb

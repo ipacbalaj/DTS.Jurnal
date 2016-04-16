@@ -1,0 +1,68 @@
+﻿<UserControl x:Class="DSA.Module.PersonalData.SettingsColumns.SettingsTile.SettingsTileView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:buttons="clr-namespace:DSA.Common.Controls.Buttons;assembly=DSA.Common.Controls"
+             xmlns:optionButton="clr-namespace:DSA.Common.Controls.Buttons.OptionButton;assembly=DSA.Common.Controls"
+             xmlns:symbolButton="clr-namespace:DSA.Common.Controls.Buttons.SymbolButton;assembly=DSA.Common.Controls"
+             mc:Ignorable="d" Name="this"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Border  MinHeight="40" MaxHeight="40" Background="{Binding ContentBackGround}" CornerRadius="3" BorderThickness="0.7" BorderBrush="SlateGray" MouseEnter="UIElement_OnMouseEnter" MouseLeave="UIElement_OnMouseLeave">
+        <Grid Margin="5 0 5 0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="{Binding NormalViewHeight}"/>
+                <RowDefinition Height="{Binding EditViewHeight}"/>
+            </Grid.RowDefinitions>
+            <Grid Visibility="{Binding NormalDisplayVisibility}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="30"/>
+
+                </Grid.ColumnDefinitions>
+                
+                <TextBlock VerticalAlignment="Center" Grid.Column="1" FontWeight="SemiBold" FontSize="14" Text="{Binding Name}"></TextBlock>               
+
+                <TextBlock Visibility="{Binding CostVisibility}" Text="Cost:" Margin="5 0 5 0" Foreground="Red" VerticalAlignment="Center" FontWeight="SemiBold" Grid.Column="4"></TextBlock>
+                <TextBlock Visibility="{Binding CostVisibility}"  Margin="5 0 5 0" VerticalAlignment="Center" FontWeight="SemiBold" Grid.Column="5">
+                    <Run Text="{Binding Cost}" />
+                    <Run Text="lei" Foreground="Red"/>
+                </TextBlock>                
+                <!--            <optionButton:OptionButtonView MaxHeight="34" Grid.Column="1" VerticalContentAlignment="Center" Visibility="{Binding ElementName=this, Path=DataContext.DeleteBtnVisibility}" DataContext="{Binding EditButton}" VerticalAlignment="Top" HorizontalAlignment="Stretch" />-->
+                <symbolButton:SymbolIconButtonView Margin="1.5" Grid.Column="7"  Visibility="{Binding ElementName=this, Path=DataContext.DeleteBtnVisibility}"  DataContext="{Binding DeleteBtn}"/>
+                <symbolButton:SymbolIconButtonView Margin="1.5" Grid.Column="6"  Visibility="{Binding ElementName=this, Path=DataContext.DeleteBtnVisibility}"  DataContext="{Binding EditButton}"/>
+                
+            </Grid>
+            <Grid Grid.Row="1" Visibility="{Binding EditDisplayVisibility}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.7*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="30"/>
+                </Grid.ColumnDefinitions>
+                <TextBox FontSize="14" VerticalAlignment="Center" FontWeight="SemiBold" Text="{Binding Name}"></TextBox>               
+
+                <TextBlock Visibility="{Binding CostVisibility}" Text="Cost:" Margin="5,2,5,1" Foreground="Red" VerticalAlignment="Center" FontWeight="SemiBold" Grid.Column="3"></TextBlock>
+                <!--                <TextBox Visibility="{Binding CostVisibility}" Text="{Binding Cost}"  Margin="5 0 5 0" VerticalAlignment="Center" FontWeight="SemiBold" Grid.Column="2"></TextBox>-->
+                <StackPanel Visibility="{Binding CostVisibility}"  MinWidth="100" HorizontalAlignment="Stretch" Orientation="Horizontal" Margin="5,0,0,0" Grid.Column="4" Grid.ColumnSpan="2">
+                    <TextBox  MinWidth="50" VerticalAlignment="Center" HorizontalAlignment="Stretch" BorderThickness="1,1,0,1" Text="{Binding Cost}"/>
+                    <TextBox VerticalAlignment="Center" BorderThickness="0,1,1,1" HorizontalAlignment="Stretch"
+                     Text="lei" IsReadOnly="True" Foreground="Red"
+                     IsTabStop="False" />
+                </StackPanel>               
+                <symbolButton:SymbolIconButtonView Margin="1.5" Grid.Column="6"  Visibility="{Binding ElementName=this, Path=DataContext.DeleteBtnVisibility}"  DataContext="{Binding DeleteBtn}"/>
+<!--                <symbolButton:SymbolIconButtonView Grid.Column="5"  Visibility="{Binding ElementName=this, Path=DataContext.DeleteBtnVisibility}"  DataContext="{Binding SaveBtn}"/>-->
+                <!--            <optionButton:OptionButtonView MaxHeight="34" Grid.Column="1" VerticalContentAlignment="Center" Visibility="{Binding ElementName=this, Path=DataContext.DeleteBtnVisibility}" DataContext="{Binding EditButton}" VerticalAlignment="Top" HorizontalAlignment="Stretch" />-->
+            </Grid>
+        </Grid>       
+    </Border>
+</UserControl>

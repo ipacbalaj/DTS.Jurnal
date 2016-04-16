@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="DSA.Common.Infrastructure.Icos.NoteLoanIcon"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Stretch="Uniform">
+        <Canvas Name="svg3404" Width="64" Height="64">
+            <Canvas.Resources/>
+            <!--Unknown tag: sodipodi:namedview-->
+            <!--Unknown tag: metadata-->
+            <Canvas Name="layer1">
+                <Canvas Name="g174">
+                    <Canvas.RenderTransform>
+                        <TranslateTransform X="-288.10098" Y="-187.52"/>
+                    </Canvas.RenderTransform>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path176" Fill="#FF5D5D5D">
+                        <Path.Data>
+                            <PathGeometry Figures="m 334.672 201.538 h -30.324 c -2.7 0 -4.883 1.962 -4.883 4.384 v 1.67 c 0 2.42 2.183 4.384 4.883 4.384 h 30.324 c 2.697 0 4.884 -1.964 4.884 -4.384 v -1.67 c 0 -2.422 -2.187 -4.384 -4.884 -4.384 z m -29.1 6.921 c -0.936 0 -1.702 -0.763 -1.702 -1.704 0 -0.937 0.767 -1.7 1.702 -1.7 0.938 0 1.704 0.764 1.704 1.7 0 0.941 -0.765 1.704 -1.704 1.704 z" FillRule="NonZero"/>
+                        </Path.Data>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path178" Fill="#FF5D5D5D">
+                        <Path.Data>
+                            <PathGeometry Figures="m 335.044 234.156 c -0.847 0.206 -1.703 0.31 -2.565 0.31 -0.309 0 -0.622 -0.013 -0.938 -0.041 -2.901 -0.252 -5.545 -1.624 -7.429 -3.863 -0.927 -1.109 -1.612 -2.361 -2.04 -3.695 h -17.724 c -2.7 0 -4.883 1.963 -4.883 4.384 v 1.669 c 0 2.422 2.183 4.386 4.883 4.386 h 30.324 c 0.938 0 1.808 -0.249 2.551 -0.662 l -2.179 -2.488 z m -29.472 -0.368 c -0.936 0 -1.702 -0.763 -1.702 -1.704 0 -0.938 0.767 -1.702 1.702 -1.702 0.938 0 1.704 0.765 1.704 1.702 0 0.941 -0.765 1.704 -1.704 1.704 z" FillRule="NonZero"/>
+                        </Path.Data>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path180" Fill="#FF5D5D5D">
+                        <Path.Data>
+                            <PathGeometry Figures="m 321.593 222.569 c 0.294 -3.362 2.144 -6.28 4.787 -8.081 h -22.032 c -2.7 0 -4.883 1.963 -4.883 4.386 v 1.671 c 0 2.419 2.183 4.383 4.883 4.383 h 17.3 c -0.1 -0.776 -0.124 -1.563 -0.055 -2.359 z m -16.021 -1.158 c -0.936 0 -1.702 -0.762 -1.702 -1.702 0 -0.94 0.767 -1.702 1.702 -1.702 0.938 0 1.704 0.762 1.704 1.702 0 0.94 -0.765 1.702 -1.704 1.702 z" FillRule="NonZero"/>
+                        </Path.Data>
+                    </Path>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path182" Fill="#FF5D5D5D">
+                        <Path.Data>
+                            <PathGeometry Figures="m 341.586 237.502 c 0.732 0 1.455 -0.265 2.025 -0.739 0.646 -0.539 1.042 -1.299 1.113 -2.139 0.076 -0.842 -0.184 -1.661 -0.735 -2.313 l -3.515 -4.019 c 0.73 -1.217 1.163 -2.548 1.292 -3.957 0.211 -2.475 -0.549 -4.886 -2.146 -6.794 -1.601 -1.901 -3.846 -3.069 -6.314 -3.283 -0.272 -0.024 -0.544 -0.037 -0.813 -0.037 -4.777 0 -8.846 3.731 -9.263 8.491 -0.217 2.472 0.545 4.883 2.142 6.79 1.603 1.903 3.844 3.072 6.314 3.284 0.266 0.025 0.532 0.037 0.792 0.037 1.056 0 2.097 -0.183 3.107 -0.54 l 3.579 4.089 c 0.545 0.646 1.308 1.045 2.138 1.117 0.096 0.007 0.188 0.013 0.284 0.013 l 0 0 z m -9.092 -20.274 c 0.185 0 0.373 0.009 0.557 0.023 3.458 0.303 6.021 3.356 5.718 6.811 -0.282 3.22 -3.032 5.739 -6.261 5.739 -0.184 0 -0.367 -0.008 -0.551 -0.021 -3.454 -0.303 -6.017 -3.358 -5.715 -6.813 0.28 -3.22 3.027 -5.739 6.252 -5.739 l 0 0 z" FillRule="NonZero"/>
+                        </Path.Data>
+                    </Path>
+                </Canvas>
+            </Canvas>
+        </Canvas>
+    </Viewbox>
+
+</UserControl>

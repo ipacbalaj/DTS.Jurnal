@@ -1,0 +1,713 @@
+
+-- --------------------------------------------------
+-- Entity Designer DDL Script for SQL Server Compact Edition
+-- --------------------------------------------------
+-- Date Created: 03/29/2016 19:19:40
+-- Generated from EDMX file: E:\DTS\DTS.Jurnal.V5\Projects\DSA.Database.Model\EfSQlLite\Dts.edmx
+-- --------------------------------------------------
+
+
+-- --------------------------------------------------
+-- Dropping existing FOREIGN KEY constraints
+-- NOTE: if the constraint does not exist, an ignorable error will be reported.
+-- --------------------------------------------------
+
+    ALTER TABLE [Interventions] DROP CONSTRAINT [FK_AreaIntervention];
+GO
+    ALTER TABLE [Interventions] DROP CONSTRAINT [FK_InterventionDateHourDetails];
+GO
+    ALTER TABLE [Filters] DROP CONSTRAINT [FK_FilterGroupFilter];
+GO
+    ALTER TABLE [Filters] DROP CONSTRAINT [FK_FilterFilterType];
+GO
+    ALTER TABLE [Interventions] DROP CONSTRAINT [FK_InterventionLocation];
+GO
+    ALTER TABLE [Interventions] DROP CONSTRAINT [FK_InterventionWork];
+GO
+    ALTER TABLE [Interventions] DROP CONSTRAINT [FK_MaterialIntervention];
+GO
+    ALTER TABLE [Interventions] DROP CONSTRAINT [FK_MonthIntervention];
+GO
+    ALTER TABLE [Interventions] DROP CONSTRAINT [FK_PatientIntervention];
+GO
+    ALTER TABLE [Interventions] DROP CONSTRAINT [FK_YearIntervention];
+GO
+    ALTER TABLE [FilterFilterItem] DROP CONSTRAINT [FK_FilterFilterItem_Filter];
+GO
+    ALTER TABLE [FilterFilterItem] DROP CONSTRAINT [FK_FilterFilterItem_FilterItem];
+GO
+    ALTER TABLE [Types] DROP CONSTRAINT [FK_MaterialType];
+GO
+    ALTER TABLE [Interventions] DROP CONSTRAINT [FK_TypeIntervention];
+GO
+    ALTER TABLE [MACs] DROP CONSTRAINT [FK_UserMAC];
+GO
+    ALTER TABLE [WorkTypes] DROP CONSTRAINT [FK_WorkWorkType];
+GO
+    ALTER TABLE [Interventions] DROP CONSTRAINT [FK_WorkTypeIntervention];
+GO
+    ALTER TABLE [Interventions] DROP CONSTRAINT [FK_TechnicianIntervention];
+GO
+
+-- --------------------------------------------------
+-- Dropping existing tables
+-- NOTE: if the table does not exist, an ignorable error will be reported.
+-- --------------------------------------------------
+
+    DROP TABLE [Areas];
+GO
+    DROP TABLE [DateHourDetails];
+GO
+    DROP TABLE [FilterGroups];
+GO
+    DROP TABLE [FilterItems];
+GO
+    DROP TABLE [Filters];
+GO
+    DROP TABLE [FilterTypes];
+GO
+    DROP TABLE [Interventions];
+GO
+    DROP TABLE [Locations];
+GO
+    DROP TABLE [Materials];
+GO
+    DROP TABLE [Months];
+GO
+    DROP TABLE [Patients];
+GO
+    DROP TABLE [Works];
+GO
+    DROP TABLE [Years];
+GO
+    DROP TABLE [Technicians];
+GO
+    DROP TABLE [Types];
+GO
+    DROP TABLE [DentalPaymentInfoes];
+GO
+    DROP TABLE [Users];
+GO
+    DROP TABLE [IntervalInfoes];
+GO
+    DROP TABLE [MACs];
+GO
+    DROP TABLE [WorkTypes];
+GO
+    DROP TABLE [ProgramInfoes];
+GO
+    DROP TABLE [FilterFilterItem];
+GO
+
+-- --------------------------------------------------
+-- Creating all tables
+-- --------------------------------------------------
+
+-- Creating table 'Areas'
+CREATE TABLE [Areas] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [Name] nvarchar(4000)  NOT NULL,
+    [WasDeleted] bit  NULL
+);
+GO
+
+-- Creating table 'DateHourDetails'
+CREATE TABLE [DateHourDetails] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [StartHour] datetime  NOT NULL,
+    [EndingHour] datetime  NOT NULL,
+    [Date] datetime  NOT NULL,
+    [Duration] bigint  NULL,
+    [MiliTime] bigint  NOT NULL
+);
+GO
+
+-- Creating table 'FilterGroups'
+CREATE TABLE [FilterGroups] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [Name] nvarchar(4000)  NOT NULL,
+    [StartDate] datetime  NOT NULL,
+    [EndDate] datetime  NOT NULL,
+    [IsActive] bit  NOT NULL,
+    [IsIntervalActive] bit  NOT NULL
+);
+GO
+
+-- Creating table 'FilterItems'
+CREATE TABLE [FilterItems] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [Name] nvarchar(4000)  NOT NULL
+);
+GO
+
+-- Creating table 'Filters'
+CREATE TABLE [Filters] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [IsActive] bit  NOT NULL,
+    [FilterGroup_Id] int  NOT NULL,
+    [FilterType_Id] int  NOT NULL
+);
+GO
+
+-- Creating table 'FilterTypes'
+CREATE TABLE [FilterTypes] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [Name] nvarchar(4000)  NOT NULL
+);
+GO
+
+-- Creating table 'Interventions'
+CREATE TABLE [Interventions] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [Observation] nvarchar(4000)  NULL,
+    [Number] int  NOT NULL,
+    [Revenue] float  NOT NULL,
+    [Percent] float  NOT NULL,
+    [Patient_id] int  NOT NULL,
+    [Location_Id] int  NULL,
+    [Material_Id] int  NULL,
+    [DateHourDetail_Id] int  NOT NULL,
+    [Area_Id] int  NULL,
+    [Work_Id] int  NULL,
+    [Year_Id] int  NOT NULL,
+    [Month_Id] int  NOT NULL,
+    [WasPayedByDental] bit  NULL,
+    [TechnicianId] int  NULL,
+    [MaterialCost] float  NULL,
+    [IsSelected] bit  NOT NULL,
+    [Remainder] float  NOT NULL,
+    [Type_Id] int  NULL,
+    [WorkType_Id] int  NULL
+);
+GO
+
+-- Creating table 'Locations'
+CREATE TABLE [Locations] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [Name] nvarchar(4000)  NOT NULL,
+    [WasDeleted] bit  NULL
+);
+GO
+
+-- Creating table 'Materials'
+CREATE TABLE [Materials] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [Name] nvarchar(4000)  NOT NULL,
+    [Cost] float  NOT NULL,
+    [WasDeleted] bit  NULL
+);
+GO
+
+-- Creating table 'Months'
+CREATE TABLE [Months] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [MOnthNumber] int  NOT NULL
+);
+GO
+
+-- Creating table 'Patients'
+CREATE TABLE [Patients] (
+    [id] int IDENTITY(1,1) NOT NULL,
+    [name] nvarchar(100)  NULL,
+    [surname] nvarchar(100)  NULL,
+    [Address] nvarchar(100)  NULL,
+    [City] nvarchar(50)  NULL,
+    [Phone] nvarchar(50)  NULL,
+    [Email] nvarchar(50)  NULL,
+    [BirthDate] datetime  NULL,
+    [Street] nvarchar(4000)  NULL,
+    [Block] nvarchar(4000)  NULL,
+    [Job] nvarchar(4000)  NULL,
+    [StreetNumber] nvarchar(4000)  NULL,
+    [Ocupation] nvarchar(4000)  NULL,
+    [Country] nvarchar(4000)  NULL
+);
+GO
+
+-- Creating table 'Works'
+CREATE TABLE [Works] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [Name] nvarchar(4000)  NOT NULL,
+    [Cost] float  NOT NULL,
+    [Percent] float  NULL,
+    [IncludedINFinancial] bit  NULL,
+    [WasDeleted] bit  NULL
+);
+GO
+
+-- Creating table 'Years'
+CREATE TABLE [Years] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [YearNb] int  NOT NULL
+);
+GO
+
+-- Creating table 'Technicians'
+CREATE TABLE [Technicians] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [Name] nvarchar(4000)  NOT NULL,
+    [WasDeleted] bit  NULL
+);
+GO
+
+-- Creating table 'Types'
+CREATE TABLE [Types] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [Cost] float  NOT NULL,
+    [Name] nvarchar(4000)  NOT NULL,
+    [Material_Id] int  NULL
+);
+GO
+
+-- Creating table 'DentalPaymentInfoes'
+CREATE TABLE [DentalPaymentInfoes] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [Name] nvarchar(4000)  NOT NULL,
+    [Date] datetime  NOT NULL,
+    [TotalRevenue] float  NOT NULL,
+    [TotalPercent] float  NOT NULL
+);
+GO
+
+-- Creating table 'Users'
+CREATE TABLE [Users] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [username] nvarchar(4000)  NULL,
+    [password] nvarchar(4000)  NULL,
+    [appInfo] nvarchar(4000)  NULL
+);
+GO
+
+-- Creating table 'IntervalInfoes'
+CREATE TABLE [IntervalInfoes] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [TotalRevenue] float  NOT NULL,
+    [TotalPercent] float  NOT NULL,
+    [Name] nvarchar(4000)  NOT NULL
+);
+GO
+
+-- Creating table 'MACs'
+CREATE TABLE [MACs] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [macId] nvarchar(4000)  NULL,
+    [User_Id] int  NOT NULL
+);
+GO
+
+-- Creating table 'WorkTypes'
+CREATE TABLE [WorkTypes] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [Name] nvarchar(4000)  NOT NULL,
+    [Cost] float  NOT NULL,
+    [Percent] float  NOT NULL,
+    [Work_Id] int  NOT NULL
+);
+GO
+
+-- Creating table 'ProgramInfoes'
+CREATE TABLE [ProgramInfoes] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [ExportFileName] nvarchar(4000)  NOT NULL,
+    [LastFileDateImport] datetime  NOT NULL,
+    [LastAddedInterventionDate] datetime  NOT NULL
+);
+GO
+
+-- Creating table 'FilterFilterItem'
+CREATE TABLE [FilterFilterItem] (
+    [Filters_Id] int  NOT NULL,
+    [FilterItems_Id] int  NOT NULL
+);
+GO
+
+-- --------------------------------------------------
+-- Creating all PRIMARY KEY constraints
+-- --------------------------------------------------
+
+-- Creating primary key on [Id] in table 'Areas'
+ALTER TABLE [Areas]
+ADD CONSTRAINT [PK_Areas]
+    PRIMARY KEY ([Id] );
+GO
+
+-- Creating primary key on [Id] in table 'DateHourDetails'
+ALTER TABLE [DateHourDetails]
+ADD CONSTRAINT [PK_DateHourDetails]
+    PRIMARY KEY ([Id] );
+GO
+
+-- Creating primary key on [Id] in table 'FilterGroups'
+ALTER TABLE [FilterGroups]
+ADD CONSTRAINT [PK_FilterGroups]
+    PRIMARY KEY ([Id] );
+GO
+
+-- Creating primary key on [Id] in table 'FilterItems'
+ALTER TABLE [FilterItems]
+ADD CONSTRAINT [PK_FilterItems]
+    PRIMARY KEY ([Id] );
+GO
+
+-- Creating primary key on [Id] in table 'Filters'
+ALTER TABLE [Filters]
+ADD CONSTRAINT [PK_Filters]
+    PRIMARY KEY ([Id] );
+GO
+
+-- Creating primary key on [Id] in table 'FilterTypes'
+ALTER TABLE [FilterTypes]
+ADD CONSTRAINT [PK_FilterTypes]
+    PRIMARY KEY ([Id] );
+GO
+
+-- Creating primary key on [Id] in table 'Interventions'
+ALTER TABLE [Interventions]
+ADD CONSTRAINT [PK_Interventions]
+    PRIMARY KEY ([Id] );
+GO
+
+-- Creating primary key on [Id] in table 'Locations'
+ALTER TABLE [Locations]
+ADD CONSTRAINT [PK_Locations]
+    PRIMARY KEY ([Id] );
+GO
+
+-- Creating primary key on [Id] in table 'Materials'
+ALTER TABLE [Materials]
+ADD CONSTRAINT [PK_Materials]
+    PRIMARY KEY ([Id] );
+GO
+
+-- Creating primary key on [Id] in table 'Months'
+ALTER TABLE [Months]
+ADD CONSTRAINT [PK_Months]
+    PRIMARY KEY ([Id] );
+GO
+
+-- Creating primary key on [id] in table 'Patients'
+ALTER TABLE [Patients]
+ADD CONSTRAINT [PK_Patients]
+    PRIMARY KEY ([id] );
+GO
+
+-- Creating primary key on [Id] in table 'Works'
+ALTER TABLE [Works]
+ADD CONSTRAINT [PK_Works]
+    PRIMARY KEY ([Id] );
+GO
+
+-- Creating primary key on [Id] in table 'Years'
+ALTER TABLE [Years]
+ADD CONSTRAINT [PK_Years]
+    PRIMARY KEY ([Id] );
+GO
+
+-- Creating primary key on [Id] in table 'Technicians'
+ALTER TABLE [Technicians]
+ADD CONSTRAINT [PK_Technicians]
+    PRIMARY KEY ([Id] );
+GO
+
+-- Creating primary key on [Id] in table 'Types'
+ALTER TABLE [Types]
+ADD CONSTRAINT [PK_Types]
+    PRIMARY KEY ([Id] );
+GO
+
+-- Creating primary key on [Id] in table 'DentalPaymentInfoes'
+ALTER TABLE [DentalPaymentInfoes]
+ADD CONSTRAINT [PK_DentalPaymentInfoes]
+    PRIMARY KEY ([Id] );
+GO
+
+-- Creating primary key on [Id] in table 'Users'
+ALTER TABLE [Users]
+ADD CONSTRAINT [PK_Users]
+    PRIMARY KEY ([Id] );
+GO
+
+-- Creating primary key on [Id] in table 'IntervalInfoes'
+ALTER TABLE [IntervalInfoes]
+ADD CONSTRAINT [PK_IntervalInfoes]
+    PRIMARY KEY ([Id] );
+GO
+
+-- Creating primary key on [Id] in table 'MACs'
+ALTER TABLE [MACs]
+ADD CONSTRAINT [PK_MACs]
+    PRIMARY KEY ([Id] );
+GO
+
+-- Creating primary key on [Id] in table 'WorkTypes'
+ALTER TABLE [WorkTypes]
+ADD CONSTRAINT [PK_WorkTypes]
+    PRIMARY KEY ([Id] );
+GO
+
+-- Creating primary key on [Id] in table 'ProgramInfoes'
+ALTER TABLE [ProgramInfoes]
+ADD CONSTRAINT [PK_ProgramInfoes]
+    PRIMARY KEY ([Id] );
+GO
+
+-- Creating primary key on [Filters_Id], [FilterItems_Id] in table 'FilterFilterItem'
+ALTER TABLE [FilterFilterItem]
+ADD CONSTRAINT [PK_FilterFilterItem]
+    PRIMARY KEY ([Filters_Id], [FilterItems_Id] );
+GO
+
+-- --------------------------------------------------
+-- Creating all FOREIGN KEY constraints
+-- --------------------------------------------------
+
+-- Creating foreign key on [Area_Id] in table 'Interventions'
+ALTER TABLE [Interventions]
+ADD CONSTRAINT [FK_AreaIntervention]
+    FOREIGN KEY ([Area_Id])
+    REFERENCES [Areas]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_AreaIntervention'
+CREATE INDEX [IX_FK_AreaIntervention]
+ON [Interventions]
+    ([Area_Id]);
+GO
+
+-- Creating foreign key on [DateHourDetail_Id] in table 'Interventions'
+ALTER TABLE [Interventions]
+ADD CONSTRAINT [FK_InterventionDateHourDetails]
+    FOREIGN KEY ([DateHourDetail_Id])
+    REFERENCES [DateHourDetails]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_InterventionDateHourDetails'
+CREATE INDEX [IX_FK_InterventionDateHourDetails]
+ON [Interventions]
+    ([DateHourDetail_Id]);
+GO
+
+-- Creating foreign key on [FilterGroup_Id] in table 'Filters'
+ALTER TABLE [Filters]
+ADD CONSTRAINT [FK_FilterGroupFilter]
+    FOREIGN KEY ([FilterGroup_Id])
+    REFERENCES [FilterGroups]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_FilterGroupFilter'
+CREATE INDEX [IX_FK_FilterGroupFilter]
+ON [Filters]
+    ([FilterGroup_Id]);
+GO
+
+-- Creating foreign key on [FilterType_Id] in table 'Filters'
+ALTER TABLE [Filters]
+ADD CONSTRAINT [FK_FilterFilterType]
+    FOREIGN KEY ([FilterType_Id])
+    REFERENCES [FilterTypes]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_FilterFilterType'
+CREATE INDEX [IX_FK_FilterFilterType]
+ON [Filters]
+    ([FilterType_Id]);
+GO
+
+-- Creating foreign key on [Location_Id] in table 'Interventions'
+ALTER TABLE [Interventions]
+ADD CONSTRAINT [FK_InterventionLocation]
+    FOREIGN KEY ([Location_Id])
+    REFERENCES [Locations]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_InterventionLocation'
+CREATE INDEX [IX_FK_InterventionLocation]
+ON [Interventions]
+    ([Location_Id]);
+GO
+
+-- Creating foreign key on [Work_Id] in table 'Interventions'
+ALTER TABLE [Interventions]
+ADD CONSTRAINT [FK_InterventionWork]
+    FOREIGN KEY ([Work_Id])
+    REFERENCES [Works]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_InterventionWork'
+CREATE INDEX [IX_FK_InterventionWork]
+ON [Interventions]
+    ([Work_Id]);
+GO
+
+-- Creating foreign key on [Material_Id] in table 'Interventions'
+ALTER TABLE [Interventions]
+ADD CONSTRAINT [FK_MaterialIntervention]
+    FOREIGN KEY ([Material_Id])
+    REFERENCES [Materials]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_MaterialIntervention'
+CREATE INDEX [IX_FK_MaterialIntervention]
+ON [Interventions]
+    ([Material_Id]);
+GO
+
+-- Creating foreign key on [Month_Id] in table 'Interventions'
+ALTER TABLE [Interventions]
+ADD CONSTRAINT [FK_MonthIntervention]
+    FOREIGN KEY ([Month_Id])
+    REFERENCES [Months]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_MonthIntervention'
+CREATE INDEX [IX_FK_MonthIntervention]
+ON [Interventions]
+    ([Month_Id]);
+GO
+
+-- Creating foreign key on [Patient_id] in table 'Interventions'
+ALTER TABLE [Interventions]
+ADD CONSTRAINT [FK_PatientIntervention]
+    FOREIGN KEY ([Patient_id])
+    REFERENCES [Patients]
+        ([id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_PatientIntervention'
+CREATE INDEX [IX_FK_PatientIntervention]
+ON [Interventions]
+    ([Patient_id]);
+GO
+
+-- Creating foreign key on [Year_Id] in table 'Interventions'
+ALTER TABLE [Interventions]
+ADD CONSTRAINT [FK_YearIntervention]
+    FOREIGN KEY ([Year_Id])
+    REFERENCES [Years]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_YearIntervention'
+CREATE INDEX [IX_FK_YearIntervention]
+ON [Interventions]
+    ([Year_Id]);
+GO
+
+-- Creating foreign key on [Filters_Id] in table 'FilterFilterItem'
+ALTER TABLE [FilterFilterItem]
+ADD CONSTRAINT [FK_FilterFilterItem_Filter]
+    FOREIGN KEY ([Filters_Id])
+    REFERENCES [Filters]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating foreign key on [FilterItems_Id] in table 'FilterFilterItem'
+ALTER TABLE [FilterFilterItem]
+ADD CONSTRAINT [FK_FilterFilterItem_FilterItem]
+    FOREIGN KEY ([FilterItems_Id])
+    REFERENCES [FilterItems]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_FilterFilterItem_FilterItem'
+CREATE INDEX [IX_FK_FilterFilterItem_FilterItem]
+ON [FilterFilterItem]
+    ([FilterItems_Id]);
+GO
+
+-- Creating foreign key on [Material_Id] in table 'Types'
+ALTER TABLE [Types]
+ADD CONSTRAINT [FK_MaterialType]
+    FOREIGN KEY ([Material_Id])
+    REFERENCES [Materials]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_MaterialType'
+CREATE INDEX [IX_FK_MaterialType]
+ON [Types]
+    ([Material_Id]);
+GO
+
+-- Creating foreign key on [Type_Id] in table 'Interventions'
+ALTER TABLE [Interventions]
+ADD CONSTRAINT [FK_TypeIntervention]
+    FOREIGN KEY ([Type_Id])
+    REFERENCES [Types]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_TypeIntervention'
+CREATE INDEX [IX_FK_TypeIntervention]
+ON [Interventions]
+    ([Type_Id]);
+GO
+
+-- Creating foreign key on [User_Id] in table 'MACs'
+ALTER TABLE [MACs]
+ADD CONSTRAINT [FK_UserMAC]
+    FOREIGN KEY ([User_Id])
+    REFERENCES [Users]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_UserMAC'
+CREATE INDEX [IX_FK_UserMAC]
+ON [MACs]
+    ([User_Id]);
+GO
+
+-- Creating foreign key on [Work_Id] in table 'WorkTypes'
+ALTER TABLE [WorkTypes]
+ADD CONSTRAINT [FK_WorkWorkType]
+    FOREIGN KEY ([Work_Id])
+    REFERENCES [Works]
+        ([Id])
+    ON DELETE CASCADE ON UPDATE NO ACTION;
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_WorkWorkType'
+CREATE INDEX [IX_FK_WorkWorkType]
+ON [WorkTypes]
+    ([Work_Id]);
+GO
+
+-- Creating foreign key on [WorkType_Id] in table 'Interventions'
+ALTER TABLE [Interventions]
+ADD CONSTRAINT [FK_WorkTypeIntervention]
+    FOREIGN KEY ([WorkType_Id])
+    REFERENCES [WorkTypes]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_WorkTypeIntervention'
+CREATE INDEX [IX_FK_WorkTypeIntervention]
+ON [Interventions]
+    ([WorkType_Id]);
+GO
+
+-- Creating foreign key on [TechnicianId] in table 'Interventions'
+ALTER TABLE [Interventions]
+ADD CONSTRAINT [FK_TechnicianIntervention]
+    FOREIGN KEY ([TechnicianId])
+    REFERENCES [Technicians]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_TechnicianIntervention'
+CREATE INDEX [IX_FK_TechnicianIntervention]
+ON [Interventions]
+    ([TechnicianId]);
+GO
+
+-- --------------------------------------------------
+-- Script has ended
+-- --------------------------------------------------

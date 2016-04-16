@@ -1,0 +1,130 @@
+﻿<UserControl x:Class="DTS_Jurnal.Jurnal.JurnalScreen.JurnalView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+             xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+             xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+             xmlns:addInterventionTile="clr-namespace:DTS_Jurnal.Jurnal.AddInterventionTile"
+             xmlns:buttons="clr-namespace:DSA.Common.Controls.Buttons;assembly=DSA.Common.Controls"
+             mc:Ignorable="d" dx:ThemeManager.ThemeName="MetropolisLight"
+             PreviewMouseUp="JurnalView_OnPreviewMouseUp"             
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Border  Background="{Binding ContentBackground}">
+        <Grid Margin="10 20 0 0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="67"/>
+            </Grid.RowDefinitions>
+            <addInterventionTile:AddInterventionTileView MouseUp="UIElement_OnMouseUp" Margin="5 0 5 0" Grid.Row="0" DataContext="{Binding AddInterventionTileViewModel}"/>
+            <dxg:GridControl PreviewKeyDown="GridControlInt_OnPreviewKeyDown" ShowLoadingPanel="{Binding ShowLoadingPanel}" MouseLeave="GridControlInt_OnMouseLeave" LostMouseCapture="GridControlInt_OnLostMouseCapture" 
+                             Name="gridControlInt"  MaxHeight="1300"
+                             Visibility="{Binding ContentVisibility}" 
+                             Margin="5 0 5 0"
+                             Grid.Row="1"
+                             dx:DXSerializer.SerializationID="grid"                      
+                         dx:DXSerializer.StoreLayoutMode="All"
+                             HorizontalAlignment="Stretch"
+                         dxg:GridSerializationOptions.AddNewColumns="False"
+                             FontSize="16"
+                         dxg:GridSerializationOptions.RemoveOldColumns="False"                          
+                         ItemsSource="{Binding Interventions}"  AutoPopulateColumns="False" 
+                           VerticalAlignment="Stretch" AutoExpandAllGroups="True"  
+                          >
+                <dxg:GridControl.View >
+                    <dxg:TableView  ShowTotalSummary="True" RowDoubleClick="TableView_OnRowDoubleClick"
+                                    NavigationStyle="Cell"  
+                                    Name="TableView" ShowAutoFilterRow="True" 
+                                    CellValueChanging="TableView_OnCellValueChanged" 
+                                    AllowScrollToFocusedRow="True" HorizontalAlignment="Stretch"  
+                                    MultiSelectMode="Row" 
+                                    SelectionChanged="TableView_OnSelectionChanged"                                   
+                                    ShowGroupPanel="False" 
+                                    FadeSelectionOnLostFocus="True"
+                                    FocusedRow="{Binding SelectedInterventionModel,Mode=TwoWay}" 
+                                    AutoWidth="True">
+                        <dxg:TableView.RowStyle>
+                            <Style TargetType="{x:Type dxg:GridRowContent}">
+                                <Setter Property="Background" Value="{Binding Row.RowColorBrush}"/>
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding Path=IsSelected}" Value="True">
+                                        <Setter Property="Background" Value="LightBlue"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </dxg:TableView.RowStyle>
+                    </dxg:TableView>
+                </dxg:GridControl.View>
+                <dxg:GridControl.Columns>
+                    <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="PatientName" Header="Nume Pacient"/>
+                    <dxg:GridColumn AllowEditing="False" AllowResizing="True"  AllowBestFit="True" FieldName="Date" Header="Data"/>
+                    <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="Work" Header="Manopera"/>
+                    <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="Area" Header="Zona"/>
+                    <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="Location" Header="Locatie"/>
+                    <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="Start" Header="Ora inceput">
+                        <dxg:GridColumn.EditSettings>
+                            <dxe:TextEditSettings Mask="HH:mm" MaskType="DateTime" MaskUseAsDisplayFormat="True"/>
+                        </dxg:GridColumn.EditSettings>
+                    </dxg:GridColumn>
+                    <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="DurataString" Header="Durata">
+                        <dxg:GridColumn.EditSettings>
+                            <dxe:TextEditSettings Mask="HH:mm" MaskType="DateTime" MaskUseAsDisplayFormat="True"/>
+                        </dxg:GridColumn.EditSettings>
+                    </dxg:GridColumn>
+                    <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="End" Header="Ora sfarsit">
+                        <dxg:GridColumn.EditSettings>
+                            <dxe:TextEditSettings Mask="HH:mm" MaskType="DateTime" MaskUseAsDisplayFormat="True"/>
+                        </dxg:GridColumn.EditSettings>
+                    </dxg:GridColumn>
+                    <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="Revenue" Header="Incasari"/>
+                    <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="Remainder" Header="Rest Plata"/>
+                    <dxg:GridColumn AllowEditing="True"  AllowResizing="True" AllowBestFit="True" FieldName="WasPayed" Header="Platit"/>
+                    <dxg:GridColumn AllowEditing="True"  AllowResizing="True" AllowBestFit="True" FieldName="IsSelected" Header="Selectat"/>
+                    <dxg:GridColumn  AllowEditing="True"  AllowResizing="True" AllowBestFit="True" FieldName="Delete" Header="Șterge">
+                        <dxg:GridColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="x" ToolTip="Șterge manopera" Command="{Binding View.Grid.DataContext.DeleteRowCommand}" CommandParameter="{Binding RowData.Row}"/>
+                            </DataTemplate>
+                        </dxg:GridColumn.CellTemplate>
+                    </dxg:GridColumn>
+
+                </dxg:GridControl.Columns>
+
+                <dxg:GridControl.TotalSummary>
+                    <dxg:GridSummaryItem FieldName="PatientName"   SummaryType="Count" DisplayFormat="Intervenții: ({0})"/>
+                </dxg:GridControl.TotalSummary>
+            </dxg:GridControl>
+            <Grid Margin="10 0 0 0" Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="1" VerticalAlignment="Center">
+                <Run Foreground="DarkGray" Text="  Selectate:   " FontSize="19" FontWeight="SemiBold"></Run>
+                <Run Foreground="Black" Text="{Binding TotalSelected}" FontSize="19" FontWeight="SemiBold"></Run>
+                <Run Foreground="DarkGray" Text=" lei  " FontSize="19" FontWeight="SemiBold"></Run>
+                </TextBlock>
+                <TextBlock Grid.Column="0" VerticalAlignment="Center" >
+                <Run Foreground="DarkGray" Text="  Total:   " FontSize="19" FontWeight="SemiBold"></Run>
+                <Run Foreground="Black" Text="{Binding Total}" FontSize="19" FontWeight="SemiBold"></Run>
+                <Run Foreground="DarkGray" Text=" lei  " FontSize="19" FontWeight="SemiBold"></Run>
+                </TextBlock>
+                <TextBlock Grid.Column="2" FontWeight="SemiBold" FontSize="19" VerticalAlignment="Center" Foreground="DarkGray" Text="             Incarcă intervenții de la data:"></TextBlock>
+                <dxe:DateEdit Height="35" Width="200"  EditValue="" DateTime ="{Binding StartingDate}" HorizontalAlignment="Stretch" Mask="d" MaskUseAsDisplayFormat ="True" ShowWeekNumbers="True"  Margin="8 2 8 2"  Grid.Column ="3"   />
+                
+                <StackPanel  Grid.Column="4" VerticalAlignment="Center" Orientation="Horizontal" Margin="10 10 10 0" HorizontalAlignment="Right">
+<!--                    <buttons:ActionButtonView MaxHeight="45"   Margin="0 -22 0 -3" DataContext="{Binding DeleteDataButton}"/>-->
+                    <buttons:ActionButtonView MaxHeight="45" Margin="0 -22 10 -3"  DataContext="{Binding GetAllInterventionsButton}"/>
+                    <buttons:ActionButtonView MaxHeight="45" Margin="0 -22 0 -3"  DataContext="{Binding ExportSelectedButton}"/>
+                    <buttons:ActionButtonView MaxHeight="45" Margin="0 -22 0 -3"  DataContext="{Binding ExportButton}"/>
+                    <buttons:ActionButtonView MaxHeight="45" Margin="0 -22 0 -3"  DataContext="{Binding ExportPatientsButton}"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Border>
+</UserControl>

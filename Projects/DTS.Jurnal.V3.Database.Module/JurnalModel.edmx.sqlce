@@ -1,0 +1,271 @@
+
+-- --------------------------------------------------
+-- Entity Designer DDL Script for SQL Server Compact Edition
+-- --------------------------------------------------
+-- Date Created: 11/01/2015 23:05:36
+-- Generated from EDMX file: E:\DTS\DTS.Jurnal.V3\Projects\DTS.Jurnal.V3.Database.Module\JurnalModel.edmx
+-- --------------------------------------------------
+
+
+-- --------------------------------------------------
+-- Dropping existing FOREIGN KEY constraints
+-- NOTE: if the constraint does not exist, an ignorable error will be reported.
+-- --------------------------------------------------
+
+    ALTER TABLE [Interventions] DROP CONSTRAINT [FK_PatientIntervention];
+GO
+    ALTER TABLE [Patients] DROP CONSTRAINT [FK_UserPatient];
+GO
+    ALTER TABLE [Interventions] DROP CONSTRAINT [FK_WorkIntervention];
+GO
+    ALTER TABLE [Interventions] DROP CONSTRAINT [FK_LocationIntervention];
+GO
+    ALTER TABLE [Macs] DROP CONSTRAINT [FK_UserMac];
+GO
+    ALTER TABLE [Interventions] DROP CONSTRAINT [FK_AreaIntervention];
+GO
+
+-- --------------------------------------------------
+-- Dropping existing tables
+-- NOTE: if the table does not exist, an ignorable error will be reported.
+-- --------------------------------------------------
+
+    DROP TABLE [Interventions];
+GO
+    DROP TABLE [Patients];
+GO
+    DROP TABLE [Users];
+GO
+    DROP TABLE [Works];
+GO
+    DROP TABLE [Locations];
+GO
+    DROP TABLE [Macs];
+GO
+    DROP TABLE [Areas];
+GO
+
+-- --------------------------------------------------
+-- Creating all tables
+-- --------------------------------------------------
+
+-- Creating table 'Interventions'
+CREATE TABLE [Interventions] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [Date] datetime  NOT NULL,
+    [Duration] bigint  NOT NULL,
+    [Start] datetime  NOT NULL,
+    [End] datetime  NOT NULL,
+    [Revenue] float  NOT NULL,
+    [Patient_Id] int  NOT NULL,
+    [IsSelected] bit  NULL,
+    [Remainder] float  NOT NULL,
+    [Payed] bit  NOT NULL,
+    [WasExported] bit  NOT NULL,
+    [Work_Id] int  NULL,
+    [Location_Id] int  NULL,
+    [Area_Id] int  NULL
+);
+GO
+
+-- Creating table 'Patients'
+CREATE TABLE [Patients] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [FirstName] nvarchar(4000)  NOT NULL,
+    [LastName] nvarchar(4000)  NOT NULL,
+    [Address] nvarchar(4000)  NULL,
+    [BirthDate] datetime  NULL,
+    [City] nvarchar(4000)  NULL,
+    [Country] nvarchar(4000)  NULL,
+    [Street] nvarchar(4000)  NULL,
+    [Block] nvarchar(4000)  NULL,
+    [StreetNo] nvarchar(4000)  NULL,
+    [Job] nvarchar(4000)  NULL,
+    [Ocupation] nvarchar(4000)  NULL,
+    [Phone] nvarchar(4000)  NULL,
+    [Email] nvarchar(4000)  NULL,
+    [Brush] nvarchar(4000)  NULL,
+    [NewlyAdded] nvarchar(4000)  NULL,
+    [WasExported] bit  NULL,
+    [User_Id] int  NOT NULL
+);
+GO
+
+-- Creating table 'Users'
+CREATE TABLE [Users] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [Username] nvarchar(50)  NULL,
+    [Password] nvarchar(4000)  NOT NULL
+);
+GO
+
+-- Creating table 'Works'
+CREATE TABLE [Works] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [Name] nvarchar(4000)  NOT NULL,
+    [Cost] float  NOT NULL,
+    [WasDeleted] bit  NOT NULL
+);
+GO
+
+-- Creating table 'Locations'
+CREATE TABLE [Locations] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [Name] nvarchar(4000)  NOT NULL,
+    [WasDeleted] bit  NOT NULL
+);
+GO
+
+-- Creating table 'Macs'
+CREATE TABLE [Macs] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [macId] nvarchar(4000)  NOT NULL,
+    [User_Id] int  NOT NULL
+);
+GO
+
+-- Creating table 'Areas'
+CREATE TABLE [Areas] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [Name] nvarchar(4000)  NOT NULL,
+    [WasDeleted] bit  NOT NULL
+);
+GO
+
+-- --------------------------------------------------
+-- Creating all PRIMARY KEY constraints
+-- --------------------------------------------------
+
+-- Creating primary key on [Id] in table 'Interventions'
+ALTER TABLE [Interventions]
+ADD CONSTRAINT [PK_Interventions]
+    PRIMARY KEY ([Id] );
+GO
+
+-- Creating primary key on [Id] in table 'Patients'
+ALTER TABLE [Patients]
+ADD CONSTRAINT [PK_Patients]
+    PRIMARY KEY ([Id] );
+GO
+
+-- Creating primary key on [Id] in table 'Users'
+ALTER TABLE [Users]
+ADD CONSTRAINT [PK_Users]
+    PRIMARY KEY ([Id] );
+GO
+
+-- Creating primary key on [Id] in table 'Works'
+ALTER TABLE [Works]
+ADD CONSTRAINT [PK_Works]
+    PRIMARY KEY ([Id] );
+GO
+
+-- Creating primary key on [Id] in table 'Locations'
+ALTER TABLE [Locations]
+ADD CONSTRAINT [PK_Locations]
+    PRIMARY KEY ([Id] );
+GO
+
+-- Creating primary key on [Id] in table 'Macs'
+ALTER TABLE [Macs]
+ADD CONSTRAINT [PK_Macs]
+    PRIMARY KEY ([Id] );
+GO
+
+-- Creating primary key on [Id] in table 'Areas'
+ALTER TABLE [Areas]
+ADD CONSTRAINT [PK_Areas]
+    PRIMARY KEY ([Id] );
+GO
+
+-- --------------------------------------------------
+-- Creating all FOREIGN KEY constraints
+-- --------------------------------------------------
+
+-- Creating foreign key on [Patient_Id] in table 'Interventions'
+ALTER TABLE [Interventions]
+ADD CONSTRAINT [FK_PatientIntervention]
+    FOREIGN KEY ([Patient_Id])
+    REFERENCES [Patients]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_PatientIntervention'
+CREATE INDEX [IX_FK_PatientIntervention]
+ON [Interventions]
+    ([Patient_Id]);
+GO
+
+-- Creating foreign key on [User_Id] in table 'Patients'
+ALTER TABLE [Patients]
+ADD CONSTRAINT [FK_UserPatient]
+    FOREIGN KEY ([User_Id])
+    REFERENCES [Users]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_UserPatient'
+CREATE INDEX [IX_FK_UserPatient]
+ON [Patients]
+    ([User_Id]);
+GO
+
+-- Creating foreign key on [Work_Id] in table 'Interventions'
+ALTER TABLE [Interventions]
+ADD CONSTRAINT [FK_WorkIntervention]
+    FOREIGN KEY ([Work_Id])
+    REFERENCES [Works]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_WorkIntervention'
+CREATE INDEX [IX_FK_WorkIntervention]
+ON [Interventions]
+    ([Work_Id]);
+GO
+
+-- Creating foreign key on [Location_Id] in table 'Interventions'
+ALTER TABLE [Interventions]
+ADD CONSTRAINT [FK_LocationIntervention]
+    FOREIGN KEY ([Location_Id])
+    REFERENCES [Locations]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_LocationIntervention'
+CREATE INDEX [IX_FK_LocationIntervention]
+ON [Interventions]
+    ([Location_Id]);
+GO
+
+-- Creating foreign key on [User_Id] in table 'Macs'
+ALTER TABLE [Macs]
+ADD CONSTRAINT [FK_UserMac]
+    FOREIGN KEY ([User_Id])
+    REFERENCES [Users]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_UserMac'
+CREATE INDEX [IX_FK_UserMac]
+ON [Macs]
+    ([User_Id]);
+GO
+
+-- Creating foreign key on [Area_Id] in table 'Interventions'
+ALTER TABLE [Interventions]
+ADD CONSTRAINT [FK_AreaIntervention]
+    FOREIGN KEY ([Area_Id])
+    REFERENCES [Areas]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_AreaIntervention'
+CREATE INDEX [IX_FK_AreaIntervention]
+ON [Interventions]
+    ([Area_Id]);
+GO
+
+-- --------------------------------------------------
+-- Script has ended
+-- --------------------------------------------------

@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="DSA.Common.Controls.Buttons.ListItemButton.ListItemButtonView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             Name="ListButton"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Border
+                MouseUp="OnMouseUp" MouseEnter="OnMouseEnter" MouseLeave="OnMouseLeave"
+                Height="{Binding ElementName=ListButton, Path=Height}" Width="{Binding ElementName=ActionButton, Path=Width}">
+            <TextBlock >
+                <Run
+                       Text="{Binding Text}" Foreground="{Binding TextColor}" 
+                       FontWeight="SemiBold" FontSize="18"/>
+                <Run Text="  "></Run>
+                </TextBlock>
+        </Border>
+    </Grid>
+</UserControl>

@@ -1,0 +1,184 @@
+D:\c#\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.FileUpload.dll
+D:\c#\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.FileUpload.pdb
+D:\c#\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.Database.Model.dll
+D:\c#\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.Database.Model.pdb
+D:\c#\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\obj\Debug\DSA.FileUpload.csprojResolveAssemblyReference.cache
+D:\c#\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\obj\Debug\DSA.FileUpload.dll
+D:\c#\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\obj\Debug\DSA.FileUpload.pdb
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.FileUpload.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.FileUpload.pdb
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.Database.Model.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.Database.Model.pdb
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\obj\Debug\DSA.FileUpload.csprojResolveAssemblyReference.cache
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\obj\Debug\DSA.FileUpload.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\obj\Debug\DSA.FileUpload.pdb
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.Common.Infrastructure.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.Common.Infrastructure.pdb
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Prism.pdb
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Prism.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.FileUpload.dll
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.FileUpload.pdb
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.Database.Model.dll
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.Common.Infrastructure.dll
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.Database.Model.pdb
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.Common.Infrastructure.pdb
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Prism.pdb
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Prism.xml
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\obj\Debug\DSA.FileUpload.csprojResolveAssemblyReference.cache
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\obj\Debug\DSA.FileUpload.dll
+C:\Users\ionut\Dropbox\Poli\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\obj\Debug\DSA.FileUpload.pdb
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.FileUpload.dll
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.FileUpload.pdb
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.Database.Model.dll
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.Common.Infrastructure.dll
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Prism.dll
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Unity.dll
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.Database.Model.pdb
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.Common.Infrastructure.pdb
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Prism.pdb
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Prism.xml
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Unity.xml
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\obj\Debug\DSA.FileUpload.csprojResolveAssemblyReference.cache
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\obj\Debug\DSA.FileUpload.dll
+D:\c#\DTS.v1\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\obj\Debug\DSA.FileUpload.pdb
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.FileUpload.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.FileUpload.pdb
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.Database.Model.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.Common.Infrastructure.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Prism.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Unity.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.Database.Model.pdb
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.Common.Infrastructure.pdb
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Prism.pdb
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Prism.xml
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Unity.xml
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\obj\Debug\DSA.FileUpload.csprojResolveAssemblyReference.cache
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\obj\Debug\DSA.FileUpload.dll
+E:\Dental Tracking System\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\obj\Debug\DSA.FileUpload.pdb
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.FileUpload.dll
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.FileUpload.pdb
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.Database.Model.dll
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.Common.Infrastructure.dll
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Prism.dll
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Unity.dll
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.Database.Model.pdb
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.Common.Infrastructure.pdb
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Prism.pdb
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Prism.xml
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Unity.xml
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\obj\Debug\DSA.FileUpload.csprojResolveAssemblyReference.cache
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\obj\Debug\DSA.FileUpload.dll
+D:\c#\v1\DentalTrackingSystem\DTS\finalProject\DuplexTestProject\Common\DSA.FileUpload\obj\Debug\DSA.FileUpload.pdb
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.FileUpload.dll
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.FileUpload.pdb
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.Database.Model.dll
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.Common.Infrastructure.dll
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.Database.Model.pdb
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.Common.Infrastructure.pdb
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Prism.pdb
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Prism.xml
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Common\DSA.FileUpload\obj\Debug\DSA.FileUpload.csprojResolveAssemblyReference.cache
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Common\DSA.FileUpload\obj\Debug\DSA.FileUpload.dll
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Common\DSA.FileUpload\obj\Debug\DSA.FileUpload.pdb
+C:\Users\ionut\Dropbox\DentalTrackingSystem\v2\finalProject\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\log4net.dll
+D:\c#\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.FileUpload.dll
+D:\c#\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.FileUpload.pdb
+D:\c#\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.Common.Infrastructure.dll
+D:\c#\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.Database.Model.dll
+D:\c#\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\log4net.dll
+D:\c#\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Prism.dll
+D:\c#\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Unity.dll
+D:\c#\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\c#\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.Database.Model.pdb
+D:\c#\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.Common.Infrastructure.pdb
+D:\c#\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Prism.pdb
+D:\c#\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Prism.xml
+D:\c#\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Unity.xml
+D:\c#\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\c#\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\obj\Debug\DSA.FileUpload.csprojResolveAssemblyReference.cache
+D:\c#\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\obj\Debug\DSA.FileUpload.dll
+D:\c#\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\obj\Debug\DSA.FileUpload.pdb
+C:\Users\ionut\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.FileUpload.dll
+C:\Users\ionut\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.FileUpload.pdb
+C:\Users\ionut\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.Common.Infrastructure.dll
+C:\Users\ionut\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.Database.Model.dll
+C:\Users\ionut\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\log4net.dll
+C:\Users\ionut\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Users\ionut\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\ionut\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\ionut\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.Database.Model.pdb
+C:\Users\ionut\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.Common.Infrastructure.pdb
+C:\Users\ionut\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\obj\Debug\DSA.FileUpload.csprojResolveAssemblyReference.cache
+C:\Users\ionut\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\obj\Debug\DSA.FileUpload.dll
+C:\Users\ionut\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\obj\Debug\DSA.FileUpload.pdb
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.FileUpload.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.FileUpload.pdb
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.Common.Infrastructure.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.Database.Model.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.Database.Model.pdb
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DSA.Common.Infrastructure.pdb
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Prism.pdb
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.Prism.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\obj\Debug\DSA.FileUpload.csprojResolveAssemblyReference.cache
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\obj\Debug\DSA.FileUpload.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\obj\Debug\DSA.FileUpload.pdb
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Common\DSA.FileUpload\bin\Debug\DocX.dll
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.FileUpload\bin\Debug\DSA.FileUpload.dll
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.FileUpload\bin\Debug\DSA.FileUpload.pdb
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.FileUpload\bin\Debug\DSA.Common.Infrastructure.dll
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.FileUpload\bin\Debug\DTS.Jurnal.V3.Database.Module.dll
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.FileUpload\bin\Debug\Microsoft.Practices.Prism.dll
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.FileUpload\bin\Debug\Microsoft.Practices.Unity.dll
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.FileUpload\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.FileUpload\bin\Debug\DSA.Common.Infrastructure.pdb
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.FileUpload\bin\Debug\DTS.Jurnal.V3.Database.Module.pdb
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.FileUpload\bin\Debug\Microsoft.Practices.Prism.pdb
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.FileUpload\bin\Debug\Microsoft.Practices.Prism.xml
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.FileUpload\bin\Debug\Microsoft.Practices.Unity.xml
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.FileUpload\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.FileUpload\obj\Debug\DSA.FileUpload.csprojResolveAssemblyReference.cache
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.FileUpload\obj\Debug\DSA.FileUpload.dll
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.FileUpload\obj\Debug\DSA.FileUpload.pdb
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.FileUpload\obj\Debug\DSA.FileUpload.csprojResolveAssemblyReference.cache
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.FileUpload\bin\Debug\DSA.FileUpload.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.FileUpload\bin\Debug\DSA.FileUpload.pdb
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.FileUpload\bin\Debug\DSA.Common.Infrastructure.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.FileUpload\bin\Debug\DSA.Database.Model.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.FileUpload\bin\Debug\DTS.Jurnal.V3.Database.Module.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.FileUpload\bin\Debug\Microsoft.Practices.Prism.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.FileUpload\bin\Debug\Microsoft.Practices.Unity.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.FileUpload\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.FileUpload\bin\Debug\DSA.Database.Model.pdb
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.FileUpload\bin\Debug\DSA.Common.Infrastructure.pdb
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.FileUpload\bin\Debug\DTS.Jurnal.V3.Database.Module.pdb
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.FileUpload\bin\Debug\Microsoft.Practices.Prism.pdb
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.FileUpload\bin\Debug\Microsoft.Practices.Prism.xml
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.FileUpload\bin\Debug\Microsoft.Practices.Unity.xml
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.FileUpload\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.FileUpload\obj\Debug\DSA.FileUpload.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.FileUpload\obj\Debug\DSA.FileUpload.pdb

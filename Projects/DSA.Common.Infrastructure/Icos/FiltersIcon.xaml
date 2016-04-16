@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="DSA.Common.Infrastructure.Icos.FiltersIcon"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+
+    <Viewbox Stretch="Uniform">
+        <Canvas Name="svg3061" Width="64" Height="64">
+            <Canvas.Resources/>
+            <!--Unknown tag: sodipodi:namedview-->
+            <!--Unknown tag: metadata-->
+            <Canvas Name="layer1">
+                <Path Fill="Black">
+                    <Path.Data>
+                        <PathGeometry Figures="M 8 22 h 8 V 14 H 8 v 8 z M 8 36 h 8 V 28 H 8 v 8 z M 8 50 h 8 V 42 H 8 v 8 z" FillRule="NonZero"/>
+                    </Path.Data>
+                </Path>
+                <Path Fill="#FF5D5D5D">
+                    <Path.Data>
+                        <PathGeometry Figures="m 22 14 v 8 H 56 V 14 H 22 z M 22 36 H 56 V 28 H 22 v 8 z M 22 50 H 56 V 42 H 22 v 8 z " FillRule="NonZero"/>
+                    </Path.Data>
+                </Path>
+            </Canvas>
+        </Canvas>
+    </Viewbox>
+
+</UserControl>

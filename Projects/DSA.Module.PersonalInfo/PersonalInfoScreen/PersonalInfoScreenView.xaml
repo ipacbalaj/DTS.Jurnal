@@ -1,0 +1,168 @@
+﻿<UserControl x:Class="DSA.Module.PersonalInfo.PersonalInfoScreen.PersonalInfoScreenView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:patientInformation="clr-namespace:DSA.Module.PersonalInfo.PatientInformation"
+             xmlns:buttons="clr-namespace:DSA.Common.Controls.Buttons;assembly=DSA.Common.Controls"
+             xmlns:icos="clr-namespace:DSA.Common.Infrastructure.Icos;assembly=DSA.Common.Infrastructure"
+             xmlns:editPatient="clr-namespace:DSA.Module.PersonalInfo.PatientInformation.EditPatient"
+             xmlns:optionButton="clr-namespace:DSA.Common.Controls.Buttons.OptionButton;assembly=DSA.Common.Controls"
+             xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+             xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+             xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+             xmlns:metroLoading="clr-namespace:DSA.Common.Controls.Loading.MetroLoading;assembly=DSA.Common.Controls"
+             mc:Ignorable="d" dx:ThemeManager.ThemeName="MetropolisLight" Name="MainControl"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Border Margin="0 0 0 10" BorderThickness="0.7 0 0.7 1" BorderBrush="SlateGray" Background="{Binding ContentBackground}">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>            
+            <Grid Grid.Column="0" Margin="10 14 0 40">
+                <Border BorderBrush="SlateGray" Background="SkyBlue" BorderThickness="0.7">
+                    <dxg:GridControl PreviewKeyDown="UIElement_OnPreviewKeyDown"  MaxHeight="1000" FontSize="16"  dx:DXSerializer.SerializationID="grid" 
+                                 Visibility="{Binding InterventionsVisibility}"     Background="Transparent"                
+                         dx:DXSerializer.StoreLayoutMode="All" HorizontalAlignment="Stretch"
+                         dxg:GridSerializationOptions.AddNewColumns="False" 
+                         dxg:GridSerializationOptions.RemoveOldColumns="False"                            
+                         ItemsSource="{Binding Patients}"  AutoPopulateColumns="False" 
+                                
+                           VerticalAlignment="Stretch" AutoExpandAllGroups="True">
+                        <dxg:GridControl.View>
+                            <dxg:TableView  Name="tableView12" AllowResizing="True" 
+                                            ShowAutoFilterRow="True" 
+                                            FocusedRow="{Binding SelectedPatient,Mode=TwoWay}"
+                                            NavigationStyle="Cell"
+                                            MultiSelectMode="Row"  
+                                            SelectionChanged="TableView12_OnSelectionChanged"
+                                            FadeSelectionOnLostFocus="True"
+                                       ShowGroupPanel="False" ShowTotalSummary="True" AutoWidth="True">
+<!--                                <dxg:TableView.RowStyle>-->
+<!--                                    <Style TargetType="{x:Type dxg:GridRowContent}">-->
+<!--                                        <Setter Property="Background" Value="{Binding Row.Brush}"/>-->
+<!--                                    </Style>-->
+<!--                                </dxg:TableView.RowStyle>-->
+<!---->
+<!--                                <dxg:TableView.CellStyle>-->
+<!--                                    <Style TargetType="dxg:CellContentPresenter">-->
+<!--                                        <Style.Triggers>-->
+<!--                                            <Trigger Property="dxg:DataViewBase.IsFocusedCell" Value="True">-->
+<!--                                                <Setter Property="Background" Value="#ADC0C0 "/>-->
+<!--                                            </Trigger>-->
+<!--                                        </Style.Triggers>-->
+<!--                                    </Style>-->
+<!--                                </dxg:TableView.CellStyle>-->
+                            </dxg:TableView>
+                        </dxg:GridControl.View>
+                        <dxg:GridControl.Columns>
+                            <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="AllName" Header="Nume Prenume Pacient"/>
+                        </dxg:GridControl.Columns>
+                    </dxg:GridControl>
+                </Border>                    
+            </Grid>
+            <Grid Grid.Column="1" Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="30"/>
+                </Grid.RowDefinitions>
+                <patientInformation:PatientInformationView Visibility="{Binding ElementName=MainControl, Path=DataContext.RegularVisibility}" Grid.Row="0" DataContext="{Binding PatientInformationViewModel}"/>
+                <editPatient:EditPatientView  Visibility="{Binding ElementName=MainControl, Path=DataContext.EditVisibility}" Grid.Row="0" DataContext="{Binding PatientInformationViewModel}"/>
+                <buttons:ActionButtonView   Margin="7 -70 7 0"  MaxWidth="100" HorizontalAlignment="Right" Grid.Row="1" DataContext="{Binding EditButton}" Visibility="{Binding ElementName=MainControl, Path=DataContext.RegularVisibility}" />
+                <Grid HorizontalAlignment="Right" Margin="7 -70 7 0" Grid.Row="1" Visibility="{Binding ElementName=MainControl, Path=DataContext.EditVisibility}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <buttons:ActionButtonView   Grid.Column="0" MaxWidth="100" DataContext="{Binding CancelButton}" />
+                    <buttons:ActionButtonView   MaxWidth="100"  Grid.Column="1" DataContext="{Binding SaveBtn}" />
+                    <buttons:ActionButtonView MaxWidth="100" Grid.Column="2" DataContext="{Binding DeletePatientButton}" />
+                </Grid>
+                <!--        <buttons:ActionButtonView HorizontalAlignment="Right" Grid.Row="1" DataContext="{Binding EditSaveButton}"/>-->
+                <Border BorderThickness="1" BorderBrush="Black" Margin="3 0 3 0" Grid.Row="2" Background="{Binding InterventionTabColor}" MouseEnter="UIElement_OnMouseEnter" MouseLeave="UIElement_OnMouseLeave" MouseLeftButtonUp="UIElement_OnMouseLeftButtonUp" >
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5 0 0 0" Text="Listă Intervenții Pacient" FontWeight="SemiBold"></TextBlock>
+                        <Viewbox HorizontalAlignment="Right" Margin="5" Grid.Column="1">
+                            <icos:CloseOpenArrow>
+                                <icos:CloseOpenArrow.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="2" ScaleY="2" CenterX="32" CenterY="32" />
+                                        <RotateTransform CenterX="32" CenterY="32" Angle="{Binding ExpanderRotation}"/>
+                                    </TransformGroup>
+                                </icos:CloseOpenArrow.RenderTransform>
+                            </icos:CloseOpenArrow>
+                        </Viewbox>
+                    </Grid>
+                </Border>
+                <dxg:GridControl MaxHeight="810" FontSize="16" Margin="5 0 5 0" Grid.Row="3" dx:DXSerializer.SerializationID="grid" Visibility="{Binding InterventionsVisibility}"                     
+                         dx:DXSerializer.StoreLayoutMode="All" HorizontalAlignment="Stretch"
+                         dxg:GridSerializationOptions.AddNewColumns="False" 
+                         dxg:GridSerializationOptions.RemoveOldColumns="False"                            
+                         ItemsSource="{Binding Interventions}"  AutoPopulateColumns="False" Name="ViewPatientGrid" 
+                           VerticalAlignment="Stretch" AutoExpandAllGroups="True">
+                    <dxg:GridControl.View>
+                        <dxg:TableView  AllowResizing="True" ShowGroupPanel="False" ShowTotalSummary="True" AutoWidth="True">
+                            <dxg:TableView.RowStyle>
+                                <Style TargetType="{x:Type dxg:GridRowContent}">
+                                    <Setter Property="Background" Value="{Binding Row.Brush}"/>
+                                    <Style.Triggers>
+                                        <Trigger Property="dxg:GridViewBase.IsFocusedRow" Value="True">
+                                            <Setter Property="Background" Value="LightSkyBlue" />
+                                            <Setter Property="Foreground" Value="Black" />
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </dxg:TableView.RowStyle>
+                        </dxg:TableView>
+                    </dxg:GridControl.View>
+                    <dxg:GridControl.Columns>                        
+                        <dxg:GridColumn AllowEditing="False" AllowResizing="True"  AllowBestFit="True" FieldName="Date" Header="Data"/>
+                        <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="Work" Header="Manopera"/>
+                        <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="Area" Header="Zona"/>
+                        <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="Location" Header="Locatie"/>
+                        <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="Start" Header="Ora inceput">
+                            <dxg:GridColumn.EditSettings>
+                                <dxe:TextEditSettings Mask="HH:mm" MaskType="DateTime" MaskUseAsDisplayFormat="True"/>
+                            </dxg:GridColumn.EditSettings>
+                        </dxg:GridColumn>
+                        <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="DurataString" Header="Durata">
+                            <dxg:GridColumn.EditSettings>
+                                <dxe:TextEditSettings Mask="HH:mm" MaskType="DateTime" MaskUseAsDisplayFormat="True"/>
+                            </dxg:GridColumn.EditSettings>
+                        </dxg:GridColumn>
+                        <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="End" Header="Ora sfarsit">
+                            <dxg:GridColumn.EditSettings>
+                                <dxe:TextEditSettings Mask="HH:mm" MaskType="DateTime" MaskUseAsDisplayFormat="True"/>
+                            </dxg:GridColumn.EditSettings>
+                        </dxg:GridColumn>
+                        <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="Revenue" Header="Incasari"/>
+                        <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="Remainder" Header="Rest Plata"/>
+<!--                        <dxg:GridColumn AllowEditing="True"  AllowResizing="True" AllowBestFit="True" FieldName="WasPayed" Header="Platit"/>-->
+<!--                        <dxg:GridColumn AllowEditing="True"  AllowResizing="True" AllowBestFit="True" FieldName="IsSelected" Header="Selectat"    />-->
+                    </dxg:GridControl.Columns>
+
+                    <dxg:GridControl.TotalSummary>
+                        <!--                <dxg:GridSummaryItem FieldName="PacientName"   SummaryType="Count"  DisplayFormat="({0})" />                -->
+                        <!--                <dxg:GridSummaryItem FieldName="Percent" SummaryType="Sum" DisplayFormat=" {0:c2}" />-->
+                        <!--                <dxg:GridSummaryItem FieldName="Durata" SummaryType="Sum" DisplayFormat=" {0:c1}" />-->
+                        <!--                <dxg:GridSummaryItem FieldName="Revenue" SummaryType="Sum" DisplayFormat=" {0:c2}" />-->
+                        <!---->
+                <dxg:GridSummaryItem FieldName="Work"   SummaryType="Count" DisplayFormat="Numar interventii: ({0} )" />
+                <dxg:GridSummaryItem FieldName="Percent" SummaryType="Sum" DisplayFormat="Procent Total: {0:n2}" />
+                <dxg:GridSummaryItem FieldName="Durata" SummaryType="Sum" DisplayFormat="Ore Lucrate: {0:hh\\:mm} days" />
+                <dxg:GridSummaryItem FieldName="Revenue" SummaryType="Sum" DisplayFormat="Total Incasari: {0:n2}" />
+            </dxg:GridControl.TotalSummary>
+        </dxg:GridControl>        
+            </Grid>
+        </Grid>    
+    </Border>
+</UserControl>

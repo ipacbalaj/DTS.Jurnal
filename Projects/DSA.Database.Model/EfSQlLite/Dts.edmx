@@ -1,0 +1,1340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="dsaModel.Store" Alias="Self" Provider="System.Data.SqlServerCe.4.0" ProviderManifestToken="4.0" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="dsaModelStoreContainer">
+    <EntitySet Name="Areas" EntityType="dsaModel.Store.Areas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DateHourDetails" EntityType="dsaModel.Store.DateHourDetails" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FilterGroups" EntityType="dsaModel.Store.FilterGroups" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FilterItems" EntityType="dsaModel.Store.FilterItems" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Filters" EntityType="dsaModel.Store.Filters" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FilterTypes" EntityType="dsaModel.Store.FilterTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Interventions" EntityType="dsaModel.Store.Interventions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Locations" EntityType="dsaModel.Store.Locations" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Materials" EntityType="dsaModel.Store.Materials" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Months" EntityType="dsaModel.Store.Months" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Patients" EntityType="dsaModel.Store.Patients" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Works" EntityType="dsaModel.Store.Works" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Years" EntityType="dsaModel.Store.Years" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Technicians" EntityType="dsaModel.Store.Technicians" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Types" EntityType="dsaModel.Store.Types" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DentalPaymentInfoes" EntityType="dsaModel.Store.DentalPaymentInfoes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Users" EntityType="dsaModel.Store.Users" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="IntervalInfoes" EntityType="dsaModel.Store.IntervalInfoes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MACs" EntityType="dsaModel.Store.MACs" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="WorkTypes" EntityType="dsaModel.Store.WorkTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ProgramInfoes" EntityType="dsaModel.Store.ProgramInfoes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FilterFilterItem" EntityType="dsaModel.Store.FilterFilterItem" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_AreaIntervention" Association="dsaModel.Store.FK_AreaIntervention">
+      <End Role="Area" EntitySet="Areas" />
+      <End Role="Intervention" EntitySet="Interventions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InterventionDateHourDetails" Association="dsaModel.Store.FK_InterventionDateHourDetails">
+      <End Role="DateHourDetail" EntitySet="DateHourDetails" />
+      <End Role="Intervention" EntitySet="Interventions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FilterGroupFilter" Association="dsaModel.Store.FK_FilterGroupFilter">
+      <End Role="FilterGroup" EntitySet="FilterGroups" />
+      <End Role="Filter" EntitySet="Filters" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FilterFilterType" Association="dsaModel.Store.FK_FilterFilterType">
+      <End Role="FilterType" EntitySet="FilterTypes" />
+      <End Role="Filter" EntitySet="Filters" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InterventionLocation" Association="dsaModel.Store.FK_InterventionLocation">
+      <End Role="Location" EntitySet="Locations" />
+      <End Role="Intervention" EntitySet="Interventions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InterventionWork" Association="dsaModel.Store.FK_InterventionWork">
+      <End Role="Work" EntitySet="Works" />
+      <End Role="Intervention" EntitySet="Interventions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MaterialIntervention" Association="dsaModel.Store.FK_MaterialIntervention">
+      <End Role="Material" EntitySet="Materials" />
+      <End Role="Intervention" EntitySet="Interventions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MonthIntervention" Association="dsaModel.Store.FK_MonthIntervention">
+      <End Role="Month" EntitySet="Months" />
+      <End Role="Intervention" EntitySet="Interventions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PatientIntervention" Association="dsaModel.Store.FK_PatientIntervention">
+      <End Role="Patient" EntitySet="Patients" />
+      <End Role="Intervention" EntitySet="Interventions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_YearIntervention" Association="dsaModel.Store.FK_YearIntervention">
+      <End Role="Year" EntitySet="Years" />
+      <End Role="Intervention" EntitySet="Interventions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FilterFilterItem_Filter" Association="dsaModel.Store.FK_FilterFilterItem_Filter">
+      <End Role="Filter" EntitySet="Filters" />
+      <End Role="FilterFilterItem" EntitySet="FilterFilterItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FilterFilterItem_FilterItem" Association="dsaModel.Store.FK_FilterFilterItem_FilterItem">
+      <End Role="FilterItem" EntitySet="FilterItems" />
+      <End Role="FilterFilterItem" EntitySet="FilterFilterItem" />
+    </AssociationSet>
+    <AssociationSet Name="MaterialType" Association="dsaModel.Store.MaterialType">
+      <End Role="Material" EntitySet="Materials" />
+      <End Role="Type" EntitySet="Types" />
+    </AssociationSet>
+    <AssociationSet Name="TypeIntervention" Association="dsaModel.Store.TypeIntervention">
+      <End Role="Type" EntitySet="Types" />
+      <End Role="Intervention" EntitySet="Interventions" />
+    </AssociationSet>
+    <AssociationSet Name="UserMAC" Association="dsaModel.Store.UserMAC">
+      <End Role="User" EntitySet="Users" />
+      <End Role="MAC" EntitySet="MACs" />
+    </AssociationSet>
+    <AssociationSet Name="WorkWorkType" Association="dsaModel.Store.WorkWorkType">
+      <End Role="Work" EntitySet="Works" />
+      <End Role="WorkType" EntitySet="WorkTypes" />
+    </AssociationSet>
+    <AssociationSet Name="WorkTypeIntervention" Association="dsaModel.Store.WorkTypeIntervention">
+      <End Role="Intervention" EntitySet="Interventions" />
+      <End Role="WorkType" EntitySet="WorkTypes" />
+    </AssociationSet>
+    <AssociationSet Name="TechnicianIntervention" Association="dsaModel.Store.TechnicianIntervention">
+      <End Role="Technician" EntitySet="Technicians" />
+      <End Role="Intervention" EntitySet="Interventions" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Areas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="4000" />
+    <Property Name="WasDeleted" Type="bit" Nullable="true" />
+  </EntityType>
+  <EntityType Name="DateHourDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StartHour" Type="datetime" Nullable="false" />
+    <Property Name="EndingHour" Type="datetime" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="Duration" Type="bigint" Nullable="true" />
+    <Property Name="MiliTime" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FilterGroups">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="4000" />
+    <Property Name="StartDate" Type="datetime" Nullable="false" />
+    <Property Name="EndDate" Type="datetime" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsIntervalActive" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FilterItems">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="4000" />
+  </EntityType>
+  <EntityType Name="Filters">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="FilterGroup_Id" Type="int" Nullable="false" />
+    <Property Name="FilterType_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FilterTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="4000" />
+  </EntityType>
+  <EntityType Name="Interventions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Observation" Type="nvarchar" Nullable="true" MaxLength="4000" />
+    <Property Name="Number" Type="int" Nullable="false" />
+    <Property Name="Revenue" Type="float" Nullable="false" />
+    <Property Name="Percent" Type="float" Nullable="false" />
+    <Property Name="Patient_id" Type="int" Nullable="false" />
+    <Property Name="Location_Id" Type="int" Nullable="true" />
+    <Property Name="Material_Id" Type="int" Nullable="true" />
+    <Property Name="DateHourDetail_Id" Type="int" Nullable="false" />
+    <Property Name="Area_Id" Type="int" Nullable="true" />
+    <Property Name="Work_Id" Type="int" Nullable="true" />
+    <Property Name="Year_Id" Type="int" Nullable="false" />
+    <Property Name="Month_Id" Type="int" Nullable="false" />
+    <Property Name="WasPayedByDental" Type="bit" Nullable="true" />
+    <Property Name="TechnicianId" Type="int" Nullable="true" />
+    <Property Name="MaterialCost" Type="float" Nullable="true" />
+    <Property Name="IsSelected" Type="bit" Nullable="false" />
+    <Property Name="Remainder" Type="float" Nullable="false" />
+    <Property Name="Type_Id" Type="int" Nullable="true" />
+    <Property Name="WorkType_Id" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Locations">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="4000" />
+    <Property Name="WasDeleted" Type="bit" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Materials">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="4000" />
+    <Property Name="Cost" Type="float" Nullable="false" />
+    <Property Name="WasDeleted" Type="bit" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Months">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MOnthNumber" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Patients">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" Nullable="true" MaxLength="100" />
+    <Property Name="surname" Type="nvarchar" Nullable="true" MaxLength="100" />
+    <Property Name="Address" Type="nvarchar" Nullable="true" MaxLength="100" />
+    <Property Name="City" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="Phone" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="BirthDate" Type="datetime" Nullable="true" />
+    <Property Name="Street" Type="nvarchar" Nullable="true" MaxLength="4000" />
+    <Property Name="Block" Type="nvarchar" Nullable="true" MaxLength="4000" />
+    <Property Name="Job" Type="nvarchar" Nullable="true" MaxLength="4000" />
+    <Property Name="StreetNumber" Type="nvarchar" Nullable="true" MaxLength="4000" />
+    <Property Name="Ocupation" Type="nvarchar" Nullable="true" MaxLength="4000" />
+    <Property Name="Country" Type="nvarchar" Nullable="true" MaxLength="4000" />
+  </EntityType>
+  <EntityType Name="Works">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="4000" />
+    <Property Name="Cost" Type="float" Nullable="false" />
+    <Property Name="Percent" Type="float" Nullable="true" />
+    <Property Name="IncludedINFinancial" Type="bit" Nullable="true" />
+    <Property Name="WasDeleted" Type="bit" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Years">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="YearNb" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Technicians">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" />
+    <Property Name="WasDeleted" Type="bit" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Types">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Cost" Type="float" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" />
+    <Property Name="Material_Id" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="DentalPaymentInfoes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="TotalRevenue" Type="float" Nullable="false" />
+    <Property Name="TotalPercent" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="username" Type="nvarchar" Nullable="true" />
+    <Property Name="password" Type="nvarchar" Nullable="true" />
+    <Property Name="appInfo" Type="nvarchar" Nullable="true" />
+  </EntityType>
+  <EntityType Name="IntervalInfoes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TotalRevenue" Type="float" Nullable="false" />
+    <Property Name="TotalPercent" Type="float" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MACs">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="macId" Type="nvarchar" Nullable="true" />
+    <Property Name="User_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="WorkTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" />
+    <Property Name="Cost" Type="float" Nullable="false" />
+    <Property Name="Percent" Type="float" Nullable="false" />
+    <Property Name="Work_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProgramInfoes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ExportFileName" Type="nvarchar" Nullable="false" />
+    <Property Name="LastFileDateImport" Type="datetime" Nullable="false" />
+    <Property Name="LastAddedInterventionDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FilterFilterItem">
+    <Key>
+      <PropertyRef Name="Filters_Id" />
+      <PropertyRef Name="FilterItems_Id" />
+    </Key>
+    <Property Name="Filters_Id" Type="int" Nullable="false" />
+    <Property Name="FilterItems_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_AreaIntervention">
+    <End Role="Area" Type="dsaModel.Store.Areas" Multiplicity="0..1" />
+    <End Role="Intervention" Type="dsaModel.Store.Interventions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Area">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Intervention">
+        <PropertyRef Name="Area_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InterventionDateHourDetails">
+    <End Role="DateHourDetail" Type="dsaModel.Store.DateHourDetails" Multiplicity="1" />
+    <End Role="Intervention" Type="dsaModel.Store.Interventions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DateHourDetail">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Intervention">
+        <PropertyRef Name="DateHourDetail_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FilterGroupFilter">
+    <End Role="FilterGroup" Type="dsaModel.Store.FilterGroups" Multiplicity="1" />
+    <End Role="Filter" Type="dsaModel.Store.Filters" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FilterGroup">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Filter">
+        <PropertyRef Name="FilterGroup_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FilterFilterType">
+    <End Role="FilterType" Type="dsaModel.Store.FilterTypes" Multiplicity="1" />
+    <End Role="Filter" Type="dsaModel.Store.Filters" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FilterType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Filter">
+        <PropertyRef Name="FilterType_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InterventionLocation">
+    <End Role="Location" Type="dsaModel.Store.Locations" Multiplicity="0..1" />
+    <End Role="Intervention" Type="dsaModel.Store.Interventions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Location">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Intervention">
+        <PropertyRef Name="Location_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InterventionWork">
+    <End Role="Work" Type="dsaModel.Store.Works" Multiplicity="0..1" />
+    <End Role="Intervention" Type="dsaModel.Store.Interventions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Work">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Intervention">
+        <PropertyRef Name="Work_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MaterialIntervention">
+    <End Role="Material" Type="dsaModel.Store.Materials" Multiplicity="0..1" />
+    <End Role="Intervention" Type="dsaModel.Store.Interventions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Material">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Intervention">
+        <PropertyRef Name="Material_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MonthIntervention">
+    <End Role="Month" Type="dsaModel.Store.Months" Multiplicity="1" />
+    <End Role="Intervention" Type="dsaModel.Store.Interventions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Month">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Intervention">
+        <PropertyRef Name="Month_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PatientIntervention">
+    <End Role="Patient" Type="dsaModel.Store.Patients" Multiplicity="1" />
+    <End Role="Intervention" Type="dsaModel.Store.Interventions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Patient">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Intervention">
+        <PropertyRef Name="Patient_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_YearIntervention">
+    <End Role="Year" Type="dsaModel.Store.Years" Multiplicity="1" />
+    <End Role="Intervention" Type="dsaModel.Store.Interventions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Year">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Intervention">
+        <PropertyRef Name="Year_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MaterialType">
+    <End Role="Material" Type="dsaModel.Store.Materials" Multiplicity="0..1" />
+    <End Role="Type" Type="dsaModel.Store.Types" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Material">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Type">
+        <PropertyRef Name="Material_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TypeIntervention">
+    <End Role="Type" Type="dsaModel.Store.Types" Multiplicity="0..1" />
+    <End Role="Intervention" Type="dsaModel.Store.Interventions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Type">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Intervention">
+        <PropertyRef Name="Type_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UserMAC">
+    <End Role="User" Type="dsaModel.Store.Users" Multiplicity="1" />
+    <End Role="MAC" Type="dsaModel.Store.MACs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MAC">
+        <PropertyRef Name="User_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="WorkWorkType">
+    <End Role="Work" Type="dsaModel.Store.Works" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="WorkType" Type="dsaModel.Store.WorkTypes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Work">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="WorkType">
+        <PropertyRef Name="Work_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="WorkTypeIntervention">
+    <End Role="Intervention" Type="dsaModel.Store.Interventions" Multiplicity="*" />
+    <End Role="WorkType" Type="dsaModel.Store.WorkTypes" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="WorkType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Intervention">
+        <PropertyRef Name="WorkType_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TechnicianIntervention">
+    <End Role="Technician" Type="dsaModel.Store.Technicians" Multiplicity="0..1" />
+    <End Role="Intervention" Type="dsaModel.Store.Interventions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Technician">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Intervention">
+        <PropertyRef Name="TechnicianId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FilterFilterItem_Filter">
+    <End Role="Filter" Type="dsaModel.Store.Filters" Multiplicity="1" />
+    <End Role="FilterFilterItem" Type="dsaModel.Store.FilterFilterItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Filter">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FilterFilterItem">
+        <PropertyRef Name="Filters_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FilterFilterItem_FilterItem">
+    <End Role="FilterFilterItem" Type="dsaModel.Store.FilterFilterItem" Multiplicity="*" />
+    <End Role="FilterItem" Type="dsaModel.Store.FilterItems" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="FilterItem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FilterFilterItem">
+        <PropertyRef Name="FilterItems_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="dsaModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="dsaEntities" p1:LazyLoadingEnabled="true" >
+          <EntitySet Name="Areas" EntityType="dsaModel.Area" />
+          <EntitySet Name="DateHourDetails" EntityType="dsaModel.DateHourDetail" />
+          <EntitySet Name="FilterGroups" EntityType="dsaModel.FilterGroup" />
+          <EntitySet Name="FilterItems" EntityType="dsaModel.FilterItem" />
+          <EntitySet Name="Filters" EntityType="dsaModel.Filter" />
+          <EntitySet Name="FilterTypes" EntityType="dsaModel.FilterType" />
+          <EntitySet Name="Interventions" EntityType="dsaModel.Intervention" />
+          <EntitySet Name="Locations" EntityType="dsaModel.Location" />
+          <EntitySet Name="Materials" EntityType="dsaModel.Material" />
+          <EntitySet Name="Months" EntityType="dsaModel.Month" />
+          <EntitySet Name="Patients" EntityType="dsaModel.Patient" />
+          <EntitySet Name="Works" EntityType="dsaModel.Work" />
+          <EntitySet Name="Years" EntityType="dsaModel.Year" />
+          <AssociationSet Name="FK_AreaIntervention" Association="dsaModel.FK_AreaIntervention">
+            <End Role="Area" EntitySet="Areas" />
+            <End Role="Intervention" EntitySet="Interventions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_InterventionDateHourDetails" Association="dsaModel.FK_InterventionDateHourDetails">
+            <End Role="DateHourDetail" EntitySet="DateHourDetails" />
+            <End Role="Intervention" EntitySet="Interventions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FilterGroupFilter" Association="dsaModel.FK_FilterGroupFilter">
+            <End Role="FilterGroup" EntitySet="FilterGroups" />
+            <End Role="Filter" EntitySet="Filters" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FilterFilterType" Association="dsaModel.FK_FilterFilterType">
+            <End Role="FilterType" EntitySet="FilterTypes" />
+            <End Role="Filter" EntitySet="Filters" />
+          </AssociationSet>
+          <AssociationSet Name="FK_InterventionLocation" Association="dsaModel.FK_InterventionLocation">
+            <End Role="Location" EntitySet="Locations" />
+            <End Role="Intervention" EntitySet="Interventions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_InterventionWork" Association="dsaModel.FK_InterventionWork">
+            <End Role="Work" EntitySet="Works" />
+            <End Role="Intervention" EntitySet="Interventions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MaterialIntervention" Association="dsaModel.FK_MaterialIntervention">
+            <End Role="Material" EntitySet="Materials" />
+            <End Role="Intervention" EntitySet="Interventions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MonthIntervention" Association="dsaModel.FK_MonthIntervention">
+            <End Role="Month" EntitySet="Months" />
+            <End Role="Intervention" EntitySet="Interventions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PatientIntervention" Association="dsaModel.FK_PatientIntervention">
+            <End Role="Patient" EntitySet="Patients" />
+            <End Role="Intervention" EntitySet="Interventions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_YearIntervention" Association="dsaModel.FK_YearIntervention">
+            <End Role="Year" EntitySet="Years" />
+            <End Role="Intervention" EntitySet="Interventions" />
+          </AssociationSet>
+          <AssociationSet Name="FilterFilterItem" Association="dsaModel.FilterFilterItem">
+            <End Role="Filter" EntitySet="Filters" />
+            <End Role="FilterItem" EntitySet="FilterItems" />
+          </AssociationSet>
+          <EntitySet Name="Technicians" EntityType="dsaModel.Technician" />
+          <EntitySet Name="Types" EntityType="dsaModel.Type" />
+          <AssociationSet Name="MaterialType" Association="dsaModel.MaterialType">
+            <End Role="Material" EntitySet="Materials" />
+            <End Role="Type" EntitySet="Types" />
+          </AssociationSet>
+          <EntitySet Name="DentalPaymentInfoes" EntityType="dsaModel.DentalPaymentInfo" />
+          <EntitySet Name="Users" EntityType="dsaModel.User" />
+          <AssociationSet Name="TypeIntervention" Association="dsaModel.TypeIntervention">
+            <End Role="Type" EntitySet="Types" />
+            <End Role="Intervention" EntitySet="Interventions" />
+          </AssociationSet>
+          <EntitySet Name="IntervalInfoes" EntityType="dsaModel.IntervalInfo" />
+          <EntitySet Name="MACs" EntityType="dsaModel.MAC" />
+          <AssociationSet Name="UserMAC" Association="dsaModel.UserMAC">
+            <End Role="User" EntitySet="Users" />
+            <End Role="MAC" EntitySet="MACs" />
+          </AssociationSet>
+          <EntitySet Name="WorkTypes" EntityType="dsaModel.WorkType" />
+          <AssociationSet Name="WorkWorkType" Association="dsaModel.WorkWorkType">
+            <End Role="Work" EntitySet="Works" />
+            <End Role="WorkType" EntitySet="WorkTypes" />
+          </AssociationSet>
+          <AssociationSet Name="WorkTypeIntervention" Association="dsaModel.WorkTypeIntervention">
+            <End Role="Intervention" EntitySet="Interventions" />
+            <End Role="WorkType" EntitySet="WorkTypes" />
+          </AssociationSet>
+          <EntitySet Name="ProgramInfoes" EntityType="dsaModel.ProgramInfo" />
+          <AssociationSet Name="TechnicianIntervention" Association="dsaModel.TechnicianIntervention">
+            <End Role="Technician" EntitySet="Technicians" />
+            <End Role="Intervention" EntitySet="Interventions" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Area">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Interventions" Relationship="dsaModel.FK_AreaIntervention" FromRole="Area" ToRole="Intervention" />
+          <Property Type="Boolean" Name="WasDeleted" />
+        </EntityType>
+        <EntityType Name="DateHourDetail">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="DateTime" Name="StartHour" Nullable="false" Precision="3" />
+          <Property Type="DateTime" Name="EndingHour" Nullable="false" Precision="3" />
+          <Property Type="DateTime" Name="Date" Nullable="false" Precision="3" />
+          <Property Type="Int64" Name="Duration" />
+          <NavigationProperty Name="Interventions" Relationship="dsaModel.FK_InterventionDateHourDetails" FromRole="DateHourDetail" ToRole="Intervention" />
+          <Property Type="Int64" Name="MiliTime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="FilterGroup">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="StartDate" Nullable="false" Precision="3" />
+          <Property Type="DateTime" Name="EndDate" Nullable="false" Precision="3" />
+          <Property Type="Boolean" Name="IsActive" Nullable="false" />
+          <Property Type="Boolean" Name="IsIntervalActive" Nullable="false" />
+          <NavigationProperty Name="Filters" Relationship="dsaModel.FK_FilterGroupFilter" FromRole="FilterGroup" ToRole="Filter" />
+        </EntityType>
+        <EntityType Name="FilterItem">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Filters" Relationship="dsaModel.FilterFilterItem" FromRole="FilterItem" ToRole="Filter" />
+        </EntityType>
+        <EntityType Name="Filter">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Boolean" Name="IsActive" Nullable="false" />
+          <Property Type="Int32" Name="FilterGroup_Id" Nullable="false" />
+          <Property Type="Int32" Name="FilterType_Id" Nullable="false" />
+          <NavigationProperty Name="FilterGroup" Relationship="dsaModel.FK_FilterGroupFilter" FromRole="Filter" ToRole="FilterGroup" />
+          <NavigationProperty Name="FilterType" Relationship="dsaModel.FK_FilterFilterType" FromRole="Filter" ToRole="FilterType" />
+          <NavigationProperty Name="FilterItems" Relationship="dsaModel.FilterFilterItem" FromRole="Filter" ToRole="FilterItem" />
+        </EntityType>
+        <EntityType Name="FilterType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Filters" Relationship="dsaModel.FK_FilterFilterType" FromRole="FilterType" ToRole="Filter" />
+        </EntityType>
+        <EntityType Name="Intervention">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Observation" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="Number" Nullable="false" />
+          <Property Type="Double" Name="Revenue" Nullable="false" />
+          <Property Type="Double" Name="Percent" Nullable="false" />
+          <Property Type="Int32" Name="Patient_id" Nullable="false" />
+          <Property Type="Int32" Name="Location_Id" />
+          <Property Type="Int32" Name="Material_Id" />
+          <Property Type="Int32" Name="DateHourDetail_Id" Nullable="false" />
+          <Property Type="Int32" Name="Area_Id" />
+          <Property Type="Int32" Name="Work_Id" />
+          <Property Type="Int32" Name="Year_Id" Nullable="false" />
+          <Property Type="Int32" Name="Month_Id" Nullable="false" />
+          <Property Type="Boolean" Name="WasPayedByDental" />
+          <NavigationProperty Name="Area" Relationship="dsaModel.FK_AreaIntervention" FromRole="Intervention" ToRole="Area" />
+          <NavigationProperty Name="DateHourDetail" Relationship="dsaModel.FK_InterventionDateHourDetails" FromRole="Intervention" ToRole="DateHourDetail" />
+          <NavigationProperty Name="Location" Relationship="dsaModel.FK_InterventionLocation" FromRole="Intervention" ToRole="Location" />
+          <NavigationProperty Name="Work" Relationship="dsaModel.FK_InterventionWork" FromRole="Intervention" ToRole="Work" />
+          <NavigationProperty Name="Material" Relationship="dsaModel.FK_MaterialIntervention" FromRole="Intervention" ToRole="Material" />
+          <NavigationProperty Name="Month" Relationship="dsaModel.FK_MonthIntervention" FromRole="Intervention" ToRole="Month" />
+          <NavigationProperty Name="Patient" Relationship="dsaModel.FK_PatientIntervention" FromRole="Intervention" ToRole="Patient" />
+          <NavigationProperty Name="Year" Relationship="dsaModel.FK_YearIntervention" FromRole="Intervention" ToRole="Year" />
+          <NavigationProperty Name="Type" Relationship="dsaModel.TypeIntervention" FromRole="Intervention" ToRole="Type" />
+          <NavigationProperty Name="WorkType" Relationship="dsaModel.WorkTypeIntervention" FromRole="Intervention" ToRole="WorkType" />
+          <NavigationProperty Name="Technician" Relationship="dsaModel.TechnicianIntervention" FromRole="Intervention" ToRole="Technician" />
+          <Property Type="Int32" Name="TechnicianId" Nullable="true" />
+          <Property Type="Double" Name="MaterialCost" />
+          <Property Type="Boolean" Name="IsSelected" Nullable="false" />
+          <Property Type="Double" Name="Remainder" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Location">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Interventions" Relationship="dsaModel.FK_InterventionLocation" FromRole="Location" ToRole="Intervention" />
+          <Property Type="Boolean" Name="WasDeleted" />
+        </EntityType>
+        <EntityType Name="Material">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="Double" Name="Cost" Nullable="false" />
+          <NavigationProperty Name="Interventions" Relationship="dsaModel.FK_MaterialIntervention" FromRole="Material" ToRole="Intervention" />
+          <NavigationProperty Name="Types" Relationship="dsaModel.MaterialType" FromRole="Material" ToRole="Type" />
+          <Property Type="Boolean" Name="WasDeleted" />
+        </EntityType>
+        <EntityType Name="Month">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="MOnthNumber" Nullable="false" />
+          <NavigationProperty Name="Interventions" Relationship="dsaModel.FK_MonthIntervention" FromRole="Month" ToRole="Intervention" />
+        </EntityType>
+        <EntityType Name="Patient">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="name" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="surname" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Address" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="City" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Phone" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Email" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="BirthDate" Precision="3" />
+          <Property Type="String" Name="Street" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Block" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Job" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="StreetNumber" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Ocupation" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Country" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Interventions" Relationship="dsaModel.FK_PatientIntervention" FromRole="Patient" ToRole="Intervention" />
+        </EntityType>
+        <EntityType Name="Work">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="Double" Name="Cost" Nullable="false" />
+          <Property Type="Double" Name="Percent" />
+          <NavigationProperty Name="Interventions" Relationship="dsaModel.FK_InterventionWork" FromRole="Work" ToRole="Intervention" />
+          <Property Type="Boolean" Name="IncludedINFinancial" />
+          <Property Type="Boolean" Name="WasDeleted" />
+          <NavigationProperty Name="WorkTypes" Relationship="dsaModel.WorkWorkType" FromRole="Work" ToRole="WorkType" />
+        </EntityType>
+        <EntityType Name="Year">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="YearNb" Nullable="false" />
+          <NavigationProperty Name="Interventions" Relationship="dsaModel.FK_YearIntervention" FromRole="Year" ToRole="Intervention" />
+        </EntityType>
+        <Association Name="FK_AreaIntervention">
+          <End Type="dsaModel.Area" Role="Area" Multiplicity="0..1" />
+          <End Type="dsaModel.Intervention" Role="Intervention" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Area">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Intervention">
+              <PropertyRef Name="Area_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_InterventionDateHourDetails">
+          <End Type="dsaModel.DateHourDetail" Role="DateHourDetail" Multiplicity="1" />
+          <End Type="dsaModel.Intervention" Role="Intervention" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DateHourDetail">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Intervention">
+              <PropertyRef Name="DateHourDetail_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FilterGroupFilter">
+          <End Type="dsaModel.FilterGroup" Role="FilterGroup" Multiplicity="1" />
+          <End Type="dsaModel.Filter" Role="Filter" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FilterGroup">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Filter">
+              <PropertyRef Name="FilterGroup_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FilterFilterType">
+          <End Type="dsaModel.FilterType" Role="FilterType" Multiplicity="1" />
+          <End Type="dsaModel.Filter" Role="Filter" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FilterType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Filter">
+              <PropertyRef Name="FilterType_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_InterventionLocation">
+          <End Type="dsaModel.Location" Role="Location" Multiplicity="0..1" />
+          <End Type="dsaModel.Intervention" Role="Intervention" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Location">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Intervention">
+              <PropertyRef Name="Location_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_InterventionWork">
+          <End Type="dsaModel.Work" Role="Work" Multiplicity="0..1" />
+          <End Type="dsaModel.Intervention" Role="Intervention" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Work">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Intervention">
+              <PropertyRef Name="Work_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MaterialIntervention">
+          <End Type="dsaModel.Material" Role="Material" Multiplicity="0..1" />
+          <End Type="dsaModel.Intervention" Role="Intervention" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Material">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Intervention">
+              <PropertyRef Name="Material_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MonthIntervention">
+          <End Type="dsaModel.Month" Role="Month" Multiplicity="1" />
+          <End Type="dsaModel.Intervention" Role="Intervention" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Month">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Intervention">
+              <PropertyRef Name="Month_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PatientIntervention">
+          <End Type="dsaModel.Patient" Role="Patient" Multiplicity="1" />
+          <End Type="dsaModel.Intervention" Role="Intervention" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patient">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Intervention">
+              <PropertyRef Name="Patient_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_YearIntervention">
+          <End Type="dsaModel.Year" Role="Year" Multiplicity="1" />
+          <End Type="dsaModel.Intervention" Role="Intervention" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Year">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Intervention">
+              <PropertyRef Name="Year_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FilterFilterItem">
+          <End Type="dsaModel.Filter" Role="Filter" Multiplicity="*" />
+          <End Type="dsaModel.FilterItem" Role="FilterItem" Multiplicity="*" />
+        </Association>
+        <EntityType Name="Technician">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" />
+          <Property Type="Boolean" Name="WasDeleted" />
+          <NavigationProperty Name="Interventions" Relationship="dsaModel.TechnicianIntervention" FromRole="Technician" ToRole="Intervention" />
+        </EntityType>
+        <EntityType Name="Type">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Cost" Type="Double" Nullable="false" />
+          <NavigationProperty Name="Material" Relationship="dsaModel.MaterialType" FromRole="Type" ToRole="Material" />
+          <Property Name="Name" Type="String" Nullable="false" />
+          <NavigationProperty Name="Interventions" Relationship="dsaModel.TypeIntervention" FromRole="Type" ToRole="Intervention" />
+        </EntityType>
+        <Association Name="MaterialType">
+          <End Type="dsaModel.Material" Role="Material" Multiplicity="0..1" />
+          <End Type="dsaModel.Type" Role="Type" Multiplicity="*" />
+        </Association>
+        <EntityType Name="DentalPaymentInfo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" Nullable="false" />
+          <Property Type="DateTime" Name="Date" Nullable="false" />
+          <Property Type="Double" Name="TotalRevenue" Nullable="false" />
+          <Property Type="Double" Name="TotalPercent" Nullable="false" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="username" />
+          <Property Type="String" Name="password" />
+          <Property Type="String" Name="appInfo" />
+          <NavigationProperty Name="MACs" Relationship="dsaModel.UserMAC" FromRole="User" ToRole="MAC" />
+        </EntityType>
+        <Association Name="TypeIntervention">
+          <End Type="dsaModel.Type" Role="Type" Multiplicity="0..1" />
+          <End Type="dsaModel.Intervention" Role="Intervention" Multiplicity="*" />
+        </Association>
+        <EntityType Name="IntervalInfo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Double" Name="TotalRevenue" Nullable="false" />
+          <Property Type="Double" Name="TotalPercent" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MAC">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="User" Relationship="dsaModel.UserMAC" FromRole="MAC" ToRole="User" />
+          <Property Type="String" Name="macId" />
+        </EntityType>
+        <Association Name="UserMAC">
+          <End Type="dsaModel.User" Role="User" Multiplicity="1" />
+          <End Type="dsaModel.MAC" Role="MAC" Multiplicity="*" />
+        </Association>
+        <EntityType Name="WorkType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Work" Relationship="dsaModel.WorkWorkType" FromRole="WorkType" ToRole="Work" />
+          <Property Type="String" Name="Name" Nullable="false" />
+          <Property Type="Double" Name="Cost" Nullable="false" />
+          <Property Type="Double" Name="Percent" Nullable="false" />
+          <NavigationProperty Name="Interventions" Relationship="dsaModel.WorkTypeIntervention" FromRole="WorkType" ToRole="Intervention" />
+        </EntityType>
+        <Association Name="WorkWorkType">
+          <End Type="dsaModel.Work" Role="Work" Multiplicity="1" >
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="dsaModel.WorkType" Role="WorkType" Multiplicity="*" />
+        </Association>
+        <Association Name="WorkTypeIntervention">
+          <End Type="dsaModel.Intervention" Role="Intervention" Multiplicity="*" />
+          <End Type="dsaModel.WorkType" Role="WorkType" Multiplicity="0..1" />
+        </Association>
+        <EntityType Name="ProgramInfo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="ExportFileName" Nullable="false" />
+          <Property Type="DateTime" Name="LastFileDateImport" Nullable="false" />
+          <Property Type="DateTime" Name="LastAddedInterventionDate" Nullable="false" />
+        </EntityType>
+        <Association Name="TechnicianIntervention">
+          <End Type="dsaModel.Technician" Role="Technician" Multiplicity="0..1" />
+          <End Type="dsaModel.Intervention" Role="Intervention" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Technician">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Intervention">
+              <PropertyRef Name="TechnicianId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dsaModelStoreContainer" CdmEntityContainer="dsaEntities">
+    <EntitySetMapping Name="Areas">
+      <EntityTypeMapping TypeName="IsTypeOf(dsaModel.Area)">
+        <MappingFragment StoreEntitySet="Areas">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="WasDeleted" ColumnName="WasDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DateHourDetails">
+      <EntityTypeMapping TypeName="IsTypeOf(dsaModel.DateHourDetail)">
+        <MappingFragment StoreEntitySet="DateHourDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="StartHour" ColumnName="StartHour" />
+          <ScalarProperty Name="EndingHour" ColumnName="EndingHour" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="MiliTime" ColumnName="MiliTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FilterGroups">
+      <EntityTypeMapping TypeName="IsTypeOf(dsaModel.FilterGroup)">
+        <MappingFragment StoreEntitySet="FilterGroups">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsIntervalActive" ColumnName="IsIntervalActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FilterItems">
+      <EntityTypeMapping TypeName="IsTypeOf(dsaModel.FilterItem)">
+        <MappingFragment StoreEntitySet="FilterItems">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Filters">
+      <EntityTypeMapping TypeName="IsTypeOf(dsaModel.Filter)">
+        <MappingFragment StoreEntitySet="Filters">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="FilterGroup_Id" ColumnName="FilterGroup_Id" />
+          <ScalarProperty Name="FilterType_Id" ColumnName="FilterType_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FilterTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(dsaModel.FilterType)">
+        <MappingFragment StoreEntitySet="FilterTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Interventions">
+      <EntityTypeMapping TypeName="IsTypeOf(dsaModel.Intervention)">
+        <MappingFragment StoreEntitySet="Interventions">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Observation" ColumnName="Observation" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="Revenue" ColumnName="Revenue" />
+          <ScalarProperty Name="Percent" ColumnName="Percent" />
+          <ScalarProperty Name="Patient_id" ColumnName="Patient_id" />
+          <ScalarProperty Name="Location_Id" ColumnName="Location_Id" />
+          <ScalarProperty Name="Material_Id" ColumnName="Material_Id" />
+          <ScalarProperty Name="DateHourDetail_Id" ColumnName="DateHourDetail_Id" />
+          <ScalarProperty Name="Area_Id" ColumnName="Area_Id" />
+          <ScalarProperty Name="Work_Id" ColumnName="Work_Id" />
+          <ScalarProperty Name="Year_Id" ColumnName="Year_Id" />
+          <ScalarProperty Name="Month_Id" ColumnName="Month_Id" />
+          <ScalarProperty Name="WasPayedByDental" ColumnName="WasPayedByDental" />
+          <ScalarProperty Name="TechnicianId" ColumnName="TechnicianId" />
+          <ScalarProperty Name="MaterialCost" ColumnName="MaterialCost" />
+          <ScalarProperty Name="IsSelected" ColumnName="IsSelected" />
+          <ScalarProperty Name="Remainder" ColumnName="Remainder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Locations">
+      <EntityTypeMapping TypeName="IsTypeOf(dsaModel.Location)">
+        <MappingFragment StoreEntitySet="Locations">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="WasDeleted" ColumnName="WasDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Materials">
+      <EntityTypeMapping TypeName="IsTypeOf(dsaModel.Material)">
+        <MappingFragment StoreEntitySet="Materials">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="WasDeleted" ColumnName="WasDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Months">
+      <EntityTypeMapping TypeName="IsTypeOf(dsaModel.Month)">
+        <MappingFragment StoreEntitySet="Months">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MOnthNumber" ColumnName="MOnthNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Patients">
+      <EntityTypeMapping TypeName="IsTypeOf(dsaModel.Patient)">
+        <MappingFragment StoreEntitySet="Patients">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="surname" ColumnName="surname" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="Street" ColumnName="Street" />
+          <ScalarProperty Name="Block" ColumnName="Block" />
+          <ScalarProperty Name="Job" ColumnName="Job" />
+          <ScalarProperty Name="StreetNumber" ColumnName="StreetNumber" />
+          <ScalarProperty Name="Ocupation" ColumnName="Ocupation" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Works">
+      <EntityTypeMapping TypeName="IsTypeOf(dsaModel.Work)">
+        <MappingFragment StoreEntitySet="Works">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="Percent" ColumnName="Percent" />
+          <ScalarProperty Name="IncludedINFinancial" ColumnName="IncludedINFinancial" />
+          <ScalarProperty Name="WasDeleted" ColumnName="WasDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Years">
+      <EntityTypeMapping TypeName="IsTypeOf(dsaModel.Year)">
+        <MappingFragment StoreEntitySet="Years">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="YearNb" ColumnName="YearNb" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Technicians">
+      <EntityTypeMapping TypeName="IsTypeOf(dsaModel.Technician)">
+        <MappingFragment StoreEntitySet="Technicians">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="WasDeleted" ColumnName="WasDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Types">
+      <EntityTypeMapping TypeName="IsTypeOf(dsaModel.Type)">
+        <MappingFragment StoreEntitySet="Types">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DentalPaymentInfoes">
+      <EntityTypeMapping TypeName="IsTypeOf(dsaModel.DentalPaymentInfo)">
+        <MappingFragment StoreEntitySet="DentalPaymentInfoes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="TotalRevenue" ColumnName="TotalRevenue" />
+          <ScalarProperty Name="TotalPercent" ColumnName="TotalPercent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="IsTypeOf(dsaModel.User)">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="appInfo" ColumnName="appInfo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IntervalInfoes">
+      <EntityTypeMapping TypeName="IsTypeOf(dsaModel.IntervalInfo)">
+        <MappingFragment StoreEntitySet="IntervalInfoes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TotalRevenue" ColumnName="TotalRevenue" />
+          <ScalarProperty Name="TotalPercent" ColumnName="TotalPercent" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MACs">
+      <EntityTypeMapping TypeName="IsTypeOf(dsaModel.MAC)">
+        <MappingFragment StoreEntitySet="MACs">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="macId" ColumnName="macId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WorkTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(dsaModel.WorkType)">
+        <MappingFragment StoreEntitySet="WorkTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="Percent" ColumnName="Percent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProgramInfoes">
+      <EntityTypeMapping TypeName="IsTypeOf(dsaModel.ProgramInfo)">
+        <MappingFragment StoreEntitySet="ProgramInfoes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ExportFileName" ColumnName="ExportFileName" />
+          <ScalarProperty Name="LastFileDateImport" ColumnName="LastFileDateImport" />
+          <ScalarProperty Name="LastAddedInterventionDate" ColumnName="LastAddedInterventionDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FilterFilterItem" TypeName="dsaModel.FilterFilterItem" StoreEntitySet="FilterFilterItem">
+      <EndProperty Name="Filter">
+        <ScalarProperty Name="Id" ColumnName="Filters_Id" />
+      </EndProperty>
+      <EndProperty Name="FilterItem">
+        <ScalarProperty Name="Id" ColumnName="FilterItems_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="MaterialType" TypeName="dsaModel.MaterialType" StoreEntitySet="Types">
+      <EndProperty Name="Material">
+        <ScalarProperty Name="Id" ColumnName="Material_Id" />
+      </EndProperty>
+      <EndProperty Name="Type">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="Material_Id" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="TypeIntervention" TypeName="dsaModel.TypeIntervention" StoreEntitySet="Interventions">
+      <EndProperty Name="Type">
+        <ScalarProperty Name="Id" ColumnName="Type_Id" />
+      </EndProperty>
+      <EndProperty Name="Intervention">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="Type_Id" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="UserMAC" TypeName="dsaModel.UserMAC" StoreEntitySet="MACs">
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="User_Id" />
+      </EndProperty>
+      <EndProperty Name="MAC">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="WorkWorkType" TypeName="dsaModel.WorkWorkType" StoreEntitySet="WorkTypes">
+      <EndProperty Name="Work">
+        <ScalarProperty Name="Id" ColumnName="Work_Id" />
+      </EndProperty>
+      <EndProperty Name="WorkType">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="WorkTypeIntervention" TypeName="dsaModel.WorkTypeIntervention" StoreEntitySet="Interventions">
+      <EndProperty Name="WorkType">
+        <ScalarProperty Name="Id" ColumnName="WorkType_Id" />
+      </EndProperty>
+      <EndProperty Name="Intervention">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="WorkType_Id" IsNull="false" />
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Default" />
+        <DesignerProperty Name="UseLegacyProvider" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

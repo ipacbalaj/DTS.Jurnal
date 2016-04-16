@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9dc15d72054e4903842ec2acfe301594" Name="Diagram1" ZoomLevel="86" >
+        <EntityTypeShape EntityType="dsaModel.Area" Width="1.5" PointX="11.25" PointY="25.25" />
+        <EntityTypeShape EntityType="dsaModel.DateHourDetail" Width="1.5" PointX="13.25" PointY="21.25" />
+        <EntityTypeShape EntityType="dsaModel.FilterGroup" Width="1.5" PointX="7.375" PointY="21.25" />
+        <EntityTypeShape EntityType="dsaModel.FilterItem" Width="1.5" PointX="5.375" PointY="21.375" />
+        <EntityTypeShape EntityType="dsaModel.Filter" Width="1.5" PointX="7.375" PointY="24.375" />
+        <EntityTypeShape EntityType="dsaModel.FilterType" Width="1.5" PointX="9.375" PointY="24.375" />
+        <EntityTypeShape EntityType="dsaModel.Intervention" Width="1.5" PointX="16.75" PointY="28.25" />
+        <EntityTypeShape EntityType="dsaModel.Location" Width="1.5" PointX="13.625" PointY="28.875" />
+        <EntityTypeShape EntityType="dsaModel.Material" Width="1.5" PointX="15.875" PointY="24.625" />
+        <EntityTypeShape EntityType="dsaModel.Month" Width="1.5" PointX="19.375" PointY="29.875" />
+        <EntityTypeShape EntityType="dsaModel.Patient" Width="1.5" PointX="4.5" PointY="24" />
+        <EntityTypeShape EntityType="dsaModel.Work" Width="1.5" PointX="7.375" PointY="27.25" />
+        <EntityTypeShape EntityType="dsaModel.Year" Width="1.5" PointX="19.375" PointY="31.875" />
+        <AssociationConnector Association="dsaModel.FK_AreaIntervention" />
+        <AssociationConnector Association="dsaModel.FK_InterventionDateHourDetails" />
+        <AssociationConnector Association="dsaModel.FK_FilterGroupFilter" />
+        <AssociationConnector Association="dsaModel.FK_FilterFilterType" />
+        <AssociationConnector Association="dsaModel.FK_InterventionLocation" />
+        <AssociationConnector Association="dsaModel.FK_InterventionWork" />
+        <AssociationConnector Association="dsaModel.FK_MaterialIntervention" />
+        <AssociationConnector Association="dsaModel.FK_MonthIntervention" />
+        <AssociationConnector Association="dsaModel.FK_PatientIntervention" />
+        <AssociationConnector Association="dsaModel.FK_YearIntervention" />
+        <AssociationConnector Association="dsaModel.FilterFilterItem" />
+        <EntityTypeShape EntityType="dsaModel.Technician" Width="1.5" PointX="13.625" PointY="24.875" />
+        <EntityTypeShape EntityType="dsaModel.Type" Width="1.5" PointX="18.375" PointY="25.75" />
+        <AssociationConnector Association="dsaModel.MaterialType" />
+        <EntityTypeShape EntityType="dsaModel.DentalPaymentInfo" Width="1.5" PointX="10" PointY="20.875" />
+        <EntityTypeShape EntityType="dsaModel.User" Width="1.5" PointX="3.625" PointY="18.875" />
+        <AssociationConnector Association="dsaModel.TypeIntervention" />
+        <EntityTypeShape EntityType="dsaModel.IntervalInfo" Width="1.5" PointX="2.875" PointY="21.375" />
+        <EntityTypeShape EntityType="dsaModel.MAC" Width="1.5" PointX="5.75" PointY="18.75" />
+        <AssociationConnector Association="dsaModel.UserMAC" />
+        <EntityTypeShape EntityType="dsaModel.WorkType" Width="1.5" PointX="14.125" PointY="31.625" />
+        <AssociationConnector Association="dsaModel.WorkWorkType" />
+        <AssociationConnector Association="dsaModel.WorkTypeIntervention" />
+        <EntityTypeShape EntityType="dsaModel.ProgramInfo" Width="1.5" PointX="2.25" PointY="23.625" />
+        <AssociationConnector Association="dsaModel.TechnicianIntervention" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,53 @@
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Login\obj\Debug\DSA.Login.csprojResolveAssemblyReference.cache
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Login\obj\Debug\Login\LoginView.baml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Login\obj\Debug\Login\LoginView.g.cs
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Login\obj\Debug\DSA.Login_MarkupCompile.cache
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Login\obj\Debug\DSA.Login.g.resources
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Login\bin\Debug\DSA.Login.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Login\bin\Debug\DSA.Login.pdb
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Login\bin\Debug\DSA.Common.Controls.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Login\bin\Debug\DSA.Common.Infrastructure.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Login\bin\Debug\log4net.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Login\bin\Debug\DSA.Common.Controls.pdb
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Login\bin\Debug\DSA.Common.Infrastructure.pdb
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Login\bin\Debug\DevExpress.Data.v12.2.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Login\bin\Debug\DevExpress.Xpf.Core.v12.2.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Login\bin\Debug\Microsoft.Practices.Prism.pdb
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Login\bin\Debug\Microsoft.Practices.Prism.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Login\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Login\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Login\obj\Debug\DSA.Login.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Login\obj\Debug\DSA.Login.pdb
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Login\bin\Debug\DSA.Database.Model.dll
+C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\DTS.V3\DuplexTestProject\Client\Client\Projects\DSA.Login\bin\Debug\DSA.Database.Model.pdb
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Login\bin\Debug\DSA.Login.dll
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Login\bin\Debug\DSA.Login.pdb
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Login\bin\Debug\DSA.Common.Controls.dll
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Login\bin\Debug\DSA.Common.Infrastructure.dll
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Login\bin\Debug\DTS.Jurnal.V3.Database.Module.dll
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Login\bin\Debug\DSA.Common.Controls.pdb
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Login\bin\Debug\DSA.Common.Infrastructure.pdb
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Login\bin\Debug\DTS.Jurnal.V3.Database.Module.pdb
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Login\obj\Debug\DSA.Login.csprojResolveAssemblyReference.cache
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Login\obj\Debug\Login\LoginView.baml
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Login\obj\Debug\Login\LoginView.g.cs
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Login\obj\Debug\DSA.Login_MarkupCompile.cache
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Login\obj\Debug\DSA.Login.g.resources
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Login\obj\Debug\DSA.Login.dll
+E:\DTS\DTS.Jurnal.V3\Projects\DSA.Login\obj\Debug\DSA.Login.pdb
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Login\obj\Debug\DSA.Login.csprojResolveAssemblyReference.cache
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Login\obj\Debug\DSA.Login_MarkupCompile.cache
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Login\bin\Debug\DSA.Login.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Login\bin\Debug\DSA.Login.pdb
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Login\bin\Debug\DSA.Common.Controls.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Login\bin\Debug\DSA.Common.Infrastructure.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Login\bin\Debug\DSA.Database.Model.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Login\bin\Debug\log4net.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Login\bin\Debug\DSA.Common.Controls.pdb
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Login\bin\Debug\DSA.Common.Infrastructure.pdb
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Login\bin\Debug\DSA.Database.Model.pdb
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Login\obj\Debug\Login\LoginView.baml
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Login\obj\Debug\Login\LoginView.g.cs
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Login\obj\Debug\DSA.Login.g.resources
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Login\obj\Debug\DSA.Login.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Login\obj\Debug\DSA.Login.pdb

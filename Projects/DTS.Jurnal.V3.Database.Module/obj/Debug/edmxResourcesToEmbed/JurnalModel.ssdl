@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="JurnalModel.Store" Alias="Self" Provider="System.Data.SqlServerCe.4.0" ProviderManifestToken="4.0" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="JurnalModelStoreContainer">
+    <EntitySet Name="Interventions" EntityType="JurnalModel.Store.Interventions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Patients" EntityType="JurnalModel.Store.Patients" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Users" EntityType="JurnalModel.Store.Users" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Works" EntityType="JurnalModel.Store.Works" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Locations" EntityType="JurnalModel.Store.Locations" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Macs" EntityType="JurnalModel.Store.Macs" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Areas" EntityType="JurnalModel.Store.Areas" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_PatientIntervention" Association="JurnalModel.Store.FK_PatientIntervention">
+      <End Role="Patients" EntitySet="Patients" />
+      <End Role="Interventions" EntitySet="Interventions" />
+    </AssociationSet>
+    <AssociationSet Name="UserPatient" Association="JurnalModel.Store.UserPatient">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Patient" EntitySet="Patients" />
+    </AssociationSet>
+    <AssociationSet Name="WorkIntervention" Association="JurnalModel.Store.WorkIntervention">
+      <End Role="Work" EntitySet="Works" />
+      <End Role="Intervention" EntitySet="Interventions" />
+    </AssociationSet>
+    <AssociationSet Name="LocationIntervention" Association="JurnalModel.Store.LocationIntervention">
+      <End Role="Location" EntitySet="Locations" />
+      <End Role="Intervention" EntitySet="Interventions" />
+    </AssociationSet>
+    <AssociationSet Name="UserMac" Association="JurnalModel.Store.UserMac">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Mac" EntitySet="Macs" />
+    </AssociationSet>
+    <AssociationSet Name="AreaIntervention" Association="JurnalModel.Store.AreaIntervention">
+      <End Role="Intervention" EntitySet="Interventions" />
+      <End Role="Area" EntitySet="Areas" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Interventions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="Duration" Type="bigint" Nullable="false" />
+    <Property Name="Start" Type="datetime" Nullable="false" />
+    <Property Name="End" Type="datetime" Nullable="false" />
+    <Property Name="Revenue" Type="float" Nullable="false" />
+    <Property Name="Patient_Id" Type="int" Nullable="false" />
+    <Property Name="IsSelected" Type="bit" Nullable="true" />
+    <Property Name="Remainder" Type="float" Nullable="false" />
+    <Property Name="Payed" Type="bit" Nullable="false" />
+    <Property Name="WasExported" Type="bit" Nullable="false" />
+    <Property Name="Work_Id" Type="int" Nullable="true" />
+    <Property Name="Location_Id" Type="int" Nullable="true" />
+    <Property Name="Area_Id" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Patients">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar" Nullable="false" MaxLength="4000" />
+    <Property Name="LastName" Type="nvarchar" Nullable="false" MaxLength="4000" />
+    <Property Name="Address" Type="nvarchar" Nullable="true" />
+    <Property Name="BirthDate" Type="datetime" Nullable="true" />
+    <Property Name="City" Type="nvarchar" Nullable="true" />
+    <Property Name="Country" Type="nvarchar" Nullable="true" />
+    <Property Name="Street" Type="nvarchar" Nullable="true" />
+    <Property Name="Block" Type="nvarchar" Nullable="true" />
+    <Property Name="StreetNo" Type="nvarchar" Nullable="true" />
+    <Property Name="Job" Type="nvarchar" Nullable="true" />
+    <Property Name="Ocupation" Type="nvarchar" Nullable="true" />
+    <Property Name="Phone" Type="nvarchar" Nullable="true" />
+    <Property Name="Email" Type="nvarchar" Nullable="true" />
+    <Property Name="Brush" Type="nvarchar" Nullable="true" />
+    <Property Name="NewlyAdded" Type="nvarchar" Nullable="true" />
+    <Property Name="WasExported" Type="bit" Nullable="true" />
+    <Property Name="User_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Username" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="4000" />
+  </EntityType>
+  <EntityType Name="Works">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="4000" />
+    <Property Name="Cost" Type="float" Nullable="false" />
+    <Property Name="WasDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Locations">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" />
+    <Property Name="WasDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Macs">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="macId" Type="nvarchar" Nullable="false" />
+    <Property Name="User_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Areas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" />
+    <Property Name="WasDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_PatientIntervention">
+    <End Role="Patients" Type="JurnalModel.Store.Patients" Multiplicity="1" />
+    <End Role="Interventions" Type="JurnalModel.Store.Interventions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Patients">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Interventions">
+        <PropertyRef Name="Patient_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UserPatient">
+    <End Role="User" Type="JurnalModel.Store.Users" Multiplicity="1" />
+    <End Role="Patient" Type="JurnalModel.Store.Patients" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Patient">
+        <PropertyRef Name="User_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="WorkIntervention">
+    <End Role="Work" Type="JurnalModel.Store.Works" Multiplicity="0..1" />
+    <End Role="Intervention" Type="JurnalModel.Store.Interventions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Work">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Intervention">
+        <PropertyRef Name="Work_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="LocationIntervention">
+    <End Role="Location" Type="JurnalModel.Store.Locations" Multiplicity="0..1" />
+    <End Role="Intervention" Type="JurnalModel.Store.Interventions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Location">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Intervention">
+        <PropertyRef Name="Location_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UserMac">
+    <End Role="User" Type="JurnalModel.Store.Users" Multiplicity="1" />
+    <End Role="Mac" Type="JurnalModel.Store.Macs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Mac">
+        <PropertyRef Name="User_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AreaIntervention">
+    <End Role="Intervention" Type="JurnalModel.Store.Interventions" Multiplicity="*" />
+    <End Role="Area" Type="JurnalModel.Store.Areas" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Area">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Intervention">
+        <PropertyRef Name="Area_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

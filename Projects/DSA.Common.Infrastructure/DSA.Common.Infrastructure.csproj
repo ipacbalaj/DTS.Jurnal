@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EDD4730D-BAC5-4D75-B556-C70C8BFD736B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DSA.Common.Infrastructure</RootNamespace>
+    <AssemblyName>DSA.Common.Infrastructure</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.XtraBars.v12.2">
+      <HintPath>C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\v2\finalProject\References\DevExpress\v12.2\Framework\DevExpress.XtraBars.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Solutions\DTS_Jurnal.Solution\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism">
+      <HintPath>C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\v2\finalProject\References\Microsoft\Microsoft.Practices.Prism\Desktop\Microsoft.Practices.Prism.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\v2\finalProject\References\Microsoft\Microsoft.Practices.Prism\Desktop\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\v2\finalProject\References\Microsoft\Microsoft.Practices.Prism\Desktop\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Helpers\PrintGrid.cs" />
+    <Compile Include="Helpers\UpdateUITask.cs" />
+    <Compile Include="Helpers\XmlSerializerHelper.cs" />
+    <Compile Include="Icos\AdminIcon.xaml.cs">
+      <DependentUpon>AdminIcon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Icos\AnalyzeIcon.xaml.cs">
+      <DependentUpon>AnalyzeIcon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Icos\BlueCancelIcon.xaml.cs">
+      <DependentUpon>BlueCancelIcon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Icos\CheckBoxIcon.xaml.cs">
+      <DependentUpon>CheckBoxIcon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Icos\CloseIcon.xaml.cs">
+      <DependentUpon>CloseIcon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Icos\CloseOpenArrow.xaml.cs">
+      <DependentUpon>CloseOpenArrow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Icos\CloseTabIcon.xaml.cs">
+      <DependentUpon>CloseTabIcon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Icos\DashboardIcon.xaml.cs">
+      <DependentUpon>DashboardIcon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Icos\DateIcon.xaml.cs">
+      <DependentUpon>DateIcon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Icos\EditIcon.xaml.cs">
+      <DependentUpon>EditIcon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Icos\FiltersIcon.xaml.cs">
+      <DependentUpon>FiltersIcon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Icos\GreaterIcon.xaml.cs">
+      <DependentUpon>GreaterIcon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Icos\LoanIcon.xaml.cs">
+      <DependentUpon>LoanIcon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Icos\NoteLoanIcon.xaml.cs">
+      <DependentUpon>NoteLoanIcon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Icos\OpenTabIcon.xaml.cs">
+      <DependentUpon>OpenTabIcon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Icos\manopera.xaml.cs">
+      <DependentUpon>manopera.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Icos\SearchIcon.xaml.cs">
+      <DependentUpon>SearchIcon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Icos\SettingsIcon.xaml.cs">
+      <DependentUpon>SettingsIcon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Icos\SubmitIcon.xaml.cs">
+      <DependentUpon>SubmitIcon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Icos\Tooth.xaml.cs">
+      <DependentUpon>Tooth.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Icos\Tooth1.xaml.cs">
+      <DependentUpon>Tooth1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Icos\Tooth2.xaml.cs">
+      <DependentUpon>Tooth2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Icos\Tooth3.xaml.cs">
+      <DependentUpon>Tooth3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Icos\Tooth4.xaml.cs">
+      <DependentUpon>Tooth4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Icos\Tooth5.xaml.cs">
+      <DependentUpon>Tooth5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Icos\ToothTest.xaml.cs">
+      <DependentUpon>ToothTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Icos\UserIcon.xaml.cs">
+      <DependentUpon>UserIcon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ImagePath.cs" />
+    <Compile Include="Login\LoginResponse.cs" />
+    <Compile Include="Login\UserCredentials.cs" />
+    <Compile Include="ObjectList\IObjectListBase.cs" />
+    <Compile Include="ObjectList\ObjectList.cs" />
+    <Compile Include="Login\Prism\EventAggregator\EventAggregatorExtensions.cs" />
+    <Compile Include="Login\Prism\EventAggregator\Events\DataModifiedEvents.cs" />
+    <Compile Include="Login\Prism\EventAggregator\Events\LogInEvent.cs" />
+    <Compile Include="Login\Prism\EventAggregator\Events\ShellStateChangeEvent.cs" />
+    <Compile Include="Login\Prism\EventAggregator\Events\UpdateEvents.cs" />
+    <Compile Include="Login\Prism\Regions\MainScreenRegions.cs" />
+    <Compile Include="Login\Prism\Regions\RegisterMeWithRegions.cs" />
+    <Compile Include="Login\Prism\Regions\ViewsInterfaces\ILoginView.cs" />
+    <Compile Include="Login\Prism\Regions\ViewsInterfaces\ISearchBarView.cs" />
+    <Compile Include="Login\Prism\Regions\ViewsInterfaces\IStatefulView.cs" />
+    <Compile Include="Login\Prism\Regions\ViewsInterfaces\IStatusBarView.cs" />
+    <Compile Include="Login\Prism\Regions\ViewsInterfaces\ITitleAreaView.cs" />
+    <Compile Include="Login\Prism\Regions\ViewsInterfaces\ITopAreaView.cs" />
+    <Compile Include="Login\Prism\Regions\ViewsInterfaces\IWorkAreaView.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Styles\BackgroundColors.cs" />
+    <Compile Include="Styles\ViewConstants.cs" />
+    <Compile Include="ViewModel\BindableObjectListBase.cs" />
+    <Compile Include="ViewModel\ViewModelBase.cs" />
+    <Compile Include="ViewModel\ViewModelBaseOld.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Icos\AdminIcon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Icos\AnalyzeIcon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Icos\BlueCancelIcon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Icos\CheckBoxIcon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Icos\CloseIcon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Icos\CloseOpenArrow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Icos\CloseTabIcon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Icos\DashboardIcon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Icos\DateIcon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Icos\EditIcon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Icos\FiltersIcon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Icos\GreaterIcon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Icos\LoanIcon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Icos\NoteLoanIcon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Icos\OpenTabIcon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Icos\manopera.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Icos\SearchIcon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Icos\SettingsIcon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Icos\SubmitIcon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Icos\Tooth.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Icos\Tooth1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Icos\Tooth2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Icos\Tooth3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Icos\Tooth4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Icos\Tooth5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Icos\ToothTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Icos\UserIcon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\SIGLA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

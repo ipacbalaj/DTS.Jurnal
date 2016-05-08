@@ -17,6 +17,7 @@ using DSA.Common.Infrastructure.Styles;
 using DSA.Common.Infrastructure.ViewModel;
 using DSA.Database.Model;
 using DSA.Database.Model.Helpers;
+using DSA.Module.PersonalData.FTP_Settings;
 using DTS.Jurnal.V3.Database.Module;
 using DTS.Jurnal.V3.Database.Module.Entities.Local;
 using DTS.Jurnal.V3.Database.Module.Helpers;
@@ -65,6 +66,7 @@ namespace DSA.Login.Login
             ControlsBackground = BackgroundColors.BackgroundLightColor;
             ChangeUserFromFile();
             SetUsername();
+            DownLoadDatabaseFromFtp();
             //            eventAgg.GetEvent<UpdateConnectionStatusEvent>().Subscribe(OnUpdateConnectionStatus);
             //            OnUpdateConnectionStatus(BusinessStructure.Instance.ConnectionStatus);
         }
@@ -424,5 +426,11 @@ namespace DSA.Login.Login
                 ImagePath = !string.IsNullOrEmpty(currentUser.ImagePath) ? currentUser.ImagePath : DSA.Common.Infrastructure.ImagePath.DentistProfile;
             }
         }
+
+        public void DownLoadDatabaseFromFtp()
+        {
+            FTPConnectionHandler.DownloadFile();
+        }
+
     }
 }

@@ -283,3 +283,5 @@ E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalData\obj\Debug\SettingsDataScre
 E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalData\obj\Debug\DSA.Module.PersonalData.g.resources
 E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalData\obj\Debug\DSA.Module.PersonalData.dll
 E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalData\obj\Debug\DSA.Module.PersonalData.pdb
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalData\bin\Debug\Ftp.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalData\bin\Debug\ftplib.dll

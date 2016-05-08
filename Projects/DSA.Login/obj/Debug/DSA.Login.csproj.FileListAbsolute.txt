@@ -51,3 +51,7 @@ E:\DTS\DTS.Jurnal.V5\Projects\DSA.Login\obj\Debug\Login\LoginView.g.cs
 E:\DTS\DTS.Jurnal.V5\Projects\DSA.Login\obj\Debug\DSA.Login.g.resources
 E:\DTS\DTS.Jurnal.V5\Projects\DSA.Login\obj\Debug\DSA.Login.dll
 E:\DTS\DTS.Jurnal.V5\Projects\DSA.Login\obj\Debug\DSA.Login.pdb
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Login\bin\Debug\DSA.Module.PersonalData.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Login\bin\Debug\DSA.Module.PersonalData.pdb
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Login\bin\Debug\Ftp.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DSA.Login\bin\Debug\ftplib.dll

@@ -205,3 +205,5 @@ E:\DTS\DTS.Jurnal.V5\Projects\DTS.Jurnal.V3.Shell\obj\Debug\DTS.Jurnal.V3.Shell.
 E:\DTS\DTS.Jurnal.V5\Projects\DTS.Jurnal.V3.Shell\obj\Debug\DTS.Jurnal.V3.Shell.csproj.GenerateResource.Cache
 E:\DTS\DTS.Jurnal.V5\Projects\DTS.Jurnal.V3.Shell\obj\Debug\DTS.Jurnal.V3.Shell.exe
 E:\DTS\DTS.Jurnal.V5\Projects\DTS.Jurnal.V3.Shell\obj\Debug\DTS.Jurnal.V3.Shell.pdb
+E:\DTS\DTS.Jurnal.V5\Projects\DTS.Jurnal.V3.Shell\bin\Debug\Ftp.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DTS.Jurnal.V3.Shell\bin\Debug\ftplib.dll

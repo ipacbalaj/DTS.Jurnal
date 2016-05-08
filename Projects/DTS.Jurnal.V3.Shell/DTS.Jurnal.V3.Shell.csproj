@@ -88,6 +88,12 @@
     <Reference Include="DevExpress.XtraLayout.v12.2">
       <HintPath>C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\v2\finalProject\References\DevExpress\v12.2\Framework\DevExpress.XtraLayout.v12.2.dll</HintPath>
     </Reference>
+    <Reference Include="Ftp">
+      <HintPath>..\..\resources\Ftp.dll</HintPath>
+    </Reference>
+    <Reference Include="ftplib">
+      <HintPath>..\..\resources\ftplib.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Practices.Prism, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\v2\finalProject\References\Microsoft\Microsoft.Practices.Prism\Desktop\Microsoft.Practices.Prism.dll</HintPath>

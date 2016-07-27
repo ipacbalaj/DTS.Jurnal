@@ -412,8 +412,8 @@ namespace DTS_Jurnal.Jurnal.AddInterventionTile
                     Parent.SelectedInterventionModel.PatientName = SelectedPatient.AllName;
                     Parent.SelectedInterventionModel.PatientId = SelectedPatient.Id;
                     Parent.SelectedInterventionModel.WorkId = SelectedWork.Id;
-                    Parent.SelectedInterventionModel.MaterialCost = materialCost;
-                    Parent.SelectedInterventionModel.Percent = 
+                    Parent.SelectedInterventionModel.MaterialCost = materialCost;        
+            
                     if (CurrentRevenue.HasValue)
                     {
                         Parent.SelectedInterventionModel.ShouldSetPayed = true;

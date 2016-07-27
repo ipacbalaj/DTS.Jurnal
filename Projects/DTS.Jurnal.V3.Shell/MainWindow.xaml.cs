@@ -28,9 +28,11 @@ namespace DTS.Jurnal.V3.Shell
             DataContext = mainWindowViewModel;
         }
 
-        private void MainWindow_OnClosing(object sender, CancelEventArgs e)
+        private async void MainWindow_OnClosing(object sender, CancelEventArgs e)
         {
-            LocalCache.Instance.SaveDatabase();
+            ((MainWindowViewModel)DataContext).SaveDatabaseBackUp();
+            ((MainWindowViewModel)DataContext).SaveDatabaseFileToFtp();
+            MessageBox.Show("Baza de date a fost salvată.");
         }
     }
 }

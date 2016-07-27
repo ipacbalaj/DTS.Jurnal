@@ -28,6 +28,14 @@ namespace DSA.Module.PersonalInfo.PersonalInfoScreen
         {
             InitializeComponent();
             DataContext = new PersonalInfoScreenViewModel();
+            ViewPatientGrid.Columns["Start"].SortOrder = DevExpress.Data.ColumnSortOrder.Ascending;
+            ViewPatientGrid.Columns["Revenue"].Width = 35;
+            ViewPatientGrid.Columns["Percent"].Width = 35;
+            ViewPatientGrid.Columns["Remainder"].Width = 35;
+            ViewPatientGrid.Columns["Date"].Width = 55;
+            ViewPatientGrid.Columns["End"].Width = 35;
+            ViewPatientGrid.Columns["DurataString"].Width = 35;
+            ViewPatientGrid.Columns["Start"].Width = 35;
             ((PersonalInfoScreenViewModel) DataContext).ViewReference = this;
         }
 

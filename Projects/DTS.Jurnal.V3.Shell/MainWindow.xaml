@@ -4,8 +4,7 @@
         xmlns:regions="http://www.codeplex.com/CompositeWPF"
         xmlns:Regions="clr-namespace:DSA.Common.Infrastructure.Prism.Regions;assembly=DSA.Common.Infrastructure"
         xmlns:horizontalTabs="clr-namespace:ClientShell.Views.Tabs.HorizontalTabs"
-        xmlns:buttons="clr-namespace:DSA.Common.Controls.Buttons;assembly=DSA.Common.Controls" Closing="MainWindow_OnClosing"
-        
+        xmlns:buttons="clr-namespace:DSA.Common.Controls.Buttons;assembly=DSA.Common.Controls" Closing="MainWindow_OnClosing"        
         Title="DTS.Jurnal"   WindowState="Maximized">
     <Grid Background="WhiteSmoke">
         <Grid Visibility="{Binding IsContentVisible}">
@@ -42,6 +41,8 @@
         </Grid>
         <ContentControl x:Name="Login" Visibility="{Binding IsLoginVisible}"
                                 regions:RegionManager.RegionName="{x:Static Regions:MainScreenRegions.LoginRegion}" />
-
+        <!--<Grid  Background="LightGray" Opacity="0.5" Visibility="{Binding SaveProcessingVisibility}">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Baza de date se salvează pe serverul ftp...." FontSize="45"></TextBlock>
+        </Grid>-->
     </Grid>
 </Window>

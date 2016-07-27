@@ -1,0 +1,11 @@
+/bin
+/obj
+*.suo
+*.user
+*.sdf
+*.obj
+*.bin
+bin
+obj
+Debug/
+Release/

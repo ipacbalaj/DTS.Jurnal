@@ -2,7 +2,7 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server Compact Edition
 -- --------------------------------------------------
--- Date Created: 03/29/2016 19:19:40
+-- Date Created: 06/09/2016 23:44:14
 -- Generated from EDMX file: E:\DTS\DTS.Jurnal.V5\Projects\DSA.Database.Model\EfSQlLite\Dts.edmx
 -- --------------------------------------------------
 
@@ -47,6 +47,10 @@ GO
     ALTER TABLE [Interventions] DROP CONSTRAINT [FK_WorkTypeIntervention];
 GO
     ALTER TABLE [Interventions] DROP CONSTRAINT [FK_TechnicianIntervention];
+GO
+    ALTER TABLE [Patients] DROP CONSTRAINT [FK_UserPatient];
+GO
+    ALTER TABLE [Interventions] DROP CONSTRAINT [FK_UserIntervention];
 GO
 
 -- --------------------------------------------------
@@ -176,6 +180,7 @@ CREATE TABLE [Interventions] (
     [MaterialCost] float  NULL,
     [IsSelected] bit  NOT NULL,
     [Remainder] float  NOT NULL,
+    [UserId] int  NOT NULL,
     [Type_Id] int  NULL,
     [WorkType_Id] int  NULL
 );
@@ -220,7 +225,8 @@ CREATE TABLE [Patients] (
     [Job] nvarchar(4000)  NULL,
     [StreetNumber] nvarchar(4000)  NULL,
     [Ocupation] nvarchar(4000)  NULL,
-    [Country] nvarchar(4000)  NULL
+    [Country] nvarchar(4000)  NULL,
+    [UserId] int  NOT NULL
 );
 GO
 
@@ -706,6 +712,34 @@ ADD CONSTRAINT [FK_TechnicianIntervention]
 CREATE INDEX [IX_FK_TechnicianIntervention]
 ON [Interventions]
     ([TechnicianId]);
+GO
+
+-- Creating foreign key on [UserId] in table 'Patients'
+ALTER TABLE [Patients]
+ADD CONSTRAINT [FK_UserPatient]
+    FOREIGN KEY ([UserId])
+    REFERENCES [Users]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_UserPatient'
+CREATE INDEX [IX_FK_UserPatient]
+ON [Patients]
+    ([UserId]);
+GO
+
+-- Creating foreign key on [UserId] in table 'Interventions'
+ALTER TABLE [Interventions]
+ADD CONSTRAINT [FK_UserIntervention]
+    FOREIGN KEY ([UserId])
+    REFERENCES [Users]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_UserIntervention'
+CREATE INDEX [IX_FK_UserIntervention]
+ON [Interventions]
+    ([UserId]);
 GO
 
 -- --------------------------------------------------

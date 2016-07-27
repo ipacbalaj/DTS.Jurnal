@@ -43,6 +43,8 @@
         <AssociationConnector Association="dsaModel.WorkTypeIntervention" />
         <EntityTypeShape EntityType="dsaModel.ProgramInfo" Width="1.5" PointX="2.25" PointY="23.625" />
         <AssociationConnector Association="dsaModel.TechnicianIntervention" />
+        <AssociationConnector Association="dsaModel.UserPatient" />
+        <AssociationConnector Association="dsaModel.UserIntervention" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

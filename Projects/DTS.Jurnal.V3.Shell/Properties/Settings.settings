@@ -8,5 +8,17 @@
     <Setting Name="NetworkPath" Type="System.String" Scope="User">
       <Value Profile="(Default)">C:\Users\Pac-Balaj ionutzela2\Desktop\dtstest</Value>
     </Setting>
+    <Setting Name="FtpFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">test/DTS</Value>
+    </Setting>
+    <Setting Name="FtpIP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">109.102.28.238</Value>
+    </Setting>
+    <Setting Name="FtpUser" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ipacbalaj</Value>
+    </Setting>
+    <Setting Name="FtpPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">pbi</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

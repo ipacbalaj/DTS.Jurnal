@@ -23,7 +23,9 @@
                 <ColumnDefinition Width="100"/>
                 <ColumnDefinition Width="100"/>
                 <ColumnDefinition Width="80"/>
-                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="100"/>
                 <ColumnDefinition Width="80"/>
                 <ColumnDefinition Width="80"/>
             </Grid.ColumnDefinitions>
@@ -31,11 +33,12 @@
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <TextBlock VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="0" Text="Nume Pacient" FontSize="15" FontWeight="SemiBold"></TextBlock>
+            <!--Name-->
+            <TextBlock VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="0" Text="Nume Pacient" FontSize="13"  FontWeight="SemiBold"></TextBlock>
             <dxe:ComboBoxEdit Height="30" Grid.Column="0"  Grid.Row="1" Padding="2" Margin="8 2 8 2" ValidateOnTextInput="False" 
                               addInterventionTile:FocusExtension.IsFocused="{Binding IsPatientComboFocused}" 
                                       AutoComplete="True" ImmediatePopup="True" Name="PatientComboBoxEdit" IncrementalFiltering="True"
-                                      FontFamily="Segoe WP SemiLight" FontSize="15" 
+                                      FontFamily="Segoe WP SemiLight" FontSize="13"  
                                       BorderBrush="#FFFFFF"                                    
                                       Foreground="#FF434D59" BorderThickness="1"
                                       ItemsSource="{Binding PatientList}"  
@@ -46,14 +49,14 @@
                     <dxe:ComboBoxStyleSettings />
                 </dxe:ComboBoxEdit.StyleSettings>
             </dxe:ComboBoxEdit>
+            
+            <TextBlock VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="0" Text="Data" FontSize="13"  FontWeight="SemiBold"></TextBlock>
+            <dxe:DateEdit Height="30" VerticalAlignment="Center" Grid.Row="1"  FontSize="13"  DateTime ="{Binding Date}" HorizontalAlignment="Stretch" Mask="d" MaskUseAsDisplayFormat ="True" ShowWeekNumbers="True"  Margin="8 2 8 2"  Grid.Column ="1"   />
 
-            <TextBlock VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="0" Text="Data" FontSize="15" FontWeight="SemiBold"></TextBlock>
-            <dxe:DateEdit Height="30" VerticalAlignment="Center" Grid.Row="1"  FontSize="15" DateTime ="{Binding Date}" HorizontalAlignment="Stretch" Mask="d" MaskUseAsDisplayFormat ="True" ShowWeekNumbers="True"  Margin="8 2 8 2"  Grid.Column ="1"   />
-
-            <TextBlock VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="2" Grid.Row="0" Text="Manopera" FontSize="15" FontWeight="SemiBold"></TextBlock>
+            <TextBlock VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="2" Grid.Row="0" Text="Manopera" FontSize="13"  FontWeight="SemiBold"></TextBlock>
             <dxe:ComboBoxEdit Height="30"  Grid.Column="2" Grid.Row="1" Padding="2" Margin="8 6 8 6" 
                                       AutoComplete="True" ImmediatePopup="True"
-                                      FontFamily="Segoe WP SemiLight" FontSize="15" 
+                                      FontFamily="Segoe WP SemiLight" FontSize="13"  
                                       BorderBrush="#FFFFFF" 
                                       Foreground="#FF434D59" BorderThickness="1"
                                       ItemsSource="{Binding Works}"  
@@ -67,10 +70,10 @@
             </dxe:ComboBoxEdit>
 
 
-            <TextBlock VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="3" Grid.Row="0" Text="Zona" FontSize="15" FontWeight="SemiBold"></TextBlock>
+            <TextBlock VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="3" Grid.Row="0" Text="Zona" FontSize="13"  FontWeight="SemiBold"></TextBlock>
             <dxe:ComboBoxEdit Height="30"  Grid.Column="3" Grid.Row="1" Padding="2" Margin="8 6 8 6" 
                                       AutoComplete="True" ImmediatePopup="True"
-                                      FontFamily="Segoe WP SemiLight" FontSize="15" 
+                                      FontFamily="Segoe WP SemiLight" FontSize="13"  
                                       BorderBrush="#FFFFFF" 
                                       Foreground="#FF434D59" BorderThickness="1"
                                       ItemsSource="{Binding Areas}"  
@@ -84,11 +87,11 @@
             </dxe:ComboBoxEdit>
 
 
-            <TextBlock VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="4" Grid.Row="0" Text="Locatie" FontSize="15" FontWeight="SemiBold"></TextBlock>
-<!--            <TextBox VerticalAlignment="Center" Text="{Binding Location}" FontWeight="SemiBold" FontSize="15" Grid.Column="3" Grid.Row="1"></TextBox>-->
+            <TextBlock VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="4" Grid.Row="0" Text="Locatie" FontSize="13"  FontWeight="SemiBold"></TextBlock>
+<!--            <TextBox VerticalAlignment="Center" Text="{Binding Location}" FontWeight="SemiBold" FontSize="13"  Grid.Column="3" Grid.Row="1"></TextBox>-->
             <dxe:ComboBoxEdit Height="30" Grid.Column="4" Grid.Row="1" Padding="2" Margin="8 2 8 2" 
                                       AutoComplete="True" ImmediatePopup="True"
-                                      FontFamily="Segoe WP SemiLight" FontSize="15" 
+                                      FontFamily="Segoe WP SemiLight" FontSize="13"  
                                       BorderBrush="#FFFFFF" 
                                       Foreground="#FF434D59" BorderThickness="1"
                                       ItemsSource="{Binding Locations}"  
@@ -102,22 +105,42 @@
             </dxe:ComboBoxEdit>
 
 
-            <TextBlock VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="5" Grid.Row="0" Text="Ora Inceput" FontSize="15" FontWeight="SemiBold"></TextBlock>
+            <TextBlock VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="5" Grid.Row="0" Text="Ora Inceput" FontSize="13"  FontWeight="SemiBold"></TextBlock>
             <xctk:DateTimeUpDown Height="30" Margin="8 0 8 0" Grid.Column="5" Grid.Row="1" Value="{Binding StartingHour}" 
-                                                  Format="ShortTime" FontSize="15" VerticalAlignment="Center" />
+                                                  Format="ShortTime" FontSize="13"  VerticalAlignment="Center" />
 
 
-            <TextBlock VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="6" Grid.Row="0" Text="Durata" FontSize="15" FontWeight="SemiBold"></TextBlock>
-            <TextBox Height="30" Margin="2 0 4 0" VerticalAlignment="Center" Text="{Binding Durata}" FontWeight="SemiBold" FontSize="15" Grid.Column="6" Grid.Row="1"></TextBox>
+            <TextBlock VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="6" Grid.Row="0" Text="Durata" FontSize="13"  FontWeight="SemiBold"></TextBlock>
+            <TextBox Height="30" Margin="2 0 4 0" VerticalAlignment="Center" Text="{Binding Durata}" FontWeight="SemiBold" FontSize="13"  Grid.Column="6" Grid.Row="1"></TextBox>
 
-            <TextBlock VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="7" Grid.Row="0" Text="Incasari" FontSize="15" FontWeight="SemiBold"></TextBlock>
-            <TextBox Margin="4 0 4 0" Height="30" VerticalAlignment="Center"  Text="{Binding Revenue,UpdateSourceTrigger=PropertyChanged}" FontWeight="SemiBold" FontSize="15" Grid.Column="7" Grid.Row="1"></TextBox>
+            <TextBlock VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="7" Grid.Row="0" Text="Incasari" FontSize="13"  FontWeight="SemiBold"></TextBlock>
+            <TextBox Margin="4 0 4 0" Height="30" VerticalAlignment="Center"  Text="{Binding Revenue,UpdateSourceTrigger=PropertyChanged}" FontWeight="SemiBold" FontSize="13"  Grid.Column="7" Grid.Row="1"></TextBox>
 
-            <TextBlock VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="8" Grid.Row="0" Text="Incasare Curenta" FontSize="15" FontWeight="SemiBold"></TextBlock>
-            <TextBox Margin="4 0 4 0" Height="30" VerticalAlignment="Center"  Text="{Binding CurrentRevenue,UpdateSourceTrigger=PropertyChanged}" FontWeight="SemiBold" FontSize="15" Grid.Column="8" Grid.Row="1"></TextBox>
+            <TextBlock Text="Procent" Grid.Row="0" Grid.Column="8" FontSize="13"   VerticalAlignment="Bottom" HorizontalAlignment="Center" FontWeight="SemiBold" />
+            <dxe:ComboBoxEdit Height="30"  Grid.Column="8" Grid.Row="1" Padding="2" Margin="8 2 8 2" 
+                                              AutoComplete="True" ImmediatePopup="True"
+                                              FontFamily="Segoe WP SemiLight" FontSize="13"  
+                                              BorderBrush="#FFFFFF" 
+                                              Foreground="#FF434D59" BorderThickness="1"
+                                              ItemsSource="{Binding Percentages}"  
+                                              SelectedItem="{Binding SelectedPercentage}"
+                                              DisplayMember="Percentage" IsTextEditable="True"   
+                                   IsEnabled="{Binding ComboEnabled}"
+                                              HorizontalAlignment="Stretch" VerticalAlignment="Center">
+                <dxe:ComboBoxEdit.StyleSettings>
+                    <dxe:ComboBoxStyleSettings />
+                </dxe:ComboBoxEdit.StyleSettings>
+            </dxe:ComboBoxEdit>
 
-            <buttons:ActionButtonView MaxHeight="45" Grid.Column="9" Grid.Row="1"  Margin="0 -22 0 -3" DataContext="{Binding SaveIntevertionButton}"/>
-            <buttons:ActionButtonView MaxHeight="45" Margin="0 -22 0 -3" Grid.Column="10" Grid.Row="1" DataContext="{Binding CancelIntevertionButton}"/>
+            <TextBlock VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="-5 0 0 0" Grid.Column="9" Grid.Row="0" Text="Cost Material" FontSize="13"  FontWeight="SemiBold"></TextBlock>
+            <TextBox Margin="4 0 4 0" Height="30" VerticalAlignment="Center"  Text="{Binding MaterialCost,UpdateSourceTrigger=PropertyChanged}" FontWeight="SemiBold" FontSize="13"  Grid.Column="9" Grid.Row="1"></TextBox>
+
+            <TextBlock VerticalAlignment="Bottom" Margin="5 0 -5 0" HorizontalAlignment="Center" Grid.Column="10" Grid.Row="0" Text="Incasare Curentă" FontSize="13"  FontWeight="SemiBold"></TextBlock>
+            <TextBox Margin="4 0 4 0"  Height="30" VerticalAlignment="Center"  Text="{Binding CurrentRevenue,UpdateSourceTrigger=PropertyChanged}" FontWeight="SemiBold" FontSize="13"  Grid.Column="10" Grid.Row="1"></TextBox>
+
+
+            <buttons:ActionButtonView MaxHeight="45" Grid.Column="11" Grid.Row="1"  Margin="0 -22 0 -3" DataContext="{Binding SaveIntevertionButton}"/>
+            <buttons:ActionButtonView MaxHeight="45" Margin="0 -22 0 -3" Grid.Column="12" Grid.Row="1" DataContext="{Binding CancelIntevertionButton}"/>
             
         </Grid>
     </Border>

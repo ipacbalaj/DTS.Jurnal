@@ -171,6 +171,7 @@
       <DependentUpon>AddInterventionTileView.xaml</DependentUpon>
     </Compile>
     <Compile Include="AddInterventionTile\AddInterventionTileViewModel.cs" />
+    <Compile Include="Helpers\Percent.cs" />
     <Compile Include="JurnalInit.cs" />
     <Compile Include="JurnalScreen\JurnalView.xaml.cs">
       <DependentUpon>JurnalView.xaml</DependentUpon>

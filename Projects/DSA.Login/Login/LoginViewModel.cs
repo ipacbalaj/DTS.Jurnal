@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
 using System.Net.NetworkInformation;
 using System.Runtime.InteropServices;
 using System.Security;
@@ -17,7 +19,6 @@ using DSA.Common.Infrastructure.Styles;
 using DSA.Common.Infrastructure.ViewModel;
 using DSA.Database.Model;
 using DSA.Database.Model.Helpers;
-using DSA.Module.PersonalData.FTP_Settings;
 using DTS.Jurnal.V3.Database.Module;
 using DTS.Jurnal.V3.Database.Module.Entities.Local;
 using DTS.Jurnal.V3.Database.Module.Helpers;
@@ -52,23 +53,13 @@ namespace DSA.Login.Login
         {
             eventAgg = ServiceLocator.Current.GetInstance<IEventAggregator>();
             ForgotPasswordCommand = new DelegateCommand(ChangeForgotPasswordVisibility);
-
-            UsernameBarViewModel = new UsernameBarViewModel();
-            //            UsernameBarViewModel.Username = LocalAppSettings.GetBySettings(LocalAppSettings.Settings.Username);
-            //            UsernameBarViewModel.Description = LocalAppSettings.GetBySettings(LocalAppSettings.Settings.UserRole); 
-
             PasswordBarViewModel = new PasswordBarViewModel();
             ForgotPasswordViewModel = new ForgotPasswordViewModel();
-            PasswordBarViewModel.LoginCommand = new DelegateCommand(Login);
-            //ForgotPasswordViewModel.ResetPasswordCommand = new DelegateCommand(ResetPassword);
-
+            PasswordBarViewModel.LoginCommand = new DelegateCommand(Login);            
             Background = BackgroundColors.BackgroundDarkColor;
             ControlsBackground = BackgroundColors.BackgroundLightColor;
             ChangeUserFromFile();
-            SetUsername();
-            DownLoadDatabaseFromFtp();
-            //            eventAgg.GetEvent<UpdateConnectionStatusEvent>().Subscribe(OnUpdateConnectionStatus);
-            //            OnUpdateConnectionStatus(BusinessStructure.Instance.ConnectionStatus);
+            SetLocalUsers();
         }
 
         #region Properties
@@ -85,14 +76,7 @@ namespace DSA.Login.Login
                 OnPropertyChanged();
             }
         }
-
-        /// <summary>
-        /// Gets or sets the username bar view model.
-        /// </summary>
-        /// <value>
-        /// The username bar view model.
-        /// </value>
-        public UsernameBarViewModel UsernameBarViewModel { get; set; }
+        
         /// <summary>
         /// Gets or sets the password bar view model.
         /// </summary>
@@ -252,6 +236,32 @@ namespace DSA.Login.Login
             }
         }
 
+        private ObservableCollection<LocalUser> users;
+        public ObservableCollection<LocalUser> Users
+        {
+            get { return users; }
+            set
+            {
+                if (value == users)
+                    return;
+                users = value;
+                OnPropertyChanged();
+            }
+        }
+
+        private LocalUser selectedUser;
+        public LocalUser SelectedUser
+        {
+            get { return selectedUser; }
+            set
+            {
+                if (value == selectedUser)
+                    return;
+                selectedUser = value;
+                OnPropertyChanged();
+            }
+        }
+
         #endregion
 
         /// <summary>
@@ -261,12 +271,12 @@ namespace DSA.Login.Login
         /// </summary>
         public void Login()
         {
-            Log.Info("Try to login with Username = " + UsernameBarViewModel.Username);
+            Log.Info("Try to login with Username = " + SelectedUser.Username);
             try
             {
-                string username = UsernameBarViewModel.Username;
+                string username = SelectedUser.Username;
                 LoginResponse response =
-                    DatabaseHandler.Instance.Login(UsernameBarViewModel.Username,
+                    DatabaseHandler.Instance.Login(SelectedUser.Username,
                         SecureStringToString(PasswordBarViewModel.Password));
                 if (response.Status == LoginStatus.Unsuccessful)
                 {
@@ -279,8 +289,7 @@ namespace DSA.Login.Login
                 else
                 {
                     ResponseVisibility = Visibility.Collapsed;
-                    InvalidPasswordMessageVisibility = Visibility.Collapsed;
-                    UsernameBarViewModel.ChangeTextModeVisibility();
+                    InvalidPasswordMessageVisibility = Visibility.Collapsed;                    
                     eventAgg.GetEvent<UserLoginEvent>().Publish(username);
                     LocalCache.Instance.LocalUser = new LocalUser()
                     {
@@ -417,19 +426,10 @@ namespace DSA.Login.Login
             //}
         }
 
-        public void SetUsername()
+        private void SetLocalUsers()
         {
-            var currentUser = XmlSerializerHelper.GetFromXml<LocalUser>(ViewConstants.appDataPath);
-            if (currentUser != null)
-            {
-                UsernameBarViewModel.Username = currentUser.Username;
-                ImagePath = !string.IsNullOrEmpty(currentUser.ImagePath) ? currentUser.ImagePath : DSA.Common.Infrastructure.ImagePath.DentistProfile;
-            }
-        }
-
-        public void DownLoadDatabaseFromFtp()
-        {
-            FTPConnectionHandler.DownloadFile();
+            Users = new ObservableCollection<LocalUser>(DatabaseHandler.Instance.GetUsers());
+            SelectedUser = Users.FirstOrDefault();
         }
 
     }

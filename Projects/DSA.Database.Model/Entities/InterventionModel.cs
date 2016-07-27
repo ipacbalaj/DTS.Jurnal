@@ -194,6 +194,32 @@ namespace DSA.Common.Infrastructure.Entities
             }
         }
 
+        private double materialCost;
+        public double MaterialCost
+        {
+            get { return materialCost; }
+            set
+            {
+                if (value == materialCost)
+                    return;
+                materialCost = value;
+                OnPropertyChanged();
+            }
+        }
+
+        private double percent;
+        public double Percent
+        {
+            get { return percent; }
+            set
+            {
+                if (value == percent)
+                    return;
+                percent = value;
+                OnPropertyChanged();
+            }
+        }
+
         private string location;
 
         public string Location
@@ -318,7 +344,6 @@ namespace DSA.Common.Infrastructure.Entities
         }
 
         private bool shouldSetPayed;
-
         public bool ShouldSetPayed
         {
             get { return shouldSetPayed; }

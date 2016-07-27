@@ -40,7 +40,7 @@ namespace DSA.Database.Model.Helpers
         {
             using (dsaEntities coreModel = new dsaEntities())
             {
-                return coreModel.Patients.OrderBy(p => p.surname).ToLocalPatients();
+                return coreModel.Patients.Where(item => item.UserId == userId).OrderBy(p => p.surname).ToLocalPatients();
             }
         }
 
@@ -48,13 +48,15 @@ namespace DSA.Database.Model.Helpers
         {
             using (dsaEntities dsaEntities = new dsaEntities())
             {
+                var interventions = dsaEntities.Interventions.Where(item => item.UserId == userId);
+
                 switch (interventionsLoadType)
                 {
                     case InterventionsLoadType.All:
-                        return dsaEntities.Interventions.ToInterventionModels();
+                        return interventions.ToInterventionModels();
                     case InterventionsLoadType.ByDate:
                         var interventionToReturn = new List<InterventionModel>();
-                        foreach (var intervention in dsaEntities.Interventions)
+                        foreach (var intervention in interventions)
                         {
                             if (intervention.DateHourDetail.Date >= dateToReturnFrom)
                             {
@@ -63,13 +65,13 @@ namespace DSA.Database.Model.Helpers
                         }
                         return interventionToReturn;
                     default:
-                        return dsaEntities.Interventions.ToInterventionModels();
+                        return interventions.ToInterventionModels();
 
                 }
             }
         }
 
-        public async Task<int> SaveIntervention(InterventionModel localIntervention)
+        public async Task<int> SaveIntervention(InterventionModel localIntervention, int userId)
         {
             return await Task.Run(() =>
             {
@@ -95,6 +97,7 @@ namespace DSA.Database.Model.Helpers
                             item => item.MOnthNumber == localIntervention.Date.Month);
                     intervention.DateHourDetail = new DateHourDetail();
                     intervention.Revenue = localIntervention.Revenue;
+                    intervention.Percent = localIntervention.Percent;
                     intervention.DateHourDetail.StartHour = localIntervention.Start;
                     intervention.DateHourDetail.EndingHour = localIntervention.End;
                     intervention.Work = model.Works.FirstOrDefault(item => item.Id == localIntervention.WorkId);
@@ -106,8 +109,9 @@ namespace DSA.Database.Model.Helpers
                     intervention.Area = model.Areas.FirstOrDefault(item => item.Id == localIntervention.AreaId);
                     intervention.Remainder = localIntervention.Remainder;
                     intervention.IsSelected = localIntervention.IsSelected;
+                    intervention.MaterialCost = localIntervention.MaterialCost;
                     model.Interventions.AddObject(intervention);
-
+                    intervention.UserId = userId;
 
                     model.SaveChanges();
                     return intervention.Id;
@@ -123,18 +127,19 @@ namespace DSA.Database.Model.Helpers
                 if (intervention != null)
                 {
                     intervention.Revenue = localIntervention.Revenue;
+                    intervention.Percent = localIntervention.Percent;
                     intervention.DateHourDetail.StartHour = localIntervention.Start;
                     intervention.DateHourDetail.EndingHour = localIntervention.End;
                     intervention.Work = model.Works.FirstOrDefault(item => item.Id == localIntervention.WorkId);
                     intervention.Location =
                         model.Locations.FirstOrDefault(item => item.Id == localIntervention.LocationId);
                     intervention.DateHourDetail.Date = localIntervention.Date;
-                    //                    intervention.IsSelected = localIntervention.IsSelected;
                     intervention.Patient = model.Patients.FirstOrDefault(item => item.id == localIntervention.PatientId);
                     intervention.DateHourDetail.Duration = (localIntervention.End - localIntervention.Start).Ticks;
                     intervention.Area = model.Areas.FirstOrDefault(item => item.Id == localIntervention.AreaId);
                     intervention.Remainder = localIntervention.Remainder;
                     intervention.WasPayedByDental = localIntervention.WasPayed;
+                    intervention.MaterialCost = localIntervention.MaterialCost;
                     model.SaveChanges();
                 }
             }
@@ -330,6 +335,23 @@ namespace DSA.Database.Model.Helpers
             }
         }
 
+        public List<LocalUser> GetUsers()
+        {
+            using (dsaEntities dsaModel = new dsaEntities())
+            {
+                var users = new List<LocalUser>();
+                foreach (var user in dsaModel.Users)
+                {
+                    users.Add(new LocalUser()
+                    {
+                        Id = user.Id,
+                        Username = user.username
+                    });
+                }
+                return users;
+            }
+        }
+
         #endregion Login
 
         #region settings
@@ -516,7 +538,8 @@ namespace DSA.Database.Model.Helpers
                 {
                     name = localPatient.LastName,
                     surname = localPatient.FirstName,
-                    BirthDate = localPatient.BirthDate
+                    BirthDate = localPatient.BirthDate,
+                    UserId = userId
                 };
                 model.Patients.AddObject(patient);
                 model.SaveChanges();

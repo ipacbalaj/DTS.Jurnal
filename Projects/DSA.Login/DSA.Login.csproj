@@ -91,6 +91,10 @@
       <Project>{3773b378-5d13-414a-8586-bad50f1b5cd3}</Project>
       <Name>DSA.Module.Settings</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DTS.FtpConnection\DTS.FtpConnection.csproj">
+      <Project>{26776D77-D1EF-464B-92C9-CB8989B8E882}</Project>
+      <Name>DTS.FtpConnection</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

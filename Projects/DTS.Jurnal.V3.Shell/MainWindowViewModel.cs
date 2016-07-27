@@ -8,9 +8,11 @@ using ClientShell.Views.Tabs.HorizontalTabs;
 using DSA.Common.Controls.Buttons;
 using DSA.Common.Controls.Loading.MetroLoading;
 using DSA.Common.Controls.LoginControls.ChangePassword;
+using DSA.Common.Controls.Message;
 using DSA.Common.Infrastructure.Prism.EventAggregator.Events;
 using DSA.Common.Infrastructure.ViewModel;
 using DSA.Database.Model;
+using DTS.FtpConnection;
 using DTS.Jurnal.V3.Database.Module;
 using DTS.Jurnal.V3.Shell.Properties;
 using DTS_Jurnal.Main.Bootstrapper;
@@ -36,6 +38,7 @@ namespace DTS.Jurnal.V3.Shell
             ImagePath = DSA.Common.Infrastructure.ImagePath.SigleIconPath;
             ChangeCredentialsButton = new ActionButtonViewModel("", new DelegateCommand(OnChangeCredentials), DSA.Common.Infrastructure.ImagePath.DentistProfile);
             LocalCache.Instance.NetworkPath = Settings.Default.NetworkPath;
+            DownLoadDatabaseFromFtp();
         }
 
         #endregion Constructor
@@ -73,6 +76,19 @@ namespace DTS.Jurnal.V3.Shell
                     isContentVisible = value;
                     OnPropertyChanged();
                 }
+            }
+        }
+
+        private Visibility saveProcessingVisibility = Visibility.Collapsed;
+        public Visibility SaveProcessingVisibility
+        {
+            get { return saveProcessingVisibility; }
+            set
+            {
+                if (value == saveProcessingVisibility)
+                    return;
+                saveProcessingVisibility = value;
+                OnPropertyChanged();
             }
         }
 
@@ -192,6 +208,90 @@ namespace DTS.Jurnal.V3.Shell
             UserName = newUserName;
         }
 
+        public async void SaveDatabaseFileToFtp()
+        {
+            MessageDialog dialog = new MessageDialog("Baza de date se salveaza pe serverul FTP. Vă rugam astepati.");
+            dialog.Show();
+            CopyFile(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\DTS", Settings.Default.Databasepath);
+
+            dialog.Close();
+        }
+
+        public void DownLoadDatabaseFromFtp()
+        {
+            CopyFile(Settings.Default.Databasepath, Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\DTS");
+        }
+
+        private void CopyFile(string sourcePath, string targetPath)
+        {
+            string fileName = "dsa.sdf";
+            //string sourcePath = Settings.Default.Databasepath;
+            //string targetPath = Environment.SpecialFolder.ApplicationData.ToString();
+
+            // Use Path class to manipulate file and directory paths.
+            string sourceFile = System.IO.Path.Combine(sourcePath, fileName);
+            string destFile = System.IO.Path.Combine(targetPath, fileName);
+
+            // To copy a folder's contents to a new location:
+            // Create a new target folder, if necessary.
+            if (!System.IO.Directory.Exists(targetPath))
+            {
+                System.IO.Directory.CreateDirectory(targetPath);
+            }
+
+            // To copy a file to another location and 
+            // overwrite the destination file if it already exists.
+            System.IO.File.Copy(sourceFile, destFile, true);
+
+            // To copy all the files in one directory to another directory.
+            // Get the files in the source folder. (To recursively iterate through
+            // all subfolders under the current directory, see
+            // "How to: Iterate Through a Directory Tree.")
+            // Note: Check for target path was performed previously
+            //       in this code example.
+            if (System.IO.Directory.Exists(sourcePath))
+            {
+                string[] files = System.IO.Directory.GetFiles(sourcePath);
+
+                // Copy the files and overwrite destination files if they already exist.
+                foreach (string s in files)
+                {
+                    // Use static Path methods to extract only the file name from the path.
+                    fileName = System.IO.Path.GetFileName(s);
+                    destFile = System.IO.Path.Combine(targetPath, fileName);
+                    System.IO.File.Copy(s, destFile, true);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Eroare la copierea bazei de date");
+            }
+        }
+
+        public void SaveDatabaseBackUp()
+        {
+            string fileName = DateTime.Now.ToShortDateString() + DateTime.Now.Ticks + ".sdf";
+            string sourcePath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\DTS\";
+            string targetPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\DTS\BackUp";
+
+            // Use Path class to manipulate file and directory paths.
+            string sourceFile = System.IO.Path.Combine(sourcePath, "dsa.sdf");
+            string destFile = System.IO.Path.Combine(targetPath, fileName);
+
+            // To copy a folder's contents to a new location:
+            // Create a new target folder, if necessary.
+            if (!System.IO.Directory.Exists(targetPath))
+            {
+                System.IO.Directory.CreateDirectory(targetPath);
+            }
+
+            // To copy a file to another location and 
+            // overwrite the destination file if it already exists.
+            System.IO.File.Copy(sourceFile, destFile, true);
+        }
+
         #endregion Methods
+
+
     }
 }

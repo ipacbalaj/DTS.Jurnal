@@ -59,7 +59,8 @@
     <Reference Include="DevExpress.Xpf.Themes.MetropolisLight.v12.2">
       <HintPath>..\..\..\..\..\References\DevExpress\v12.2\Framework\DevExpress.Xpf.Themes.MetropolisLight.v12.2.dll</HintPath>
     </Reference>
-    <Reference Include="Ftp">
+    <Reference Include="Ftp, Version=2.0.16028.1152, Culture=neutral, PublicKeyToken=6dc438ab78a525b3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\resources\Ftp.dll</HintPath>
     </Reference>
     <Reference Include="ftplib">
@@ -94,7 +95,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ExtensionMethods.cs" />
-    <Compile Include="FTP_Settings\FTPConnectionHandler.cs" />
     <Compile Include="OptionsMenu\OptionsMenuView.xaml.cs">
       <DependentUpon>OptionsMenuView.xaml</DependentUpon>
     </Compile>
@@ -165,6 +165,9 @@
       <Project>{E70D8866-D808-428A-B1A3-FD091F070685}</Project>
       <Name>DTS.Jurnal.V3.Database.Module</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FTP_Settings\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

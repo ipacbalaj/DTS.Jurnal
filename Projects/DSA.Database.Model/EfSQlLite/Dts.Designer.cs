@@ -36,6 +36,8 @@ using System.Xml.Serialization;
 [assembly: EdmRelationshipAttribute("dsaModel", "WorkWorkType", "Work", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DSA.Database.Model.EfSQlLite.Work), "WorkType", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DSA.Database.Model.EfSQlLite.WorkType))]
 [assembly: EdmRelationshipAttribute("dsaModel", "WorkTypeIntervention", "Intervention", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DSA.Database.Model.EfSQlLite.Intervention), "WorkType", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DSA.Database.Model.EfSQlLite.WorkType))]
 [assembly: EdmRelationshipAttribute("dsaModel", "TechnicianIntervention", "Technician", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DSA.Database.Model.EfSQlLite.Technician), "Intervention", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DSA.Database.Model.EfSQlLite.Intervention), true)]
+[assembly: EdmRelationshipAttribute("dsaModel", "UserPatient", "User", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DSA.Database.Model.EfSQlLite.User), "Patient", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DSA.Database.Model.EfSQlLite.Patient), true)]
+[assembly: EdmRelationshipAttribute("dsaModel", "UserIntervention", "User", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DSA.Database.Model.EfSQlLite.User), "Intervention", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DSA.Database.Model.EfSQlLite.Intervention), true)]
 
 #endregion
 
@@ -1926,7 +1928,8 @@ namespace DSA.Database.Model.EfSQlLite
         /// <param name="month_Id">Initial value of the Month_Id property.</param>
         /// <param name="isSelected">Initial value of the IsSelected property.</param>
         /// <param name="remainder">Initial value of the Remainder property.</param>
-        public static Intervention CreateIntervention(global::System.Int32 id, global::System.Int32 number, global::System.Double revenue, global::System.Double percent, global::System.Int32 patient_id, global::System.Int32 dateHourDetail_Id, global::System.Int32 year_Id, global::System.Int32 month_Id, global::System.Boolean isSelected, global::System.Double remainder)
+        /// <param name="userId">Initial value of the UserId property.</param>
+        public static Intervention CreateIntervention(global::System.Int32 id, global::System.Int32 number, global::System.Double revenue, global::System.Double percent, global::System.Int32 patient_id, global::System.Int32 dateHourDetail_Id, global::System.Int32 year_Id, global::System.Int32 month_Id, global::System.Boolean isSelected, global::System.Double remainder, global::System.Int32 userId)
         {
             Intervention intervention = new Intervention();
             intervention.Id = id;
@@ -1939,6 +1942,7 @@ namespace DSA.Database.Model.EfSQlLite
             intervention.Month_Id = month_Id;
             intervention.IsSelected = isSelected;
             intervention.Remainder = remainder;
+            intervention.UserId = userId;
             return intervention;
         }
 
@@ -2380,6 +2384,30 @@ namespace DSA.Database.Model.EfSQlLite
         private global::System.Double _Remainder;
         partial void OnRemainderChanging(global::System.Double value);
         partial void OnRemainderChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 UserId
+        {
+            get
+            {
+                return _UserId;
+            }
+            set
+            {
+                OnUserIdChanging(value);
+                ReportPropertyChanging("UserId");
+                _UserId = StructuralObject.SetValidValue(value, "UserId");
+                ReportPropertyChanged("UserId");
+                OnUserIdChanged();
+            }
+        }
+        private global::System.Int32 _UserId;
+        partial void OnUserIdChanging(global::System.Int32 value);
+        partial void OnUserIdChanged();
 
         #endregion
 
@@ -2799,6 +2827,44 @@ namespace DSA.Database.Model.EfSQlLite
                 if ((value != null))
                 {
                     ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Technician>("dsaModel.TechnicianIntervention", "Technician", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("dsaModel", "UserIntervention", "User")]
+        public User User
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<User>("dsaModel.UserIntervention", "User").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<User>("dsaModel.UserIntervention", "User").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<User> UserReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<User>("dsaModel.UserIntervention", "User");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<User>("dsaModel.UserIntervention", "User", value);
                 }
             }
         }
@@ -3363,10 +3429,12 @@ namespace DSA.Database.Model.EfSQlLite
         /// Create a new Patient object.
         /// </summary>
         /// <param name="id">Initial value of the id property.</param>
-        public static Patient CreatePatient(global::System.Int32 id)
+        /// <param name="userId">Initial value of the UserId property.</param>
+        public static Patient CreatePatient(global::System.Int32 id, global::System.Int32 userId)
         {
             Patient patient = new Patient();
             patient.id = id;
+            patient.UserId = userId;
             return patient;
         }
 
@@ -3712,6 +3780,30 @@ namespace DSA.Database.Model.EfSQlLite
         private global::System.String _Country;
         partial void OnCountryChanging(global::System.String value);
         partial void OnCountryChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 UserId
+        {
+            get
+            {
+                return _UserId;
+            }
+            set
+            {
+                OnUserIdChanging(value);
+                ReportPropertyChanging("UserId");
+                _UserId = StructuralObject.SetValidValue(value, "UserId");
+                ReportPropertyChanged("UserId");
+                OnUserIdChanged();
+            }
+        }
+        private global::System.Int32 _UserId;
+        partial void OnUserIdChanging(global::System.Int32 value);
+        partial void OnUserIdChanged();
 
         #endregion
 
@@ -3735,6 +3827,44 @@ namespace DSA.Database.Model.EfSQlLite
                 if ((value != null))
                 {
                     ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Intervention>("dsaModel.FK_PatientIntervention", "Intervention", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("dsaModel", "UserPatient", "User")]
+        public User User
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<User>("dsaModel.UserPatient", "User").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<User>("dsaModel.UserPatient", "User").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<User> UserReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<User>("dsaModel.UserPatient", "User");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<User>("dsaModel.UserPatient", "User", value);
                 }
             }
         }
@@ -4327,6 +4457,50 @@ namespace DSA.Database.Model.EfSQlLite
                 if ((value != null))
                 {
                     ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<MAC>("dsaModel.UserMAC", "MAC", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("dsaModel", "UserPatient", "Patient")]
+        public EntityCollection<Patient> Patients
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<Patient>("dsaModel.UserPatient", "Patient");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Patient>("dsaModel.UserPatient", "Patient", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("dsaModel", "UserIntervention", "Intervention")]
+        public EntityCollection<Intervention> Interventions
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<Intervention>("dsaModel.UserIntervention", "Intervention");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Intervention>("dsaModel.UserIntervention", "Intervention", value);
                 }
             }
         }

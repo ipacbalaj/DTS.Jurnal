@@ -243,7 +243,7 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
                 if (value == startingDate)
                     return;
                 startingDate = value;
-                LoadInterventionsFromDate(startingDate,DatabaseHandler.InterventionsLoadType.ByDate);
+                LoadInterventionsFromDate(startingDate, DatabaseHandler.InterventionsLoadType.ByDate);
                 OnPropertyChanged();
             }
         }
@@ -252,48 +252,65 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
 
         #region Methods
 
+        #region load
+
+        private void LoadInterventionsFromDate(DateTime date, DatabaseHandler.InterventionsLoadType interventionsLoadType)
+        {
+            GetInterventionsByDate(date, interventionsLoadType);
+            SelectedInterventionModel = Interventions.LastOrDefault();
+        }
+
+        private async void GetInterventionsByDate(DateTime date, DatabaseHandler.InterventionsLoadType interventionsLoadType)
+        {
+            ShowLoadingPanel = true;
+            await LocalCache.Instance.InitInterventionsStartTask(date, interventionsLoadType);
+            Interventions = new ObservableCollection<InterventionModel>(LocalCache.Instance.Interventions);
+            SetTotals();
+            ShowLoadingPanel = false;
+            SelectedInterventionModel = Interventions.LastOrDefault();
+        }
+
+        private void OnLoadAllInterventions()
+        {
+            GetInterventionsByDate(new DateTime(), DatabaseHandler.InterventionsLoadType.All);
+        }
+
+        private void SetTotals()
+        {
+            double totalSelected = 0;
+            double total = 0;
+            foreach (var interventionModel in Interventions)
+            {
+                if (interventionModel.IsSelected)
+                {
+                    totalSelected += interventionModel.Percent;
+                }
+                total += interventionModel.Revenue;
+            }
+            TotalSelected = totalSelected;
+            Total = total;
+        }
+
+        private void InitData()
+        {
+            Interventions = new ObservableCollection<InterventionModel>(LocalCache.Instance.Interventions);
+            SelectedInterventionModel = Interventions.LastOrDefault();
+            SetTotals();
+            LocalCache.Instance.InterventionLoaded = true;
+            ShowLoadingPanel = false;
+        }
+
+        #endregion load
+
+        #region actions
+
         public void AddIntervention(InterventionModel intervention)
         {
             Total += intervention.Revenue;
-            TotalSelected += intervention.Revenue;
+            TotalSelected += intervention.Percent;
             Interventions.Add(intervention);
             SelectedInterventionModel = intervention;
             SetTimer();
-        }
-
-        public void EditIntervention(InterventionModel intervention)
-        {
-            var inderventionToEdit = Interventions.FirstOrDefault(item => item.Id == intervention.Id);
-            Total -= inderventionToEdit.Revenue;
-            if (inderventionToEdit.IsSelected)
-            {
-                TotalSelected -= inderventionToEdit.Revenue;
-            }
-            inderventionToEdit.Id = intervention.Id;
-            inderventionToEdit.PatientId = intervention.PatientId;
-            inderventionToEdit.LocationId = intervention.LocationId;
-            inderventionToEdit.WorkId = intervention.WorkId;
-            inderventionToEdit.Work = intervention.Work;
-            inderventionToEdit.Location = intervention.Location;
-            inderventionToEdit.PatientName = intervention.PatientName;
-            inderventionToEdit.Revenue = intervention.Revenue;
-            inderventionToEdit.Start = intervention.Start;
-            inderventionToEdit.Duration = intervention.Duration;
-            inderventionToEdit.End = intervention.End;
-            inderventionToEdit.Date = intervention.Date;
-            inderventionToEdit.Area = intervention.Area;
-            inderventionToEdit.AreaId = intervention.AreaId;
-            inderventionToEdit.RowColorBrush = intervention.RowColorBrush;
-            inderventionToEdit.Remainder = intervention.Remainder;
-            Total += intervention.Revenue;
-            if (intervention.IsSelected)
-                TotalSelected += intervention.Revenue;
-            SetTimer();
-        }
-
-        public void DeleteIntervention(InterventionModel intervention)
-        {
-
         }
 
         private void OnExport()
@@ -305,11 +322,6 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
         private async void OnExportPatients()
         {
             await ExcelExporter.ExportPatients(LocalCache.Instance.Patients.Where(item => (!item.WasExported.HasValue || (item.WasExported.HasValue && !item.WasExported.Value))).ToList());
-            //
-            //            foreach (var localPatient in LocalCache.Instance.Patients)
-            //            {
-            //                localPatient.WasExported = true;
-            //            }
         }
 
         private void OnExportSelected()
@@ -328,32 +340,6 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
             }
         }
 
-        private void SetTotals()
-        {
-            double totalSelected = 0;
-            double total = 0;
-            foreach (var interventionModel in Interventions)
-            {
-                if (interventionModel.IsSelected)
-                {
-                    totalSelected += interventionModel.Revenue;
-                }
-                total += interventionModel.Revenue;
-            }
-            TotalSelected = totalSelected;
-            Total = total;
-        }
-
-        private void InitData()
-        {
-            while (LocalCache.Instance.Interventions == null) ;
-            //            Monitor.Wait(LocalCache.Instance.lockObj);
-            Interventions = new ObservableCollection<InterventionModel>(LocalCache.Instance.Interventions);
-            SetTotals();
-            LocalCache.Instance.InterventionLoaded = true;
-            ShowLoadingPanel = false;
-        }
-
         public void ModifySelectedTotal(bool shouldAdd, double valueToAdd, int interventionId)
         {
             if (shouldAdd)
@@ -367,18 +353,6 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
             var intModel = Interventions.FirstOrDefault(item => item.Id == interventionId);
             intModel.IsSelected = shouldAdd;
             DatabaseHandler.Instance.SetInterventionSelectionStatus(interventionId, shouldAdd);
-        }
-
-        private bool initialized = false;
-        private void UpdateJurnalScreen(Object anObj)
-        {
-            if (!initialized)
-            {
-                InitData();
-                AddInterventionTileViewModel.InitData();
-                ClearSelection();
-                initialized = true;
-            }
         }
 
         public void EditIntervention()
@@ -398,10 +372,7 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
                 {
                     AddInterventionTileViewModel.PreviouslyAddedIntervention.RowColorBrush = BackgroundColors.GridNotPayedColor;
                 }
-
             }
-
-            //            SelectedInterventionModel = null;
         }
 
         public void ClearSelectedRow()
@@ -410,21 +381,6 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
             {
                 SelectedInterventionModel = null;
             }
-        }
-
-        private void SetTimer()
-        {
-            // Create a timer with a two second interval.
-            var aTimer = new System.Timers.Timer(5000);
-            // Hook up the Elapsed event for the timer. 
-            aTimer.Elapsed += OnTimedEvent;
-            aTimer.AutoReset = true;
-            aTimer.Enabled = true;
-        }
-
-        private void OnTimedEvent(Object source, ElapsedEventArgs e)
-        {
-            ClearSelection();
         }
 
         public void ModifyPaymentStatus(InterventionModel rowintervention)
@@ -454,16 +410,18 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
             DatabaseHandler.Instance.SetInterventionPayed(rowintervention.Id, rowintervention.WasPayed);
         }
 
-        private void OnDelete(InterventionModel interventionModel)
+        private async void OnDelete(InterventionModel interventionModel)
         {
             DialogResult dialogResult = MessageBox.Show("Doriți sî ștergeți manopera?", "Atentie", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
                 try
                 {
-                    DatabaseHandler.Instance.DeleteIntervention(interventionModel.Id);
+                    await DatabaseHandler.Instance.DeleteIntervention(interventionModel.Id);
                     Interventions.Remove(interventionModel);
                     LocalCache.Instance.Interventions.Remove(interventionModel);
+                    Total -= interventionModel.Revenue;
+                    TotalSelected -= interventionModel.Percent;
                 }
                 catch (Exception)
                 {
@@ -472,6 +430,37 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
 
             }
         }
+
+        #endregion actions
+
+
+        private bool initialized = false;
+        private void UpdateJurnalScreen(Object anObj)
+        {
+            if (!initialized)
+            {
+                InitData();
+                AddInterventionTileViewModel.InitData();
+                ClearSelection();
+                initialized = true;
+            }
+        }
+      
+        private void SetTimer()
+        {
+            // Create a timer with a two second interval.
+            var aTimer = new System.Timers.Timer(5000);
+            // Hook up the Elapsed event for the timer. 
+            aTimer.Elapsed += OnTimedEvent;
+            aTimer.AutoReset = true;
+            aTimer.Enabled = true;
+        }
+
+        private void OnTimedEvent(Object source, ElapsedEventArgs e)
+        {
+            ClearSelection();
+        }
+
 
         public async void SetSelectedInverventionsPaymentStatus()
         {
@@ -530,25 +519,7 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
             }
         }
 
-        private  void LoadInterventionsFromDate(DateTime date, DatabaseHandler.InterventionsLoadType interventionsLoadType)
-        {
-             GetInterventionsByDate(date, interventionsLoadType);
-        }
-
-        private async void GetInterventionsByDate(DateTime date, DatabaseHandler.InterventionsLoadType interventionsLoadType)
-        {
-            ShowLoadingPanel = true;
-            await LocalCache.Instance.InitInterventionsStartTask(date, interventionsLoadType);
-            Interventions = new ObservableCollection<InterventionModel>(LocalCache.Instance.Interventions);
-            SetTotals();
-            ShowLoadingPanel = false;
-        }
-        
-        private  void OnLoadAllInterventions()
-        {
-            GetInterventionsByDate(new DateTime(), DatabaseHandler.InterventionsLoadType.All);
-            
-        }
+ 
 
         #endregion Methods
     }

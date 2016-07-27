@@ -21,6 +21,7 @@ using DTS.Jurnal.V3.Database.Module;
 using DTS.Jurnal.V3.Database.Module.Entities;
 using DTS.Jurnal.V3.Database.Module.Entities.Local;
 using DTS.Jurnal.V3.Database.Module.Helpers;
+using DTS_Jurnal.Jurnal.Helpers;
 using DTS_Jurnal.Jurnal.JurnalScreen;
 using Microsoft.Practices.Prism.Commands;
 using Microsoft.Practices.Prism.Events;
@@ -35,7 +36,6 @@ namespace DTS_Jurnal.Jurnal.AddInterventionTile
         {
             Parent = parent;
             IsPatientComboFocused = true;
-            //            InitDataFromDb();
             SaveIntevertionButton = new ActionButtonViewModel("Salveaza", new DelegateCommand(OnSave), ImagePath.SaveIconPath);
             CancelIntevertionButton = new ActionButtonViewModel("Anulare", new DelegateCommand(OnCancel), ImagePath.CancelIconPath);
         }
@@ -117,7 +117,6 @@ namespace DTS_Jurnal.Jurnal.AddInterventionTile
         }
 
         private int id;
-
         public int Id
         {
             get { return id; }
@@ -196,7 +195,6 @@ namespace DTS_Jurnal.Jurnal.AddInterventionTile
         }
 
         private SettingItem selectedArea;
-
         public SettingItem SelectedArea
         {
             get { return selectedArea; }
@@ -248,7 +246,6 @@ namespace DTS_Jurnal.Jurnal.AddInterventionTile
             }
         }
 
-        //        private bool revenueChanged = false;
         private double? revenue;
         public double? Revenue
         {
@@ -326,10 +323,48 @@ namespace DTS_Jurnal.Jurnal.AddInterventionTile
             }
         }
 
+        private ObservableCollection<Percent> percentages;
+        public ObservableCollection<Percent> Percentages
+        {
+            get { return percentages; }
+            set
+            {
+                if (value == percentages)
+                    return;
+                percentages = value;
+                OnPropertyChanged();
+            }
+        }
+
+        private Percent selectedPercentage;
+        public Percent SelectedPercentage
+        {
+            get { return selectedPercentage; }
+            set
+            {
+                if (value == selectedPercentage)
+                    return;
+                selectedPercentage = value;
+                OnPropertyChanged();
+            }
+        }
+
+        private double? materialCost;
+        public double? MaterialCost
+        {
+            get { return materialCost; }
+            set
+            {
+                if (value == materialCost)
+                    return;
+                materialCost = value;
+                OnPropertyChanged();
+            }
+        }
+
         #endregion Properties
 
         #region Methods
-
 
         public void InitData()
         {
@@ -338,6 +373,7 @@ namespace DTS_Jurnal.Jurnal.AddInterventionTile
             Areas = new ObservableCollection<SettingItem>(LocalCache.Instance.Areas);
             PatientList = new ObservableCollection<LocalPatient>(LocalCache.Instance.Patients);
             IsEditMode = false;
+            InitPercentage();
         }
 
         public async void OnSave()
@@ -349,11 +385,14 @@ namespace DTS_Jurnal.Jurnal.AddInterventionTile
             }
             try
             {
+                double percentage = SelectedPercentage != null ? SelectedPercentage.Percentage / 100 : 1;
+
                 if (PreviouslyAddedIntervention != null)
                 {
 
                     PreviouslyAddedIntervention.RowColorBrush = PreviouslyAddedIntervention.WasPayed ? null : BackgroundColors.GridNotPayedColor;
                 }
+                var materialCost = MaterialCost.HasValue ? MaterialCost.Value : 0;
                 if (IsEditMode)
                 {
                     if (SelectedLocation != null)
@@ -363,6 +402,7 @@ namespace DTS_Jurnal.Jurnal.AddInterventionTile
                     }
                     var revenue = Revenue.HasValue ? Revenue.Value : 0;
                     Parent.SelectedInterventionModel.Revenue = revenue;
+                    Parent.SelectedInterventionModel.Percent = Convert.ToDouble((revenue - materialCost) * percentage);
                     Parent.SelectedInterventionModel.Start = StartingHour;
                     Parent.SelectedInterventionModel.Duration = TimeSpan.FromMinutes(Durata.HasValue ? Durata.Value : 0);
                     Parent.SelectedInterventionModel.Date = Date;
@@ -372,6 +412,8 @@ namespace DTS_Jurnal.Jurnal.AddInterventionTile
                     Parent.SelectedInterventionModel.PatientName = SelectedPatient.AllName;
                     Parent.SelectedInterventionModel.PatientId = SelectedPatient.Id;
                     Parent.SelectedInterventionModel.WorkId = SelectedWork.Id;
+                    Parent.SelectedInterventionModel.MaterialCost = materialCost;
+                    Parent.SelectedInterventionModel.Percent = 
                     if (CurrentRevenue.HasValue)
                     {
                         Parent.SelectedInterventionModel.ShouldSetPayed = true;
@@ -381,8 +423,8 @@ namespace DTS_Jurnal.Jurnal.AddInterventionTile
                         }
                         else
                         {
-                            Parent.SelectedInterventionModel.Remainder = Parent.SelectedInterventionModel.Remainder - CurrentRevenue.Value;   
-                        }                        
+                            Parent.SelectedInterventionModel.Remainder = Parent.SelectedInterventionModel.Remainder - CurrentRevenue.Value;
+                        }
                         Parent.SelectedInterventionModel.ShouldSetPayed = false;
                     }
                     if (SelectedArea != null)
@@ -391,16 +433,17 @@ namespace DTS_Jurnal.Jurnal.AddInterventionTile
                         Parent.SelectedInterventionModel.Area = SelectedArea.Name;
                     }
                     PreviouslyAddedIntervention = Parent.SelectedInterventionModel;
-                    await DatabaseHandler.Instance.EditIntervention(Parent.SelectedInterventionModel);                    
+                    await DatabaseHandler.Instance.EditIntervention(Parent.SelectedInterventionModel);
                     StartingHour = DateTime.Now;
                 }
                 else
                 {
+                    var revenue = Revenue.HasValue ? Revenue.Value : 0;
                     var modelIntervention = new InterventionModel();
                     modelIntervention.Id = Id;
                     modelIntervention.Location = SelectedLocation != null ? SelectedLocation.Name : "";
-                    var revenue = Revenue.HasValue ? Revenue.Value : 0;
                     modelIntervention.Revenue = revenue;
+                    modelIntervention.Percent = Convert.ToDouble((revenue - materialCost) * percentage);
                     modelIntervention.Start = StartingHour;
                     modelIntervention.Duration = TimeSpan.FromMinutes(Durata.HasValue ? Durata.Value : 0);
                     modelIntervention.Date = Date;
@@ -412,6 +455,7 @@ namespace DTS_Jurnal.Jurnal.AddInterventionTile
                     modelIntervention.WorkId = SelectedWork.Id;
                     modelIntervention.LocationId = SelectedLocation != null ? SelectedLocation.Id : 0;
                     modelIntervention.WasPayed = false;
+                    modelIntervention.MaterialCost = materialCost;
                     if (CurrentRevenue.HasValue)
                     {
                         modelIntervention.ShouldSetPayed = true;
@@ -429,12 +473,12 @@ namespace DTS_Jurnal.Jurnal.AddInterventionTile
                     }
                     PreviouslyAddedIntervention = modelIntervention;
                     modelIntervention.IsSelected = true;
-                    modelIntervention.Id = await DatabaseHandler.Instance.SaveIntervention(modelIntervention);
+                    modelIntervention.Id = await DatabaseHandler.Instance.SaveIntervention(modelIntervention, LocalCache.Instance.LocalUser.Id);
                     Parent.AddIntervention(modelIntervention);
                     LocalCache.Instance.Interventions.Add(modelIntervention);
                 }
 
-                initData();
+                InitInputs();
 
             }
             catch (Exception)
@@ -444,33 +488,38 @@ namespace DTS_Jurnal.Jurnal.AddInterventionTile
 
         }
 
-        private string GetMessage()
+        private void InitInputs()
         {
-            return "a";
-        }
-
-        private void initData()
-        {
-            SelectedPatient = new LocalPatient();
-            SelectedLocation = new LocalLocation();
-            SelectedWork = new LocalWork();
-            SelectedArea = new SettingItem();
-            SelectedLocation = new LocalLocation();
-            Revenue = null;
-            StartingHour = StartingHour.AddMinutes(Durata.HasValue ? Durata.Value : 0);
-            Durata = null;
-            IsPatientComboFocused = false;
-            IsPatientComboFocused = true;
-            IsEditMode = false;
-            CurrentRevenue = null;
-            Parent.SelectedInterventionModel.revenueChanged = false;
+            try
+            {
+                SelectedPatient = new LocalPatient();
+                SelectedLocation = new LocalLocation();
+                SelectedWork = new LocalWork();
+                SelectedArea = new SettingItem();
+                SelectedLocation = new LocalLocation();
+                Revenue = null;
+                StartingHour = StartingHour.AddMinutes(Durata.HasValue ? Durata.Value : 0);
+                Durata = null;
+                IsPatientComboFocused = false;
+                IsPatientComboFocused = true;
+                IsEditMode = false;
+                CurrentRevenue = null;
+                SelectedPercentage = null;
+                Parent.SelectedInterventionModel.revenueChanged = false;
+                MaterialCost = null;
+                SelectedPercentage = null;
+                Date = DateTime.Now;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("A intervenit o eroare. Reporniți aplicația!");
+            }
 
         }
 
         private void OnCancel()
         {
-            initData();
-
+            InitInputs();
         }
 
         public async void AddPatient(string patientName)
@@ -512,7 +561,25 @@ namespace DTS_Jurnal.Jurnal.AddInterventionTile
                 Remainder = interventionModel.Remainder;
                 Id = interventionModel.Id;
                 IsEditMode = true;
+                MaterialCost = interventionModel.MaterialCost;
+                SelectedPercentage = new Percent()
+                {
+                    Percentage = (interventionModel.Percent / 100) * interventionModel.Revenue * 10
+                };
             }
+        }
+
+        private void InitPercentage()
+        {
+            var listOfP = new ObservableCollection<Percent>();
+            for (int i = 0; i < 11; i++)
+            {
+                listOfP.Add(new Percent()
+                {
+                    Percentage = i * 10
+                });
+            }
+            Percentages = listOfP;
         }
 
         #endregion Methods

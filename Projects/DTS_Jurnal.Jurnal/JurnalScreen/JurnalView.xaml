@@ -59,28 +59,30 @@
                 </dxg:GridControl.View>
                 <dxg:GridControl.Columns>
                     <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="PatientName" Header="Nume Pacient"/>
-                    <dxg:GridColumn AllowEditing="False" AllowResizing="True"  AllowBestFit="True" FieldName="Date" Header="Data"/>
-                    <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="Work" Header="Manopera"/>
-                    <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="Area" Header="Zona"/>
-                    <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="Location" Header="Locatie"/>
-                    <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="Start" Header="Ora inceput">
+                    <dxg:GridColumn AllowEditing="False" AllowResizing="True"  AllowBestFit="True" FieldName="Date" Header="Dată"/>
+                    <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="Work" Header="Manoperă"/>
+                    <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="Area" Header="Zonă"/>
+                    <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="Location" Header="Locație"/>
+                    <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="Start" Header="Oră inceput">
                         <dxg:GridColumn.EditSettings>
                             <dxe:TextEditSettings Mask="HH:mm" MaskType="DateTime" MaskUseAsDisplayFormat="True"/>
                         </dxg:GridColumn.EditSettings>
                     </dxg:GridColumn>
-                    <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="DurataString" Header="Durata">
+                    <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="DurataString" Header="Durată">
                         <dxg:GridColumn.EditSettings>
                             <dxe:TextEditSettings Mask="HH:mm" MaskType="DateTime" MaskUseAsDisplayFormat="True"/>
                         </dxg:GridColumn.EditSettings>
                     </dxg:GridColumn>
-                    <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="End" Header="Ora sfarsit">
+                    <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="End" Header="Oră sfarsit">
                         <dxg:GridColumn.EditSettings>
                             <dxe:TextEditSettings Mask="HH:mm" MaskType="DateTime" MaskUseAsDisplayFormat="True"/>
                         </dxg:GridColumn.EditSettings>
                     </dxg:GridColumn>
-                    <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="Revenue" Header="Incasari"/>
-                    <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="Remainder" Header="Rest Plata"/>
-                    <dxg:GridColumn AllowEditing="True"  AllowResizing="True" AllowBestFit="True" FieldName="WasPayed" Header="Platit"/>
+                    <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="Revenue" Header="Incasări"/>
+                    <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="MaterialCost" Header="Cost Material"/>
+                    <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="Percent" Header="Procent"/>
+                    <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="Remainder" Header="Rest Plată"/>
+                    <dxg:GridColumn AllowEditing="True"  AllowResizing="True" AllowBestFit="True" FieldName="WasPayed" Header="Plătit"/>
                     <dxg:GridColumn AllowEditing="True"  AllowResizing="True" AllowBestFit="True" FieldName="IsSelected" Header="Selectat"/>
                     <dxg:GridColumn  AllowEditing="True"  AllowResizing="True" AllowBestFit="True" FieldName="Delete" Header="Șterge">
                         <dxg:GridColumn.CellTemplate>
@@ -105,24 +107,22 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <TextBlock Grid.Column="1" VerticalAlignment="Center">
-                <Run Foreground="DarkGray" Text="  Selectate:   " FontSize="19" FontWeight="SemiBold"></Run>
-                <Run Foreground="Black" Text="{Binding TotalSelected}" FontSize="19" FontWeight="SemiBold"></Run>
+                <Run Foreground="DarkGray" Text="     Total  Selectate:   " FontSize="19" FontWeight="SemiBold"></Run>
+                <Run Foreground="Black" Text="{Binding TotalSelected,StringFormat={}{0:#,#.00}}" FontSize="19" FontWeight="SemiBold"></Run>
                 <Run Foreground="DarkGray" Text=" lei  " FontSize="19" FontWeight="SemiBold"></Run>
                 </TextBlock>
                 <TextBlock Grid.Column="0" VerticalAlignment="Center" >
                 <Run Foreground="DarkGray" Text="  Total:   " FontSize="19" FontWeight="SemiBold"></Run>
-                <Run Foreground="Black" Text="{Binding Total}" FontSize="19" FontWeight="SemiBold"></Run>
+                <Run Foreground="Black" Text="{Binding Total,StringFormat={}{0:#,#.00}}" FontSize="19" FontWeight="SemiBold"></Run>
                 <Run Foreground="DarkGray" Text=" lei  " FontSize="19" FontWeight="SemiBold"></Run>
                 </TextBlock>
                 <TextBlock Grid.Column="2" FontWeight="SemiBold" FontSize="19" VerticalAlignment="Center" Foreground="DarkGray" Text="             Incarcă intervenții de la data:"></TextBlock>
                 <dxe:DateEdit Height="35" Width="200"  EditValue="" DateTime ="{Binding StartingDate}" HorizontalAlignment="Stretch" Mask="d" MaskUseAsDisplayFormat ="True" ShowWeekNumbers="True"  Margin="8 2 8 2"  Grid.Column ="3"   />
-                
-                <StackPanel  Grid.Column="4" VerticalAlignment="Center" Orientation="Horizontal" Margin="10 10 10 0" HorizontalAlignment="Right">
-<!--                    <buttons:ActionButtonView MaxHeight="45"   Margin="0 -22 0 -3" DataContext="{Binding DeleteDataButton}"/>-->
+
+                <StackPanel  Grid.Column="4" VerticalAlignment="Center" Orientation="Horizontal" Margin="10 10 10 0" HorizontalAlignment="Right">                    
                     <buttons:ActionButtonView MaxHeight="45" Margin="0 -22 10 -3"  DataContext="{Binding GetAllInterventionsButton}"/>
                     <buttons:ActionButtonView MaxHeight="45" Margin="0 -22 0 -3"  DataContext="{Binding ExportSelectedButton}"/>
-                    <buttons:ActionButtonView MaxHeight="45" Margin="0 -22 0 -3"  DataContext="{Binding ExportButton}"/>
-                    <buttons:ActionButtonView MaxHeight="45" Margin="0 -22 0 -3"  DataContext="{Binding ExportPatientsButton}"/>
+                    <buttons:ActionButtonView MaxHeight="45" Margin="0 -22 0 -3"  DataContext="{Binding ExportButton}"/>                    
                 </StackPanel>
             </Grid>
         </Grid>

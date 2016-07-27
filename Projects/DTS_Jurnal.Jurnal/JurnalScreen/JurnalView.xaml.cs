@@ -1,23 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
+﻿using System.Linq;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using DevExpress.Xpf.Grid;
 using DevExpress.Xpf.Printing;
 using DSA.Common.Infrastructure.Entities;
 using DSA.Common.Infrastructure.Prism.EventAggregator.Events;
 using DSA.Common.Infrastructure.Prism.Regions.ViewsInterfaces;
-using DTS.Jurnal.V3.Database.Module.Entities;
 
 namespace DTS_Jurnal.Jurnal.JurnalScreen
 {
@@ -30,7 +17,16 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
         {
             InitializeComponent();            
             DataContext = new JurnalViewModel(this);            
+
             gridControlInt.Columns["Start"].SortOrder = DevExpress.Data.ColumnSortOrder.Ascending;
+            gridControlInt.Columns["Revenue"].Width = 35;
+            gridControlInt.Columns["Percent"].Width = 35;
+            gridControlInt.Columns["Remainder"].Width = 35;
+            gridControlInt.Columns["Date"].Width = 55;
+            gridControlInt.Columns["MaterialCost"].Width = 35;
+            gridControlInt.Columns["End"].Width = 35;
+            gridControlInt.Columns["DurataString"].Width = 35;
+            gridControlInt.Columns["Start"].Width = 35;            
             gridControlInt.Columns["IsSelected"].Width = 35;
             gridControlInt.Columns["WasPayed"].Width = 35;
             gridControlInt.Columns["Delete"].Width = 25;
@@ -44,7 +40,7 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
             {
                 var rwData = (InterventionModel)e.Row;
                 if (rwData != null)
-                    ((JurnalViewModel)DataContext).ModifySelectedTotal(!(bool)e.OldValue, rwData.Revenue, rwData.Id);
+                    ((JurnalViewModel)DataContext).ModifySelectedTotal(!(bool)e.OldValue, rwData.Percent, rwData.Id);
             }
             if (e.Column.FieldName == "WasPayed")
             {

@@ -106,6 +106,8 @@ namespace DTS.Jurnal.V3.Database.Module.Helpers
                 Revenue = from.Revenue,
                 Remainder = from.Remainder,
                 WasPayed = from.WasPayedByDental.HasValue ? from.WasPayedByDental.Value : false,
+                MaterialCost = from.MaterialCost.HasValue ? from.MaterialCost.Value : 0,
+                Percent = from.Percent
                 //                WasExported = from.WasExported
             };
         }

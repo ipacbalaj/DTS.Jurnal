@@ -72,8 +72,7 @@ namespace DSA.Database.Model
 
         private void InitInterventions(DateTime defaultStartingDate, DatabaseHandler.InterventionsLoadType interventionsLoadType)
         {
-            {
-                //                var defaultStartingDate = DateTime.Now.AddMonths(-3);
+            {                
                 Interventions = DatabaseHandler.Instance.GetInterventions(LocalUser.Id, defaultStartingDate, interventionsLoadType);
             }
         }
@@ -128,7 +127,9 @@ namespace DSA.Database.Model
 
             // To copy a file to another location and 
             // overwrite the destination file if it already exists.
-            System.IO.File.Copy(sourceFile, destFile, true);
+            System.IO.File.Copy(sourceFile, destFile, true);            
+
+
         }
 
         public void DeletePatient(int id)

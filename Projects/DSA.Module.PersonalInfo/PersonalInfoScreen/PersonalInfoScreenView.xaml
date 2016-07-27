@@ -39,21 +39,6 @@
                                             SelectionChanged="TableView12_OnSelectionChanged"
                                             FadeSelectionOnLostFocus="True"
                                        ShowGroupPanel="False" ShowTotalSummary="True" AutoWidth="True">
-<!--                                <dxg:TableView.RowStyle>-->
-<!--                                    <Style TargetType="{x:Type dxg:GridRowContent}">-->
-<!--                                        <Setter Property="Background" Value="{Binding Row.Brush}"/>-->
-<!--                                    </Style>-->
-<!--                                </dxg:TableView.RowStyle>-->
-<!---->
-<!--                                <dxg:TableView.CellStyle>-->
-<!--                                    <Style TargetType="dxg:CellContentPresenter">-->
-<!--                                        <Style.Triggers>-->
-<!--                                            <Trigger Property="dxg:DataViewBase.IsFocusedCell" Value="True">-->
-<!--                                                <Setter Property="Background" Value="#ADC0C0 "/>-->
-<!--                                            </Trigger>-->
-<!--                                        </Style.Triggers>-->
-<!--                                    </Style>-->
-<!--                                </dxg:TableView.CellStyle>-->
                             </dxg:TableView>
                         </dxg:GridControl.View>
                         <dxg:GridControl.Columns>
@@ -125,37 +110,31 @@
                         </dxg:TableView>
                     </dxg:GridControl.View>
                     <dxg:GridControl.Columns>                        
-                        <dxg:GridColumn AllowEditing="False" AllowResizing="True"  AllowBestFit="True" FieldName="Date" Header="Data"/>
-                        <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="Work" Header="Manopera"/>
-                        <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="Area" Header="Zona"/>
-                        <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="Location" Header="Locatie"/>
-                        <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="Start" Header="Ora inceput">
+                        <dxg:GridColumn AllowEditing="False" AllowResizing="True"  AllowBestFit="True" FieldName="Date" Header="Dată"/>
+                        <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="Work" Header="Manoperă"/>
+                        <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="Area" Header="Zonă"/>
+                        <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="Location" Header="Locație"/>
+                        <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="Start" Header="Oră inceput">
                             <dxg:GridColumn.EditSettings>
                                 <dxe:TextEditSettings Mask="HH:mm" MaskType="DateTime" MaskUseAsDisplayFormat="True"/>
                             </dxg:GridColumn.EditSettings>
                         </dxg:GridColumn>
-                        <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="DurataString" Header="Durata">
+                        <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="DurataString" Header="Durată">
                             <dxg:GridColumn.EditSettings>
                                 <dxe:TextEditSettings Mask="HH:mm" MaskType="DateTime" MaskUseAsDisplayFormat="True"/>
                             </dxg:GridColumn.EditSettings>
                         </dxg:GridColumn>
-                        <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="End" Header="Ora sfarsit">
+                        <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="End" Header="Oră sfarsit">
                             <dxg:GridColumn.EditSettings>
                                 <dxe:TextEditSettings Mask="HH:mm" MaskType="DateTime" MaskUseAsDisplayFormat="True"/>
                             </dxg:GridColumn.EditSettings>
                         </dxg:GridColumn>
-                        <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="Revenue" Header="Incasari"/>
-                        <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="Remainder" Header="Rest Plata"/>
-<!--                        <dxg:GridColumn AllowEditing="True"  AllowResizing="True" AllowBestFit="True" FieldName="WasPayed" Header="Platit"/>-->
-<!--                        <dxg:GridColumn AllowEditing="True"  AllowResizing="True" AllowBestFit="True" FieldName="IsSelected" Header="Selectat"    />-->
+                        <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="Revenue" Header="Încasări"/>
+                        <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="Percent" Header="Procent"/>
+                        <dxg:GridColumn AllowEditing="False" AllowResizing="True" AllowBestFit="True" FieldName="Remainder" Header="Rest Plată"/>
                     </dxg:GridControl.Columns>
 
                     <dxg:GridControl.TotalSummary>
-                        <!--                <dxg:GridSummaryItem FieldName="PacientName"   SummaryType="Count"  DisplayFormat="({0})" />                -->
-                        <!--                <dxg:GridSummaryItem FieldName="Percent" SummaryType="Sum" DisplayFormat=" {0:c2}" />-->
-                        <!--                <dxg:GridSummaryItem FieldName="Durata" SummaryType="Sum" DisplayFormat=" {0:c1}" />-->
-                        <!--                <dxg:GridSummaryItem FieldName="Revenue" SummaryType="Sum" DisplayFormat=" {0:c2}" />-->
-                        <!---->
                 <dxg:GridSummaryItem FieldName="Work"   SummaryType="Count" DisplayFormat="Numar interventii: ({0} )" />
                 <dxg:GridSummaryItem FieldName="Percent" SummaryType="Sum" DisplayFormat="Procent Total: {0:n2}" />
                 <dxg:GridSummaryItem FieldName="Durata" SummaryType="Sum" DisplayFormat="Ore Lucrate: {0:hh\\:mm} days" />

@@ -88,6 +88,9 @@
     <Reference Include="DevExpress.XtraLayout.v12.2">
       <HintPath>C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\v2\finalProject\References\DevExpress\v12.2\Framework\DevExpress.XtraLayout.v12.2.dll</HintPath>
     </Reference>
+    <Reference Include="FontAwesome.WPF">
+      <HintPath>..\..\DTS.Jurnal.V3.Solution\packages\FontAwesome.WPF.4.5.0.8\lib\net40\FontAwesome.WPF.dll</HintPath>
+    </Reference>
     <Reference Include="Ftp">
       <HintPath>..\..\resources\Ftp.dll</HintPath>
     </Reference>
@@ -208,9 +211,11 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </None>
     <AppDesigner Include="Properties\" />
   </ItemGroup>
@@ -241,6 +246,10 @@
     <ProjectReference Include="..\DSA.Module.PersonalInfo\DSA.Module.PersonalInfo.csproj">
       <Project>{ae1b0290-936e-4d8f-9973-35153f804c6f}</Project>
       <Name>DSA.Module.PersonalInfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTS.FtpConnection\DTS.FtpConnection.csproj">
+      <Project>{26776D77-D1EF-464B-92C9-CB8989B8E882}</Project>
+      <Name>DTS.FtpConnection</Name>
     </ProjectReference>
     <ProjectReference Include="..\DTS.Jurnal.V3.Database.Module\DTS.Jurnal.V3.Database.Module.csproj">
       <Project>{E70D8866-D808-428A-B1A3-FD091F070685}</Project>

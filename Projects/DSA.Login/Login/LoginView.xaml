@@ -9,6 +9,7 @@
              xmlns:usernameBar1="clr-namespace:DSA.Common.Controls.LoginControls.UsernameBar;assembly=DSA.Common.Controls"
              xmlns:passwordBar1="clr-namespace:DSA.Common.Controls.LoginControls.PasswordBar;assembly=DSA.Common.Controls"
              mc:Ignorable="d" Name="MainLogin"
+             dx:ThemeManager.ThemeName="MetropolisLight"
              d:DesignHeight="300" d:DesignWidth="700">
     <Border Background="{Binding Background}">
         
@@ -41,9 +42,22 @@
                             <RowDefinition Height="Auto"/>
                             <RowDefinition Height="Auto"/>
                         </Grid.RowDefinitions>
-                        <usernameBar1:UsernameBarView Grid.Row="0" DataContext="{Binding UsernameBarViewModel}" 
-                                                     VerticalAlignment="Bottom" HorizontalAlignment="Left" 
-                                                     IsEnabled="{Binding ElementName=MainLogin, Path=DataContext.ConnectionSuccessful}"/>
+<!--                        <usernameBar1:UsernameBarView Grid.Row="0" DataContext="{Binding UsernameBarViewModel}" -->
+<!--                                                     VerticalAlignment="Bottom" HorizontalAlignment="Left" -->
+<!--                                                     IsEnabled="{Binding ElementName=MainLogin, Path=DataContext.ConnectionSuccessful}"/>-->
+                        <dxe:ComboBoxEdit  Grid.Row="0" Padding="2" Margin="5 10 0 10" 
+                                              AutoComplete="True" ImmediatePopup="True"
+                                              FontFamily="Segoe WP SemiLight" FontSize="14" 
+                                              BorderBrush="Black" 
+                                              Foreground="#FF434D59" BorderThickness="1"
+                                              ItemsSource="{Binding Users}"  
+                                              SelectedItem="{Binding SelectedUser}"
+                                              DisplayMember="Username" IsTextEditable="True"                                         
+                                              HorizontalAlignment="Stretch" VerticalAlignment="Center">
+                            <dxe:ComboBoxEdit.StyleSettings>
+                                <dxe:ComboBoxStyleSettings />
+                            </dxe:ComboBoxEdit.StyleSettings>
+                        </dxe:ComboBoxEdit>
                         <passwordBar1:PasswordBarView Grid.Row="1" DataContext="{Binding PasswordBarViewModel,Mode=TwoWay}" 
                                                      VerticalAlignment="Center" HorizontalAlignment="Left" 
                                                      IsEnabled="{Binding ElementName=MainLogin, Path=DataContext.ConnectionSuccessful}"/>

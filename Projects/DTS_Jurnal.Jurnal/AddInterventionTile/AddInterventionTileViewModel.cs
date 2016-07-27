@@ -412,8 +412,8 @@ namespace DTS_Jurnal.Jurnal.AddInterventionTile
                     Parent.SelectedInterventionModel.PatientName = SelectedPatient.AllName;
                     Parent.SelectedInterventionModel.PatientId = SelectedPatient.Id;
                     Parent.SelectedInterventionModel.WorkId = SelectedWork.Id;
-                    Parent.SelectedInterventionModel.MaterialCost = materialCost;        
-            
+                    Parent.SelectedInterventionModel.MaterialCost = materialCost;
+
                     if (CurrentRevenue.HasValue)
                     {
                         Parent.SelectedInterventionModel.ShouldSetPayed = true;
@@ -562,10 +562,8 @@ namespace DTS_Jurnal.Jurnal.AddInterventionTile
                 Id = interventionModel.Id;
                 IsEditMode = true;
                 MaterialCost = interventionModel.MaterialCost;
-                SelectedPercentage = new Percent()
-                {
-                    Percentage = (interventionModel.Percent / 100) * interventionModel.Revenue * 10
-                };
+                var percentageValue = (double)(100 * interventionModel.Percent) / interventionModel.Revenue;
+                SelectedPercentage = percentages.FirstOrDefault(item => item.Percentage == percentageValue);
             }
         }
 

@@ -108,15 +108,15 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
 
         private void GridControlInt_OnPreviewKeyDown(object sender, KeyEventArgs e)
         {
-            if ((Keyboard.Modifiers == ModifierKeys.Control))
+            if ((Keyboard.Modifiers == ModifierKeys.Shift))
             {
-                if (e.Key == Key.K)
+                if (e.Key == Key.P)
                 {
                     ((JurnalViewModel)DataContext).SetSelectedInverventionsPaymentStatus();
                     return;
                 }
 
-                if (e.Key == Key.L)
+                if (e.Key == Key.S)
                 {
                     ((JurnalViewModel)DataContext).SetSelectedInterventionsSelectedStatus();
                     return;

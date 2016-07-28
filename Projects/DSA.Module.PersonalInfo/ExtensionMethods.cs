@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DSA.Database.Model.Entities.Local;
 using DSA.Module.PersonalInfo.PatientInformation;
 using DSA.Module.PersonalInfo.PersonalInfoScreen;
-using DTS.Jurnal.Database.Model.Entities.Local;
-using DTS.Jurnal.V3.Database.Module.Entities.Local;
+using DTS.Jurnal.Database.SQLServer.Module.EntitiesModel.Local;
 
 namespace DSA.Module.PersonalInfo
 {

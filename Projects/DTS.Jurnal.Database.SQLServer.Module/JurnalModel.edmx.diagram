@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3b36a00bf7b8417f980030e236932471" Name="Diagram1">
+        <EntityTypeShape EntityType="DTS.JurnalModel.Area" Width="1.5" PointX="3" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DTS.JurnalModel.DateHourDetail" Width="1.5" PointX="3" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DTS.JurnalModel.DentalPaymentInfo" Width="1.5" PointX="7.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DTS.JurnalModel.FilterGroup" Width="1.5" PointX="7.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="DTS.JurnalModel.FilterItem" Width="1.5" PointX="12.25" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DTS.JurnalModel.Filter" Width="1.5" PointX="10" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="DTS.JurnalModel.FilterType" Width="1.5" PointX="7.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DTS.JurnalModel.IntervalInfo" Width="1.5" PointX="9.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DTS.JurnalModel.Intervention" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DTS.JurnalModel.Location" Width="1.5" PointX="3" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DTS.JurnalModel.MAC" Width="1.5" PointX="3" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DTS.JurnalModel.Material" Width="1.5" PointX="3" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DTS.JurnalModel.Month" Width="1.5" PointX="3" PointY="21.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DTS.JurnalModel.Patient" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DTS.JurnalModel.ProgramInfo" Width="1.5" PointX="9.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DTS.JurnalModel.Technician" Width="1.5" PointX="3" PointY="24" IsExpanded="true" />
+        <EntityTypeShape EntityType="DTS.JurnalModel.Type" Width="1.5" PointX="5.25" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DTS.JurnalModel.User" Width="1.5" PointX="0.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DTS.JurnalModel.Work" Width="1.5" PointX="3" PointY="26.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DTS.JurnalModel.WorkType" Width="1.5" PointX="5.25" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DTS.JurnalModel.Year" Width="1.5" PointX="3" PointY="29.875" IsExpanded="true" />
+        <AssociationConnector Association="DTS.JurnalModel.FK_AreaIntervention" ManuallyRouted="false" />
+        <AssociationConnector Association="DTS.JurnalModel.FK_InterventionDateHourDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="DTS.JurnalModel.FK_FilterGroupFilter" ManuallyRouted="false" />
+        <AssociationConnector Association="DTS.JurnalModel.FK_FilterFilterType" ManuallyRouted="false" />
+        <AssociationConnector Association="DTS.JurnalModel.FK_InterventionLocation" ManuallyRouted="false" />
+        <AssociationConnector Association="DTS.JurnalModel.FK_InterventionWork" ManuallyRouted="false" />
+        <AssociationConnector Association="DTS.JurnalModel.FK_MaterialIntervention" ManuallyRouted="false" />
+        <AssociationConnector Association="DTS.JurnalModel.FK_MonthIntervention" ManuallyRouted="false" />
+        <AssociationConnector Association="DTS.JurnalModel.FK_PatientIntervention" ManuallyRouted="false" />
+        <AssociationConnector Association="DTS.JurnalModel.FK_TechnicianIntervention" ManuallyRouted="false" />
+        <AssociationConnector Association="DTS.JurnalModel.FK_YearIntervention" ManuallyRouted="false" />
+        <AssociationConnector Association="DTS.JurnalModel.FK_UserMAC" ManuallyRouted="false" />
+        <AssociationConnector Association="DTS.JurnalModel.FK_MaterialType" ManuallyRouted="false" />
+        <AssociationConnector Association="DTS.JurnalModel.FK_UserPatient" ManuallyRouted="false" />
+        <AssociationConnector Association="DTS.JurnalModel.FK_WorkWorkType" ManuallyRouted="false" />
+        <AssociationConnector Association="DTS.JurnalModel.FilterFilterItem" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

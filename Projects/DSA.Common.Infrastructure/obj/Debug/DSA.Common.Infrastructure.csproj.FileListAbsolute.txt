@@ -97,7 +97,6 @@ E:\DTS\DTS.Jurnal.V5\Projects\DSA.Common.Infrastructure\bin\Debug\DevExpress.Uti
 E:\DTS\DTS.Jurnal.V5\Projects\DSA.Common.Infrastructure\bin\Debug\DevExpress.XtraEditors.v12.2.xml
 E:\DTS\DTS.Jurnal.V5\Projects\DSA.Common.Infrastructure\bin\Debug\DevExpress.Data.v12.2.xml
 E:\DTS\DTS.Jurnal.V5\Projects\DSA.Common.Infrastructure\bin\Debug\DevExpress.Printing.v12.2.Core.xml
-E:\DTS\DTS.Jurnal.V5\Projects\DSA.Common.Infrastructure\obj\Debug\DSA.Common.Infrastructure.csprojResolveAssemblyReference.cache
 E:\DTS\DTS.Jurnal.V5\Projects\DSA.Common.Infrastructure\obj\Debug\Icos\AdminIcon.baml
 E:\DTS\DTS.Jurnal.V5\Projects\DSA.Common.Infrastructure\obj\Debug\Icos\AnalyzeIcon.baml
 E:\DTS\DTS.Jurnal.V5\Projects\DSA.Common.Infrastructure\obj\Debug\Icos\BlueCancelIcon.baml

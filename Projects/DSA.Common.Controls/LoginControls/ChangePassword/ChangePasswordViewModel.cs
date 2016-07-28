@@ -8,9 +8,8 @@ using DSA.Common.Infrastructure.Prism.EventAggregator.Events;
 using DSA.Common.Infrastructure.Styles;
 using DSA.Common.Infrastructure.ViewModel;
 using DSA.Database.Model;
-using DSA.Database.Model.Helpers;
-using DTS.Jurnal.V3.Database.Module;
-using DTS.Jurnal.V3.Database.Module.Entities.Local;
+using DTS.Jurnal.Database.SQLServer.Module.EntitiesModel.Local;
+using DTS.Jurnal.Database.SQLServer.Module.Helpers;
 using Microsoft.Practices.Prism.Commands;
 using Microsoft.Practices.Prism.Events;
 using Microsoft.Practices.ServiceLocation;
@@ -19,17 +18,17 @@ using MessageBox = System.Windows.MessageBox;
 namespace DSA.Common.Controls.LoginControls.ChangePassword
 {
     public class ChangePasswordViewModel : ViewModelBase
-    {        
+    {
         #region Constructor
 
         public ChangePasswordViewModel()
         {
             ChangePassCommand = new DelegateCommand(OnChangeCommand);
             ConfirmCommand = new DelegateCommand(OnConfirmCommand);
-            CancelCommand=new DelegateCommand(OnCloseCommand);
+            CancelCommand = new DelegateCommand(OnCloseCommand);
             ChoseFileCommand = new DelegateCommand(OnSelectImagePath);
             ChangePassButton = new SymbolIconButtonViewModel(ChangePassCommand, "Change Password");
-            ConfirmButton = new SymbolIconButtonViewModel(ConfirmCommand,"Salveaza");
+            ConfirmButton = new SymbolIconButtonViewModel(ConfirmCommand, "Salveaza");
             SelectImagePathButton = new SymbolIconButtonViewModel(ChoseFileCommand, "Selecteaza Imagine");
             //CancelButton = new SymbolIconButtonViewModel(CancelCommand,"Anuleaza");
             Inititialize();
@@ -42,7 +41,7 @@ namespace DSA.Common.Controls.LoginControls.ChangePassword
 
         public Action CloseAction { get; set; }
 
-//        public AccountListViewModel Paremt { get; set; }
+        //        public AccountListViewModel Paremt { get; set; }
 
         private SymbolIconButtonViewModel changePassButton;
         public SymbolIconButtonViewModel ChangePassButton
@@ -171,7 +170,7 @@ namespace DSA.Common.Controls.LoginControls.ChangePassword
             }
         }
 
-         private Visibility changePassVisibility;
+        private Visibility changePassVisibility;
         public Visibility ChangePassVisibility
         {
             get { return changePassVisibility; }
@@ -265,11 +264,7 @@ namespace DSA.Common.Controls.LoginControls.ChangePassword
 
         private void Inititialize()
         {
-//            Server = Parent.MailSender.MailData.Server;
-//            Email = Parent.MailSender.MailData.SenderEmail.EmailAddress;
-//            Port = Parent.MailSender.MailData.Port;
-//            Password = Parent.MailSender.MailData.SenderEmail.Password;
-//            RetypedPassword = Parent.MailSender.MailData.SenderEmail.Password;
+
         }
 
 
@@ -278,7 +273,7 @@ namespace DSA.Common.Controls.LoginControls.ChangePassword
         /// Show the fields for typing new password and confirm button
         /// </summary>
         private void OnChangeCommand()
-        {            
+        {
             ConfirmButtonVisibility = Visibility.Visible;
             CancelButtonVisibility = Visibility.Visible;
             BorderLineVisibility = 1;
@@ -296,17 +291,17 @@ namespace DSA.Common.Controls.LoginControls.ChangePassword
             {
                 ConfirmButtonVisibility = Visibility.Collapsed;
                 PasswordFieldsVisibility = Visibility.Collapsed;
-                CancelButtonVisibility=Visibility.Collapsed;
+                CancelButtonVisibility = Visibility.Collapsed;
                 BorderLineVisibility = 0;
-                
+
                 LocalCache.Instance.LocalUser.Username = Email;
-                  eventAggregator.GetEvent<UserNameChangedEvent>().Publish(Email);
-                  XmlSerializerHelper.SaveToXml(ViewConstants.appDataPath, LocalCache.Instance.LocalUser);
-                  LocalUser localUser = new LocalUser();
-                  localUser.Username = Email;
-                  localUser.Password = Password;
-                  localUser.Id = LocalCache.Instance.LocalUser.Id;
-                  DatabaseHandler.Instance.EditUser(localUser);                
+                eventAggregator.GetEvent<UserNameChangedEvent>().Publish(Email);
+                XmlSerializerHelper.SaveToXml(ViewConstants.appDataPath, LocalCache.Instance.LocalUser);
+                LocalUser localUser = new LocalUser();
+                localUser.Username = Email;
+                localUser.Password = Password;
+                localUser.Id = LocalCache.Instance.LocalUser.Id;
+                DatabaseHandler.Instance.EditUser(localUser);
                 CloseAction();
             }
             else
@@ -327,7 +322,7 @@ namespace DSA.Common.Controls.LoginControls.ChangePassword
             ConfirmButtonVisibility = Visibility.Collapsed;
             PasswordFieldsVisibility = Visibility.Collapsed;
             ChangePassButtonVisibility = Visibility.Visible;
-            CancelButtonVisibility=Visibility.Collapsed;
+            CancelButtonVisibility = Visibility.Collapsed;
             BorderLineVisibility = 0;
             Password = "";
             RetypedPassword = "";
@@ -353,12 +348,12 @@ namespace DSA.Common.Controls.LoginControls.ChangePassword
         private void OnSelectImagePath()
         {
             string tempPath = "";
-              OpenFileDialog ofd=new OpenFileDialog();
+            OpenFileDialog ofd = new OpenFileDialog();
             if (ofd.ShowDialog() == DialogResult.OK)
             {
                 tempPath = ofd.FileName; // prints path
             }
-            LocalCache.Instance.LocalUser.ImagePath = tempPath;            
+            LocalCache.Instance.LocalUser.ImagePath = tempPath;
         }
 
         #endregion Methods

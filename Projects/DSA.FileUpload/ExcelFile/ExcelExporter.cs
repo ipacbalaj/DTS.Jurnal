@@ -1,20 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.IO;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DSA.Common.Infrastructure.Entities;
 using DSA.Common.Infrastructure.Helpers;
 using DSA.Common.Infrastructure.Styles;
 using DSA.Database.Model;
-using DSA.Database.Model.Entities.Local;
-using DSA.Database.Model.Helpers;
-using DTS.Jurnal.Database.Model.Entities.Local;
-using DTS.Jurnal.V3.Database.Module;
-using DTS.Jurnal.V3.Database.Module.Entities.Local;
+using DTS.Jurnal.Database.SQLServer.Module.EntitiesModel;
+using DTS.Jurnal.Database.SQLServer.Module.EntitiesModel.Local;
+using DTS.Jurnal.Database.SQLServer.Module.Helpers;
 using Excel = Microsoft.Office.Interop.Excel;
 namespace DSA.FileUpload.ExcelFile
 {

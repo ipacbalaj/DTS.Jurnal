@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DSA.Module.PersonalData.SettingsColumns.SettingsTile;
-using DTS.Jurnal.V3.Database.Module.Entities.Local;
+using DTS.Jurnal.Database.SQLServer.Module.EntitiesModel.Local;
 
 namespace DSA.Module.PersonalData
 {

@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Media;
 using DSA.Common.Controls.Buttons;
@@ -11,12 +9,11 @@ using DSA.Common.Infrastructure;
 using DSA.Common.Infrastructure.Styles;
 using DSA.Common.Infrastructure.ViewModel;
 using DSA.Database.Model;
-using DSA.Database.Model.Helpers;
 using DSA.Module.PersonalData.SettingsColumns.SettingsTile;
 using DSA.Module.PersonalData.SettingsColumns.SettingsTile.EditSettingsTile;
 using DSA.Module.PersonalData.SettingsDataScreen;
-using DTS.Jurnal.V3.Database.Module;
-using DTS.Jurnal.V3.Database.Module.Entities.Local;
+using DTS.Jurnal.Database.SQLServer.Module.EntitiesModel.Local;
+using DTS.Jurnal.Database.SQLServer.Module.Helpers;
 using Microsoft.Practices.Prism.Commands;
 
 namespace DSA.Module.PersonalData.SettingsColumns.SettingsTileList

@@ -83,10 +83,6 @@
       <Project>{EDD4730D-BAC5-4D75-B556-C70C8BFD736B}</Project>
       <Name>DSA.Common.Infrastructure</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DSA.Database.Model\DSA.Database.Model.csproj">
-      <Project>{E71BE83D-E64A-4D52-97AB-0AB7482363F7}</Project>
-      <Name>DSA.Database.Model</Name>
-    </ProjectReference>
     <ProjectReference Include="..\DSA.Module.PersonalData\DSA.Module.Settings.csproj">
       <Project>{3773b378-5d13-414a-8586-bad50f1b5cd3}</Project>
       <Name>DSA.Module.Settings</Name>
@@ -94,6 +90,10 @@
     <ProjectReference Include="..\DTS.FtpConnection\DTS.FtpConnection.csproj">
       <Project>{26776D77-D1EF-464B-92C9-CB8989B8E882}</Project>
       <Name>DTS.FtpConnection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTS.Jurnal.Database.SQLServer.Module\DTS.Jurnal.Database.SQLServer.Module.csproj">
+      <Project>{8378E5C0-BC52-4F9B-A854-2C6F0990598C}</Project>
+      <Name>DTS.Jurnal.Database.SQLServer.Module</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

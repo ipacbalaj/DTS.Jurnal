@@ -136,9 +136,9 @@
       <Project>{EDD4730D-BAC5-4D75-B556-C70C8BFD736B}</Project>
       <Name>DSA.Common.Infrastructure</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DSA.Database.Model\DSA.Database.Model.csproj">
-      <Project>{E71BE83D-E64A-4D52-97AB-0AB7482363F7}</Project>
-      <Name>DSA.Database.Model</Name>
+    <ProjectReference Include="..\DTS.Jurnal.Database.SQLServer.Module\DTS.Jurnal.Database.SQLServer.Module.csproj">
+      <Project>{8378E5C0-BC52-4F9B-A854-2C6F0990598C}</Project>
+      <Name>DTS.Jurnal.Database.SQLServer.Module</Name>
     </ProjectReference>
     <ProjectReference Include="..\DTS.Jurnal.V3.Database.Module\DTS.Jurnal.V3.Database.Module.csproj">
       <Project>{e70d8866-d808-428a-b1a3-fd091f070685}</Project>

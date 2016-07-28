@@ -76,10 +76,6 @@
       <Project>{EDD4730D-BAC5-4D75-B556-C70C8BFD736B}</Project>
       <Name>DSA.Common.Infrastructure</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DSA.Database.Model\DSA.Database.Model.csproj">
-      <Project>{E71BE83D-E64A-4D52-97AB-0AB7482363F7}</Project>
-      <Name>DSA.Database.Model</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -16,5 +16,5 @@ DEBUG;TRACE
 39-1466386132
 PatientInformation\EditPatient\EditPatientView.xaml;PatientInformation\PatientInformationView.xaml;PersonalInfoScreen\PersonalInfoScreenView.xaml;
 
-False
+True
 

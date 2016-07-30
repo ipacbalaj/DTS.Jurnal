@@ -552,7 +552,8 @@ namespace DTS_Jurnal.Jurnal.AddInterventionTile
                 Id = interventionModel.Id;
                 IsEditMode = true;
                 MaterialCost = interventionModel.MaterialCost;
-                var percentageValue = (double)(100 * interventionModel.Percent) / interventionModel.Revenue;
+                var percentageValue = ((double) interventionModel.Percent/
+                                       (interventionModel.Revenue - interventionModel.MaterialCost))*100;             
                 SelectedPercentage = percentages.FirstOrDefault(item => item.Percentage == percentageValue);
             }
         }

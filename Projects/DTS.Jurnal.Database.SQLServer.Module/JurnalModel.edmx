@@ -4,524 +4,498 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="DTS.JurnalModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <EntityContainer Name="DTSJurnalModelStoreContainer">
-          <EntitySet Name="Areas" EntityType="DTS.JurnalModel.Store.Areas" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="DateHourDetails" EntityType="DTS.JurnalModel.Store.DateHourDetails" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="DentalPaymentInfoes" EntityType="DTS.JurnalModel.Store.DentalPaymentInfoes" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="FilterFilterItem" EntityType="DTS.JurnalModel.Store.FilterFilterItem" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="FilterGroups" EntityType="DTS.JurnalModel.Store.FilterGroups" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="FilterItems" EntityType="DTS.JurnalModel.Store.FilterItems" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="Filters" EntityType="DTS.JurnalModel.Store.Filters" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="FilterTypes" EntityType="DTS.JurnalModel.Store.FilterTypes" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="IntervalInfoes" EntityType="DTS.JurnalModel.Store.IntervalInfoes" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="Interventions" EntityType="DTS.JurnalModel.Store.Interventions" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="Locations" EntityType="DTS.JurnalModel.Store.Locations" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="MACs" EntityType="DTS.JurnalModel.Store.MACs" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="Materials" EntityType="DTS.JurnalModel.Store.Materials" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="Months" EntityType="DTS.JurnalModel.Store.Months" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="Patients" EntityType="DTS.JurnalModel.Store.Patients" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="ProgramInfoes" EntityType="DTS.JurnalModel.Store.ProgramInfoes" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="Technicians" EntityType="DTS.JurnalModel.Store.Technicians" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="Types" EntityType="DTS.JurnalModel.Store.Types" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="Users" EntityType="DTS.JurnalModel.Store.Users" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="Works" EntityType="DTS.JurnalModel.Store.Works" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="WorkTypes" EntityType="DTS.JurnalModel.Store.WorkTypes" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="Years" EntityType="DTS.JurnalModel.Store.Years" store:Type="Tables" Schema="dbo" />
-          <AssociationSet Name="FK_AreaIntervention" Association="DTS.JurnalModel.Store.FK_AreaIntervention">
-            <End Role="Areas" EntitySet="Areas" />
-            <End Role="Interventions" EntitySet="Interventions" />
-          </AssociationSet>
-          <AssociationSet Name="FK_FilterFilterItem_Filter" Association="DTS.JurnalModel.Store.FK_FilterFilterItem_Filter">
-            <End Role="Filters" EntitySet="Filters" />
-            <End Role="FilterFilterItem" EntitySet="FilterFilterItem" />
-          </AssociationSet>
-          <AssociationSet Name="FK_FilterFilterItem_FilterItem" Association="DTS.JurnalModel.Store.FK_FilterFilterItem_FilterItem">
-            <End Role="FilterItems" EntitySet="FilterItems" />
-            <End Role="FilterFilterItem" EntitySet="FilterFilterItem" />
-          </AssociationSet>
-          <AssociationSet Name="FK_FilterFilterType" Association="DTS.JurnalModel.Store.FK_FilterFilterType">
-            <End Role="FilterTypes" EntitySet="FilterTypes" />
-            <End Role="Filters" EntitySet="Filters" />
-          </AssociationSet>
-          <AssociationSet Name="FK_FilterGroupFilter" Association="DTS.JurnalModel.Store.FK_FilterGroupFilter">
-            <End Role="FilterGroups" EntitySet="FilterGroups" />
-            <End Role="Filters" EntitySet="Filters" />
-          </AssociationSet>
-          <AssociationSet Name="FK_InterventionDateHourDetails" Association="DTS.JurnalModel.Store.FK_InterventionDateHourDetails">
-            <End Role="DateHourDetails" EntitySet="DateHourDetails" />
-            <End Role="Interventions" EntitySet="Interventions" />
-          </AssociationSet>
-          <AssociationSet Name="FK_InterventionLocation" Association="DTS.JurnalModel.Store.FK_InterventionLocation">
-            <End Role="Locations" EntitySet="Locations" />
-            <End Role="Interventions" EntitySet="Interventions" />
-          </AssociationSet>
-          <AssociationSet Name="FK_InterventionWork" Association="DTS.JurnalModel.Store.FK_InterventionWork">
-            <End Role="Works" EntitySet="Works" />
-            <End Role="Interventions" EntitySet="Interventions" />
-          </AssociationSet>
-          <AssociationSet Name="FK_MaterialIntervention" Association="DTS.JurnalModel.Store.FK_MaterialIntervention">
-            <End Role="Materials" EntitySet="Materials" />
-            <End Role="Interventions" EntitySet="Interventions" />
-          </AssociationSet>
-          <AssociationSet Name="FK_MaterialType" Association="DTS.JurnalModel.Store.FK_MaterialType">
-            <End Role="Materials" EntitySet="Materials" />
-            <End Role="Types" EntitySet="Types" />
-          </AssociationSet>
-          <AssociationSet Name="FK_MonthIntervention" Association="DTS.JurnalModel.Store.FK_MonthIntervention">
-            <End Role="Months" EntitySet="Months" />
-            <End Role="Interventions" EntitySet="Interventions" />
-          </AssociationSet>
-          <AssociationSet Name="FK_PatientIntervention" Association="DTS.JurnalModel.Store.FK_PatientIntervention">
-            <End Role="Patients" EntitySet="Patients" />
-            <End Role="Interventions" EntitySet="Interventions" />
-          </AssociationSet>
-          <AssociationSet Name="FK_TechnicianIntervention" Association="DTS.JurnalModel.Store.FK_TechnicianIntervention">
-            <End Role="Technicians" EntitySet="Technicians" />
-            <End Role="Interventions" EntitySet="Interventions" />
-          </AssociationSet>
-          <AssociationSet Name="FK_UserMAC" Association="DTS.JurnalModel.Store.FK_UserMAC">
-            <End Role="Users" EntitySet="Users" />
-            <End Role="MACs" EntitySet="MACs" />
-          </AssociationSet>
-          <AssociationSet Name="FK_UserPatient" Association="DTS.JurnalModel.Store.FK_UserPatient">
-            <End Role="Users" EntitySet="Users" />
-            <End Role="Patients" EntitySet="Patients" />
-          </AssociationSet>
-          <AssociationSet Name="FK_WorkWorkType" Association="DTS.JurnalModel.Store.FK_WorkWorkType">
-            <End Role="Works" EntitySet="Works" />
-            <End Role="WorkTypes" EntitySet="WorkTypes" />
-          </AssociationSet>
-          <AssociationSet Name="FK_YearIntervention" Association="DTS.JurnalModel.Store.FK_YearIntervention">
-            <End Role="Years" EntitySet="Years" />
-            <End Role="Interventions" EntitySet="Interventions" />
-          </AssociationSet>
-        </EntityContainer>
-        <EntityType Name="Areas">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-          <Property Name="Name" Type="nvarchar" Nullable="false" />
-          <Property Name="WasDeleted" Type="bit" />
-        </EntityType>
-        <EntityType Name="DateHourDetails">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-          <Property Name="StartHour" Type="datetime" Nullable="false" />
-          <Property Name="EndingHour" Type="datetime" Nullable="false" />
-          <Property Name="Date" Type="datetime" Nullable="false" />
-          <Property Name="Duration" Type="bigint" />
-          <Property Name="MiliTime" Type="bigint" Nullable="false" />
-        </EntityType>
-        <EntityType Name="DentalPaymentInfoes">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-          <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
-          <Property Name="Date" Type="datetime" Nullable="false" />
-          <Property Name="TotalRevenue" Type="float" Nullable="false" />
-          <Property Name="TotalPercent" Type="float" Nullable="false" />
-        </EntityType>
-        <EntityType Name="FilterFilterItem">
-          <Key>
-            <PropertyRef Name="Filters_Id" />
-            <PropertyRef Name="FilterItems_Id" />
-          </Key>
-          <Property Name="Filters_Id" Type="int" Nullable="false" />
-          <Property Name="FilterItems_Id" Type="int" Nullable="false" />
-        </EntityType>
-        <EntityType Name="FilterGroups">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-          <Property Name="Name" Type="nvarchar" Nullable="false" />
-          <Property Name="StartDate" Type="datetime" Nullable="false" />
-          <Property Name="EndDate" Type="datetime" Nullable="false" />
-          <Property Name="IsActive" Type="bit" Nullable="false" />
-          <Property Name="IsIntervalActive" Type="bit" Nullable="false" />
-        </EntityType>
-        <EntityType Name="FilterItems">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-          <Property Name="Name" Type="nvarchar" Nullable="false" />
-        </EntityType>
-        <EntityType Name="Filters">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-          <Property Name="IsActive" Type="bit" Nullable="false" />
-          <Property Name="FilterGroup_Id" Type="int" Nullable="false" />
-          <Property Name="FilterType_Id" Type="int" Nullable="false" />
-        </EntityType>
-        <EntityType Name="FilterTypes">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-          <Property Name="Name" Type="nvarchar" Nullable="false" />
-        </EntityType>
-        <EntityType Name="IntervalInfoes">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-          <Property Name="TotalRevenue" Type="float" Nullable="false" />
-          <Property Name="TotalPercent" Type="float" Nullable="false" />
-          <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
-        </EntityType>
-        <EntityType Name="Interventions">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-          <Property Name="Observation" Type="nvarchar" />
-          <Property Name="Number" Type="int" Nullable="false" />
-          <Property Name="Revenue" Type="float" Nullable="false" />
-          <Property Name="Percent" Type="float" Nullable="false" />
-          <Property Name="Patient_id" Type="int" Nullable="false" />
-          <Property Name="Location_Id" Type="int" />
-          <Property Name="Material_Id" Type="int" />
-          <Property Name="DateHourDetail_Id" Type="int" Nullable="false" />
-          <Property Name="Area_Id" Type="int" />
-          <Property Name="Work_Id" Type="int" />
-          <Property Name="Year_Id" Type="int" Nullable="false" />
-          <Property Name="Month_Id" Type="int" Nullable="false" />
-          <Property Name="WasPayedByDental" Type="bit" />
-          <Property Name="TechnicianId" Type="int" />
-          <Property Name="MaterialCost" Type="float" />
-          <Property Name="IsSelected" Type="bit" Nullable="false" />
-          <Property Name="Remainder" Type="float" Nullable="false" />
-          <Property Name="UserId" Type="int" Nullable="false" />
-        </EntityType>
-        <EntityType Name="Locations">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-          <Property Name="Name" Type="nvarchar" Nullable="false" />
-          <Property Name="WasDeleted" Type="bit" />
-        </EntityType>
-        <EntityType Name="MACs">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-          <Property Name="macId" Type="nvarchar(max)" />
-          <Property Name="User_Id" Type="int" Nullable="false" />
-        </EntityType>
-        <EntityType Name="Materials">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-          <Property Name="Name" Type="nvarchar" Nullable="false" />
-          <Property Name="Cost" Type="float" Nullable="false" />
-          <Property Name="WasDeleted" Type="bit" />
-        </EntityType>
-        <EntityType Name="Months">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-          <Property Name="MOnthNumber" Type="int" Nullable="false" />
-        </EntityType>
-        <EntityType Name="Patients">
-          <Key>
-            <PropertyRef Name="id" />
-          </Key>
-          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-          <Property Name="name" Type="nvarchar" MaxLength="100" />
-          <Property Name="surname" Type="nvarchar" MaxLength="100" />
-          <Property Name="Address" Type="nvarchar" MaxLength="100" />
-          <Property Name="City" Type="nvarchar" MaxLength="50" />
-          <Property Name="Phone" Type="nvarchar" MaxLength="50" />
-          <Property Name="Email" Type="nvarchar" MaxLength="50" />
-          <Property Name="BirthDate" Type="datetime" />
-          <Property Name="Street" Type="nvarchar" />
-          <Property Name="Block" Type="nvarchar" />
-          <Property Name="Job" Type="nvarchar" />
-          <Property Name="StreetNumber" Type="nvarchar" />
-          <Property Name="Ocupation" Type="nvarchar" />
-          <Property Name="Country" Type="nvarchar" />
-          <Property Name="UserId" Type="int" Nullable="false" />
-        </EntityType>
-        <EntityType Name="ProgramInfoes">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-          <Property Name="ExportFileName" Type="nvarchar(max)" Nullable="false" />
-          <Property Name="LastFileDateImport" Type="datetime" Nullable="false" />
-          <Property Name="LastAddedInterventionDate" Type="datetime" Nullable="false" />
-        </EntityType>
-        <EntityType Name="Technicians">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-          <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
-          <Property Name="WasDeleted" Type="bit" />
-        </EntityType>
-        <EntityType Name="Types">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-          <Property Name="Cost" Type="float" Nullable="false" />
-          <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
-          <Property Name="Material_Id" Type="int" />
-        </EntityType>
-        <EntityType Name="Users">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-          <Property Name="username" Type="nvarchar(max)" />
-          <Property Name="password" Type="nvarchar(max)" />
-          <Property Name="appInfo" Type="nvarchar(max)" />
-        </EntityType>
-        <EntityType Name="Works">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-          <Property Name="Name" Type="nvarchar" Nullable="false" />
-          <Property Name="Cost" Type="float" Nullable="false" />
-          <Property Name="Percent" Type="float" />
-          <Property Name="IncludedINFinancial" Type="bit" />
-          <Property Name="WasDeleted" Type="bit" />
-        </EntityType>
-        <EntityType Name="WorkTypes">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-          <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
-          <Property Name="Cost" Type="float" Nullable="false" />
-          <Property Name="Percent" Type="float" Nullable="false" />
-          <Property Name="Work_Id" Type="int" Nullable="false" />
-        </EntityType>
-        <EntityType Name="Years">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-          <Property Name="YearNb" Type="int" Nullable="false" />
-        </EntityType>
-        <Association Name="FK_AreaIntervention">
-          <End Role="Areas" Type="DTS.JurnalModel.Store.Areas" Multiplicity="0..1" />
-          <End Role="Interventions" Type="DTS.JurnalModel.Store.Interventions" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Areas">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="Interventions">
-              <PropertyRef Name="Area_Id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_FilterFilterItem_Filter">
-          <End Role="Filters" Type="DTS.JurnalModel.Store.Filters" Multiplicity="1" />
-          <End Role="FilterFilterItem" Type="DTS.JurnalModel.Store.FilterFilterItem" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Filters">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="FilterFilterItem">
-              <PropertyRef Name="Filters_Id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_FilterFilterItem_FilterItem">
-          <End Role="FilterItems" Type="DTS.JurnalModel.Store.FilterItems" Multiplicity="1" />
-          <End Role="FilterFilterItem" Type="DTS.JurnalModel.Store.FilterFilterItem" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="FilterItems">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="FilterFilterItem">
-              <PropertyRef Name="FilterItems_Id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_FilterFilterType">
-          <End Role="FilterTypes" Type="DTS.JurnalModel.Store.FilterTypes" Multiplicity="1" />
-          <End Role="Filters" Type="DTS.JurnalModel.Store.Filters" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="FilterTypes">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="Filters">
-              <PropertyRef Name="FilterType_Id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_FilterGroupFilter">
-          <End Role="FilterGroups" Type="DTS.JurnalModel.Store.FilterGroups" Multiplicity="1" />
-          <End Role="Filters" Type="DTS.JurnalModel.Store.Filters" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="FilterGroups">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="Filters">
-              <PropertyRef Name="FilterGroup_Id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_InterventionDateHourDetails">
-          <End Role="DateHourDetails" Type="DTS.JurnalModel.Store.DateHourDetails" Multiplicity="1" />
-          <End Role="Interventions" Type="DTS.JurnalModel.Store.Interventions" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="DateHourDetails">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="Interventions">
-              <PropertyRef Name="DateHourDetail_Id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_InterventionLocation">
-          <End Role="Locations" Type="DTS.JurnalModel.Store.Locations" Multiplicity="0..1" />
-          <End Role="Interventions" Type="DTS.JurnalModel.Store.Interventions" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Locations">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="Interventions">
-              <PropertyRef Name="Location_Id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_InterventionWork">
-          <End Role="Works" Type="DTS.JurnalModel.Store.Works" Multiplicity="0..1" />
-          <End Role="Interventions" Type="DTS.JurnalModel.Store.Interventions" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Works">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="Interventions">
-              <PropertyRef Name="Work_Id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_MaterialIntervention">
-          <End Role="Materials" Type="DTS.JurnalModel.Store.Materials" Multiplicity="0..1" />
-          <End Role="Interventions" Type="DTS.JurnalModel.Store.Interventions" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Materials">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="Interventions">
-              <PropertyRef Name="Material_Id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_MaterialType">
-          <End Role="Materials" Type="DTS.JurnalModel.Store.Materials" Multiplicity="0..1" />
-          <End Role="Types" Type="DTS.JurnalModel.Store.Types" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Materials">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="Types">
-              <PropertyRef Name="Material_Id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_MonthIntervention">
-          <End Role="Months" Type="DTS.JurnalModel.Store.Months" Multiplicity="1" />
-          <End Role="Interventions" Type="DTS.JurnalModel.Store.Interventions" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Months">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="Interventions">
-              <PropertyRef Name="Month_Id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_PatientIntervention">
-          <End Role="Patients" Type="DTS.JurnalModel.Store.Patients" Multiplicity="1" />
-          <End Role="Interventions" Type="DTS.JurnalModel.Store.Interventions" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Patients">
-              <PropertyRef Name="id" />
-            </Principal>
-            <Dependent Role="Interventions">
-              <PropertyRef Name="Patient_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_TechnicianIntervention">
-          <End Role="Technicians" Type="DTS.JurnalModel.Store.Technicians" Multiplicity="0..1" />
-          <End Role="Interventions" Type="DTS.JurnalModel.Store.Interventions" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Technicians">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="Interventions">
-              <PropertyRef Name="TechnicianId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_UserMAC">
-          <End Role="Users" Type="DTS.JurnalModel.Store.Users" Multiplicity="1" />
-          <End Role="MACs" Type="DTS.JurnalModel.Store.MACs" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Users">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="MACs">
-              <PropertyRef Name="User_Id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_UserPatient">
-          <End Role="Users" Type="DTS.JurnalModel.Store.Users" Multiplicity="1" />
-          <End Role="Patients" Type="DTS.JurnalModel.Store.Patients" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Users">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="Patients">
-              <PropertyRef Name="UserId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_WorkWorkType">
-          <End Role="Works" Type="DTS.JurnalModel.Store.Works" Multiplicity="1" />
-          <End Role="WorkTypes" Type="DTS.JurnalModel.Store.WorkTypes" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Works">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="WorkTypes">
-              <PropertyRef Name="Work_Id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_YearIntervention">
-          <End Role="Years" Type="DTS.JurnalModel.Store.Years" Multiplicity="1" />
-          <End Role="Interventions" Type="DTS.JurnalModel.Store.Interventions" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Years">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="Interventions">
-              <PropertyRef Name="Year_Id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-      </Schema>
-    </edmx:StorageModels>
+    <Schema Namespace="DTS.JurnalModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="DTSJurnalModelStoreContainer">
+    <EntitySet Name="Areas" EntityType="DTS.JurnalModel.Store.Areas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DateHourDetails" EntityType="DTS.JurnalModel.Store.DateHourDetails" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DentalPaymentInfoes" EntityType="DTS.JurnalModel.Store.DentalPaymentInfoes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FilterGroups" EntityType="DTS.JurnalModel.Store.FilterGroups" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FilterItems" EntityType="DTS.JurnalModel.Store.FilterItems" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Filters" EntityType="DTS.JurnalModel.Store.Filters" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FilterTypes" EntityType="DTS.JurnalModel.Store.FilterTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="IntervalInfoes" EntityType="DTS.JurnalModel.Store.IntervalInfoes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Interventions" EntityType="DTS.JurnalModel.Store.Interventions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Locations" EntityType="DTS.JurnalModel.Store.Locations" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Materials" EntityType="DTS.JurnalModel.Store.Materials" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Months" EntityType="DTS.JurnalModel.Store.Months" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Patients" EntityType="DTS.JurnalModel.Store.Patients" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ProgramInfoes" EntityType="DTS.JurnalModel.Store.ProgramInfoes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Technicians" EntityType="DTS.JurnalModel.Store.Technicians" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Types" EntityType="DTS.JurnalModel.Store.Types" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Users" EntityType="DTS.JurnalModel.Store.Users" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Works" EntityType="DTS.JurnalModel.Store.Works" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="WorkTypes" EntityType="DTS.JurnalModel.Store.WorkTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Years" EntityType="DTS.JurnalModel.Store.Years" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FilterFilterItem" EntityType="DTS.JurnalModel.Store.FilterFilterItem" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_AreaIntervention" Association="DTS.JurnalModel.Store.FK_AreaIntervention">
+      <End Role="Areas" EntitySet="Areas" />
+      <End Role="Interventions" EntitySet="Interventions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InterventionDateHourDetails" Association="DTS.JurnalModel.Store.FK_InterventionDateHourDetails">
+      <End Role="DateHourDetails" EntitySet="DateHourDetails" />
+      <End Role="Interventions" EntitySet="Interventions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FilterGroupFilter" Association="DTS.JurnalModel.Store.FK_FilterGroupFilter">
+      <End Role="FilterGroups" EntitySet="FilterGroups" />
+      <End Role="Filters" EntitySet="Filters" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FilterFilterType" Association="DTS.JurnalModel.Store.FK_FilterFilterType">
+      <End Role="FilterTypes" EntitySet="FilterTypes" />
+      <End Role="Filters" EntitySet="Filters" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InterventionLocation" Association="DTS.JurnalModel.Store.FK_InterventionLocation">
+      <End Role="Locations" EntitySet="Locations" />
+      <End Role="Interventions" EntitySet="Interventions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InterventionWork" Association="DTS.JurnalModel.Store.FK_InterventionWork">
+      <End Role="Works" EntitySet="Works" />
+      <End Role="Interventions" EntitySet="Interventions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MaterialIntervention" Association="DTS.JurnalModel.Store.FK_MaterialIntervention">
+      <End Role="Materials" EntitySet="Materials" />
+      <End Role="Interventions" EntitySet="Interventions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MonthIntervention" Association="DTS.JurnalModel.Store.FK_MonthIntervention">
+      <End Role="Months" EntitySet="Months" />
+      <End Role="Interventions" EntitySet="Interventions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PatientIntervention" Association="DTS.JurnalModel.Store.FK_PatientIntervention">
+      <End Role="Patients" EntitySet="Patients" />
+      <End Role="Interventions" EntitySet="Interventions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TechnicianIntervention" Association="DTS.JurnalModel.Store.FK_TechnicianIntervention">
+      <End Role="Technicians" EntitySet="Technicians" />
+      <End Role="Interventions" EntitySet="Interventions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_YearIntervention" Association="DTS.JurnalModel.Store.FK_YearIntervention">
+      <End Role="Years" EntitySet="Years" />
+      <End Role="Interventions" EntitySet="Interventions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MaterialType" Association="DTS.JurnalModel.Store.FK_MaterialType">
+      <End Role="Materials" EntitySet="Materials" />
+      <End Role="Types" EntitySet="Types" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserPatient" Association="DTS.JurnalModel.Store.FK_UserPatient">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Patients" EntitySet="Patients" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WorkWorkType" Association="DTS.JurnalModel.Store.FK_WorkWorkType">
+      <End Role="Works" EntitySet="Works" />
+      <End Role="WorkTypes" EntitySet="WorkTypes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FilterFilterItem_Filters" Association="DTS.JurnalModel.Store.FK_FilterFilterItem_Filters">
+      <End Role="Filters" EntitySet="Filters" />
+      <End Role="FilterFilterItem" EntitySet="FilterFilterItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FilterFilterItem_FilterItems" Association="DTS.JurnalModel.Store.FK_FilterFilterItem_FilterItems">
+      <End Role="FilterItems" EntitySet="FilterItems" />
+      <End Role="FilterFilterItem" EntitySet="FilterFilterItem" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Areas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="4000" />
+    <Property Name="WasDeleted" Type="bit" Nullable="true" />
+  </EntityType>
+  <EntityType Name="DateHourDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StartHour" Type="datetime" Nullable="false" />
+    <Property Name="EndingHour" Type="datetime" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="Duration" Type="bigint" Nullable="true" />
+    <Property Name="MiliTime" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DentalPaymentInfoes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="TotalRevenue" Type="float" Nullable="false" />
+    <Property Name="TotalPercent" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FilterGroups">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="4000" />
+    <Property Name="StartDate" Type="datetime" Nullable="false" />
+    <Property Name="EndDate" Type="datetime" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsIntervalActive" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FilterItems">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="4000" />
+  </EntityType>
+  <EntityType Name="Filters">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="FilterGroup_Id" Type="int" Nullable="false" />
+    <Property Name="FilterType_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FilterTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="4000" />
+  </EntityType>
+  <EntityType Name="IntervalInfoes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TotalRevenue" Type="float" Nullable="false" />
+    <Property Name="TotalPercent" Type="float" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Interventions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Observation" Type="nvarchar" Nullable="true" MaxLength="4000" />
+    <Property Name="Number" Type="int" Nullable="false" />
+    <Property Name="Revenue" Type="float" Nullable="false" />
+    <Property Name="Percent" Type="float" Nullable="false" />
+    <Property Name="Patient_id" Type="int" Nullable="false" />
+    <Property Name="Location_Id" Type="int" Nullable="true" />
+    <Property Name="Material_Id" Type="int" Nullable="true" />
+    <Property Name="DateHourDetail_Id" Type="int" Nullable="false" />
+    <Property Name="Area_Id" Type="int" Nullable="true" />
+    <Property Name="Work_Id" Type="int" Nullable="true" />
+    <Property Name="Year_Id" Type="int" Nullable="false" />
+    <Property Name="Month_Id" Type="int" Nullable="false" />
+    <Property Name="WasPayedByDental" Type="bit" Nullable="true" />
+    <Property Name="TechnicianId" Type="int" Nullable="true" />
+    <Property Name="MaterialCost" Type="float" Nullable="true" />
+    <Property Name="IsSelected" Type="bit" Nullable="false" />
+    <Property Name="Remainder" Type="float" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Locations">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="4000" />
+    <Property Name="WasDeleted" Type="bit" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Materials">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="4000" />
+    <Property Name="Cost" Type="float" Nullable="false" />
+    <Property Name="WasDeleted" Type="bit" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Months">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MOnthNumber" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Patients">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" Nullable="true" MaxLength="100" />
+    <Property Name="surname" Type="nvarchar" Nullable="true" MaxLength="100" />
+    <Property Name="Address" Type="nvarchar" Nullable="true" MaxLength="100" />
+    <Property Name="City" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="Phone" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="BirthDate" Type="datetime" Nullable="true" />
+    <Property Name="Street" Type="nvarchar" Nullable="true" MaxLength="4000" />
+    <Property Name="Block" Type="nvarchar" Nullable="true" MaxLength="4000" />
+    <Property Name="Job" Type="nvarchar" Nullable="true" MaxLength="4000" />
+    <Property Name="StreetNumber" Type="nvarchar" Nullable="true" MaxLength="4000" />
+    <Property Name="Ocupation" Type="nvarchar" Nullable="true" MaxLength="4000" />
+    <Property Name="Country" Type="nvarchar" Nullable="true" MaxLength="4000" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProgramInfoes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ExportFileName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LastFileDateImport" Type="datetime" Nullable="false" />
+    <Property Name="LastAddedInterventionDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Technicians">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="WasDeleted" Type="bit" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Types">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Cost" Type="float" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Material_Id" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="username" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="password" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="appInfo" Type="nvarchar(max)" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Works">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="4000" />
+    <Property Name="Cost" Type="float" Nullable="false" />
+    <Property Name="Percent" Type="float" Nullable="true" />
+    <Property Name="IncludedINFinancial" Type="bit" Nullable="true" />
+    <Property Name="WasDeleted" Type="bit" Nullable="true" />
+  </EntityType>
+  <EntityType Name="WorkTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Cost" Type="float" Nullable="false" />
+    <Property Name="Percent" Type="float" Nullable="false" />
+    <Property Name="Work_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Years">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="YearNb" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FilterFilterItem">
+    <Key>
+      <PropertyRef Name="Filters_Id" />
+      <PropertyRef Name="FilterItems_Id" />
+    </Key>
+    <Property Name="Filters_Id" Type="int" Nullable="false" />
+    <Property Name="FilterItems_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_AreaIntervention">
+    <End Role="Areas" Type="DTS.JurnalModel.Store.Areas" Multiplicity="0..1" />
+    <End Role="Interventions" Type="DTS.JurnalModel.Store.Interventions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Areas">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Interventions">
+        <PropertyRef Name="Area_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InterventionDateHourDetails">
+    <End Role="DateHourDetails" Type="DTS.JurnalModel.Store.DateHourDetails" Multiplicity="1" />
+    <End Role="Interventions" Type="DTS.JurnalModel.Store.Interventions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DateHourDetails">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Interventions">
+        <PropertyRef Name="DateHourDetail_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FilterGroupFilter">
+    <End Role="FilterGroups" Type="DTS.JurnalModel.Store.FilterGroups" Multiplicity="1" />
+    <End Role="Filters" Type="DTS.JurnalModel.Store.Filters" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FilterGroups">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Filters">
+        <PropertyRef Name="FilterGroup_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FilterFilterType">
+    <End Role="FilterTypes" Type="DTS.JurnalModel.Store.FilterTypes" Multiplicity="1" />
+    <End Role="Filters" Type="DTS.JurnalModel.Store.Filters" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FilterTypes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Filters">
+        <PropertyRef Name="FilterType_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InterventionLocation">
+    <End Role="Locations" Type="DTS.JurnalModel.Store.Locations" Multiplicity="0..1" />
+    <End Role="Interventions" Type="DTS.JurnalModel.Store.Interventions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Locations">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Interventions">
+        <PropertyRef Name="Location_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InterventionWork">
+    <End Role="Works" Type="DTS.JurnalModel.Store.Works" Multiplicity="0..1" />
+    <End Role="Interventions" Type="DTS.JurnalModel.Store.Interventions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Works">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Interventions">
+        <PropertyRef Name="Work_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MaterialIntervention">
+    <End Role="Materials" Type="DTS.JurnalModel.Store.Materials" Multiplicity="0..1" />
+    <End Role="Interventions" Type="DTS.JurnalModel.Store.Interventions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Materials">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Interventions">
+        <PropertyRef Name="Material_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MonthIntervention">
+    <End Role="Months" Type="DTS.JurnalModel.Store.Months" Multiplicity="1" />
+    <End Role="Interventions" Type="DTS.JurnalModel.Store.Interventions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Months">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Interventions">
+        <PropertyRef Name="Month_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PatientIntervention">
+    <End Role="Patients" Type="DTS.JurnalModel.Store.Patients" Multiplicity="1" />
+    <End Role="Interventions" Type="DTS.JurnalModel.Store.Interventions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Patients">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Interventions">
+        <PropertyRef Name="Patient_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TechnicianIntervention">
+    <End Role="Technicians" Type="DTS.JurnalModel.Store.Technicians" Multiplicity="0..1" />
+    <End Role="Interventions" Type="DTS.JurnalModel.Store.Interventions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Technicians">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Interventions">
+        <PropertyRef Name="TechnicianId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_YearIntervention">
+    <End Role="Years" Type="DTS.JurnalModel.Store.Years" Multiplicity="1" />
+    <End Role="Interventions" Type="DTS.JurnalModel.Store.Interventions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Years">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Interventions">
+        <PropertyRef Name="Year_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MaterialType">
+    <End Role="Materials" Type="DTS.JurnalModel.Store.Materials" Multiplicity="0..1" />
+    <End Role="Types" Type="DTS.JurnalModel.Store.Types" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Materials">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Types">
+        <PropertyRef Name="Material_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserPatient">
+    <End Role="Users" Type="DTS.JurnalModel.Store.Users" Multiplicity="1" />
+    <End Role="Patients" Type="DTS.JurnalModel.Store.Patients" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Patients">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WorkWorkType">
+    <End Role="Works" Type="DTS.JurnalModel.Store.Works" Multiplicity="1" />
+    <End Role="WorkTypes" Type="DTS.JurnalModel.Store.WorkTypes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Works">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="WorkTypes">
+        <PropertyRef Name="Work_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FilterFilterItem_Filters">
+    <End Role="Filters" Type="DTS.JurnalModel.Store.Filters" Multiplicity="1" />
+    <End Role="FilterFilterItem" Type="DTS.JurnalModel.Store.FilterFilterItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Filters">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FilterFilterItem">
+        <PropertyRef Name="Filters_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FilterFilterItem_FilterItems">
+    <End Role="FilterFilterItem" Type="DTS.JurnalModel.Store.FilterFilterItem" Multiplicity="*" />
+    <End Role="FilterItems" Type="DTS.JurnalModel.Store.FilterItems" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="FilterItems">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FilterFilterItem">
+        <PropertyRef Name="FilterItems_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="DTS.JurnalModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -536,7 +510,6 @@
           <EntitySet Name="IntervalInfoes" EntityType="DTS.JurnalModel.IntervalInfo" />
           <EntitySet Name="Interventions" EntityType="DTS.JurnalModel.Intervention" />
           <EntitySet Name="Locations" EntityType="DTS.JurnalModel.Location" />
-          <EntitySet Name="MACs" EntityType="DTS.JurnalModel.MAC" />
           <EntitySet Name="Materials" EntityType="DTS.JurnalModel.Material" />
           <EntitySet Name="Months" EntityType="DTS.JurnalModel.Month" />
           <EntitySet Name="Patients" EntityType="DTS.JurnalModel.Patient" />
@@ -590,10 +563,6 @@
           <AssociationSet Name="FK_YearIntervention" Association="DTS.JurnalModel.FK_YearIntervention">
             <End Role="Years" EntitySet="Years" />
             <End Role="Interventions" EntitySet="Interventions" />
-          </AssociationSet>
-          <AssociationSet Name="FK_UserMAC" Association="DTS.JurnalModel.FK_UserMAC">
-            <End Role="Users" EntitySet="Users" />
-            <End Role="MACs" EntitySet="MACs" />
           </AssociationSet>
           <AssociationSet Name="FK_MaterialType" Association="DTS.JurnalModel.FK_MaterialType">
             <End Role="Materials" EntitySet="Materials" />
@@ -734,15 +703,6 @@
           <Property Name="WasDeleted" Type="Boolean" />
           <NavigationProperty Name="Interventions" Relationship="DTS.JurnalModel.FK_InterventionLocation" FromRole="Locations" ToRole="Interventions" />
         </EntityType>
-        <EntityType Name="MAC">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
-          <Property Name="macId" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
-          <Property Name="User_Id" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="User" Relationship="DTS.JurnalModel.FK_UserMAC" FromRole="MACs" ToRole="Users" />
-        </EntityType>
         <EntityType Name="Material">
           <Key>
             <PropertyRef Name="Id" />
@@ -820,7 +780,6 @@
           <Property Name="username" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
           <Property Name="password" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
           <Property Name="appInfo" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
-          <NavigationProperty Name="MACs" Relationship="DTS.JurnalModel.FK_UserMAC" FromRole="Users" ToRole="MACs" />
           <NavigationProperty Name="Patients" Relationship="DTS.JurnalModel.FK_UserPatient" FromRole="Users" ToRole="Patients" />
         </EntityType>
         <EntityType Name="Work">
@@ -987,18 +946,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_UserMAC">
-          <End Role="Users" Type="DTS.JurnalModel.User" Multiplicity="1" />
-          <End Role="MACs" Type="DTS.JurnalModel.MAC" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Users">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="MACs">
-              <PropertyRef Name="User_Id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_MaterialType">
           <End Role="Materials" Type="DTS.JurnalModel.Material" Multiplicity="0..1" />
           <End Role="Types" Type="DTS.JurnalModel.Type" Multiplicity="*" />
@@ -1043,251 +990,241 @@
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
-      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="DTSJurnalModelStoreContainer" CdmEntityContainer="dsaEntities">
-          <EntitySetMapping Name="Areas">
-            <EntityTypeMapping TypeName="DTS.JurnalModel.Area">
-              <MappingFragment StoreEntitySet="Areas">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="WasDeleted" ColumnName="WasDeleted" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="DateHourDetails">
-            <EntityTypeMapping TypeName="DTS.JurnalModel.DateHourDetail">
-              <MappingFragment StoreEntitySet="DateHourDetails">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="StartHour" ColumnName="StartHour" />
-                <ScalarProperty Name="EndingHour" ColumnName="EndingHour" />
-                <ScalarProperty Name="Date" ColumnName="Date" />
-                <ScalarProperty Name="Duration" ColumnName="Duration" />
-                <ScalarProperty Name="MiliTime" ColumnName="MiliTime" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="DentalPaymentInfoes">
-            <EntityTypeMapping TypeName="DTS.JurnalModel.DentalPaymentInfo">
-              <MappingFragment StoreEntitySet="DentalPaymentInfoes">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="Date" ColumnName="Date" />
-                <ScalarProperty Name="TotalRevenue" ColumnName="TotalRevenue" />
-                <ScalarProperty Name="TotalPercent" ColumnName="TotalPercent" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="FilterGroups">
-            <EntityTypeMapping TypeName="DTS.JurnalModel.FilterGroup">
-              <MappingFragment StoreEntitySet="FilterGroups">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
-                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
-                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
-                <ScalarProperty Name="IsIntervalActive" ColumnName="IsIntervalActive" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="FilterItems">
-            <EntityTypeMapping TypeName="DTS.JurnalModel.FilterItem">
-              <MappingFragment StoreEntitySet="FilterItems">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Filters">
-            <EntityTypeMapping TypeName="DTS.JurnalModel.Filter">
-              <MappingFragment StoreEntitySet="Filters">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
-                <ScalarProperty Name="FilterGroup_Id" ColumnName="FilterGroup_Id" />
-                <ScalarProperty Name="FilterType_Id" ColumnName="FilterType_Id" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="FilterTypes">
-            <EntityTypeMapping TypeName="DTS.JurnalModel.FilterType">
-              <MappingFragment StoreEntitySet="FilterTypes">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="IntervalInfoes">
-            <EntityTypeMapping TypeName="DTS.JurnalModel.IntervalInfo">
-              <MappingFragment StoreEntitySet="IntervalInfoes">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="TotalRevenue" ColumnName="TotalRevenue" />
-                <ScalarProperty Name="TotalPercent" ColumnName="TotalPercent" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Interventions">
-            <EntityTypeMapping TypeName="DTS.JurnalModel.Intervention">
-              <MappingFragment StoreEntitySet="Interventions">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="Observation" ColumnName="Observation" />
-                <ScalarProperty Name="Number" ColumnName="Number" />
-                <ScalarProperty Name="Revenue" ColumnName="Revenue" />
-                <ScalarProperty Name="Percent" ColumnName="Percent" />
-                <ScalarProperty Name="Patient_id" ColumnName="Patient_id" />
-                <ScalarProperty Name="Location_Id" ColumnName="Location_Id" />
-                <ScalarProperty Name="Material_Id" ColumnName="Material_Id" />
-                <ScalarProperty Name="DateHourDetail_Id" ColumnName="DateHourDetail_Id" />
-                <ScalarProperty Name="Area_Id" ColumnName="Area_Id" />
-                <ScalarProperty Name="Work_Id" ColumnName="Work_Id" />
-                <ScalarProperty Name="Year_Id" ColumnName="Year_Id" />
-                <ScalarProperty Name="Month_Id" ColumnName="Month_Id" />
-                <ScalarProperty Name="WasPayedByDental" ColumnName="WasPayedByDental" />
-                <ScalarProperty Name="TechnicianId" ColumnName="TechnicianId" />
-                <ScalarProperty Name="MaterialCost" ColumnName="MaterialCost" />
-                <ScalarProperty Name="IsSelected" ColumnName="IsSelected" />
-                <ScalarProperty Name="Remainder" ColumnName="Remainder" />
-                <ScalarProperty Name="UserId" ColumnName="UserId" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Locations">
-            <EntityTypeMapping TypeName="DTS.JurnalModel.Location">
-              <MappingFragment StoreEntitySet="Locations">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="WasDeleted" ColumnName="WasDeleted" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="MACs">
-            <EntityTypeMapping TypeName="DTS.JurnalModel.MAC">
-              <MappingFragment StoreEntitySet="MACs">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="macId" ColumnName="macId" />
-                <ScalarProperty Name="User_Id" ColumnName="User_Id" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Materials">
-            <EntityTypeMapping TypeName="DTS.JurnalModel.Material">
-              <MappingFragment StoreEntitySet="Materials">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="Cost" ColumnName="Cost" />
-                <ScalarProperty Name="WasDeleted" ColumnName="WasDeleted" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Months">
-            <EntityTypeMapping TypeName="DTS.JurnalModel.Month">
-              <MappingFragment StoreEntitySet="Months">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="MOnthNumber" ColumnName="MOnthNumber" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Patients">
-            <EntityTypeMapping TypeName="DTS.JurnalModel.Patient">
-              <MappingFragment StoreEntitySet="Patients">
-                <ScalarProperty Name="id" ColumnName="id" />
-                <ScalarProperty Name="name" ColumnName="name" />
-                <ScalarProperty Name="surname" ColumnName="surname" />
-                <ScalarProperty Name="Address" ColumnName="Address" />
-                <ScalarProperty Name="City" ColumnName="City" />
-                <ScalarProperty Name="Phone" ColumnName="Phone" />
-                <ScalarProperty Name="Email" ColumnName="Email" />
-                <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
-                <ScalarProperty Name="Street" ColumnName="Street" />
-                <ScalarProperty Name="Block" ColumnName="Block" />
-                <ScalarProperty Name="Job" ColumnName="Job" />
-                <ScalarProperty Name="StreetNumber" ColumnName="StreetNumber" />
-                <ScalarProperty Name="Ocupation" ColumnName="Ocupation" />
-                <ScalarProperty Name="Country" ColumnName="Country" />
-                <ScalarProperty Name="UserId" ColumnName="UserId" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="ProgramInfoes">
-            <EntityTypeMapping TypeName="DTS.JurnalModel.ProgramInfo">
-              <MappingFragment StoreEntitySet="ProgramInfoes">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="ExportFileName" ColumnName="ExportFileName" />
-                <ScalarProperty Name="LastFileDateImport" ColumnName="LastFileDateImport" />
-                <ScalarProperty Name="LastAddedInterventionDate" ColumnName="LastAddedInterventionDate" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Technicians">
-            <EntityTypeMapping TypeName="DTS.JurnalModel.Technician">
-              <MappingFragment StoreEntitySet="Technicians">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="WasDeleted" ColumnName="WasDeleted" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Types">
-            <EntityTypeMapping TypeName="DTS.JurnalModel.Type">
-              <MappingFragment StoreEntitySet="Types">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="Cost" ColumnName="Cost" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="Material_Id" ColumnName="Material_Id" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Users">
-            <EntityTypeMapping TypeName="DTS.JurnalModel.User">
-              <MappingFragment StoreEntitySet="Users">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="username" ColumnName="username" />
-                <ScalarProperty Name="password" ColumnName="password" />
-                <ScalarProperty Name="appInfo" ColumnName="appInfo" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Works">
-            <EntityTypeMapping TypeName="DTS.JurnalModel.Work">
-              <MappingFragment StoreEntitySet="Works">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="Cost" ColumnName="Cost" />
-                <ScalarProperty Name="Percent" ColumnName="Percent" />
-                <ScalarProperty Name="IncludedINFinancial" ColumnName="IncludedINFinancial" />
-                <ScalarProperty Name="WasDeleted" ColumnName="WasDeleted" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="WorkTypes">
-            <EntityTypeMapping TypeName="DTS.JurnalModel.WorkType">
-              <MappingFragment StoreEntitySet="WorkTypes">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="Cost" ColumnName="Cost" />
-                <ScalarProperty Name="Percent" ColumnName="Percent" />
-                <ScalarProperty Name="Work_Id" ColumnName="Work_Id" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Years">
-            <EntityTypeMapping TypeName="DTS.JurnalModel.Year">
-              <MappingFragment StoreEntitySet="Years">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="YearNb" ColumnName="YearNb" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <AssociationSetMapping Name="FilterFilterItem" TypeName="DTS.JurnalModel.FilterFilterItem" StoreEntitySet="FilterFilterItem">
-            <EndProperty Name="Filters">
-              <ScalarProperty Name="Id" ColumnName="Filters_Id" />
-            </EndProperty>
-            <EndProperty Name="FilterItems">
-              <ScalarProperty Name="Id" ColumnName="FilterItems_Id" />
-            </EndProperty>
-          </AssociationSetMapping>
-        </EntityContainerMapping>
-      </Mapping>
-    </edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DTSJurnalModelStoreContainer" CdmEntityContainer="dsaEntities">
+    <EntitySetMapping Name="Areas">
+      <EntityTypeMapping TypeName="IsTypeOf(DTS.JurnalModel.Area)">
+        <MappingFragment StoreEntitySet="Areas">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="WasDeleted" ColumnName="WasDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DateHourDetails">
+      <EntityTypeMapping TypeName="IsTypeOf(DTS.JurnalModel.DateHourDetail)">
+        <MappingFragment StoreEntitySet="DateHourDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="StartHour" ColumnName="StartHour" />
+          <ScalarProperty Name="EndingHour" ColumnName="EndingHour" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="MiliTime" ColumnName="MiliTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DentalPaymentInfoes">
+      <EntityTypeMapping TypeName="IsTypeOf(DTS.JurnalModel.DentalPaymentInfo)">
+        <MappingFragment StoreEntitySet="DentalPaymentInfoes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="TotalRevenue" ColumnName="TotalRevenue" />
+          <ScalarProperty Name="TotalPercent" ColumnName="TotalPercent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FilterGroups">
+      <EntityTypeMapping TypeName="IsTypeOf(DTS.JurnalModel.FilterGroup)">
+        <MappingFragment StoreEntitySet="FilterGroups">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsIntervalActive" ColumnName="IsIntervalActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FilterItems">
+      <EntityTypeMapping TypeName="IsTypeOf(DTS.JurnalModel.FilterItem)">
+        <MappingFragment StoreEntitySet="FilterItems">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Filters">
+      <EntityTypeMapping TypeName="IsTypeOf(DTS.JurnalModel.Filter)">
+        <MappingFragment StoreEntitySet="Filters">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="FilterGroup_Id" ColumnName="FilterGroup_Id" />
+          <ScalarProperty Name="FilterType_Id" ColumnName="FilterType_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FilterTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(DTS.JurnalModel.FilterType)">
+        <MappingFragment StoreEntitySet="FilterTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IntervalInfoes">
+      <EntityTypeMapping TypeName="IsTypeOf(DTS.JurnalModel.IntervalInfo)">
+        <MappingFragment StoreEntitySet="IntervalInfoes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TotalRevenue" ColumnName="TotalRevenue" />
+          <ScalarProperty Name="TotalPercent" ColumnName="TotalPercent" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Interventions">
+      <EntityTypeMapping TypeName="IsTypeOf(DTS.JurnalModel.Intervention)">
+        <MappingFragment StoreEntitySet="Interventions">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Observation" ColumnName="Observation" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="Revenue" ColumnName="Revenue" />
+          <ScalarProperty Name="Percent" ColumnName="Percent" />
+          <ScalarProperty Name="Patient_id" ColumnName="Patient_id" />
+          <ScalarProperty Name="Location_Id" ColumnName="Location_Id" />
+          <ScalarProperty Name="Material_Id" ColumnName="Material_Id" />
+          <ScalarProperty Name="DateHourDetail_Id" ColumnName="DateHourDetail_Id" />
+          <ScalarProperty Name="Area_Id" ColumnName="Area_Id" />
+          <ScalarProperty Name="Work_Id" ColumnName="Work_Id" />
+          <ScalarProperty Name="Year_Id" ColumnName="Year_Id" />
+          <ScalarProperty Name="Month_Id" ColumnName="Month_Id" />
+          <ScalarProperty Name="WasPayedByDental" ColumnName="WasPayedByDental" />
+          <ScalarProperty Name="TechnicianId" ColumnName="TechnicianId" />
+          <ScalarProperty Name="MaterialCost" ColumnName="MaterialCost" />
+          <ScalarProperty Name="IsSelected" ColumnName="IsSelected" />
+          <ScalarProperty Name="Remainder" ColumnName="Remainder" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Locations">
+      <EntityTypeMapping TypeName="IsTypeOf(DTS.JurnalModel.Location)">
+        <MappingFragment StoreEntitySet="Locations">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="WasDeleted" ColumnName="WasDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Materials">
+      <EntityTypeMapping TypeName="IsTypeOf(DTS.JurnalModel.Material)">
+        <MappingFragment StoreEntitySet="Materials">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="WasDeleted" ColumnName="WasDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Months">
+      <EntityTypeMapping TypeName="IsTypeOf(DTS.JurnalModel.Month)">
+        <MappingFragment StoreEntitySet="Months">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MOnthNumber" ColumnName="MOnthNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Patients">
+      <EntityTypeMapping TypeName="IsTypeOf(DTS.JurnalModel.Patient)">
+        <MappingFragment StoreEntitySet="Patients">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="surname" ColumnName="surname" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="Street" ColumnName="Street" />
+          <ScalarProperty Name="Block" ColumnName="Block" />
+          <ScalarProperty Name="Job" ColumnName="Job" />
+          <ScalarProperty Name="StreetNumber" ColumnName="StreetNumber" />
+          <ScalarProperty Name="Ocupation" ColumnName="Ocupation" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProgramInfoes">
+      <EntityTypeMapping TypeName="IsTypeOf(DTS.JurnalModel.ProgramInfo)">
+        <MappingFragment StoreEntitySet="ProgramInfoes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ExportFileName" ColumnName="ExportFileName" />
+          <ScalarProperty Name="LastFileDateImport" ColumnName="LastFileDateImport" />
+          <ScalarProperty Name="LastAddedInterventionDate" ColumnName="LastAddedInterventionDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Technicians">
+      <EntityTypeMapping TypeName="IsTypeOf(DTS.JurnalModel.Technician)">
+        <MappingFragment StoreEntitySet="Technicians">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="WasDeleted" ColumnName="WasDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Types">
+      <EntityTypeMapping TypeName="IsTypeOf(DTS.JurnalModel.Type)">
+        <MappingFragment StoreEntitySet="Types">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Material_Id" ColumnName="Material_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="IsTypeOf(DTS.JurnalModel.User)">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="appInfo" ColumnName="appInfo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Works">
+      <EntityTypeMapping TypeName="IsTypeOf(DTS.JurnalModel.Work)">
+        <MappingFragment StoreEntitySet="Works">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="Percent" ColumnName="Percent" />
+          <ScalarProperty Name="IncludedINFinancial" ColumnName="IncludedINFinancial" />
+          <ScalarProperty Name="WasDeleted" ColumnName="WasDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WorkTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(DTS.JurnalModel.WorkType)">
+        <MappingFragment StoreEntitySet="WorkTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="Percent" ColumnName="Percent" />
+          <ScalarProperty Name="Work_Id" ColumnName="Work_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Years">
+      <EntityTypeMapping TypeName="IsTypeOf(DTS.JurnalModel.Year)">
+        <MappingFragment StoreEntitySet="Years">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="YearNb" ColumnName="YearNb" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FilterFilterItem" TypeName="DTS.JurnalModel.FilterFilterItem" StoreEntitySet="FilterFilterItem">
+      <EndProperty Name="Filters">
+        <ScalarProperty Name="Id" ColumnName="Filters_Id" />
+      </EndProperty>
+      <EndProperty Name="FilterItems">
+        <ScalarProperty Name="Id" ColumnName="FilterItems_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
   </edmx:Runtime>
   <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
   <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">

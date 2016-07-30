@@ -16,7 +16,6 @@ namespace DTS.Jurnal.Database.SQLServer.Module
     {
         public User()
         {
-            this.MACs = new HashSet<MAC>();
             this.Patients = new HashSet<Patient>();
         }
     
@@ -25,7 +24,6 @@ namespace DTS.Jurnal.Database.SQLServer.Module
         public string password { get; set; }
         public string appInfo { get; set; }
     
-        public virtual ICollection<MAC> MACs { get; set; }
         public virtual ICollection<Patient> Patients { get; set; }
     }
 }

@@ -82,7 +82,7 @@ namespace DTS.Jurnal.Database.SQLServer.Module.Helpers
                         {
                             YearNb = localIntervention.Date.Year
                         };
-                        model.Years.Remove(year);
+                        model.Years.Add(year);
                         model.SaveChanges();
                     }
 
@@ -106,7 +106,7 @@ namespace DTS.Jurnal.Database.SQLServer.Module.Helpers
                     intervention.Remainder = localIntervention.Remainder;
                     intervention.IsSelected = localIntervention.IsSelected;
                     intervention.MaterialCost = localIntervention.MaterialCost;
-                    model.Interventions.Remove(intervention);
+                    model.Interventions.Add(intervention);
                     intervention.UserId = userId;
 
                     model.SaveChanges();
@@ -233,7 +233,7 @@ namespace DTS.Jurnal.Database.SQLServer.Module.Helpers
 
 
         #region Login
-        
+
 
         public LoginResponse Login(string username, string password)
         {
@@ -243,45 +243,23 @@ namespace DTS.Jurnal.Database.SQLServer.Module.Helpers
                 var currentUser = dsaModel.Users.FirstOrDefault(item => item.username == username);
                 if (currentUser != null)
                 {
-                    bool shouldContinue = false;
-                    foreach (NetworkInterface nic in NetworkInterface.GetAllNetworkInterfaces())
+                    if (currentUser.password == EncryptString(password))
                     {
-                        if (nic.NetworkInterfaceType.ToString() == "Ethernet" ||
-                            nic.NetworkInterfaceType.ToString().ToLower().Contains("wireless"))
+                        loginResponse.Description = "";
+                        loginResponse.Status = LoginStatus.Successful;
+                        loginResponse.UserId = currentUser.Id;
+                        loginResponse.Username = currentUser.username;
+                        XmlSerializerHelper.SaveToXml(ViewConstants.appDataPath, new LocalUser()
                         {
-                            string ecryptedMac = EncryptString(nic.GetPhysicalAddress().ToString());
-                            if (currentUser.MACs.Any(item => item.macId == ecryptedMac))
-                            {
-                                shouldContinue = true;
-                                break;
-                            }
-                        }
-                    }
-                    if (shouldContinue)
-                    {
-                        if (currentUser.password == EncryptString(password))
-                        {
-                            loginResponse.Description = "";
-                            loginResponse.Status = LoginStatus.Successful;
-                            loginResponse.UserId = currentUser.Id;
-                            loginResponse.Username = currentUser.username;
-                            XmlSerializerHelper.SaveToXml(ViewConstants.appDataPath, new LocalUser()
-                            {
-                                Username = username
-                            });
-                        }
-                        else
-                        {
-                            loginResponse.Description = "Parola Gresita!";
-                            loginResponse.Status = LoginStatus.Unsuccessful;
-                        }
+                            Username = username
+                        });
                     }
                     else
                     {
-                        loginResponse.Description = "Pentru a folosi aplicatia aveti nevoie de licenta!";
+                        loginResponse.Description = "Parola Gresita!";
                         loginResponse.Status = LoginStatus.Unsuccessful;
-                        return loginResponse;
                     }
+
                 }
                 else
                 {

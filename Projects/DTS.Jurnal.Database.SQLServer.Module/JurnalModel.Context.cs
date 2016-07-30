@@ -35,7 +35,6 @@ namespace DTS.Jurnal.Database.SQLServer.Module
         public DbSet<IntervalInfo> IntervalInfoes { get; set; }
         public DbSet<Intervention> Interventions { get; set; }
         public DbSet<Location> Locations { get; set; }
-        public DbSet<MAC> MACs { get; set; }
         public DbSet<Material> Materials { get; set; }
         public DbSet<Month> Months { get; set; }
         public DbSet<Patient> Patients { get; set; }

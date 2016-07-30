@@ -109,9 +109,6 @@
     <Compile Include="Location.cs">
       <DependentUpon>JurnalModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="MAC.cs">
-      <DependentUpon>JurnalModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Material.cs">
       <DependentUpon>JurnalModel.tt</DependentUpon>
     </Compile>
@@ -173,6 +170,9 @@
       <Project>{EDD4730D-BAC5-4D75-B556-C70C8BFD736B}</Project>
       <Name>DSA.Common.Infrastructure</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="JurnalModel.edmx.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

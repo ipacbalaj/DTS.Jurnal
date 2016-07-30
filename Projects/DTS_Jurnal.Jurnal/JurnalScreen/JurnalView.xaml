@@ -19,7 +19,7 @@
                 <RowDefinition Height="67"/>
             </Grid.RowDefinitions>
             <addInterventionTile:AddInterventionTileView MouseUp="UIElement_OnMouseUp" Margin="5 0 5 0" Grid.Row="0" DataContext="{Binding AddInterventionTileViewModel}"/>
-            <dxg:GridControl PreviewKeyDown="GridControlInt_OnPreviewKeyDown" ShowLoadingPanel="{Binding ShowLoadingPanel}" MouseLeave="GridControlInt_OnMouseLeave" LostMouseCapture="GridControlInt_OnLostMouseCapture" 
+            <dxg:GridControl PreviewKeyDown="GridControlInt_OnPreviewKeyDown" ShowLoadingPanel="{Binding ShowLoadingPanel}" MouseLeave="GridControlInt_OnMouseLeave"
                              Name="gridControlInt"  MaxHeight="1300"
                              Visibility="{Binding ContentVisibility}" 
                              Margin="5 0 5 0"

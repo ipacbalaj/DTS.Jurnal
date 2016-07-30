@@ -65,47 +65,7 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
         private readonly IEventAggregator eventAggregator;
         private readonly IUnityContainer unityContainer;
 
-        private List<InterventionModel> selectedInterventions;
-
-        public List<InterventionModel> SelectedInterventions
-        {
-            get { return selectedInterventions; }
-            set
-            {
-                if (value == selectedInterventions)
-                    return;
-                selectedInterventions = value;
-                OnPropertyChanged();
-            }
-        }
-
-        private ObservableCollection<InterventionModel> interventions = new ObservableCollection<InterventionModel>();
-
-        public ObservableCollection<InterventionModel> Interventions
-        {
-            get { return interventions; }
-            set
-            {
-                if (value == interventions)
-                    return;
-                interventions = value;
-                OnPropertyChanged();
-            }
-        }
-
-        private AddInterventionTileViewModel addInterventionTileViewModel;
-
-        public AddInterventionTileViewModel AddInterventionTileViewModel
-        {
-            get { return addInterventionTileViewModel; }
-            set
-            {
-                if (value == addInterventionTileViewModel)
-                    return;
-                addInterventionTileViewModel = value;
-                OnPropertyChanged();
-            }
-        }
+        #region Buttons
 
         private ActionButtonViewModel deleteDataButton;
 
@@ -163,6 +123,64 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
             }
         }
 
+        private ActionButtonViewModel exportSelectedButton;
+        public ActionButtonViewModel ExportSelectedButton
+        {
+            get { return exportSelectedButton; }
+            set
+            {
+                if (value == exportSelectedButton)
+                    return;
+                exportSelectedButton = value;
+                OnPropertyChanged();
+            }
+        }
+
+        #endregion Buttons
+
+        #region Lists
+
+        private List<InterventionModel> selectedInterventions;
+        public List<InterventionModel> SelectedInterventions
+        {
+            get { return selectedInterventions; }
+            set
+            {
+                if (value == selectedInterventions)
+                    return;
+                selectedInterventions = value;
+                OnPropertyChanged();
+            }
+        }
+
+        private ObservableCollection<InterventionModel> interventions = new ObservableCollection<InterventionModel>();
+        public ObservableCollection<InterventionModel> Interventions
+        {
+            get { return interventions; }
+            set
+            {
+                if (value == interventions)
+                    return;
+                interventions = value;
+                OnPropertyChanged();
+            }
+        }
+
+        private AddInterventionTileViewModel addInterventionTileViewModel;
+        public AddInterventionTileViewModel AddInterventionTileViewModel
+        {
+            get { return addInterventionTileViewModel; }
+            set
+            {
+                if (value == addInterventionTileViewModel)
+                    return;
+                addInterventionTileViewModel = value;
+                OnPropertyChanged();
+            }
+        }
+
+        #endregion Lists
+
         private InterventionModel selectedInterventionModel;
 
         public InterventionModel SelectedInterventionModel
@@ -179,7 +197,6 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
         }
 
         private bool showLoadingPanel = true;
-
         public bool ShowLoadingPanel
         {
             get { return showLoadingPanel; }
@@ -193,7 +210,6 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
         }
 
         private double totalSelected;
-
         public double TotalSelected
         {
             get { return totalSelected; }
@@ -207,7 +223,6 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
         }
 
         private double total;
-
         public double Total
         {
             get { return total; }
@@ -220,21 +235,7 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
             }
         }
 
-        private ActionButtonViewModel exportSelectedButton;
-        public ActionButtonViewModel ExportSelectedButton
-        {
-            get { return exportSelectedButton; }
-            set
-            {
-                if (value == exportSelectedButton)
-                    return;
-                exportSelectedButton = value;
-                OnPropertyChanged();
-            }
-        }
-
         private DateTime startingDate = DateTime.Now.AddMonths(-3);
-
         public DateTime StartingDate
         {
             get { return startingDate; }
@@ -385,28 +386,28 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
 
         public void ModifyPaymentStatus(InterventionModel rowintervention)
         {
-            var currentIntervention = Interventions.FirstOrDefault(item => item.Id == rowintervention.Id);
-            if (rowintervention.Remainder > 0 && !rowintervention.WasPayed)
-            {
-                DialogResult dialogResult = MessageBox.Show("Pacientul mai are de platit " + rowintervention.Remainder + " lei. Doriti sa setati manopera platita?", "Atentie", MessageBoxButtons.YesNo);
-                if (dialogResult == DialogResult.Yes)
-                {
-                    currentIntervention.ShouldSetPayed = true;
-                    currentIntervention.WasPayed = !rowintervention.WasPayed;
-                    currentIntervention.Remainder = 0;
-                    currentIntervention.ShouldSetPayed = false;
-                }
-                else if (dialogResult == DialogResult.No)
-                {
+            //            var currentIntervention = Interventions.FirstOrDefault(item => item.Id == rowintervention.Id);
+            //if (rowintervention.Remainder > 0 && !rowintervention.WasPayed)
+            //{
+            //    DialogResult dialogResult = MessageBox.Show("Pacientul mai are de platit " + rowintervention.Remainder + " lei. Doriti sa setati manopera platita?", "Atentie", MessageBoxButtons.YesNo);
+            //    if (dialogResult == DialogResult.Yes)
+            //    {
+            //        currentIntervention.ShouldSetPayed = true;
+            //        currentIntervention.WasPayed = !rowintervention.WasPayed;
+            //        currentIntervention.Remainder = 0;
+            //        currentIntervention.ShouldSetPayed = false;
+            //    }
+            //    else if (dialogResult == DialogResult.No)
+            //    {
 
-                }
-            }
-            else
-            {
-                currentIntervention.ShouldSetPayed = true;
-                currentIntervention.WasPayed = !rowintervention.WasPayed;
-                currentIntervention.ShouldSetPayed = false;
-            }
+            //    }
+            //}
+            //else
+            //{
+            //    currentIntervention.ShouldSetPayed = true;
+            //    currentIntervention.WasPayed = !rowintervention.WasPayed;
+            //    currentIntervention.ShouldSetPayed = false;
+            //}
             DatabaseHandler.Instance.SetInterventionPayed(rowintervention.Id, rowintervention.WasPayed);
         }
 
@@ -433,19 +434,19 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
 
         #endregion actions
 
-
         private bool initialized = false;
+
         private void UpdateJurnalScreen(Object anObj)
         {
             if (!initialized)
             {
                 InitData();
-                AddInterventionTileViewModel.InitData();
                 ClearSelection();
                 initialized = true;
             }
+            AddInterventionTileViewModel.InitData();
         }
-      
+
         private void SetTimer()
         {
             // Create a timer with a two second interval.
@@ -460,7 +461,6 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
         {
             ClearSelection();
         }
-
 
         public async void SetSelectedInverventionsPaymentStatus()
         {
@@ -511,6 +511,14 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
                 foreach (var selectedIntervention in SelectedInterventions)
                 {
                     selectedIntervention.IsSelected = isSelected;
+                    if (isSelected)
+                    {
+                        TotalSelected += selectedIntervention.Percent;
+                    }
+                    else
+                    {
+                        TotalSelected -= selectedIntervention.Percent;
+                    }
                 }
             }
             catch (Exception)
@@ -518,8 +526,6 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
                 MessageBox.Show("A intervenit o eroare la salvare.Timpul alocat de procesare a fost depasit");
             }
         }
-
- 
 
         #endregion Methods
     }

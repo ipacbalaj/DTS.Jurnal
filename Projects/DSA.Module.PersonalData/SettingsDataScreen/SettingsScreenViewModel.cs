@@ -247,11 +247,6 @@ namespace DSA.Module.PersonalData.SettingsDataScreen
             }
         }
 
-        private void InitButtons()
-        {
-
-        }
-
         private void InitSettings()
         {
             WorksTileListViewModel = new SettingsTileListViewModel(LocalCache.Instance.Works, this);

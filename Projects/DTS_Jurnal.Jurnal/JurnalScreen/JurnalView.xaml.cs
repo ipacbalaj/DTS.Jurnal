@@ -67,35 +67,9 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
             ((JurnalViewModel)DataContext).ClearSelectedRow();
         }
 
-        private void GridControlInt_OnLostMouseCapture(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void JurnalView_OnMouseLeave(object sender, MouseEventArgs e)
-        {
-            ((JurnalViewModel)DataContext).ClearSelectedRow();
-        }
-
         private void GridControlInt_OnMouseLeave(object sender, MouseEventArgs e)
         {
             ((JurnalViewModel)DataContext).ClearSelectedRow();
-        }
-
-        public void Print()
-        {
-
-        }
-
-        public void ShowPrintPreview()
-        {
-            DocumentPreviewWindow preview = new DocumentPreviewWindow();
-            PrintableControlLink link = new PrintableControlLink(gridControlInt.View as DevExpress.Xpf.Printing.IPrintableControl);
-            //            link.ExportServiceUri = "../ExportService1.svc";
-            LinkPreviewModel model = new LinkPreviewModel(link);
-            preview.Model = model;
-            link.CreateDocument(false);
-            preview.ShowDialog();
         }
 
         private void TableView_OnSelectionChanged(object sender, GridSelectionChangedEventArgs e)
@@ -125,9 +99,5 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
 
         }
 
-        public void Connect(int connectionId, object target)
-        {
-
-        }
     }
 }

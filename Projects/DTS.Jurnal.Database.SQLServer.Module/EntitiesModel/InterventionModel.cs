@@ -303,12 +303,6 @@ namespace DTS.Jurnal.Database.SQLServer.Module.EntitiesModel
             get { return remainder; }
             set
             {
-                //                if (value == remainder)
-                //                    return;
-                if (value == 0)
-                {
-                    WasPayed = true;
-                }
                 remainder = value;
                 OnPropertyChanged();
             }
@@ -320,8 +314,6 @@ namespace DTS.Jurnal.Database.SQLServer.Module.EntitiesModel
             get { return wasPayed; }
             set
             {
-                //                if (!LocalCache.Instance.InterventionLoaded || ShouldSetPayed)
-                //                {
                 wasPayed = value;
                 if (wasPayed)
                 {
@@ -331,8 +323,6 @@ namespace DTS.Jurnal.Database.SQLServer.Module.EntitiesModel
                 {
                     RowColorBrush = BackgroundColors.GridNotPayedColor;
                 }
-                //                    ShouldSetPayed = false;
-                //                }
                 OnPropertyChanged();
             }
         }

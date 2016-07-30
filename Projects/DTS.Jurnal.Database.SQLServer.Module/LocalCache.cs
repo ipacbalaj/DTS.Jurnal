@@ -127,8 +127,6 @@ namespace DSA.Database.Model
             // To copy a file to another location and 
             // overwrite the destination file if it already exists.
             System.IO.File.Copy(sourceFile, destFile, true);            
-
-
         }
 
         public void DeletePatient(int id)

@@ -448,9 +448,7 @@ namespace DTS_Jurnal.Jurnal.AddInterventionTile
                     modelIntervention.MaterialCost = materialCost;
                     if (CurrentRevenue.HasValue)
                     {
-                        modelIntervention.ShouldSetPayed = true;
                         modelIntervention.Remainder = revenue - CurrentRevenue.Value;
-                        modelIntervention.ShouldSetPayed = false;
                     }
                     else
                     {

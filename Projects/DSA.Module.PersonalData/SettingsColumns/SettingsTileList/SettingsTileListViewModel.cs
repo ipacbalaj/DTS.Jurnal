@@ -233,11 +233,6 @@ namespace DSA.Module.PersonalData.SettingsColumns.SettingsTileList
             WasChanged = true;
         }
 
-        //        public async void OnSave(int id, String name, double cost, double percent, bool includedINFinancial)
-        //        {
-        //           
-        //        }
-
         private void Search(string searchedWord)
         {
             searchedWord = searchedWord.ToLower();
@@ -286,36 +281,6 @@ namespace DSA.Module.PersonalData.SettingsColumns.SettingsTileList
 
             deletedSettingsIds = new List<int>();
             WasChanged = false;
-        }
-
-        private void GetUnableToDeleteItems(List<string> unableToDeleteNames, string name)
-        {
-            if (unableToDeleteNames.Count > 0)
-            {
-                //                List<SettingsTileViewModel> unableToDeleteItems = new List<SettingsTileViewModel>();
-                //                foreach (var id in unableToDeleteIds)
-                //                {
-                //                    unableToDeleteItems.Add(SettingsTileListModels.FirstOrDefault(item => item.Id == id));
-                //                }
-                string messagePred = "";
-                if (unableToDeleteNames.Count > 1)
-                {
-                    messagePred = " nu pot fi sterse . Exista interventii care depind de ele";
-                }
-                else
-                {
-                    messagePred = "nu poate fi sterarsa . Exista interventii care depind de ea";
-                }
-                //            string oneItem = "nu poate fi sterarsa . Exista interventii cu avand aceast ";
-                //            string multipleItems = "nu pot fi sterse . Exista interventii cu avand aceaste ";
-                string names = "";
-                foreach (var nameitem in unableToDeleteNames)
-                {
-                    names += nameitem + ",";
-
-                }
-                MessageBox.Show(name + " " + names + messagePred);
-            }
         }
 
         #endregion Methods

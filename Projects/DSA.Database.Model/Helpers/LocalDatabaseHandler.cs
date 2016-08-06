@@ -7,35 +7,19 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using DSA.Common.Infrastructure.Entities;
 using DSA.Common.Infrastructure.Helpers;
 using DSA.Common.Infrastructure.Login;
 using DSA.Common.Infrastructure.Styles;
 using DSA.Database.Model.EfSQlLite;
-using DSA.Database.Model.Entities.Local;
-using DTS.Jurnal.Database.Model.Entities.Local;
-using DTS.Jurnal.V3.Database.Module.Entities.Local;
-using DTS.Jurnal.V3.Database.Module.Helpers;
+using DTS.Common.DatabaseServer;
+using DTS.Common.DatabaseServer.EntitiesModel;
+using DTS.Common.DatabaseServer.EntitiesModel.Local;
 
 namespace DSA.Database.Model.Helpers
 {
-    public class DatabaseHandler
+    public class LocalDatabaseHandler : IDatabasehandler
     {
-        public enum InterventionsLoadType
-        {
-            All, ByDate
-        }
-
-        private static readonly DatabaseHandler instance = new DatabaseHandler();
-
-        public static DatabaseHandler Instance
-        {
-            get
-            {
-                return instance;
-            }
-        }
-
+        
         public List<LocalPatient> GetPatients(int userId)
         {
             using (dsaEntities coreModel = new dsaEntities())

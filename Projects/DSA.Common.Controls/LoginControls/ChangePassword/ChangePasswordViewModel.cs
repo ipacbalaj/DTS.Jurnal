@@ -7,8 +7,9 @@ using DSA.Common.Infrastructure.Helpers;
 using DSA.Common.Infrastructure.Prism.EventAggregator.Events;
 using DSA.Common.Infrastructure.Styles;
 using DSA.Common.Infrastructure.ViewModel;
-using DSA.Database.Model;
-using DTS.Jurnal.Database.SQLServer.Module.EntitiesModel.Local;
+using DTS.Common.BusinessLogic;
+using DTS.Common.DatabaseServer.EntitiesModel.Local;
+using DTS.Jurnal.Database.SQLServer.Module;
 using DTS.Jurnal.Database.SQLServer.Module.Helpers;
 using Microsoft.Practices.Prism.Commands;
 using Microsoft.Practices.Prism.Events;
@@ -301,7 +302,7 @@ namespace DSA.Common.Controls.LoginControls.ChangePassword
                 localUser.Username = Email;
                 localUser.Password = Password;
                 localUser.Id = LocalCache.Instance.LocalUser.Id;
-                DatabaseHandler.Instance.EditUser(localUser);
+                BusinessLogic.Instance.Databasehandler.EditUser(localUser);
                 CloseAction();
             }
             else

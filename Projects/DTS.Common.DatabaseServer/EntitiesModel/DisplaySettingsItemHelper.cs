@@ -1,8 +1,8 @@
 ﻿using DSA.Common.Infrastructure.ViewModel;
 
-namespace DTS.Jurnal.Database.Model.Entities
+namespace DTS.Common.DatabaseServer.EntitiesModel
 {
-    public class DisplaySettingsItemHelper:ViewModelBase
+    public class DisplaySettingsItemHelper : ViewModelBase
     {
         private string name;
         public string Name

@@ -155,4 +155,3 @@ E:\DTS\DTS.Jurnal.V5\Projects\DSA.Common.Infrastructure\obj\Debug\DSA.Common.Inf
 E:\DTS\DTS.Jurnal.V5\Projects\DSA.Common.Infrastructure\obj\Debug\DSA.Common.Infrastructure.g.resources
 E:\DTS\DTS.Jurnal.V5\Projects\DSA.Common.Infrastructure\obj\Debug\DSA.Common.Infrastructure.dll
 E:\DTS\DTS.Jurnal.V5\Projects\DSA.Common.Infrastructure\obj\Debug\DSA.Common.Infrastructure.pdb
-E:\DTS\DTS.Jurnal.V5\Projects\DSA.Common.Infrastructure\obj\Debug\DSA.Common.Infrastructure.csprojResolveAssemblyReference.cache

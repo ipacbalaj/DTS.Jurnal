@@ -59,17 +59,6 @@
     <Compile Include="DentalPaymentInfo.cs">
       <DependentUpon>JurnalModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="EntitiesModel\DisplaySettingsItemHelper.cs" />
-    <Compile Include="EntitiesModel\InterventionModel.cs" />
-    <Compile Include="EntitiesModel\Local\LocalIntervention.cs" />
-    <Compile Include="EntitiesModel\Local\LocalLocation.cs" />
-    <Compile Include="EntitiesModel\Local\LocalPatient.cs" />
-    <Compile Include="EntitiesModel\Local\LocalUser.cs" />
-    <Compile Include="EntitiesModel\Local\LocalWork.cs" />
-    <Compile Include="EntitiesModel\Local\SettingItem.cs" />
-    <Compile Include="EntitiesModel\PatientModel.cs" />
-    <Compile Include="EntitiesModel\TotalsIfo.cs" />
-    <Compile Include="EntitiesModel\WorkModel.cs" />
     <Compile Include="Filter.cs">
       <DependentUpon>JurnalModel.tt</DependentUpon>
     </Compile>
@@ -82,7 +71,7 @@
     <Compile Include="FilterType.cs">
       <DependentUpon>JurnalModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Helpers\DatabaseHandler.cs" />
+    <Compile Include="Helpers\OnlineDatabaseHandler.cs" />
     <Compile Include="Helpers\ExtensionMethods.cs" />
     <Compile Include="IntervalInfo.cs">
       <DependentUpon>JurnalModel.tt</DependentUpon>
@@ -105,7 +94,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>JurnalModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="LocalCache.cs" />
     <Compile Include="Location.cs">
       <DependentUpon>JurnalModel.tt</DependentUpon>
     </Compile>
@@ -169,6 +157,10 @@
     <ProjectReference Include="..\DSA.Common.Infrastructure\DSA.Common.Infrastructure.csproj">
       <Project>{EDD4730D-BAC5-4D75-B556-C70C8BFD736B}</Project>
       <Name>DSA.Common.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTS.Common.DatabaseServer\DTS.Common.DatabaseServer.csproj">
+      <Project>{3e97ccfb-5dcc-4775-b0ad-3fe2e8c7ac53}</Project>
+      <Name>DTS.Common.DatabaseServer</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

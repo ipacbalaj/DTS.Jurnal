@@ -14,8 +14,9 @@ using DSA.Common.Infrastructure.Login;
 using DSA.Common.Infrastructure.Prism.EventAggregator.Events;
 using DSA.Common.Infrastructure.Styles;
 using DSA.Common.Infrastructure.ViewModel;
-using DSA.Database.Model;
-using DTS.Jurnal.Database.SQLServer.Module.EntitiesModel.Local;
+using DTS.Common.BusinessLogic;
+using DTS.Common.DatabaseServer.EntitiesModel.Local;
+using DTS.Jurnal.Database.SQLServer.Module;
 using DTS.Jurnal.Database.SQLServer.Module.Helpers;
 using log4net;
 using Microsoft.Practices.Prism.Commands;
@@ -271,7 +272,7 @@ namespace DSA.Login.Login
             {
                 string username = SelectedUser.Username;
                 LoginResponse response =
-                    DatabaseHandler.Instance.Login(SelectedUser.Username,
+                    BusinessLogic.Instance.Databasehandler.Login(SelectedUser.Username,
                         SecureStringToString(PasswordBarViewModel.Password));
                 if (response.Status == LoginStatus.Unsuccessful)
                 {
@@ -423,7 +424,7 @@ namespace DSA.Login.Login
 
         private void SetLocalUsers()
         {
-            Users = new ObservableCollection<LocalUser>(DatabaseHandler.Instance.GetUsers());
+            Users = new ObservableCollection<LocalUser>(BusinessLogic.Instance.Databasehandler.GetUsers());
             SelectedUser = Users.FirstOrDefault();
         }
 

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Windows.Media;
 
-namespace DTS.Jurnal.Database.SQLServer.Module.EntitiesModel.Local
+namespace DTS.Common.DatabaseServer.EntitiesModel.Local
 {
    public class LocalPatient
     {

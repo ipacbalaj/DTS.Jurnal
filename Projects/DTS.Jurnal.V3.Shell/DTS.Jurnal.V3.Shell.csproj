@@ -278,6 +278,10 @@
       <Project>{ae1b0290-936e-4d8f-9973-35153f804c6f}</Project>
       <Name>DSA.Module.PersonalInfo</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DTS.Common.BusinessLogic\DTS.Common.BusinessLogic.csproj">
+      <Project>{F60081CC-C513-478B-A7B2-1D77E6242AC5}</Project>
+      <Name>DTS.Common.BusinessLogic</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DTS.FtpConnection\DTS.FtpConnection.csproj">
       <Project>{26776D77-D1EF-464B-92C9-CB8989B8E882}</Project>
       <Name>DTS.FtpConnection</Name>

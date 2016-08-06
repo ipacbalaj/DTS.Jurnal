@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using DSA.Common.Infrastructure.Styles;
-using DTS.Jurnal.Database.SQLServer.Module.EntitiesModel;
-using DTS.Jurnal.Database.SQLServer.Module.EntitiesModel.Local;
+using DTS.Common.DatabaseServer.EntitiesModel;
+using DTS.Common.DatabaseServer.EntitiesModel.Local;
 
 namespace DTS.Jurnal.Database.SQLServer.Module.Helpers
 {

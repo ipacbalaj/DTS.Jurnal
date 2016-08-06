@@ -4,6 +4,7 @@ using DevExpress.Xpf.Grid;
 using DevExpress.Xpf.Printing;
 using DSA.Common.Infrastructure.Prism.EventAggregator.Events;
 using DSA.Common.Infrastructure.Prism.Regions.ViewsInterfaces;
+using DTS.Common.DatabaseServer.EntitiesModel;
 using DTS.Jurnal.Database.SQLServer.Module.EntitiesModel;
 
 namespace DTS_Jurnal.Jurnal.JurnalScreen

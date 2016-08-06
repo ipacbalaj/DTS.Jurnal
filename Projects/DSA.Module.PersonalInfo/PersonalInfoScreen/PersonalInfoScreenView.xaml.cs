@@ -4,7 +4,7 @@ using System.Windows.Input;
 using DevExpress.Xpf.Grid;
 using DSA.Common.Infrastructure.Prism.EventAggregator.Events;
 using DSA.Common.Infrastructure.Prism.Regions.ViewsInterfaces;
-using DTS.Jurnal.Database.SQLServer.Module.EntitiesModel.Local;
+using DTS.Common.DatabaseServer.EntitiesModel.Local;
 
 namespace DSA.Module.PersonalInfo.PersonalInfoScreen
 {

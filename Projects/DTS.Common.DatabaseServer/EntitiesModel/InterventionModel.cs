@@ -3,7 +3,7 @@ using System.Windows.Media;
 using DSA.Common.Infrastructure.Styles;
 using DSA.Common.Infrastructure.ViewModel;
 
-namespace DTS.Jurnal.Database.SQLServer.Module.EntitiesModel
+namespace DTS.Common.DatabaseServer.EntitiesModel
 {
     public class InterventionModel : ViewModelBase
     {

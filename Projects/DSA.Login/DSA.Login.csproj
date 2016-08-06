@@ -87,6 +87,14 @@
       <Project>{3773b378-5d13-414a-8586-bad50f1b5cd3}</Project>
       <Name>DSA.Module.Settings</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DTS.Common.BusinessLogic\DTS.Common.BusinessLogic.csproj">
+      <Project>{F60081CC-C513-478B-A7B2-1D77E6242AC5}</Project>
+      <Name>DTS.Common.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTS.Common.DatabaseServer\DTS.Common.DatabaseServer.csproj">
+      <Project>{3E97CCFB-5DCC-4775-B0AD-3FE2E8C7AC53}</Project>
+      <Name>DTS.Common.DatabaseServer</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DTS.FtpConnection\DTS.FtpConnection.csproj">
       <Project>{26776D77-D1EF-464B-92C9-CB8989B8E882}</Project>
       <Name>DTS.FtpConnection</Name>

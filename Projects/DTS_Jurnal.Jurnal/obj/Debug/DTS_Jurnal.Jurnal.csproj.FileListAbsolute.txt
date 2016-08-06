@@ -84,6 +84,12 @@ E:\DTS\DTS.Jurnal.V3\Projects\DTS_Jurnal.Jurnal\obj\Debug\JurnalScreen\JurnalVie
 E:\DTS\DTS.Jurnal.V3\Projects\DTS_Jurnal.Jurnal\obj\Debug\DTS_Jurnal.Jurnal.g.resources
 E:\DTS\DTS.Jurnal.V3\Projects\DTS_Jurnal.Jurnal\obj\Debug\DTS_Jurnal.Jurnal.dll
 E:\DTS\DTS.Jurnal.V3\Projects\DTS_Jurnal.Jurnal\obj\Debug\DTS_Jurnal.Jurnal.pdb
+E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\obj\Debug\DTS_Jurnal.Jurnal.csprojResolveAssemblyReference.cache
+E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\obj\Debug\DTS_Jurnal.Jurnal_MarkupCompile.cache
+E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\obj\Debug\AddInterventionTile\AddInterventionTileView.g.cs
+E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\obj\Debug\JurnalScreen\JurnalView.g.cs
+E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\obj\Debug\DTS_Jurnal.Jurnal_MarkupCompile.lref
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\DTS_Jurnal.Jurnal.dll.config
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\DTS_Jurnal.Jurnal.dll
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\DTS_Jurnal.Jurnal.pdb
@@ -108,6 +114,8 @@ E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\DevExpress.XtraLayout.
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\DSA.Common.Controls.dll
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\DSA.Common.Infrastructure.dll
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\DSA.FileUpload.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\DTS.Common.BusinessLogic.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\DTS.Common.DatabaseServer.dll
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\DTS.Jurnal.Database.SQLServer.Module.dll
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\DTS.Jurnal.V3.Database.Module.dll
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\Microsoft.Practices.Prism.dll
@@ -123,10 +131,13 @@ E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\Xceed.Wpf.AvalonDock.T
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\Xceed.Wpf.DataGrid.dll
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\Xceed.Wpf.Toolkit.dll
+E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\DSA.Database.Model.dll
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\System.Windows.Interactivity.dll
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\DSA.Common.Controls.pdb
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\DSA.Common.Infrastructure.pdb
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\DSA.FileUpload.pdb
+E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\DTS.Common.BusinessLogic.pdb
+E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\DTS.Common.DatabaseServer.pdb
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\DTS.Jurnal.Database.SQLServer.Module.pdb
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\DTS.Jurnal.V3.Database.Module.pdb
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\DevExpress.Data.v12.2.xml
@@ -151,6 +162,7 @@ E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\Microsoft.Practices.Pr
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.xml
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\Microsoft.Practices.ServiceLocation.xml
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\Microsoft.Practices.Unity.xml
+E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\DSA.Database.Model.pdb
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\System.Windows.Interactivity.xml
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\de\System.Windows.Interactivity.resources.dll
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\en\System.Windows.Interactivity.resources.dll
@@ -161,12 +173,6 @@ E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\ja\System.Windows.Inte
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\ko\System.Windows.Interactivity.resources.dll
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
-E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\obj\Debug\DTS_Jurnal.Jurnal.csprojResolveAssemblyReference.cache
-E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\obj\Debug\AddInterventionTile\AddInterventionTileView.g.cs
-E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\obj\Debug\JurnalScreen\JurnalView.g.cs
-E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\obj\Debug\GeneratedInternalTypeHelper.g.cs
-E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\obj\Debug\DTS_Jurnal.Jurnal_MarkupCompile.cache
-E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\obj\Debug\DTS_Jurnal.Jurnal_MarkupCompile.lref
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\obj\Debug\AddInterventionTile\AddInterventionTileView.baml
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\obj\Debug\JurnalScreen\JurnalView.baml
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\obj\Debug\DTS_Jurnal.Jurnal.g.resources

@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using DSA.Common.Infrastructure.Entities;
 using DSA.Common.Infrastructure.Styles;
 using DSA.Database.Model.EfSQlLite;
-using DSA.Database.Model.Entities.Local;
-using DTS.Jurnal.Database.Model.Entities.Local;
-using DTS.Jurnal.V3.Database.Module.Entities.Local;
+using DTS.Common.DatabaseServer.EntitiesModel;
+using DTS.Common.DatabaseServer.EntitiesModel.Local;
 
-namespace DTS.Jurnal.V3.Database.Module.Helpers
+namespace DSA.Database.Model.Helpers
 {
     public static class ExtensionMethods
     {

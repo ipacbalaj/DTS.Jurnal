@@ -11,10 +11,11 @@ using DSA.Common.Infrastructure;
 using DSA.Common.Infrastructure.Prism.EventAggregator.Events;
 using DSA.Common.Infrastructure.Styles;
 using DSA.Common.Infrastructure.ViewModel;
-using DSA.Database.Model;
 using DSA.Module.PersonalInfo.PatientInformation;
-using DTS.Jurnal.Database.SQLServer.Module.EntitiesModel;
-using DTS.Jurnal.Database.SQLServer.Module.EntitiesModel.Local;
+using DTS.Common.BusinessLogic;
+using DTS.Common.DatabaseServer.EntitiesModel;
+using DTS.Common.DatabaseServer.EntitiesModel.Local;
+using DTS.Jurnal.Database.SQLServer.Module;
 using DTS.Jurnal.Database.SQLServer.Module.Helpers;
 using Microsoft.Practices.Prism.Commands;
 using Microsoft.Practices.Prism.Events;
@@ -102,7 +103,7 @@ namespace DSA.Module.PersonalInfo.PersonalInfoScreen
                 {
                     PatientDetailsVisibility = Visibility.Visible;
                     PatientInformationViewModel = selectedPatient.ToPatientInformationViewModel(this);
-                    Interventions = new ObservableCollection<InterventionModel>(DatabaseHandler.Instance.GetPatientInterventions(selectedPatient.Id));
+                    Interventions = new ObservableCollection<InterventionModel>(BusinessLogic.Instance.Databasehandler.GetPatientInterventions(selectedPatient.Id));
                         //new ObservableCollection<InterventionModel>(LocalCache.Instance.Interventions.Where(item => item.PatientId == selectedPatient.Id));
                 }
                 else
@@ -397,7 +398,7 @@ namespace DSA.Module.PersonalInfo.PersonalInfoScreen
         {
             if (PatientId != 0)
             {
-                //                Interventions = new ObservableCollection<InterventionDetails>( DatabaseHandler.Instance.GetPatientInterventions(PatientId).Select(item => item.ToInterventionDetails()));
+                //                Interventions = new ObservableCollection<InterventionDetails>( BusinessLogic.Instance.Databasehandler.GetPatientInterventions(PatientId).Select(item => item.ToInterventionDetails()));
                 InterventionsVisibility = InterventionsVisibility == Visibility.Visible ? Visibility.Collapsed : Visibility.Visible;
                 ExpanderRotation = ExpanderRotation == "270" ? "90" : "270";
             }
@@ -451,7 +452,7 @@ namespace DSA.Module.PersonalInfo.PersonalInfoScreen
                 var editedPatient = LocalCache.Instance.Patients.FirstOrDefault(item => item.Id == SelectedPatient.Id);
                 editedPatient.CopyToLocalPatient(PatientInformationViewModel);
                 Patients=new ObservableCollection<LocalPatient>(LocalCache.Instance.Patients);
-                DatabaseHandler.Instance.EditPatient(editedPatient);
+                BusinessLogic.Instance.Databasehandler.EditPatient(editedPatient);
                 IsEdit = false;
             }
             catch (Exception)
@@ -473,7 +474,7 @@ namespace DSA.Module.PersonalInfo.PersonalInfoScreen
             {
                 try
                 {
-                    DatabaseHandler.Instance.MergePatients(SelectedLocalPatients.Select(item => item.Id).ToList());
+                    BusinessLogic.Instance.Databasehandler.MergePatients(SelectedLocalPatients.Select(item => item.Id).ToList());
                     var patientsToRemove = SelectedLocalPatients.Skip(1).ToList();
                     SelectedPatient = SelectedLocalPatients.FirstOrDefault();
                     foreach (var localPatient in patientsToRemove)
@@ -493,7 +494,7 @@ namespace DSA.Module.PersonalInfo.PersonalInfoScreen
         {
             try
             {
-                await DatabaseHandler.Instance.DeletePatient(SelectedPatient.Id);
+                await BusinessLogic.Instance.Databasehandler.DeletePatient(SelectedPatient.Id);
                 LocalCache.Instance.DeletePatient(SelectedPatient.Id);
                 Patients.Remove(SelectedPatient);
             }

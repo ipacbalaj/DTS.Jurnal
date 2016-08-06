@@ -11,8 +11,11 @@ using DSA.Common.Infrastructure;
 using DSA.Common.Infrastructure.Prism.EventAggregator.Events;
 using DSA.Common.Infrastructure.Styles;
 using DSA.Common.Infrastructure.ViewModel;
-using DSA.Database.Model;
 using DSA.FileUpload.ExcelFile;
+using DTS.Common.BusinessLogic;
+using DTS.Common.DatabaseServer;
+using DTS.Common.DatabaseServer.EntitiesModel;
+using DTS.Jurnal.Database.SQLServer.Module;
 using DTS.Jurnal.Database.SQLServer.Module.EntitiesModel;
 using DTS.Jurnal.Database.SQLServer.Module.Helpers;
 using DTS_Jurnal.Jurnal.AddInterventionTile;
@@ -244,7 +247,7 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
                 if (value == startingDate)
                     return;
                 startingDate = value;
-                LoadInterventionsFromDate(startingDate, DatabaseHandler.InterventionsLoadType.ByDate);
+                LoadInterventionsFromDate(startingDate, InterventionsLoadType.ByDate);
                 OnPropertyChanged();
             }
         }
@@ -255,13 +258,13 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
 
         #region load
 
-        private void LoadInterventionsFromDate(DateTime date, DatabaseHandler.InterventionsLoadType interventionsLoadType)
+        private void LoadInterventionsFromDate(DateTime date, InterventionsLoadType interventionsLoadType)
         {
             GetInterventionsByDate(date, interventionsLoadType);
             SelectedInterventionModel = Interventions.LastOrDefault();
         }
 
-        private async void GetInterventionsByDate(DateTime date, DatabaseHandler.InterventionsLoadType interventionsLoadType)
+        private async void GetInterventionsByDate(DateTime date, InterventionsLoadType interventionsLoadType)
         {
             ShowLoadingPanel = true;
             await LocalCache.Instance.InitInterventionsStartTask(date, interventionsLoadType);
@@ -273,7 +276,7 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
 
         private void OnLoadAllInterventions()
         {
-            GetInterventionsByDate(new DateTime(), DatabaseHandler.InterventionsLoadType.All);
+            GetInterventionsByDate(new DateTime(), InterventionsLoadType.All);
         }
 
         private void SetTotals()
@@ -336,7 +339,7 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
             DialogResult result1 = MessageBox.Show("Doriţi sa goliți lista de manopere?", "Atentie", MessageBoxButtons.YesNo);
             if (result1 == DialogResult.Yes)
             {
-                DatabaseHandler.Instance.DeleteInterventions();
+                BusinessLogic.Instance.Databasehandler.DeleteInterventions();
                 Interventions = new ObservableCollection<InterventionModel>();
             }
         }
@@ -353,7 +356,7 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
             }
             var intModel = Interventions.FirstOrDefault(item => item.Id == interventionId);
             intModel.IsSelected = shouldAdd;
-            DatabaseHandler.Instance.SetInterventionSelectionStatus(interventionId, shouldAdd);
+            BusinessLogic.Instance.Databasehandler.SetInterventionSelectionStatus(interventionId, shouldAdd);
         }
 
         public void EditIntervention()
@@ -408,7 +411,7 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
             //    currentIntervention.WasPayed = !rowintervention.WasPayed;
             //    currentIntervention.ShouldSetPayed = false;
             //}
-            DatabaseHandler.Instance.SetInterventionPayed(rowintervention.Id, rowintervention.WasPayed);
+            BusinessLogic.Instance.Databasehandler.SetInterventionPayed(rowintervention.Id, rowintervention.WasPayed);
         }
 
         private async void OnDelete(InterventionModel interventionModel)
@@ -418,7 +421,7 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
             {
                 try
                 {
-                    await DatabaseHandler.Instance.DeleteIntervention(interventionModel.Id);
+                    await BusinessLogic.Instance.Databasehandler.DeleteIntervention(interventionModel.Id);
                     Interventions.Remove(interventionModel);
                     LocalCache.Instance.Interventions.Remove(interventionModel);
                     Total -= interventionModel.Revenue;
@@ -493,7 +496,7 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
                         interventionsToModify.Add(selectedIntervention.Id);
                     }
                 }
-                await DatabaseHandler.Instance.SetInterventionsPaymentStatus(interventionsToModify, wasPayed);
+                await BusinessLogic.Instance.Databasehandler.SetInterventionsPaymentStatus(interventionsToModify, wasPayed);
             }
             catch (Exception)
             {
@@ -507,7 +510,7 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
             {
                 var firstOrDefault = SelectedInterventions.FirstOrDefault();
                 bool isSelected = firstOrDefault != null && !firstOrDefault.IsSelected;
-                await DatabaseHandler.Instance.SetInterventionsSelectionStatus(SelectedInterventions.Select(item => item.Id).ToList(), isSelected);
+                await BusinessLogic.Instance.Databasehandler.SetInterventionsSelectionStatus(SelectedInterventions.Select(item => item.Id).ToList(), isSelected);
                 foreach (var selectedIntervention in SelectedInterventions)
                 {
                     selectedIntervention.IsSelected = isSelected;

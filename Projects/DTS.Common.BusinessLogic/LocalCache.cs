@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using DSA.Common.Infrastructure.Entities;
-using DSA.Database.Model.Entities.Local;
-using DSA.Database.Model.Helpers;
-using DTS.Jurnal.V3.Database.Module.Entities.Local;
+using DTS.Common.BusinessLogic;
+using DTS.Common.DatabaseServer;
+using DTS.Common.DatabaseServer.EntitiesModel;
+using DTS.Common.DatabaseServer.EntitiesModel.Local;
+using DTS.Jurnal.Database.SQLServer.Module.Helpers;
 
-namespace DSA.Database.Model
+namespace DTS.Jurnal.Database.SQLServer.Module
 {
     public class LocalCache
     {
@@ -30,6 +31,7 @@ namespace DSA.Database.Model
         public LocalUser LocalUser { get; set; }
         public bool InterventionLoaded { get; set; }
         public string NetworkPath { get; set; }
+
         #region Tasks
 
 
@@ -40,7 +42,7 @@ namespace DSA.Database.Model
         public void Initialize()
         {
             var defaultStartingDate = DateTime.Now.AddMonths(-3);
-            InitInterventionsTask = InitInterventionsTasks(defaultStartingDate,DatabaseHandler.InterventionsLoadType.ByDate);
+            InitInterventionsTask = InitInterventionsTasks(defaultStartingDate, InterventionsLoadType.ByDate);
             InitSettingsTask = new Task(() =>
             {
                 Thread.CurrentThread.Name = "InitSettings";
@@ -54,39 +56,39 @@ namespace DSA.Database.Model
             InitStartTAsks();
         }
 
-        private Task InitInterventionsTasks(DateTime defaultStartingDate, DatabaseHandler.InterventionsLoadType interventionsLoadType)
+        private Task InitInterventionsTasks(DateTime defaultStartingDate, InterventionsLoadType interventionsLoadType)
         {
             return new Task(() =>
             {
                 Thread.CurrentThread.Name = "InitInterventions";
-                InitInterventions(defaultStartingDate,interventionsLoadType);
+                InitInterventions(defaultStartingDate, interventionsLoadType);
             });
         }
 
-        public Task InitInterventionsStartTask(DateTime defaultStartingDate,DatabaseHandler.InterventionsLoadType interventionsLoadType)
+        public Task InitInterventionsStartTask(DateTime defaultStartingDate, InterventionsLoadType interventionsLoadType)
         {
-            return Task.Run(() => InitInterventions(defaultStartingDate,interventionsLoadType));
+            return Task.Run(() => InitInterventions(defaultStartingDate, interventionsLoadType));
         }
 
         public readonly Object lockObj = new object();
 
-        private void InitInterventions(DateTime defaultStartingDate, DatabaseHandler.InterventionsLoadType interventionsLoadType)
+        private void InitInterventions(DateTime defaultStartingDate, InterventionsLoadType interventionsLoadType)
         {
-            {                
-                Interventions = DatabaseHandler.Instance.GetInterventions(LocalUser.Id, defaultStartingDate, interventionsLoadType);
+            {
+                Interventions = BusinessLogic.Instance.Databasehandler.GetInterventions(LocalUser.Id, defaultStartingDate, interventionsLoadType);
             }
         }
 
         private void InitSettings()
         {
-            Works = DatabaseHandler.Instance.GetWorks();
-            Locations = DatabaseHandler.Instance.GetLocations();
-            Instance.Areas = DatabaseHandler.Instance.GetAreas();
+            Works = BusinessLogic.Instance.Databasehandler.GetWorks();
+            Locations = BusinessLogic.Instance.Databasehandler.GetLocations();
+            Instance.Areas = BusinessLogic.Instance.Databasehandler.GetAreas();
         }
 
         private void InitPatients()
         {
-            Patients = DatabaseHandler.Instance.GetPatients(LocalUser.Id);
+            Patients = BusinessLogic.Instance.Databasehandler.GetPatients(LocalUser.Id);
         }
 
         public List<Task> StartDTSTasks;
@@ -127,9 +129,7 @@ namespace DSA.Database.Model
 
             // To copy a file to another location and 
             // overwrite the destination file if it already exists.
-            System.IO.File.Copy(sourceFile, destFile, true);            
-
-
+            System.IO.File.Copy(sourceFile, destFile, true);
         }
 
         public void DeletePatient(int id)

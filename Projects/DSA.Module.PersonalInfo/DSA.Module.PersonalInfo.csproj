@@ -136,6 +136,14 @@
       <Project>{EDD4730D-BAC5-4D75-B556-C70C8BFD736B}</Project>
       <Name>DSA.Common.Infrastructure</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DTS.Common.BusinessLogic\DTS.Common.BusinessLogic.csproj">
+      <Project>{F60081CC-C513-478B-A7B2-1D77E6242AC5}</Project>
+      <Name>DTS.Common.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTS.Common.DatabaseServer\DTS.Common.DatabaseServer.csproj">
+      <Project>{3E97CCFB-5DCC-4775-B0AD-3FE2E8C7AC53}</Project>
+      <Name>DTS.Common.DatabaseServer</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DTS.Jurnal.Database.SQLServer.Module\DTS.Jurnal.Database.SQLServer.Module.csproj">
       <Project>{8378E5C0-BC52-4F9B-A854-2C6F0990598C}</Project>
       <Name>DTS.Jurnal.Database.SQLServer.Module</Name>

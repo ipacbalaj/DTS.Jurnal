@@ -4,9 +4,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DSA.Common.Infrastructure.Helpers;
 using DSA.Common.Infrastructure.Styles;
-using DSA.Database.Model;
-using DTS.Jurnal.Database.SQLServer.Module.EntitiesModel;
-using DTS.Jurnal.Database.SQLServer.Module.EntitiesModel.Local;
+using DTS.Common.BusinessLogic;
+using DTS.Common.DatabaseServer.EntitiesModel;
+using DTS.Common.DatabaseServer.EntitiesModel.Local;
+using DTS.Jurnal.Database.SQLServer.Module;
 using DTS.Jurnal.Database.SQLServer.Module.Helpers;
 using Excel = Microsoft.Office.Interop.Excel;
 namespace DSA.FileUpload.ExcelFile
@@ -150,7 +151,7 @@ namespace DSA.FileUpload.ExcelFile
                     xlWorkBook.Close(true, misValue, misValue);
                     xlApp.Quit();
                     LocalCache.Instance.LocalUser.SavePath = path;
-                    DatabaseHandler.Instance.SetAsExported();
+                    BusinessLogic.Instance.Databasehandler.SetAsExported();
                     MessageBox.Show("Fisierul a fost salvat. Locatie:" + path);
                 }
 

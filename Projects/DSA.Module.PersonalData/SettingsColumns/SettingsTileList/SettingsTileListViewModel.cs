@@ -8,11 +8,12 @@ using DSA.Common.Controls.Buttons;
 using DSA.Common.Infrastructure;
 using DSA.Common.Infrastructure.Styles;
 using DSA.Common.Infrastructure.ViewModel;
-using DSA.Database.Model;
 using DSA.Module.PersonalData.SettingsColumns.SettingsTile;
 using DSA.Module.PersonalData.SettingsColumns.SettingsTile.EditSettingsTile;
 using DSA.Module.PersonalData.SettingsDataScreen;
-using DTS.Jurnal.Database.SQLServer.Module.EntitiesModel.Local;
+using DTS.Common.BusinessLogic;
+using DTS.Common.DatabaseServer.EntitiesModel.Local;
+using DTS.Jurnal.Database.SQLServer.Module;
 using DTS.Jurnal.Database.SQLServer.Module.Helpers;
 using Microsoft.Practices.Prism.Commands;
 
@@ -255,23 +256,23 @@ namespace DSA.Module.PersonalData.SettingsColumns.SettingsTileList
             switch (Parent.CurrentType)
             {
                 case SettingType.Locaiton:
-                    await DatabaseHandler.Instance.DeleteLocations(deletedSettingsIds);
+                    await BusinessLogic.Instance.Databasehandler.DeleteLocations(deletedSettingsIds);
                     var locations =
-                        await DatabaseHandler.Instance.AddEditLocationss(SettingsTileListModels.ToSettingItems());
+                        await BusinessLogic.Instance.Databasehandler.AddEditLocationss(SettingsTileListModels.ToSettingItems());
                     if (locations != null)
                         LocalCache.Instance.Locations = locations;
                     PopulateSettingsItems(LocalCache.Instance.Locations);
                     break;
                 case SettingType.Work:
-                    await DatabaseHandler.Instance.DeleteWorks(deletedSettingsIds);
-                    var works = await DatabaseHandler.Instance.AddEditWorks(SettingsTileListModels.ToSettingItems());
+                    await BusinessLogic.Instance.Databasehandler.DeleteWorks(deletedSettingsIds);
+                    var works = await BusinessLogic.Instance.Databasehandler.AddEditWorks(SettingsTileListModels.ToSettingItems());
                     if (works != null)
                         LocalCache.Instance.Works = works;
                     PopulateSettingsItems(LocalCache.Instance.Works);
                     break;
                 case SettingType.Area:
-                    await DatabaseHandler.Instance.DeleteAreas(deletedSettingsIds);
-                    var areas = await DatabaseHandler.Instance.AddEditAreas(SettingsTileListModels.ToSettingItems());
+                    await BusinessLogic.Instance.Databasehandler.DeleteAreas(deletedSettingsIds);
+                    var areas = await BusinessLogic.Instance.Databasehandler.AddEditAreas(SettingsTileListModels.ToSettingItems());
                     if (areas != null)
                         LocalCache.Instance.Areas = areas;
                     PopulateSettingsItems(LocalCache.Instance.Areas);

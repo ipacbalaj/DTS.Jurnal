@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using DSA.Module.PersonalData.SettingsColumns.SettingsTile;
-using DTS.Jurnal.Database.SQLServer.Module.EntitiesModel.Local;
+using DTS.Common.DatabaseServer.EntitiesModel.Local;
 
 namespace DSA.Module.PersonalData
 {

@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Net.NetworkInformation;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,27 +9,15 @@ using System.Windows.Forms;
 using DSA.Common.Infrastructure.Helpers;
 using DSA.Common.Infrastructure.Login;
 using DSA.Common.Infrastructure.Styles;
-using DTS.Jurnal.Database.SQLServer.Module.EntitiesModel;
-using DTS.Jurnal.Database.SQLServer.Module.EntitiesModel.Local;
+using DTS.Common.DatabaseServer;
+using DTS.Common.DatabaseServer.EntitiesModel;
+using DTS.Common.DatabaseServer.EntitiesModel.Local;
 
 namespace DTS.Jurnal.Database.SQLServer.Module.Helpers
 {
-    public class DatabaseHandler
-    {
-        public enum InterventionsLoadType
-        {
-            All, ByDate
-        }
-
-        private static readonly DatabaseHandler instance = new DatabaseHandler();
-
-        public static DatabaseHandler Instance
-        {
-            get
-            {
-                return instance;
-            }
-        }
+    public class OnlineDatabaseHandler : IDatabasehandler
+    {        
+        
 
         public List<LocalPatient> GetPatients(int userId)
         {

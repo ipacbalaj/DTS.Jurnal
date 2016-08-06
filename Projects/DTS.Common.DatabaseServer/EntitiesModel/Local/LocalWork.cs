@@ -1,6 +1,4 @@
-﻿using DTS.Jurnal.V3.Database.Module.Entities.Local;
-
-namespace DTS.Jurnal.Database.Model.Entities.Local
+﻿namespace DTS.Common.DatabaseServer.EntitiesModel.Local
 {
     public class LocalWork : SettingItem
     {

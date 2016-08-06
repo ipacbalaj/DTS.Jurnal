@@ -1,7 +1,7 @@
 ﻿using System;
 using DSA.Module.PersonalInfo.PatientInformation;
 using DSA.Module.PersonalInfo.PersonalInfoScreen;
-using DTS.Jurnal.Database.SQLServer.Module.EntitiesModel.Local;
+using DTS.Common.DatabaseServer.EntitiesModel.Local;
 
 namespace DSA.Module.PersonalInfo
 {

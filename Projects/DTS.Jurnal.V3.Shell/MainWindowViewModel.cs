@@ -7,7 +7,7 @@ using DSA.Common.Controls.LoginControls.ChangePassword;
 using DSA.Common.Controls.Message;
 using DSA.Common.Infrastructure.Prism.EventAggregator.Events;
 using DSA.Common.Infrastructure.ViewModel;
-using DSA.Database.Model;
+using DTS.Jurnal.Database.SQLServer.Module;
 using DTS.Jurnal.V3.Shell.Properties;
 using DTS_Jurnal.Main.Bootstrapper;
 using Microsoft.Practices.Prism.Commands;

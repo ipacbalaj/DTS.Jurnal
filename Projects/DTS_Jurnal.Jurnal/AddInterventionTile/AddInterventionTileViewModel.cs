@@ -7,9 +7,10 @@ using DSA.Common.Controls.Buttons;
 using DSA.Common.Infrastructure;
 using DSA.Common.Infrastructure.Styles;
 using DSA.Common.Infrastructure.ViewModel;
-using DSA.Database.Model;
-using DTS.Jurnal.Database.SQLServer.Module.EntitiesModel;
-using DTS.Jurnal.Database.SQLServer.Module.EntitiesModel.Local;
+using DTS.Common.BusinessLogic;
+using DTS.Common.DatabaseServer.EntitiesModel;
+using DTS.Common.DatabaseServer.EntitiesModel.Local;
+using DTS.Jurnal.Database.SQLServer.Module;
 using DTS.Jurnal.Database.SQLServer.Module.Helpers;
 using DTS_Jurnal.Jurnal.Helpers;
 using DTS_Jurnal.Jurnal.JurnalScreen;
@@ -423,7 +424,7 @@ namespace DTS_Jurnal.Jurnal.AddInterventionTile
                         Parent.SelectedInterventionModel.Area = SelectedArea.Name;
                     }
                     PreviouslyAddedIntervention = Parent.SelectedInterventionModel;
-                    await DatabaseHandler.Instance.EditIntervention(Parent.SelectedInterventionModel);
+                    await BusinessLogic.Instance.Databasehandler.EditIntervention(Parent.SelectedInterventionModel);
                     StartingHour = DateTime.Now;
                 }
                 else
@@ -461,7 +462,7 @@ namespace DTS_Jurnal.Jurnal.AddInterventionTile
                     }
                     PreviouslyAddedIntervention = modelIntervention;
                     modelIntervention.IsSelected = true;
-                    modelIntervention.Id = await DatabaseHandler.Instance.SaveIntervention(modelIntervention, LocalCache.Instance.LocalUser.Id);
+                    modelIntervention.Id = await BusinessLogic.Instance.Databasehandler.SaveIntervention(modelIntervention, LocalCache.Instance.LocalUser.Id);
                     Parent.AddIntervention(modelIntervention);
                     LocalCache.Instance.Interventions.Add(modelIntervention);
                 }
@@ -524,7 +525,7 @@ namespace DTS_Jurnal.Jurnal.AddInterventionTile
             };
             if (!PatientList.Any(item => item.FirstName == patient.FirstName && item.LastName == patient.LastName))
             {
-                patient.Id = await DatabaseHandler.Instance.SavePatient(patient, LocalCache.Instance.LocalUser.Id);
+                patient.Id = await BusinessLogic.Instance.Databasehandler.SavePatient(patient, LocalCache.Instance.LocalUser.Id);
 
                 PatientList.Add(patient);
                 LocalCache.Instance.Patients.Add(patient);

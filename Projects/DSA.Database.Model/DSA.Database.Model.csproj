@@ -93,26 +93,13 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Helpers\DatabaseHandler.cs" />
+    <Compile Include="Helpers\LocalDatabaseHandler.cs" />
     <Compile Include="EfSQlLite\Dts.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Dts.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Entities\DisplaySettingsItemHelper.cs" />
-    <Compile Include="Entities\InterventionModel.cs" />
-    <Compile Include="Entities\Local\LocalIntervention.cs" />
-    <Compile Include="Entities\Local\LocalLocation.cs" />
-    <Compile Include="Entities\Local\LocalPatient.cs" />
-    <Compile Include="Entities\Local\LocalUser.cs" />
-    <Compile Include="Entities\Local\LocalWork.cs" />
-    <Compile Include="Entities\Local\SettingItem.cs" />
-    <Compile Include="Entities\TotalsIfo.cs" />
     <Compile Include="Helpers\ExtensionMethods.cs" />
-    <Compile Include="LocalCache.cs">
-      <SubType>
-      </SubType>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -164,6 +151,10 @@
     <ProjectReference Include="..\DSA.Common.Infrastructure\DSA.Common.Infrastructure.csproj">
       <Project>{EDD4730D-BAC5-4D75-B556-C70C8BFD736B}</Project>
       <Name>DSA.Common.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTS.Common.DatabaseServer\DTS.Common.DatabaseServer.csproj">
+      <Project>{3e97ccfb-5dcc-4775-b0ad-3fe2e8c7ac53}</Project>
+      <Name>DTS.Common.DatabaseServer</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

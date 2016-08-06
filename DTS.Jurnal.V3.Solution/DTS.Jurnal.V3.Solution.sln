@@ -19,15 +19,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSA.Module.Settings", "..\P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSA.Module.PersonalInfo", "..\Projects\DSA.Module.PersonalInfo\DSA.Module.PersonalInfo.csproj", "{AE1B0290-936E-4D8F-9973-35153F804C6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTS.FtpConnection", "..\Projects\DTS.FtpConnection\DTS.FtpConnection.csproj", "{26776D77-D1EF-464B-92C9-CB8989B8E882}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTS.Jurnal.Database.SQLServer.Module", "..\Projects\DTS.Jurnal.Database.SQLServer.Module\DTS.Jurnal.Database.SQLServer.Module.csproj", "{8378E5C0-BC52-4F9B-A854-2C6F0990598C}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSA.Database.Model", "..\Projects\DSA.Database.Model\DSA.Database.Model.csproj", "{E71BE83D-E64A-4D52-97AB-0AB7482363F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTS.Common.DatabaseServer", "..\Projects\DTS.Common.DatabaseServer\DTS.Common.DatabaseServer.csproj", "{3E97CCFB-5DCC-4775-B0AD-3FE2E8C7AC53}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTS.Common.BusinessLogic", "..\Projects\DTS.Common.BusinessLogic\DTS.Common.BusinessLogic.csproj", "{F60081CC-C513-478B-A7B2-1D77E6242AC5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTS.FtpConnection", "..\Projects\DTS.FtpConnection\DTS.FtpConnection.csproj", "{26776D77-D1EF-464B-92C9-CB8989B8E882}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,26 +65,14 @@ Global
 		{AE1B0290-936E-4D8F-9973-35153F804C6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE1B0290-936E-4D8F-9973-35153F804C6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE1B0290-936E-4D8F-9973-35153F804C6F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{26776D77-D1EF-464B-92C9-CB8989B8E882}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{26776D77-D1EF-464B-92C9-CB8989B8E882}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{26776D77-D1EF-464B-92C9-CB8989B8E882}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{26776D77-D1EF-464B-92C9-CB8989B8E882}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8378E5C0-BC52-4F9B-A854-2C6F0990598C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8378E5C0-BC52-4F9B-A854-2C6F0990598C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8378E5C0-BC52-4F9B-A854-2C6F0990598C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8378E5C0-BC52-4F9B-A854-2C6F0990598C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E71BE83D-E64A-4D52-97AB-0AB7482363F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E71BE83D-E64A-4D52-97AB-0AB7482363F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E71BE83D-E64A-4D52-97AB-0AB7482363F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E71BE83D-E64A-4D52-97AB-0AB7482363F7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3E97CCFB-5DCC-4775-B0AD-3FE2E8C7AC53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3E97CCFB-5DCC-4775-B0AD-3FE2E8C7AC53}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3E97CCFB-5DCC-4775-B0AD-3FE2E8C7AC53}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3E97CCFB-5DCC-4775-B0AD-3FE2E8C7AC53}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F60081CC-C513-478B-A7B2-1D77E6242AC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F60081CC-C513-478B-A7B2-1D77E6242AC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F60081CC-C513-478B-A7B2-1D77E6242AC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F60081CC-C513-478B-A7B2-1D77E6242AC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26776D77-D1EF-464B-92C9-CB8989B8E882}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26776D77-D1EF-464B-92C9-CB8989B8E882}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26776D77-D1EF-464B-92C9-CB8989B8E882}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26776D77-D1EF-464B-92C9-CB8989B8E882}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

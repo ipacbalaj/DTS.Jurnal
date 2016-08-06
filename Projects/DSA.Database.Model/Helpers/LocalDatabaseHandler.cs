@@ -622,6 +622,4 @@ namespace DSA.Database.Model.Helpers
 
         #endregion Patients
     }
-
-
 }

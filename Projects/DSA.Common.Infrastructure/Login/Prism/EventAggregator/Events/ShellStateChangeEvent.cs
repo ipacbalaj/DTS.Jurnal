@@ -15,6 +15,7 @@ namespace DSA.Common.Infrastructure.Prism.EventAggregator.Events
         Mainpage,
         Login,
         Settings,
-        Patient
+        Patient,
+        SystemSettings
     }
 }

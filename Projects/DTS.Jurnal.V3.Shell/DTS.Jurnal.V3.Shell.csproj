@@ -122,6 +122,10 @@
     <Reference Include="DevExpress.XtraLayout.v12.2">
       <HintPath>C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\v2\finalProject\References\DevExpress\v12.2\Framework\DevExpress.XtraLayout.v12.2.dll</HintPath>
     </Reference>
+    <Reference Include="DTS.Common.BusinessLogic, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DSA.Login\bin\Debug\DTS.Common.BusinessLogic.dll</HintPath>
+    </Reference>
     <Reference Include="FontAwesome.WPF">
       <HintPath>..\..\DTS.Jurnal.V3.Solution\packages\FontAwesome.WPF.4.5.0.8\lib\net40\FontAwesome.WPF.dll</HintPath>
     </Reference>
@@ -278,21 +282,17 @@
       <Project>{ae1b0290-936e-4d8f-9973-35153f804c6f}</Project>
       <Name>DSA.Module.PersonalInfo</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DTS.Common.BusinessLogic\DTS.Common.BusinessLogic.csproj">
-      <Project>{F60081CC-C513-478B-A7B2-1D77E6242AC5}</Project>
-      <Name>DTS.Common.BusinessLogic</Name>
-    </ProjectReference>
     <ProjectReference Include="..\DTS.FtpConnection\DTS.FtpConnection.csproj">
       <Project>{26776D77-D1EF-464B-92C9-CB8989B8E882}</Project>
       <Name>DTS.FtpConnection</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DTS.Jurnal.Database.SQLServer.Module\DTS.Jurnal.Database.SQLServer.Module.csproj">
-      <Project>{8378E5C0-BC52-4F9B-A854-2C6F0990598C}</Project>
-      <Name>DTS.Jurnal.Database.SQLServer.Module</Name>
-    </ProjectReference>
     <ProjectReference Include="..\DTS.Jurnal.V3.Database.Module\DTS.Jurnal.V3.Database.Module.csproj">
       <Project>{E70D8866-D808-428A-B1A3-FD091F070685}</Project>
       <Name>DTS.Jurnal.V3.Database.Module</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTS.Module.SystemSettings\DTS.Module.SystemSettings.csproj">
+      <Project>{f64d4ffa-0693-4b99-a650-e775616a59e3}</Project>
+      <Name>DTS.Module.SystemSettings</Name>
     </ProjectReference>
     <ProjectReference Include="..\DTS_Jurnal.Jurnal\DTS_Jurnal.Jurnal.csproj">
       <Project>{824f7a19-2e48-4fca-860c-5ff03afad720}</Project>

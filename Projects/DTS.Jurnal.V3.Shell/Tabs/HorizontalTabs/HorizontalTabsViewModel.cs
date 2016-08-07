@@ -54,7 +54,8 @@ namespace ClientShell.Views.Tabs.HorizontalTabs
         {        
             TabList.Add(new HorizontalTabViewModel(BackgroundColors.JurnalColor) { Name = "Jurnal", ImagePath = ImagePath.PacientiIconPath, Command = new DelegateCommand(OnDetalPaper) });        
             TabList.Add(new HorizontalTabViewModel(BackgroundColors.JurnalColor) { Name = "Setări", ImagePath = ImagePath.SetariIconPath, Command = new DelegateCommand(OnSettingsCommand) });
-            TabList.Add(new HorizontalTabViewModel(BackgroundColors.JurnalColor) { Name = "Pacienți", ImagePath = ImagePath.FisaPacientIconPath, Command = new DelegateCommand(OnPatientiCommand) });            
+            TabList.Add(new HorizontalTabViewModel(BackgroundColors.JurnalColor) { Name = "Pacienți", ImagePath = ImagePath.FisaPacientIconPath, Command = new DelegateCommand(OnPatientiCommand) });
+            TabList.Add(new HorizontalTabViewModel(BackgroundColors.JurnalColor) { Name = "Setări System", ImagePath = ImagePath.SetariIconPath, Command = new DelegateCommand(OnSystemSettingsCommand) });
         }
 
         private void OnSettingsCommand()
@@ -77,6 +78,11 @@ namespace ClientShell.Views.Tabs.HorizontalTabs
         {
             var selectedTab = TabList.List.FirstOrDefault(item => item.Name == tabToSelect);
             selectedTab.OnSelected(selectedTab);
+        }
+
+        private void OnSystemSettingsCommand()
+        {
+            eventAggregator.GetEvent<ShellStateChangeEvent>().Publish(ShellState.SystemSettings);
         }
 
         #endregion Methods

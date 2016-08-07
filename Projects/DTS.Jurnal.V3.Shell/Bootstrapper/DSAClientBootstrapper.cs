@@ -6,11 +6,13 @@ using DTS_Jurnal.Jurnal;
 using Microsoft.Practices.Prism.Modularity;
 using Microsoft.Practices.Prism.UnityExtensions;
 using Microsoft.Practices.ServiceLocation;
+using DTS.Module.SystemSettings;
 
 namespace DTS.Jurnal.V3.Shell.Bootstrapper
 {
     public class DSAClientBootstrapper : UnityBootstrapper
     {
+
         protected override DependencyObject CreateShell()
         {
             return ServiceLocator.Current.GetInstance<MainWindow>();
@@ -37,6 +39,8 @@ namespace DTS.Jurnal.V3.Shell.Bootstrapper
             ModuleCatalog.AddModule(new ModuleInfo(mySettings.Name, mySettings.AssemblyQualifiedName));
             var myPatients = typeof(PersonalInfoInit);
             ModuleCatalog.AddModule(new ModuleInfo(myPatients.Name, myPatients.AssemblyQualifiedName));
+            var systemSettings = typeof(SystemSettingsInit);
+            ModuleCatalog.AddModule(new ModuleInfo(systemSettings.Name, systemSettings.AssemblyQualifiedName));
         }
     }
 }

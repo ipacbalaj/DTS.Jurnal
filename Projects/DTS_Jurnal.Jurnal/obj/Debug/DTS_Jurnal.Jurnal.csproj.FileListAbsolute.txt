@@ -116,7 +116,6 @@ E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\DSA.Common.Infrastruct
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\DSA.FileUpload.dll
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\DTS.Common.BusinessLogic.dll
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\DTS.Common.DatabaseServer.dll
-E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\DTS.Jurnal.Database.SQLServer.Module.dll
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\DTS.Jurnal.V3.Database.Module.dll
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\Microsoft.Practices.Prism.dll
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\Microsoft.Practices.Prism.Interactivity.dll
@@ -138,7 +137,6 @@ E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\DSA.Common.Infrastruct
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\DSA.FileUpload.pdb
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\DTS.Common.BusinessLogic.pdb
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\DTS.Common.DatabaseServer.pdb
-E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\DTS.Jurnal.Database.SQLServer.Module.pdb
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\DTS.Jurnal.V3.Database.Module.pdb
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\DevExpress.Data.v12.2.xml
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\bin\Debug\DevExpress.Printing.v12.2.Core.xml

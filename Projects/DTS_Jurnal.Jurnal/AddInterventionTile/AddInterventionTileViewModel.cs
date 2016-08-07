@@ -11,7 +11,6 @@ using DTS.Common.BusinessLogic;
 using DTS.Common.DatabaseServer.EntitiesModel;
 using DTS.Common.DatabaseServer.EntitiesModel.Local;
 using DTS.Jurnal.Database.SQLServer.Module;
-using DTS.Jurnal.Database.SQLServer.Module.Helpers;
 using DTS_Jurnal.Jurnal.Helpers;
 using DTS_Jurnal.Jurnal.JurnalScreen;
 using Microsoft.Practices.Prism.Commands;

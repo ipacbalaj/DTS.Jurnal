@@ -71,6 +71,10 @@ namespace DTS_Jurnal.Main.Bootstrapper
                     eventAggregator.GetEvent<UpdatePersonalInfoEvent>().Publish(null);
                     ShowView<IWorkAreaView>(MainScreenRegions.WorkRegion, shellState);
                     break;
+                case ShellState.SystemSettings:
+                    //eventAggregator.GetEvent<UpdatePersonalInfoEvent>().Publish(null);
+                    ShowView<IWorkAreaView>(MainScreenRegions.WorkRegion, shellState);
+                    break;
                 case ShellState.Login:
                     break;
             }

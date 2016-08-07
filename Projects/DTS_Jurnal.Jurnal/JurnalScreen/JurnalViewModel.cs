@@ -16,8 +16,6 @@ using DTS.Common.BusinessLogic;
 using DTS.Common.DatabaseServer;
 using DTS.Common.DatabaseServer.EntitiesModel;
 using DTS.Jurnal.Database.SQLServer.Module;
-using DTS.Jurnal.Database.SQLServer.Module.EntitiesModel;
-using DTS.Jurnal.Database.SQLServer.Module.Helpers;
 using DTS_Jurnal.Jurnal.AddInterventionTile;
 using Microsoft.Practices.Prism.Commands;
 using Microsoft.Practices.Prism.Events;

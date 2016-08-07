@@ -1,23 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DSA.Common.Infrastructure.Prism.EventAggregator.Events;
+﻿using DSA.Common.Infrastructure.Prism.EventAggregator.Events;
 using DSA.Common.Infrastructure.Prism.Regions;
 using DSA.Common.Infrastructure.Prism.Regions.ViewsInterfaces;
-using DTS_Jurnal.Jurnal.JurnalScreen;
+using DTS.Module.SystemSettings.SystemSettingsScreen;
 using Microsoft.Practices.Prism.Modularity;
 using Microsoft.Practices.Prism.Regions;
 using Microsoft.Practices.Unity;
 
-namespace DTS_Jurnal.Jurnal
+namespace DTS.Module.SystemSettings
 {
-    public class JurnalInit : IModule
+    public class SystemSettingsInit : IModule
     {
         #region Constructor
         [InjectionConstructor]
-        public JurnalInit(IUnityContainer unityContainer, IRegionManager regionManager)
+        public SystemSettingsInit(IUnityContainer unityContainer, IRegionManager regionManager)
         {
             this.regionManager = regionManager;
             this.unityContainer = unityContainer;
@@ -35,10 +30,11 @@ namespace DTS_Jurnal.Jurnal
         public void Initialize()
         {
             if (unityContainer == null) return;
-            unityContainer.RegisterInstance(typeof(JurnalViewModel));
-            unityContainer.RegisterType<IWorkAreaView, JurnalView>(ShellState.Mainpage.ToString());
-            RegisterMeWithRegions.RegisterWithRegionAndState<IWorkAreaView>(MainScreenRegions.WorkRegion, ShellState.Mainpage);
+            unityContainer.RegisterInstance(typeof(SystemSettingsViewModel));
+            unityContainer.RegisterType<IWorkAreaView, SystemSettingsView>(ShellState.SystemSettings.ToString());
+            RegisterMeWithRegions.RegisterWithRegionAndState<IWorkAreaView>(MainScreenRegions.WorkRegion, ShellState.SystemSettings);
         }
+
         #endregion Methods
     }
 }

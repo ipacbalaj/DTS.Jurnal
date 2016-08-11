@@ -61,6 +61,10 @@
       <Project>{edd4730d-bac5-4d75-b556-c70c8bfd736b}</Project>
       <Name>DSA.Common.Infrastructure</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DSA.Module.PersonalData\DSA.Module.Settings.csproj">
+      <Project>{3773B378-5D13-414A-8586-BAD50F1B5CD3}</Project>
+      <Name>DSA.Module.Settings</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Page Include="SystemSettingsScreen\SystemSettingsView.xaml">

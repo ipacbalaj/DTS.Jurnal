@@ -2,7 +2,7 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server Compact Edition
 -- --------------------------------------------------
--- Date Created: 06/09/2016 23:44:14
+-- Date Created: 08/07/2016 12:35:20
 -- Generated from EDMX file: E:\DTS\DTS.Jurnal.V5\Projects\DSA.Database.Model\EfSQlLite\Dts.edmx
 -- --------------------------------------------------
 
@@ -320,10 +320,45 @@ CREATE TABLE [ProgramInfoes] (
 );
 GO
 
+-- Creating table 'UserRoles'
+CREATE TABLE [UserRoles] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [Role] nvarchar(4000)  NOT NULL
+);
+GO
+
+-- Creating table 'SystemSettings'
+CREATE TABLE [SystemSettings] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [UserId] int  NOT NULL
+);
+GO
+
+-- Creating table 'RequiredFields'
+CREATE TABLE [RequiredFields] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [Name] nvarchar(4000)  NOT NULL
+);
+GO
+
 -- Creating table 'FilterFilterItem'
 CREATE TABLE [FilterFilterItem] (
     [Filters_Id] int  NOT NULL,
     [FilterItems_Id] int  NOT NULL
+);
+GO
+
+-- Creating table 'UserUserRole'
+CREATE TABLE [UserUserRole] (
+    [Users_Id] int  NOT NULL,
+    [UserRoles_Id] int  NOT NULL
+);
+GO
+
+-- Creating table 'RequiredFieldSystemSettings'
+CREATE TABLE [RequiredFieldSystemSettings] (
+    [RequiredFields_Id] int  NOT NULL,
+    [SystemSettings_Id] int  NOT NULL
 );
 GO
 
@@ -457,10 +492,40 @@ ADD CONSTRAINT [PK_ProgramInfoes]
     PRIMARY KEY ([Id] );
 GO
 
+-- Creating primary key on [Id] in table 'UserRoles'
+ALTER TABLE [UserRoles]
+ADD CONSTRAINT [PK_UserRoles]
+    PRIMARY KEY ([Id] );
+GO
+
+-- Creating primary key on [Id] in table 'SystemSettings'
+ALTER TABLE [SystemSettings]
+ADD CONSTRAINT [PK_SystemSettings]
+    PRIMARY KEY ([Id] );
+GO
+
+-- Creating primary key on [Id] in table 'RequiredFields'
+ALTER TABLE [RequiredFields]
+ADD CONSTRAINT [PK_RequiredFields]
+    PRIMARY KEY ([Id] );
+GO
+
 -- Creating primary key on [Filters_Id], [FilterItems_Id] in table 'FilterFilterItem'
 ALTER TABLE [FilterFilterItem]
 ADD CONSTRAINT [PK_FilterFilterItem]
     PRIMARY KEY ([Filters_Id], [FilterItems_Id] );
+GO
+
+-- Creating primary key on [Users_Id], [UserRoles_Id] in table 'UserUserRole'
+ALTER TABLE [UserUserRole]
+ADD CONSTRAINT [PK_UserUserRole]
+    PRIMARY KEY ([Users_Id], [UserRoles_Id] );
+GO
+
+-- Creating primary key on [RequiredFields_Id], [SystemSettings_Id] in table 'RequiredFieldSystemSettings'
+ALTER TABLE [RequiredFieldSystemSettings]
+ADD CONSTRAINT [PK_RequiredFieldSystemSettings]
+    PRIMARY KEY ([RequiredFields_Id], [SystemSettings_Id] );
 GO
 
 -- --------------------------------------------------
@@ -740,6 +805,66 @@ ADD CONSTRAINT [FK_UserIntervention]
 CREATE INDEX [IX_FK_UserIntervention]
 ON [Interventions]
     ([UserId]);
+GO
+
+-- Creating foreign key on [Users_Id] in table 'UserUserRole'
+ALTER TABLE [UserUserRole]
+ADD CONSTRAINT [FK_UserUserRole_User]
+    FOREIGN KEY ([Users_Id])
+    REFERENCES [Users]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating foreign key on [UserRoles_Id] in table 'UserUserRole'
+ALTER TABLE [UserUserRole]
+ADD CONSTRAINT [FK_UserUserRole_UserRole]
+    FOREIGN KEY ([UserRoles_Id])
+    REFERENCES [UserRoles]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_UserUserRole_UserRole'
+CREATE INDEX [IX_FK_UserUserRole_UserRole]
+ON [UserUserRole]
+    ([UserRoles_Id]);
+GO
+
+-- Creating foreign key on [UserId] in table 'SystemSettings'
+ALTER TABLE [SystemSettings]
+ADD CONSTRAINT [FK_UserSystemSettings]
+    FOREIGN KEY ([UserId])
+    REFERENCES [Users]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_UserSystemSettings'
+CREATE INDEX [IX_FK_UserSystemSettings]
+ON [SystemSettings]
+    ([UserId]);
+GO
+
+-- Creating foreign key on [RequiredFields_Id] in table 'RequiredFieldSystemSettings'
+ALTER TABLE [RequiredFieldSystemSettings]
+ADD CONSTRAINT [FK_RequiredFieldSystemSettings_RequiredField]
+    FOREIGN KEY ([RequiredFields_Id])
+    REFERENCES [RequiredFields]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating foreign key on [SystemSettings_Id] in table 'RequiredFieldSystemSettings'
+ALTER TABLE [RequiredFieldSystemSettings]
+ADD CONSTRAINT [FK_RequiredFieldSystemSettings_SystemSettings]
+    FOREIGN KEY ([SystemSettings_Id])
+    REFERENCES [SystemSettings]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_RequiredFieldSystemSettings_SystemSettings'
+CREATE INDEX [IX_FK_RequiredFieldSystemSettings_SystemSettings]
+ON [RequiredFieldSystemSettings]
+    ([SystemSettings_Id]);
 GO
 
 -- --------------------------------------------------

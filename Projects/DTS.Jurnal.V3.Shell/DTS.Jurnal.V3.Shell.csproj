@@ -286,10 +286,6 @@
       <Project>{26776D77-D1EF-464B-92C9-CB8989B8E882}</Project>
       <Name>DTS.FtpConnection</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DTS.Jurnal.V3.Database.Module\DTS.Jurnal.V3.Database.Module.csproj">
-      <Project>{E70D8866-D808-428A-B1A3-FD091F070685}</Project>
-      <Name>DTS.Jurnal.V3.Database.Module</Name>
-    </ProjectReference>
     <ProjectReference Include="..\DTS.Module.SystemSettings\DTS.Module.SystemSettings.csproj">
       <Project>{f64d4ffa-0693-4b99-a650-e775616a59e3}</Project>
       <Name>DTS.Module.SystemSettings</Name>

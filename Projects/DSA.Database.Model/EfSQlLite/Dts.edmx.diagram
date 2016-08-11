@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="9dc15d72054e4903842ec2acfe301594" Name="Diagram1" ZoomLevel="86" >
+      <Diagram DiagramId="9dc15d72054e4903842ec2acfe301594" Name="Diagram1" ZoomLevel="71" >
         <EntityTypeShape EntityType="dsaModel.Area" Width="1.5" PointX="11.25" PointY="25.25" />
         <EntityTypeShape EntityType="dsaModel.DateHourDetail" Width="1.5" PointX="13.25" PointY="21.25" />
         <EntityTypeShape EntityType="dsaModel.FilterGroup" Width="1.5" PointX="7.375" PointY="21.25" />
@@ -33,10 +33,10 @@
         <EntityTypeShape EntityType="dsaModel.Type" Width="1.5" PointX="18.375" PointY="25.75" />
         <AssociationConnector Association="dsaModel.MaterialType" />
         <EntityTypeShape EntityType="dsaModel.DentalPaymentInfo" Width="1.5" PointX="10" PointY="20.875" />
-        <EntityTypeShape EntityType="dsaModel.User" Width="1.5" PointX="3.625" PointY="18.875" />
+        <EntityTypeShape EntityType="dsaModel.User" Width="1.5" PointX="3.5" PointY="18" FillColor="Green" />
         <AssociationConnector Association="dsaModel.TypeIntervention" />
         <EntityTypeShape EntityType="dsaModel.IntervalInfo" Width="1.5" PointX="2.875" PointY="21.375" />
-        <EntityTypeShape EntityType="dsaModel.MAC" Width="1.5" PointX="5.75" PointY="18.75" />
+        <EntityTypeShape EntityType="dsaModel.MAC" Width="1.5" PointX="5.75" PointY="18.75" FillColor="Green" />
         <AssociationConnector Association="dsaModel.UserMAC" />
         <EntityTypeShape EntityType="dsaModel.WorkType" Width="1.5" PointX="14.125" PointY="31.625" />
         <AssociationConnector Association="dsaModel.WorkWorkType" />
@@ -45,6 +45,12 @@
         <AssociationConnector Association="dsaModel.TechnicianIntervention" />
         <AssociationConnector Association="dsaModel.UserPatient" />
         <AssociationConnector Association="dsaModel.UserIntervention" />
+        <EntityTypeShape EntityType="dsaModel.UserRole" Width="1.5" PointX="0.875" PointY="18.625" FillColor="Green" />
+        <AssociationConnector Association="dsaModel.UserUserRole" />
+        <EntityTypeShape EntityType="dsaModel.SystemSettings" Width="1.5" PointX="8" PointY="17.25" FillColor="Green" />
+        <AssociationConnector Association="dsaModel.UserSystemSettings" />
+        <EntityTypeShape EntityType="dsaModel.RequiredField" Width="1.5" PointX="10.875" PointY="17.75" FillColor="Green" />
+        <AssociationConnector Association="dsaModel.RequiredFieldSystemSettings" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

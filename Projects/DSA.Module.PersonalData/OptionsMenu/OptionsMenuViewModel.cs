@@ -13,7 +13,7 @@ using TULIP.Common.Controls.Icons;
 
 namespace DSA.Module.PersonalData.OptionsMenu
 {
-    public class OptionsMenuViewModel:ViewModelBase
+    public class OptionsMenuViewModel : ViewModelBase
     {
 
         #region Properties
@@ -26,8 +26,7 @@ namespace DSA.Module.PersonalData.OptionsMenu
         public OptionButtonViewModel AreaButtonViewModel { get; private set; }
         public OptionButtonViewModel SelectedButton { get; private set; }
 
-        private Brush contentBackground;//= BackgroundColors.SettingsMenuColor;
-
+        private Brush contentBackground;
         public Brush ContentBackground
         {
             get { return contentBackground; }
@@ -47,7 +46,7 @@ namespace DSA.Module.PersonalData.OptionsMenu
         public OptionsMenuViewModel(SettingsScreenViewModel parent)
         {
             Parent = parent;
-            SelectedButton =new OptionButtonViewModel();
+            SelectedButton = new OptionButtonViewModel();
             InitButtons();
         }
 
@@ -78,7 +77,6 @@ namespace DSA.Module.PersonalData.OptionsMenu
                 Name = "Locatie",
             };
 
-
             AreaButtonViewModel = new OptionButtonViewModel
             {
                 ImagePath = ImagePath.Zona,
@@ -93,9 +91,7 @@ namespace DSA.Module.PersonalData.OptionsMenu
             WorksButtonViewModel.IsSelected = true;
             SelectedButton = WorksButtonViewModel;
             Parent.SettingsTileListViewModel = Parent.WorksTileListViewModel;
-            Parent.CurrentType = SettingType.Work;
-//            Parent.SettingsTileListViewModel = new SettingsTileListViewModel(LocalCache.SettingsItemEnum.Manopera);
-//            SetWorkVis();
+            Parent.CurrentType = SettingType.Work;            
         }
 
         private void OnMaterials()
@@ -103,9 +99,7 @@ namespace DSA.Module.PersonalData.OptionsMenu
             SelectedButton.IsSelected = false;
             MaterialsButtonViewModel.IsSelected = true;
             SelectedButton = MaterialsButtonViewModel;
-            SetVisibility(true);
-
-           // Parent.SettingsTileListViewModel = new SettingsTileListViewModel(LocalCache.SettingsItemEnum.Material);
+            SetVisibility(true);            
         }
 
         private void OnLocation()
@@ -114,8 +108,7 @@ namespace DSA.Module.PersonalData.OptionsMenu
             LocationButtonViewModel.IsSelected = true;
             SelectedButton = LocationButtonViewModel;
             Parent.SettingsTileListViewModel = Parent.LocationTileListViewModel;
-            Parent.CurrentType = SettingType.Locaiton;
-//            SetVisibility(false);
+            Parent.CurrentType = SettingType.Locaiton;            
         }
 
         private void OnArea()
@@ -127,15 +120,13 @@ namespace DSA.Module.PersonalData.OptionsMenu
             Parent.CurrentType = SettingType.Area;
         }
 
-
-
         private void SetVisibility(bool isTechnician)
         {
             if (isTechnician)
             {
                 Parent.SettingsListVisibility = Visibility.Collapsed;
-                Parent.WorksVisibility=Visibility.Collapsed;
-                Parent.TechnicianListVisibility = Visibility.Visible;   
+                Parent.WorksVisibility = Visibility.Collapsed;
+                Parent.TechnicianListVisibility = Visibility.Visible;
             }
             else
             {
@@ -147,13 +138,12 @@ namespace DSA.Module.PersonalData.OptionsMenu
 
         private void SetWorkVis()
         {
-                Parent.SettingsListVisibility = Visibility.Collapsed;
-                Parent.WorksVisibility=Visibility.Visible;
-                Parent.TechnicianListVisibility = Visibility.Collapsed;   
+            Parent.SettingsListVisibility = Visibility.Collapsed;
+            Parent.WorksVisibility = Visibility.Visible;
+            Parent.TechnicianListVisibility = Visibility.Collapsed;
         }
-        
-
 
         #endregion
+
     }
 }

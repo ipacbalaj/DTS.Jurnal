@@ -1,6 +1,7 @@
 ﻿using System.Windows.Media;
 using DSA.Common.Infrastructure.Styles;
 using DSA.Common.Infrastructure.ViewModel;
+using DSA.Module.PersonalData.OptionsMenu;
 
 namespace DTS.Module.SystemSettings.SystemSettingsScreen
 {
@@ -27,6 +28,19 @@ namespace DTS.Module.SystemSettings.SystemSettingsScreen
                 if (value == contentBackground)
                     return;
                 contentBackground = value;
+                OnPropertyChanged();
+            }
+        }
+
+        private OptionsMenuViewModel optionsMenuViewModel;
+        public OptionsMenuViewModel OptionsMenuViewModel
+        {
+            get { return optionsMenuViewModel; }
+            set
+            {
+                if (value == optionsMenuViewModel)
+                    return;
+                optionsMenuViewModel = value;
                 OnPropertyChanged();
             }
         }

@@ -236,6 +236,20 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
             }
         }
 
+        private double totalActive;
+
+        public double TotalActive
+        {
+            get { return totalActive; }
+            set
+            {
+                if (value == totalActive)
+                    return;
+                totalActive = value;
+                OnPropertyChanged();
+            }
+        }
+
         private DateTime startingDate = DateTime.Now.AddMonths(-3);
         public DateTime StartingDate
         {

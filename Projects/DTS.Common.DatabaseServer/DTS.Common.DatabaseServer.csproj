@@ -47,6 +47,7 @@
     <Compile Include="EntitiesModel\Local\LocalIntervention.cs" />
     <Compile Include="EntitiesModel\Local\LocalLocation.cs" />
     <Compile Include="EntitiesModel\Local\LocalPatient.cs" />
+    <Compile Include="EntitiesModel\Local\LocalSystemSetting.cs" />
     <Compile Include="EntitiesModel\Local\LocalUser.cs" />
     <Compile Include="EntitiesModel\Local\LocalWork.cs" />
     <Compile Include="EntitiesModel\Local\SettingItem.cs" />

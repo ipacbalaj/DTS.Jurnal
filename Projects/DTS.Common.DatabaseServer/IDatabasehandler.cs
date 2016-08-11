@@ -35,7 +35,7 @@ namespace DTS.Common.DatabaseServer
         List<InterventionModel> GetPatientInterventions(int patientId);
 
 
-        #region Login
+        #region LoginUser
 
 
         LoginResponse Login(string username, string password);
@@ -46,7 +46,7 @@ namespace DTS.Common.DatabaseServer
 
         List<LocalUser> GetUsers();
 
-        #endregion Login
+        #endregion LoginUser
 
         #region settings
 
@@ -78,6 +78,12 @@ namespace DTS.Common.DatabaseServer
         Task DeletePatient(int patientId);
 
         #endregion Patients
+
+        #region SystemSettings
+
+
+
+        #endregion SystemSettings
     }
 
     public enum InterventionsLoadType

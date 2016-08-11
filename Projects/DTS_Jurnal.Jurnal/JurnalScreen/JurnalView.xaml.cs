@@ -14,8 +14,8 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
     {
         public JurnalView()
         {
-            InitializeComponent();            
-            DataContext = new JurnalViewModel(this);            
+            InitializeComponent();
+            DataContext = new JurnalViewModel(this);
 
             gridControlInt.Columns["Start"].SortOrder = DevExpress.Data.ColumnSortOrder.Ascending;
             gridControlInt.Columns["Revenue"].Width = 35;
@@ -25,7 +25,7 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
             gridControlInt.Columns["MaterialCost"].Width = 35;
             gridControlInt.Columns["End"].Width = 35;
             gridControlInt.Columns["DurataString"].Width = 35;
-            gridControlInt.Columns["Start"].Width = 35;            
+            gridControlInt.Columns["Start"].Width = 35;
             gridControlInt.Columns["IsSelected"].Width = 35;
             gridControlInt.Columns["WasPayed"].Width = 35;
             gridControlInt.Columns["Delete"].Width = 25;
@@ -75,7 +75,10 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
         {
             if (DataContext != null)
             {
-                ((JurnalViewModel)DataContext).SelectedInterventions = e.Source.SelectedRows.Cast<InterventionModel>().ToList();
+                var activeInterventions = e.Source.SelectedRows.Cast<InterventionModel>().ToList();
+                ((JurnalViewModel)DataContext).SelectedInterventions = activeInterventions;
+                ((JurnalViewModel)DataContext).TotalActive = activeInterventions.Sum(item => item.Percent);
+
             }
         }
 
@@ -100,7 +103,7 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
 
         public void Connect(int connectionId, object target)
         {
-            
+
         }
     }
 }

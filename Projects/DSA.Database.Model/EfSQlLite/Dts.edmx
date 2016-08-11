@@ -27,7 +27,12 @@
     <EntitySet Name="MACs" EntityType="dsaModel.Store.MACs" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="WorkTypes" EntityType="dsaModel.Store.WorkTypes" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="ProgramInfoes" EntityType="dsaModel.Store.ProgramInfoes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserRoles" EntityType="dsaModel.Store.UserRoles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SystemSettings" EntityType="dsaModel.Store.SystemSettings" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RequiredFields" EntityType="dsaModel.Store.RequiredFields" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="FilterFilterItem" EntityType="dsaModel.Store.FilterFilterItem" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserUserRole" EntityType="dsaModel.Store.UserUserRole" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RequiredFieldSystemSettings" EntityType="dsaModel.Store.RequiredFieldSystemSettings" store:Type="Tables" Schema="dbo" />
     <AssociationSet Name="FK_AreaIntervention" Association="dsaModel.Store.FK_AreaIntervention">
       <End Role="Area" EntitySet="Areas" />
       <End Role="Intervention" EntitySet="Interventions" />
@@ -107,6 +112,26 @@
     <AssociationSet Name="UserIntervention" Association="dsaModel.Store.UserIntervention">
       <End Role="User" EntitySet="Users" />
       <End Role="Intervention" EntitySet="Interventions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserUserRole_User" Association="dsaModel.Store.FK_UserUserRole_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="UserUserRole" EntitySet="UserUserRole" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserUserRole_UserRole" Association="dsaModel.Store.FK_UserUserRole_UserRole">
+      <End Role="UserRole" EntitySet="UserRoles" />
+      <End Role="UserUserRole" EntitySet="UserUserRole" />
+    </AssociationSet>
+    <AssociationSet Name="UserSystemSettings" Association="dsaModel.Store.UserSystemSettings">
+      <End Role="User" EntitySet="Users" />
+      <End Role="SystemSettings" EntitySet="SystemSettings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RequiredFieldSystemSettings_RequiredField" Association="dsaModel.Store.FK_RequiredFieldSystemSettings_RequiredField">
+      <End Role="RequiredField" EntitySet="RequiredFields" />
+      <End Role="RequiredFieldSystemSettings" EntitySet="RequiredFieldSystemSettings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RequiredFieldSystemSettings_SystemSettings" Association="dsaModel.Store.FK_RequiredFieldSystemSettings_SystemSettings">
+      <End Role="SystemSettings" EntitySet="SystemSettings" />
+      <End Role="RequiredFieldSystemSettings" EntitySet="RequiredFieldSystemSettings" />
     </AssociationSet>
   </EntityContainer>
   <EntityType Name="Areas">
@@ -322,6 +347,27 @@
     <Property Name="LastFileDateImport" Type="datetime" Nullable="false" />
     <Property Name="LastAddedInterventionDate" Type="datetime" Nullable="false" />
   </EntityType>
+  <EntityType Name="UserRoles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Role" Type="nvarchar" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SystemSettings">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RequiredFields">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" />
+  </EntityType>
   <EntityType Name="FilterFilterItem">
     <Key>
       <PropertyRef Name="Filters_Id" />
@@ -329,6 +375,22 @@
     </Key>
     <Property Name="Filters_Id" Type="int" Nullable="false" />
     <Property Name="FilterItems_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserUserRole">
+    <Key>
+      <PropertyRef Name="Users_Id" />
+      <PropertyRef Name="UserRoles_Id" />
+    </Key>
+    <Property Name="Users_Id" Type="int" Nullable="false" />
+    <Property Name="UserRoles_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RequiredFieldSystemSettings">
+    <Key>
+      <PropertyRef Name="RequiredFields_Id" />
+      <PropertyRef Name="SystemSettings_Id" />
+    </Key>
+    <Property Name="RequiredFields_Id" Type="int" Nullable="false" />
+    <Property Name="SystemSettings_Id" Type="int" Nullable="false" />
   </EntityType>
   <Association Name="FK_AreaIntervention">
     <End Role="Area" Type="dsaModel.Store.Areas" Multiplicity="0..1" />
@@ -548,6 +610,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="UserSystemSettings">
+    <End Role="User" Type="dsaModel.Store.Users" Multiplicity="1" />
+    <End Role="SystemSettings" Type="dsaModel.Store.SystemSettings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SystemSettings">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_FilterFilterItem_Filter">
     <End Role="Filter" Type="dsaModel.Store.Filters" Multiplicity="1" />
     <End Role="FilterFilterItem" Type="dsaModel.Store.FilterFilterItem" Multiplicity="*" />
@@ -569,6 +643,54 @@
       </Principal>
       <Dependent Role="FilterFilterItem">
         <PropertyRef Name="FilterItems_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserUserRole_User">
+    <End Role="User" Type="dsaModel.Store.Users" Multiplicity="1" />
+    <End Role="UserUserRole" Type="dsaModel.Store.UserUserRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserUserRole">
+        <PropertyRef Name="Users_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserUserRole_UserRole">
+    <End Role="UserUserRole" Type="dsaModel.Store.UserUserRole" Multiplicity="*" />
+    <End Role="UserRole" Type="dsaModel.Store.UserRoles" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="UserRole">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserUserRole">
+        <PropertyRef Name="UserRoles_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RequiredFieldSystemSettings_RequiredField">
+    <End Role="RequiredField" Type="dsaModel.Store.RequiredFields" Multiplicity="1" />
+    <End Role="RequiredFieldSystemSettings" Type="dsaModel.Store.RequiredFieldSystemSettings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RequiredField">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="RequiredFieldSystemSettings">
+        <PropertyRef Name="RequiredFields_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RequiredFieldSystemSettings_SystemSettings">
+    <End Role="RequiredFieldSystemSettings" Type="dsaModel.Store.RequiredFieldSystemSettings" Multiplicity="*" />
+    <End Role="SystemSettings" Type="dsaModel.Store.SystemSettings" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="SystemSettings">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="RequiredFieldSystemSettings">
+        <PropertyRef Name="SystemSettings_Id" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -673,6 +795,21 @@
           <AssociationSet Name="UserIntervention" Association="dsaModel.UserIntervention">
             <End Role="User" EntitySet="Users" />
             <End Role="Intervention" EntitySet="Interventions" />
+          </AssociationSet>
+          <EntitySet Name="UserRoles" EntityType="dsaModel.UserRole" />
+          <AssociationSet Name="UserUserRole" Association="dsaModel.UserUserRole">
+            <End Role="User" EntitySet="Users" />
+            <End Role="UserRole" EntitySet="UserRoles" />
+          </AssociationSet>
+          <EntitySet Name="SystemSettings" EntityType="dsaModel.SystemSettings" />
+          <AssociationSet Name="UserSystemSettings" Association="dsaModel.UserSystemSettings">
+            <End Role="User" EntitySet="Users" />
+            <End Role="SystemSettings" EntitySet="SystemSettings" />
+          </AssociationSet>
+          <EntitySet Name="RequiredFields" EntityType="dsaModel.RequiredField" />
+          <AssociationSet Name="RequiredFieldSystemSettings" Association="dsaModel.RequiredFieldSystemSettings">
+            <End Role="RequiredField" EntitySet="RequiredFields" />
+            <End Role="SystemSettings" EntitySet="SystemSettings" />
           </AssociationSet>
         </EntityContainer>
         <EntityType Name="Area">
@@ -1011,6 +1148,8 @@
           <NavigationProperty Name="MACs" Relationship="dsaModel.UserMAC" FromRole="User" ToRole="MAC" />
           <NavigationProperty Name="Patients" Relationship="dsaModel.UserPatient" FromRole="User" ToRole="Patient" />
           <NavigationProperty Name="Interventions" Relationship="dsaModel.UserIntervention" FromRole="User" ToRole="Intervention" />
+          <NavigationProperty Name="UserRoles" Relationship="dsaModel.UserUserRole" FromRole="User" ToRole="UserRole" />
+          <NavigationProperty Name="SystemSettings" Relationship="dsaModel.UserSystemSettings" FromRole="User" ToRole="SystemSettings" />
         </EntityType>
         <Association Name="TypeIntervention">
           <End Type="dsaModel.Type" Role="Type" Multiplicity="0..1" />
@@ -1102,6 +1241,51 @@
               <PropertyRef Name="UserId" />
             </Dependent>
           </ReferentialConstraint>
+        </Association>
+        <EntityType Name="UserRole">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Users" Relationship="dsaModel.UserUserRole" FromRole="UserRole" ToRole="User" />
+          <Property Type="String" Name="Role" Nullable="false" />
+        </EntityType>
+        <Association Name="UserUserRole">
+          <End Type="dsaModel.User" Role="User" Multiplicity="*" />
+          <End Type="dsaModel.UserRole" Role="UserRole" Multiplicity="*" />
+        </Association>
+        <EntityType Name="SystemSettings">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="User" Relationship="dsaModel.UserSystemSettings" FromRole="SystemSettings" ToRole="User" />
+          <Property Type="Int32" Name="UserId" Nullable="false" />
+          <NavigationProperty Name="RequiredFields" Relationship="dsaModel.RequiredFieldSystemSettings" FromRole="SystemSettings" ToRole="RequiredField" />
+        </EntityType>
+        <Association Name="UserSystemSettings">
+          <End Type="dsaModel.User" Role="User" Multiplicity="1" />
+          <End Type="dsaModel.SystemSettings" Role="SystemSettings" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SystemSettings">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="RequiredField">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" Nullable="false" />
+          <NavigationProperty Name="SystemSettings" Relationship="dsaModel.RequiredFieldSystemSettings" FromRole="RequiredField" ToRole="SystemSettings" />
+        </EntityType>
+        <Association Name="RequiredFieldSystemSettings">
+          <End Type="dsaModel.RequiredField" Role="RequiredField" Multiplicity="*" />
+          <End Type="dsaModel.SystemSettings" Role="SystemSettings" Multiplicity="*" />
         </Association>
         </Schema>
     </edmx:ConceptualModels>
@@ -1338,6 +1522,30 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="UserRoles">
+      <EntityTypeMapping TypeName="IsTypeOf(dsaModel.UserRole)">
+        <MappingFragment StoreEntitySet="UserRoles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SystemSettings">
+      <EntityTypeMapping TypeName="IsTypeOf(dsaModel.SystemSettings)">
+        <MappingFragment StoreEntitySet="SystemSettings">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RequiredFields">
+      <EntityTypeMapping TypeName="IsTypeOf(dsaModel.RequiredField)">
+        <MappingFragment StoreEntitySet="RequiredFields">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <AssociationSetMapping Name="FilterFilterItem" TypeName="dsaModel.FilterFilterItem" StoreEntitySet="FilterFilterItem">
       <EndProperty Name="Filter">
         <ScalarProperty Name="Id" ColumnName="Filters_Id" />
@@ -1388,6 +1596,22 @@
         <ScalarProperty Name="Id" ColumnName="Id" />
       </EndProperty>
       <Condition ColumnName="WorkType_Id" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="UserUserRole" TypeName="dsaModel.UserUserRole" StoreEntitySet="UserUserRole">
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="Users_Id" />
+      </EndProperty>
+      <EndProperty Name="UserRole">
+        <ScalarProperty Name="Id" ColumnName="UserRoles_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="RequiredFieldSystemSettings" TypeName="dsaModel.RequiredFieldSystemSettings" StoreEntitySet="RequiredFieldSystemSettings">
+      <EndProperty Name="RequiredField">
+        <ScalarProperty Name="Id" ColumnName="RequiredFields_Id" />
+      </EndProperty>
+      <EndProperty Name="SystemSettings">
+        <ScalarProperty Name="Id" ColumnName="SystemSettings_Id" />
+      </EndProperty>
     </AssociationSetMapping>
   </EntityContainerMapping>
 </Mapping></edmx:Mappings>

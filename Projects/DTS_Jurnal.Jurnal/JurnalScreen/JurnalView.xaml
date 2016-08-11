@@ -104,25 +104,38 @@
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <TextBlock Grid.Column="1" VerticalAlignment="Center">
-                <Run Foreground="DarkGray" Text="     Total  Selectate:   " FontSize="19" FontWeight="SemiBold"></Run>
-                <Run Foreground="Black" Text="{Binding TotalSelected,StringFormat={}{0:#,#.00}}" FontSize="19" FontWeight="SemiBold"></Run>
-                <Run Foreground="DarkGray" Text=" lei  " FontSize="19" FontWeight="SemiBold"></Run>
-                </TextBlock>
+                
                 <TextBlock Grid.Column="0" VerticalAlignment="Center" >
                 <Run Foreground="DarkGray" Text="  Total:   " FontSize="19" FontWeight="SemiBold"></Run>
                 <Run Foreground="Black" Text="{Binding Total,StringFormat={}{0:#,#.00}}" FontSize="19" FontWeight="SemiBold"></Run>
                 <Run Foreground="DarkGray" Text=" lei  " FontSize="19" FontWeight="SemiBold"></Run>
                 </TextBlock>
-                <TextBlock Grid.Column="2" FontWeight="SemiBold" FontSize="19" VerticalAlignment="Center" Foreground="DarkGray" Text="             Incarcă intervenții de la data:"></TextBlock>
-                <dxe:DateEdit Height="35" Width="200"  EditValue="" DateTime ="{Binding StartingDate}" HorizontalAlignment="Stretch" Mask="d" MaskUseAsDisplayFormat ="True" ShowWeekNumbers="True"  Margin="8 2 8 2"  Grid.Column ="3"   />
+                
+                <TextBlock Grid.Column="1" VerticalAlignment="Center">
+                <Run Foreground="DarkGray" Text="     Procent  Selectate:   " FontSize="19" FontWeight="SemiBold"></Run>
+                <Run Foreground="Black" Text="{Binding TotalSelected,StringFormat={}{0:#,#.00}}" FontSize="19" FontWeight="SemiBold"></Run>
+                <Run Foreground="DarkGray" Text=" lei  " FontSize="19" FontWeight="SemiBold"></Run>
+                </TextBlock>
 
-                <StackPanel  Grid.Column="4" VerticalAlignment="Center" Orientation="Horizontal" Margin="10 10 10 0" HorizontalAlignment="Right">                    
+                <TextBlock Grid.Column="2" VerticalAlignment="Center">
+                <Run Foreground="DarkGray" Text="     Procent  Active:   " FontSize="19" FontWeight="SemiBold"></Run>
+                <Run Foreground="Black" Text="{Binding TotalActive,StringFormat={}{0:#,#.00}}" FontSize="19" FontWeight="SemiBold"></Run>
+                <Run Foreground="DarkGray" Text=" lei  " FontSize="19" FontWeight="SemiBold"></Run>
+                </TextBlock>
+
+                <TextBlock Grid.Column="3" FontWeight="SemiBold" FontSize="19" VerticalAlignment="Center" Foreground="DarkGray" Text="             Incarcă intervenții de la data:"></TextBlock>
+                <dxe:DateEdit Height="35" Width="200"
+                              EditValue="" DateTime ="{Binding StartingDate}"
+                              HorizontalAlignment="Stretch" Mask="d"
+                              MaskUseAsDisplayFormat ="True" ShowWeekNumbers="True"  Margin="8 2 8 2"  Grid.Column ="4"   />
+                
+                <StackPanel  Grid.Column="5" VerticalAlignment="Center" Orientation="Horizontal" Margin="10 10 10 0" HorizontalAlignment="Right">
                     <buttons:ActionButtonView MaxHeight="45" Margin="0 -22 10 -3"  DataContext="{Binding GetAllInterventionsButton}"/>
                     <buttons:ActionButtonView MaxHeight="45" Margin="0 -22 0 -3"  DataContext="{Binding ExportSelectedButton}"/>
-                    <buttons:ActionButtonView MaxHeight="45" Margin="0 -22 0 -3"  DataContext="{Binding ExportButton}"/>                    
+                    <buttons:ActionButtonView MaxHeight="45" Margin="0 -22 0 -3"  DataContext="{Binding ExportButton}"/>
                 </StackPanel>
             </Grid>
         </Grid>

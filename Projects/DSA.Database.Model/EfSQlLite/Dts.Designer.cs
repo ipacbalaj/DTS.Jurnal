@@ -38,6 +38,9 @@ using System.Xml.Serialization;
 [assembly: EdmRelationshipAttribute("dsaModel", "TechnicianIntervention", "Technician", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DSA.Database.Model.EfSQlLite.Technician), "Intervention", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DSA.Database.Model.EfSQlLite.Intervention), true)]
 [assembly: EdmRelationshipAttribute("dsaModel", "UserPatient", "User", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DSA.Database.Model.EfSQlLite.User), "Patient", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DSA.Database.Model.EfSQlLite.Patient), true)]
 [assembly: EdmRelationshipAttribute("dsaModel", "UserIntervention", "User", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DSA.Database.Model.EfSQlLite.User), "Intervention", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DSA.Database.Model.EfSQlLite.Intervention), true)]
+[assembly: EdmRelationshipAttribute("dsaModel", "UserUserRole", "User", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DSA.Database.Model.EfSQlLite.User), "UserRole", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DSA.Database.Model.EfSQlLite.UserRole))]
+[assembly: EdmRelationshipAttribute("dsaModel", "UserSystemSettings", "User", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DSA.Database.Model.EfSQlLite.User), "SystemSettings", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DSA.Database.Model.EfSQlLite.SystemSettings), true)]
+[assembly: EdmRelationshipAttribute("dsaModel", "RequiredFieldSystemSettings", "RequiredField", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DSA.Database.Model.EfSQlLite.RequiredField), "SystemSettings", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DSA.Database.Model.EfSQlLite.SystemSettings))]
 
 #endregion
 
@@ -424,6 +427,54 @@ namespace DSA.Database.Model.EfSQlLite
             }
         }
         private ObjectSet<ProgramInfo> _ProgramInfoes;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        public ObjectSet<UserRole> UserRoles
+        {
+            get
+            {
+                if ((_UserRoles == null))
+                {
+                    _UserRoles = base.CreateObjectSet<UserRole>("UserRoles");
+                }
+                return _UserRoles;
+            }
+        }
+        private ObjectSet<UserRole> _UserRoles;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        public ObjectSet<SystemSettings> SystemSettings
+        {
+            get
+            {
+                if ((_SystemSettings == null))
+                {
+                    _SystemSettings = base.CreateObjectSet<SystemSettings>("SystemSettings");
+                }
+                return _SystemSettings;
+            }
+        }
+        private ObjectSet<SystemSettings> _SystemSettings;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        public ObjectSet<RequiredField> RequiredFields
+        {
+            get
+            {
+                if ((_RequiredFields == null))
+                {
+                    _RequiredFields = base.CreateObjectSet<RequiredField>("RequiredFields");
+                }
+                return _RequiredFields;
+            }
+        }
+        private ObjectSet<RequiredField> _RequiredFields;
 
         #endregion
 
@@ -595,6 +646,30 @@ namespace DSA.Database.Model.EfSQlLite
         public void AddToProgramInfoes(ProgramInfo programInfo)
         {
             base.AddObject("ProgramInfoes", programInfo);
+        }
+    
+        /// <summary>
+        /// Deprecated Method for adding a new object to the UserRoles EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddToUserRoles(UserRole userRole)
+        {
+            base.AddObject("UserRoles", userRole);
+        }
+    
+        /// <summary>
+        /// Deprecated Method for adding a new object to the SystemSettings EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddToSystemSettings(SystemSettings systemSettings)
+        {
+            base.AddObject("SystemSettings", systemSettings);
+        }
+    
+        /// <summary>
+        /// Deprecated Method for adding a new object to the RequiredFields EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddToRequiredFields(RequiredField requiredField)
+        {
+            base.AddObject("RequiredFields", requiredField);
         }
 
         #endregion
@@ -4010,6 +4085,260 @@ namespace DSA.Database.Model.EfSQlLite
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="dsaModel", Name="RequiredField")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class RequiredField : EntityObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new RequiredField object.
+        /// </summary>
+        /// <param name="id">Initial value of the Id property.</param>
+        /// <param name="name">Initial value of the Name property.</param>
+        public static RequiredField CreateRequiredField(global::System.Int32 id, global::System.String name)
+        {
+            RequiredField requiredField = new RequiredField();
+            requiredField.Id = id;
+            requiredField.Name = name;
+            return requiredField;
+        }
+
+        #endregion
+
+        #region Simple Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 Id
+        {
+            get
+            {
+                return _Id;
+            }
+            set
+            {
+                if (_Id != value)
+                {
+                    OnIdChanging(value);
+                    ReportPropertyChanging("Id");
+                    _Id = StructuralObject.SetValidValue(value, "Id");
+                    ReportPropertyChanged("Id");
+                    OnIdChanged();
+                }
+            }
+        }
+        private global::System.Int32 _Id;
+        partial void OnIdChanging(global::System.Int32 value);
+        partial void OnIdChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String Name
+        {
+            get
+            {
+                return _Name;
+            }
+            set
+            {
+                OnNameChanging(value);
+                ReportPropertyChanging("Name");
+                _Name = StructuralObject.SetValidValue(value, false, "Name");
+                ReportPropertyChanged("Name");
+                OnNameChanged();
+            }
+        }
+        private global::System.String _Name;
+        partial void OnNameChanging(global::System.String value);
+        partial void OnNameChanged();
+
+        #endregion
+
+        #region Navigation Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("dsaModel", "RequiredFieldSystemSettings", "SystemSettings")]
+        public EntityCollection<SystemSettings> SystemSettings
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<SystemSettings>("dsaModel.RequiredFieldSystemSettings", "SystemSettings");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<SystemSettings>("dsaModel.RequiredFieldSystemSettings", "SystemSettings", value);
+                }
+            }
+        }
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="dsaModel", Name="SystemSettings")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class SystemSettings : EntityObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new SystemSettings object.
+        /// </summary>
+        /// <param name="id">Initial value of the Id property.</param>
+        /// <param name="userId">Initial value of the UserId property.</param>
+        public static SystemSettings CreateSystemSettings(global::System.Int32 id, global::System.Int32 userId)
+        {
+            SystemSettings systemSettings = new SystemSettings();
+            systemSettings.Id = id;
+            systemSettings.UserId = userId;
+            return systemSettings;
+        }
+
+        #endregion
+
+        #region Simple Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 Id
+        {
+            get
+            {
+                return _Id;
+            }
+            set
+            {
+                if (_Id != value)
+                {
+                    OnIdChanging(value);
+                    ReportPropertyChanging("Id");
+                    _Id = StructuralObject.SetValidValue(value, "Id");
+                    ReportPropertyChanged("Id");
+                    OnIdChanged();
+                }
+            }
+        }
+        private global::System.Int32 _Id;
+        partial void OnIdChanging(global::System.Int32 value);
+        partial void OnIdChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 UserId
+        {
+            get
+            {
+                return _UserId;
+            }
+            set
+            {
+                OnUserIdChanging(value);
+                ReportPropertyChanging("UserId");
+                _UserId = StructuralObject.SetValidValue(value, "UserId");
+                ReportPropertyChanged("UserId");
+                OnUserIdChanged();
+            }
+        }
+        private global::System.Int32 _UserId;
+        partial void OnUserIdChanging(global::System.Int32 value);
+        partial void OnUserIdChanged();
+
+        #endregion
+
+        #region Navigation Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("dsaModel", "UserSystemSettings", "User")]
+        public User User
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<User>("dsaModel.UserSystemSettings", "User").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<User>("dsaModel.UserSystemSettings", "User").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<User> UserReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<User>("dsaModel.UserSystemSettings", "User");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<User>("dsaModel.UserSystemSettings", "User", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("dsaModel", "RequiredFieldSystemSettings", "RequiredField")]
+        public EntityCollection<RequiredField> RequiredFields
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<RequiredField>("dsaModel.RequiredFieldSystemSettings", "RequiredField");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<RequiredField>("dsaModel.RequiredFieldSystemSettings", "RequiredField", value);
+                }
+            }
+        }
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
     [EdmEntityTypeAttribute(NamespaceName="dsaModel", Name="Technician")]
     [Serializable()]
     [DataContractAttribute(IsReference=true)]
@@ -4501,6 +4830,158 @@ namespace DSA.Database.Model.EfSQlLite
                 if ((value != null))
                 {
                     ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Intervention>("dsaModel.UserIntervention", "Intervention", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("dsaModel", "UserUserRole", "UserRole")]
+        public EntityCollection<UserRole> UserRoles
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<UserRole>("dsaModel.UserUserRole", "UserRole");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<UserRole>("dsaModel.UserUserRole", "UserRole", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("dsaModel", "UserSystemSettings", "SystemSettings")]
+        public EntityCollection<SystemSettings> SystemSettings
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<SystemSettings>("dsaModel.UserSystemSettings", "SystemSettings");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<SystemSettings>("dsaModel.UserSystemSettings", "SystemSettings", value);
+                }
+            }
+        }
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="dsaModel", Name="UserRole")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class UserRole : EntityObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new UserRole object.
+        /// </summary>
+        /// <param name="id">Initial value of the Id property.</param>
+        /// <param name="role">Initial value of the Role property.</param>
+        public static UserRole CreateUserRole(global::System.Int32 id, global::System.String role)
+        {
+            UserRole userRole = new UserRole();
+            userRole.Id = id;
+            userRole.Role = role;
+            return userRole;
+        }
+
+        #endregion
+
+        #region Simple Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 Id
+        {
+            get
+            {
+                return _Id;
+            }
+            set
+            {
+                if (_Id != value)
+                {
+                    OnIdChanging(value);
+                    ReportPropertyChanging("Id");
+                    _Id = StructuralObject.SetValidValue(value, "Id");
+                    ReportPropertyChanged("Id");
+                    OnIdChanged();
+                }
+            }
+        }
+        private global::System.Int32 _Id;
+        partial void OnIdChanging(global::System.Int32 value);
+        partial void OnIdChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String Role
+        {
+            get
+            {
+                return _Role;
+            }
+            set
+            {
+                OnRoleChanging(value);
+                ReportPropertyChanging("Role");
+                _Role = StructuralObject.SetValidValue(value, false, "Role");
+                ReportPropertyChanged("Role");
+                OnRoleChanged();
+            }
+        }
+        private global::System.String _Role;
+        partial void OnRoleChanging(global::System.String value);
+        partial void OnRoleChanged();
+
+        #endregion
+
+        #region Navigation Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("dsaModel", "UserUserRole", "User")]
+        public EntityCollection<User> Users
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<User>("dsaModel.UserUserRole", "User");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<User>("dsaModel.UserUserRole", "User", value);
                 }
             }
         }

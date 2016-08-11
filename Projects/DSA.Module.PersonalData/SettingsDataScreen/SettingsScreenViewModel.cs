@@ -6,11 +6,9 @@ using DSA.Common.Infrastructure.Prism.EventAggregator.Events;
 using DSA.Common.Infrastructure.Styles;
 using DSA.Common.Infrastructure.ViewModel;
 using DSA.Module.PersonalData.OptionsMenu;
-//using DSA.Module.PersonalData.SettingsColumns.SettingsItemList;
 using DSA.Module.PersonalData.SettingsColumns.SettingsTileList;
 using DSA.Module.PersonalData.UserDetails;
 using DTS.Jurnal.Database.SQLServer.Module;
-using DTS.Jurnal.V3.Database.Module;
 using Microsoft.Practices.Prism.Events;
 using Microsoft.Practices.ServiceLocation;
 using Microsoft.Practices.Unity;
@@ -65,21 +63,7 @@ namespace DSA.Module.PersonalData.SettingsDataScreen
             }
         }
 
-        //       private SettingsItemListViewModel settingsItemListViewModel;
-        //       public SettingsItemListViewModel SettingsItemListViewModel
-        //       {
-        //           get { return settingsItemListViewModel; }
-        //           set
-        //           {
-        //               if (settingsItemListViewModel != value)
-        //               {
-        //                   settingsItemListViewModel = value;
-        //                   OnPropertyChanged();
-        //               }
-        //           }
-        //       }
-
-
+ 
         private SettingsTileListViewModel settingsTileListViewModel;
         public SettingsTileListViewModel SettingsTileListViewModel
         {

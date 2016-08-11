@@ -216,10 +216,6 @@
       <Project>{d568745d-4033-44b5-b59a-8dcebfa7b7ed}</Project>
       <Name>DSA.FileUpload</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DTS.Jurnal.V3.Database.Module\DTS.Jurnal.V3.Database.Module.csproj">
-      <Project>{e70d8866-d808-428a-b1a3-fd091f070685}</Project>
-      <Name>DTS.Jurnal.V3.Database.Module</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

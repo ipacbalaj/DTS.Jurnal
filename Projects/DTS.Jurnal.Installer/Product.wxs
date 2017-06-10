@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <!--Id="*"  * means that WIX will generate a new GUID for each build-->
+  <Product Id="*" Name="DTS.Jurnal" Language="1033" Version="1.0.0.0" Manufacturer="Ionut" UpgradeCode="a5585b45-ae42-4249-b4e0-2818bcf22c36">
+    <!--InstallScope="perMachine" can pe set to perMachine or perUser
+        perMachine - accesible for all users of the machine ( allUsers =1)
+        perUser - only installed for the current user
+                - make sure that you do not set registries per machine
+    -->
+    <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+    <!--MediatTemplate handles CAB files
+    EmbedCab="yes" instructs the wix binder to embeded the cab files inside the MSI file
+    -->
+		<MediaTemplate EmbedCab="yes"/>
+    
+    <!--Launch Condition-->
+    <Condition Message="Database folder and file must exist before installing the application.">
+      <![CDATA[Installed OR DATABASEFOLDER]]>
+    </Condition>
+
+    <Property Id="DATABASEFOLDER">
+      <DirectorySearch Id="DirSearchDatabase" Path="c:\foo">        
+      </DirectorySearch>
+    </Property>
+    
+    <Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER" />
+    <UIRef Id="WixUI_InstallDir"/>
+    
+		<Feature Id="ProductFeature" Title="DTS.Jurnal" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+      <ComponentGroupRef Id="ResourceComponents" />
+		</Feature>
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+        <!--INSTALLFOLDER is all caps meaning it will be a public windows installer property and it will persist 
+        between the UI and Execute phases-->
+        <Directory Id="INSTALLFOLDER" Name="DTS.Jurnal" >
+          <Directory Id="RESOURCES" Name="resourses">
+            <Directory Id="ICONS" Name="icons">
+            </Directory>
+          </Directory>
+        </Directory>
+			</Directory>
+		</Directory>
+	</Fragment>
+
+	<Fragment>
+    
+    <!--Dll's will be stored here-->
+		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+      <!--Usually for each file that needs to be installed there will be a component
+      this is the recomended way of doing things
+      we heed a GUID id
+      windows installer registers every component on the system such that it can enable repair and uninstall 
+      -->
+			 <Component Id="ProductComponent">
+         <File Source="test/test.txt"></File>
+			 </Component> 
+		</ComponentGroup>
+    
+    <!--Application file resources will be stored here-->
+    <ComponentGroup Id="ResourceComponents" Directory="ICONS">
+      <!--Usually for each file that needs to be installed there will be a component
+      this is the recomended way of doing things
+      we heed a GUID id
+      windows installer registers every component on the system such that it can enable repair and uninstall 
+      -->
+      <Component Id="IconComponent">
+        <File Source="icons/_SUS_contabilitate.png"></File>
+      </Component>
+    </ComponentGroup>
+	</Fragment>
+  
+</Wix>

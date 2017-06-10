@@ -20,16 +20,16 @@
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                    <StackPanel VerticalAlignment="Center">
-                        <TextBlock>
+                <StackPanel VerticalAlignment="Center">
+                    <TextBlock>
                     <Run Text="Seteaza platite : "/>
                     <Run Text="shift + p" FontWeight="SemiBold"/>
-                        </TextBlock>
-                        <TextBlock>
+                    </TextBlock>
+                    <TextBlock>
                     <Run Text="Seteaza selectate : "/>
                     <Run Text="shift + s" FontWeight="SemiBold"/>
-                        </TextBlock>
-                    </StackPanel>
+                    </TextBlock>
+                </StackPanel>
                 <Viewbox Grid.Column="1" VerticalAlignment="Center"  MaxHeight="50">
                     <buttons:ActionButtonView  DataContext="{Binding ChangeCredentialsButton}"/>
                 </Viewbox>

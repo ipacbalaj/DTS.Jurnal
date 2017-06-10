@@ -423,7 +423,7 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
             //    currentIntervention.WasPayed = !rowintervention.WasPayed;
             //    currentIntervention.ShouldSetPayed = false;
             //}
-            BusinessLogic.Instance.Databasehandler.SetInterventionPayed(rowintervention.Id, rowintervention.WasPayed);
+            BusinessLogic.Instance.Databasehandler.SetInterventionPayed(rowintervention.Id, !rowintervention.WasPayed);
         }
 
         private async void OnDelete(InterventionModel interventionModel)

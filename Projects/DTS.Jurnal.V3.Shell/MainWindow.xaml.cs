@@ -17,7 +17,7 @@ namespace DTS.Jurnal.V3.Shell
         private async void MainWindow_OnClosing(object sender, CancelEventArgs e)
         {
             ((MainWindowViewModel)DataContext).SaveDatabaseBackUp();
-            ((MainWindowViewModel)DataContext).SaveDatabaseFileToFtp();
+            //((MainWindowViewModel)DataContext).SaveDatabaseFileToFtp();
             MessageBox.Show("Baza de date a fost salvată.");
         }
     }

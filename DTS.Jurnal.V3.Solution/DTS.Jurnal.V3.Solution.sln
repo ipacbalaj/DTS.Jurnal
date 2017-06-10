@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTS.Jurnal.V3.Shell", "..\Projects\DTS.Jurnal.V3.Shell\DTS.Jurnal.V3.Shell.csproj", "{1C4EDF67-38C2-40E2-AC65-2D57360677C5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSA.Common.Infrastructure", "..\Projects\DSA.Common.Infrastructure\DSA.Common.Infrastructure.csproj", "{EDD4730D-BAC5-4D75-B556-C70C8BFD736B}"
@@ -26,6 +28,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTS.Common.BusinessLogic", "..\Projects\DTS.Common.BusinessLogic\DTS.Common.BusinessLogic.csproj", "{F60081CC-C513-478B-A7B2-1D77E6242AC5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTS.Common.DatabaseServer", "..\Projects\DTS.Common.DatabaseServer\DTS.Common.DatabaseServer.csproj", "{3E97CCFB-5DCC-4775-B0AD-3FE2E8C7AC53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTS.Jurnal.Database.SQLServer.Module", "..\Projects\DTS.Jurnal.Database.SQLServer.Module\DTS.Jurnal.Database.SQLServer.Module.csproj", "{8378E5C0-BC52-4F9B-A854-2C6F0990598C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -85,6 +89,10 @@ Global
 		{3E97CCFB-5DCC-4775-B0AD-3FE2E8C7AC53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E97CCFB-5DCC-4775-B0AD-3FE2E8C7AC53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E97CCFB-5DCC-4775-B0AD-3FE2E8C7AC53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8378E5C0-BC52-4F9B-A854-2C6F0990598C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8378E5C0-BC52-4F9B-A854-2C6F0990598C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8378E5C0-BC52-4F9B-A854-2C6F0990598C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8378E5C0-BC52-4F9B-A854-2C6F0990598C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -31,10 +31,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Practices.Prism">
-      <HintPath>C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\v2\finalProject\References\Microsoft\Microsoft.Practices.Prism\Desktop\Microsoft.Practices.Prism.dll</HintPath>
+      <HintPath>..\DSA.Common.Infrastructure\bin\Debug\Microsoft.Practices.Prism.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Practices.Unity">
-      <HintPath>C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\v2\finalProject\References\Microsoft\Microsoft.Practices.Prism\Desktop\Microsoft.Practices.Unity.dll</HintPath>
+      <HintPath>..\DSA.Common.Infrastructure\bin\Debug\Microsoft.Practices.Unity.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />

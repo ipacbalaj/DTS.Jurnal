@@ -174,3 +174,42 @@ E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\obj\Debug\JurnalScreen\JurnalVie
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\obj\Debug\DTS_Jurnal.Jurnal.g.resources
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\obj\Debug\DTS_Jurnal.Jurnal.dll
 E:\DTS\DTS.Jurnal.V5\Projects\DTS_Jurnal.Jurnal\obj\Debug\DTS_Jurnal.Jurnal.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DTS_Jurnal.Jurnal\obj\Debug\DTS_Jurnal.Jurnal.csprojResolveAssemblyReference.cache
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DTS_Jurnal.Jurnal\obj\Debug\DTS_Jurnal.Jurnal_MarkupCompile.cache
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DTS_Jurnal.Jurnal\obj\Debug\AddInterventionTile\AddInterventionTileView.g.cs
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DTS_Jurnal.Jurnal\obj\Debug\JurnalScreen\JurnalView.g.cs
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DTS_Jurnal.Jurnal\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DTS_Jurnal.Jurnal\obj\Debug\DTS_Jurnal.Jurnal_MarkupCompile.lref
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DTS_Jurnal.Jurnal\bin\Debug\DTS_Jurnal.Jurnal.dll.config
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DTS_Jurnal.Jurnal\bin\Debug\DTS_Jurnal.Jurnal.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DTS_Jurnal.Jurnal\bin\Debug\DTS_Jurnal.Jurnal.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DTS_Jurnal.Jurnal\bin\Debug\DSA.Common.Controls.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DTS_Jurnal.Jurnal\bin\Debug\DSA.Common.Infrastructure.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DTS_Jurnal.Jurnal\bin\Debug\DSA.FileUpload.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DTS_Jurnal.Jurnal\bin\Debug\DTS.Common.BusinessLogic.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DTS_Jurnal.Jurnal\bin\Debug\DTS.Common.DatabaseServer.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DTS_Jurnal.Jurnal\bin\Debug\EntityFramework.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DTS_Jurnal.Jurnal\bin\Debug\System.Data.SqlServerCe.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DTS_Jurnal.Jurnal\bin\Debug\System.Windows.Interactivity.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DTS_Jurnal.Jurnal\bin\Debug\DSA.Database.Model.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DTS_Jurnal.Jurnal\bin\Debug\DSA.Common.Controls.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DTS_Jurnal.Jurnal\bin\Debug\DSA.Common.Infrastructure.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DTS_Jurnal.Jurnal\bin\Debug\DSA.FileUpload.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DTS_Jurnal.Jurnal\bin\Debug\DTS.Common.BusinessLogic.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DTS_Jurnal.Jurnal\bin\Debug\DTS.Common.DatabaseServer.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DTS_Jurnal.Jurnal\bin\Debug\System.Windows.Interactivity.xml
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DTS_Jurnal.Jurnal\bin\Debug\DSA.Database.Model.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DTS_Jurnal.Jurnal\bin\Debug\de\System.Windows.Interactivity.resources.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DTS_Jurnal.Jurnal\bin\Debug\en\System.Windows.Interactivity.resources.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DTS_Jurnal.Jurnal\bin\Debug\es\System.Windows.Interactivity.resources.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DTS_Jurnal.Jurnal\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DTS_Jurnal.Jurnal\bin\Debug\it\System.Windows.Interactivity.resources.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DTS_Jurnal.Jurnal\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DTS_Jurnal.Jurnal\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DTS_Jurnal.Jurnal\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DTS_Jurnal.Jurnal\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DTS_Jurnal.Jurnal\obj\Debug\AddInterventionTile\AddInterventionTileView.baml
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DTS_Jurnal.Jurnal\obj\Debug\JurnalScreen\JurnalView.baml
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DTS_Jurnal.Jurnal\obj\Debug\DTS_Jurnal.Jurnal.g.resources
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DTS_Jurnal.Jurnal\obj\Debug\DTS_Jurnal.Jurnal.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DTS_Jurnal.Jurnal\obj\Debug\DTS_Jurnal.Jurnal.pdb

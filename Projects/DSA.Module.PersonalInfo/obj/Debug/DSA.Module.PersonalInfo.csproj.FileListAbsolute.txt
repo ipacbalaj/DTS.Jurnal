@@ -445,3 +445,43 @@ E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalInfo\obj\Debug\PersonalInfoScre
 E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.g.resources
 E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.dll
 E:\DTS\DTS.Jurnal.V5\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.csprojResolveAssemblyReference.cache
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\EditPatient\EditPatientView.baml
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\PatientInformationView.baml
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\EditPatient\EditPatientView.g.cs
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\obj\Debug\PatientInformation\PatientInformationView.g.cs
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo_MarkupCompile.cache
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Module.PersonalInfo.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Module.PersonalInfo.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Controls.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Infrastructure.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\bin\Debug\DTS.Common.BusinessLogic.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\bin\Debug\DTS.Common.DatabaseServer.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\bin\Debug\DTS.Jurnal.Database.SQLServer.Module.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Database.Model.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\bin\Debug\EntityFramework.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\bin\Debug\System.Windows.Interactivity.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Controls.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Common.Infrastructure.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\bin\Debug\DTS.Common.BusinessLogic.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\bin\Debug\DTS.Common.DatabaseServer.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\bin\Debug\DTS.Jurnal.Database.SQLServer.Module.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\bin\Debug\DSA.Database.Model.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\bin\Debug\EntityFramework.xml
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\bin\Debug\System.Windows.Interactivity.xml
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\bin\Debug\de\System.Windows.Interactivity.resources.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\bin\Debug\en\System.Windows.Interactivity.resources.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\bin\Debug\es\System.Windows.Interactivity.resources.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\bin\Debug\it\System.Windows.Interactivity.resources.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\obj\Debug\PersonalInfoScreen\PersonalInfoScreenView.g.cs
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo_MarkupCompile.lref
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\obj\Debug\PersonalInfoScreen\PersonalInfoScreenView.baml
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.g.resources
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\obj\Debug\DSA.Module.PersonalInfo.pdb

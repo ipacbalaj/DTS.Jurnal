@@ -213,7 +213,7 @@ namespace DTS.Jurnal.V3.Shell
 
         public void DownLoadDatabaseFromFtp()
         {
-            CopyFile(Settings.Default.Databasepath, Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\DTS");
+            //CopyFile(Settings.Default.Databasepath, Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\DTS");
         }
 
         private void CopyFile(string sourcePath, string targetPath)
@@ -285,7 +285,6 @@ namespace DTS.Jurnal.V3.Shell
         }
 
         #endregion Methods
-
 
     }
 }

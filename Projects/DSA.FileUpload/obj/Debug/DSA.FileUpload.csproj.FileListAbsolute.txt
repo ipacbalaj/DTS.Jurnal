@@ -188,3 +188,23 @@ E:\DTS\DTS.Jurnal.V5\Projects\DSA.FileUpload\bin\Debug\DSA.Database.Model.pdb
 E:\DTS\DTS.Jurnal.V5\Projects\DSA.FileUpload\bin\Debug\EntityFramework.xml
 E:\DTS\DTS.Jurnal.V5\Projects\DSA.FileUpload\obj\Debug\DSA.FileUpload.dll
 E:\DTS\DTS.Jurnal.V5\Projects\DSA.FileUpload\obj\Debug\DSA.FileUpload.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.FileUpload\obj\Debug\DSA.FileUpload.csprojResolveAssemblyReference.cache
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.FileUpload\bin\Debug\DSA.FileUpload.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.FileUpload\bin\Debug\DSA.FileUpload.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.FileUpload\bin\Debug\DSA.Common.Infrastructure.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.FileUpload\bin\Debug\DTS.Common.BusinessLogic.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.FileUpload\bin\Debug\DTS.Common.DatabaseServer.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.FileUpload\bin\Debug\DTS.Jurnal.Database.SQLServer.Module.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.FileUpload\bin\Debug\Microsoft.Practices.Prism.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.FileUpload\bin\Debug\Microsoft.Practices.Unity.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.FileUpload\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.FileUpload\bin\Debug\DSA.Database.Model.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.FileUpload\bin\Debug\EntityFramework.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.FileUpload\bin\Debug\DSA.Common.Infrastructure.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.FileUpload\bin\Debug\DTS.Common.BusinessLogic.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.FileUpload\bin\Debug\DTS.Common.DatabaseServer.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.FileUpload\bin\Debug\DTS.Jurnal.Database.SQLServer.Module.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.FileUpload\bin\Debug\DSA.Database.Model.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.FileUpload\bin\Debug\EntityFramework.xml
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.FileUpload\obj\Debug\DSA.FileUpload.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.FileUpload\obj\Debug\DSA.FileUpload.pdb

@@ -64,3 +64,32 @@ E:\DTS\DTS.Jurnal.V5\Projects\DSA.Login\bin\Debug\DSA.Database.Model.pdb
 E:\DTS\DTS.Jurnal.V5\Projects\DSA.Login\bin\Debug\EntityFramework.xml
 E:\DTS\DTS.Jurnal.V5\Projects\DSA.Login\obj\Debug\DSA.Login.dll
 E:\DTS\DTS.Jurnal.V5\Projects\DSA.Login\obj\Debug\DSA.Login.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\obj\Debug\DSA.Login.csprojResolveAssemblyReference.cache
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\obj\Debug\DSA.Login_MarkupCompile.cache
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\bin\Debug\DSA.Login.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\bin\Debug\DSA.Login.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\bin\Debug\DSA.Common.Controls.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\bin\Debug\DSA.Common.Infrastructure.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\bin\Debug\DSA.Module.PersonalData.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\bin\Debug\DTS.Common.BusinessLogic.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\bin\Debug\DTS.Common.DatabaseServer.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\bin\Debug\DTS.FtpConnection.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\bin\Debug\DTS.Jurnal.Database.SQLServer.Module.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\bin\Debug\log4net.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\bin\Debug\DSA.Database.Model.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\bin\Debug\Ftp.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\bin\Debug\EntityFramework.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\bin\Debug\DSA.Common.Controls.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\bin\Debug\DSA.Common.Infrastructure.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\bin\Debug\DSA.Module.PersonalData.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\bin\Debug\DTS.Common.BusinessLogic.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\bin\Debug\DTS.Common.DatabaseServer.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\bin\Debug\DTS.FtpConnection.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\bin\Debug\DTS.Jurnal.Database.SQLServer.Module.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\bin\Debug\DSA.Database.Model.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\bin\Debug\EntityFramework.xml
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\obj\Debug\Login\LoginView.baml
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\obj\Debug\Login\LoginView.g.cs
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\obj\Debug\DSA.Login.g.resources
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\obj\Debug\DSA.Login.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\obj\Debug\DSA.Login.pdb

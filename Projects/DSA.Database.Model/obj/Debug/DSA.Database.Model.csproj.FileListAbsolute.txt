@@ -55,3 +55,16 @@ E:\DTS\DTS.Jurnal.V5\Projects\DSA.Database.Model\bin\Debug\DevExpress.Data.v12.2
 E:\DTS\DTS.Jurnal.V5\Projects\DSA.Database.Model\bin\Debug\DevExpress.Printing.v12.2.Core.xml
 E:\DTS\DTS.Jurnal.V5\Projects\DSA.Database.Model\obj\Debug\DSA.Database.Model.dll
 E:\DTS\DTS.Jurnal.V5\Projects\DSA.Database.Model\obj\Debug\DSA.Database.Model.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Database.Model\bin\Debug\DSA.Database.Model.dll.config
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Database.Model\bin\Debug\DSA.Database.Model.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Database.Model\bin\Debug\DSA.Database.Model.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Database.Model\bin\Debug\DSA.Common.Infrastructure.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Database.Model\bin\Debug\DTS.Common.DatabaseServer.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Database.Model\bin\Debug\EntityFramework.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Database.Model\bin\Debug\Microsoft.Practices.Unity.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Database.Model\bin\Debug\DSA.Common.Infrastructure.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Database.Model\bin\Debug\DTS.Common.DatabaseServer.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Database.Model\obj\Debug\DSA.Database.Model.csprojResolveAssemblyReference.cache
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Database.Model\obj\Debug\DSA.Database.Model.csproj.ResolveComReference.cache
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Database.Model\obj\Debug\DSA.Database.Model.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Database.Model\obj\Debug\DSA.Database.Model.pdb

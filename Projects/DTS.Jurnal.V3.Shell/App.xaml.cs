@@ -32,20 +32,10 @@ namespace DTS.Jurnal.V3.Shell
         {
             var settings = ConfigurationManager.ConnectionStrings["dsaEntities"];
             var fi = typeof(ConfigurationElement).GetField("_bReadOnly", BindingFlags.Instance | BindingFlags.NonPublic);
-            fi.SetValue(settings, false);
-            //todo:uncomment to use given path
-            //            var efConfigString =
-            //                ConfigurationManager.ConnectionStrings["dsaEntities"].ConnectionString.Replace("AppData",
-            //                    Settings.Default.Databasepath);
-            //todo: be carefulll in connection strings
-//
-//             provider connection string=&quot;
-//      data source=AppData\DTS\Jurnal.sdf&quot;"
+            fi.SetValue(settings, false);            
             var efConfigString =
                 ConfigurationManager.ConnectionStrings["dsaEntities"].ConnectionString.Replace("AppData",
-                Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData));
-            ;
-            //   Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData));
+                Settings.Default.Databasepath);            
             if (efConfigString != null)
             {
                 ConfigurationManager.ConnectionStrings["dsaEntities"].ConnectionString = efConfigString;

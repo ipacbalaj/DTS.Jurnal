@@ -1,5 +1,4 @@
-﻿using DTS.Jurnal.V3.Shell.InstallerConfig;
-using Microsoft.Tools.WindowsInstallerXml.Bootstrapper;
+﻿using Microsoft.Tools.WindowsInstallerXml.Bootstrapper;
 using System.Reflection;
 using System.Resources;
 using System.Runtime.CompilerServices;
@@ -9,15 +8,16 @@ using System.Windows;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("DTS.Jurnal.V3.Shell")]
+[assembly: AssemblyTitle("InstallerUI")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Dental Tracking System")]
-[assembly: AssemblyCopyright("Copyright ©  2015")]
+[assembly: AssemblyProduct("InstallerUI")]
+[assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
-[assembly: BootstrapperApplication(typeof(InstallerBootstrapperApplication))]
+[assembly: BootstrapperApplication(typeof(InstallerUI.InstallerAppBootstrapper))]
+
 // Setting ComVisible to false makes the types in this assembly not visible 
 // to COM components.  If you need to access a type in this assembly from 
 // COM, set the ComVisible attribute to true on that type.

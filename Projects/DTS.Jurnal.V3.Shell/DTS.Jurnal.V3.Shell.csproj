@@ -68,6 +68,7 @@
     <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BootstrapperCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=ce35f76fcda82bad, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Data.v12.2">
       <HintPath>C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\v2\finalProject\References\DevExpress\v12.2\Framework\DevExpress.Data.v12.2.dll</HintPath>
     </Reference>
@@ -135,6 +136,7 @@
     <Reference Include="ftplib">
       <HintPath>..\..\resources\ftplib.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Deployment.WindowsInstaller, Version=3.0.0.0, Culture=neutral, PublicKeyToken=ce35f76fcda82bad, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.Practices.Prism, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Users\Pac-Balaj ionutzela2\Dropbox\DentalTrackingSystem\v2\finalProject\References\Microsoft\Microsoft.Practices.Prism\Desktop\Microsoft.Practices.Prism.dll</HintPath>
@@ -195,6 +197,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="InstallerConfig\InstallerBootstrapperApplication.cs" />
     <Compile Include="Tabs\HorizontalTabs\HorizontalTabsView.xaml.cs">
       <DependentUpon>HorizontalTabsView.xaml</DependentUpon>
     </Compile>
@@ -249,6 +252,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="InstallerConfig\BoostrapperCore.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

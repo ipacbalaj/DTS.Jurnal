@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Bundle Name="DTS.Jurnal.Installer.Bootstrapper" Version="1.0.0.0" Manufacturer="Ionut" UpgradeCode="b9f07616-11fc-46c6-bcb2-2f75434159f5">
+    <!--ManagedBootstrapperApplicationHost is a pre-defined trigger for WiX to load your managed UI.-->
+    <BootstrapperApplicationRef Id="ManagedBootstrapperApplicationHost" >
+      <PayloadGroupRef Id="DTSJurnalInstallerPayLoad" />
+    </BootstrapperApplicationRef> 
+      
+		<Chain>
+      <PackageGroupRef Id="NetFx45Web"/>
+      <!--This ExePackage adds Firefox as a prerequisite and bundles the exe inside the installer-->
+      <ExePackage
+        Id="TestExeInstall"
+        Name="Test"
+        SourceFile="C:\Users\ionutbal\Downloads\Firefox Setup Stub 53.0.3.exe"
+        Vital="yes"
+        Compressed="yes"/>           
+			<MsiPackage SourceFile="$(var.DTS.Jurnal.Installer.TargetPath)" /> 
+		</Chain>
+	</Bundle>
+  
+  <!--Bootstrapper-->
+  <Fragment>
+    <PayloadGroup Id ="DTSJurnalInstallerPayLoad">
+      <Payload SourceFile =" $(var.DTS.Jurnal.V3.Shell.TargetPath)"/>
+      <!--<Payload SourceFile="$(var.DTS.Jurnal.V3.Shell.TargetDir)\\BootstrapperCore.config" />-->
+      <Payload SourceFile="$(var.DTS.Jurnal.V3.Shell.TargetDir)\\Microsoft.Deployment.WindowsInstaller.dll" />
+    </PayloadGroup>
+  </Fragment>
+  
+  
+</Wix>

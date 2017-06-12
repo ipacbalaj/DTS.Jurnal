@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Bundle Name="InstallerBootstrapper" Version="1.0.0.0" Manufacturer="Ionut" UpgradeCode="353b299e-81a5-42cd-9e79-c1d2e32c24e3">
+      <BootstrapperApplicationRef Id="ManagedBootstrapperApplicationHost">
+        <PayloadGroupRef Id="TestInstallerPayload" />
+      </BootstrapperApplicationRef>
+		<Chain>
+			<!-- TODO: Define the list of chained packages. -->
+       <PackageGroupRef Id='NetFx45Web' />
+			 <MsiPackage SourceFile="$(var.InstallerDemo1.TargetPath)" /> 
+		</Chain>
+	</Bundle>
+
+
+  <!--Bootstrapper-->
+  <Fragment>
+    <PayloadGroup Id ="TestInstallerPayload">
+      <Payload SourceFile="$(var.InstallerUI.TargetPath)"/>
+      <Payload SourceFile="$(var.InstallerUI.TargetDir)\\BootstrapperCore.config" />
+      <Payload SourceFile="$(var.InstallerUI.TargetDir)\\Microsoft.Deployment.WindowsInstaller.dll" />
+    </PayloadGroup>
+  </Fragment>
+  
+</Wix>

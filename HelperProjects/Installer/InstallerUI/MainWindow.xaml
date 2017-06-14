@@ -6,7 +6,11 @@
         xmlns:local="clr-namespace:InstallerUI"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        <TextBlock Text="Ionut"></TextBlock>
-    </Grid>
+
+    <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Right">
+        <Button Content="Install" Command="{Binding Path=InstallCommand}"  Margin="10" Height="20" Width="80"/>
+        <Button Content="Uninstall" Command="{Binding Path=UninstallCommand}" Margin="10" Height="20" Width="80"/>
+        <Button Content="PrepareNextInstall" Command="{Binding Path=NextCommand}" Margin="10" Height="20" Width="80" />
+        <Button Content="Exit" Command="{Binding Path=ExitCommand}" Margin="10" Height="20" Width="80" />
+    </StackPanel>
 </Window>

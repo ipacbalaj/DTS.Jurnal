@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-	<Product Id="10A69099-CA57-4C0D-8348-65E33C32E571" Name="InstallerDemo1" Language="1033" Version="1.0.0.0" Manufacturer="Ionut" UpgradeCode="e889cfdd-ef49-4db8-aab7-c824fdb5e8c7">
+	<Product Id="*" Name="InstallerDemo3" Language="1033" Version="1.0.0.0" Manufacturer="Ionut" UpgradeCode="45e10aa7-e3d0-4025-949a-4fb9bf23ae42">
 		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
 
 		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
-		<MediaTemplate />
+		<MediaTemplate EmbedCab="yes"/>
 
-		<Feature Id="ProductFeature" Title="InstallerDemo1" Level="1">
+		<Feature Id="ProductFeature" Title="InstallerDemo3" Level="1">
 			<ComponentGroupRef Id="ProductComponents" />
 		</Feature>
 	</Product>
@@ -14,16 +14,15 @@
 	<Fragment>
 		<Directory Id="TARGETDIR" Name="SourceDir">
 			<Directory Id="ProgramFilesFolder">
-				<Directory Id="INSTALLFOLDER" Name="InstallerDemo1" />
+				<Directory Id="INSTALLFOLDER" Name="InstallerDemo3" />
 			</Directory>
 		</Directory>
 	</Fragment>
 
 	<Fragment>
 		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
-      <Component Id="ProductComponent">
-        <File Source="test/test.txt">
-        </File>
+      <Component Id="MyComponent">
+        <File Source="myFolder/myFile.txt"></File>
       </Component>
 		</ComponentGroup>
 	</Fragment>

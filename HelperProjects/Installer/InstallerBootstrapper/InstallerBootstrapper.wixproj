@@ -42,6 +42,22 @@
       <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
       <RefTargetDir>INSTALLFOLDER</RefTargetDir>
     </ProjectReference>
+    <ProjectReference Include="..\InstallerDemo2\InstallerDemo2.wixproj">
+      <Name>InstallerDemo2</Name>
+      <Project>{69742e93-76ea-4109-ab6a-b54f71b8e1d6}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\InstallerDemo3\InstallerDemo3.wixproj">
+      <Name>InstallerDemo3</Name>
+      <Project>{1828aa7e-c590-46df-80b2-4adfca572b85}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
     <ProjectReference Include="..\InstallerUI\InstallerUI.csproj">
       <Name>InstallerUI</Name>
       <Project>{b094a403-d094-4b77-ac94-15eaa36b31af}</Project>

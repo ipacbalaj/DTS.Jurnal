@@ -7,10 +7,11 @@
 		<Chain>
 			<!-- TODO: Define the list of chained packages. -->
        <PackageGroupRef Id='NetFx45Web' />
-			 <MsiPackage SourceFile="$(var.InstallerDemo1.TargetPath)" /> 
-		</Chain>
+			 <!--<MsiPackage Id="InstallDemo1" SourceFile="$(var.InstallerDemo1.TargetPath)" />-->
+       <!--<MsiPackage Id="InstallDemo2" SourceFile="$(var.InstallerDemo2.TargetPath)" />-->
+      <MsiPackage Id="InstallDemo2" SourceFile="$(var.InstallerDemo3.TargetPath)" />
+    </Chain>
 	</Bundle>
-
 
   <!--Bootstrapper-->
   <Fragment>

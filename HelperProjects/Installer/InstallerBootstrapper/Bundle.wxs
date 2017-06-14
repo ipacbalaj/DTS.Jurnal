@@ -9,7 +9,8 @@
        <PackageGroupRef Id='NetFx45Web' />
 			 <!--<MsiPackage Id="InstallDemo1" SourceFile="$(var.InstallerDemo1.TargetPath)" />-->
        <!--<MsiPackage Id="InstallDemo2" SourceFile="$(var.InstallerDemo2.TargetPath)" />-->
-      <MsiPackage Id="InstallDemo2" SourceFile="$(var.InstallerDemo3.TargetPath)" />
+      <MsiPackage Id="InstallDemo3" SourceFile="$(var.InstallerDemo3.TargetPath)" />
+      <MsiPackage Id="InstallDemo4" SourceFile="$(var.InstallerDemo4.TargetPath)" />
     </Chain>
 	</Bundle>
 

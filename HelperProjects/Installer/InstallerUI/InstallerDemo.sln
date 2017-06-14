@@ -13,6 +13,8 @@ Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "InstallerDemo2", "..\Instal
 EndProject
 Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "InstallerDemo3", "..\InstallerDemo3\InstallerDemo3.wixproj", "{1828AA7E-C590-46DF-80B2-4ADFCA572B85}"
 EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "InstallerDemo4", "..\InstallerDemo4\InstallerDemo4.wixproj", "{F332977E-2D7E-4069-913B-5E6A0D33602A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,12 @@ Global
 		{1828AA7E-C590-46DF-80B2-4ADFCA572B85}.Release|Any CPU.ActiveCfg = Release|x86
 		{1828AA7E-C590-46DF-80B2-4ADFCA572B85}.Release|x86.ActiveCfg = Release|x86
 		{1828AA7E-C590-46DF-80B2-4ADFCA572B85}.Release|x86.Build.0 = Release|x86
+		{F332977E-2D7E-4069-913B-5E6A0D33602A}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{F332977E-2D7E-4069-913B-5E6A0D33602A}.Debug|x86.ActiveCfg = Debug|x86
+		{F332977E-2D7E-4069-913B-5E6A0D33602A}.Debug|x86.Build.0 = Debug|x86
+		{F332977E-2D7E-4069-913B-5E6A0D33602A}.Release|Any CPU.ActiveCfg = Release|x86
+		{F332977E-2D7E-4069-913B-5E6A0D33602A}.Release|x86.ActiveCfg = Release|x86
+		{F332977E-2D7E-4069-913B-5E6A0D33602A}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

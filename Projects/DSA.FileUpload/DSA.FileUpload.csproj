@@ -31,10 +31,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DocX">
-      <HintPath>..\..\..\Resources\DocX.dll</HintPath>
+      <HintPath>..\..\resources\DocX.dll</HintPath>
     </Reference>
     <Reference Include="log4net">
-      <HintPath>D:\c#\DTS\finalProject\References\Log4Net\log4net.dll</HintPath>
+      <HintPath>..\..\resources\log4net.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

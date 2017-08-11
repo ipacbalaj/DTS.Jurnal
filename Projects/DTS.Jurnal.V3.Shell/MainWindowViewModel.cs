@@ -269,7 +269,7 @@ namespace DTS.Jurnal.V3.Shell
             string targetPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\DTS\BackUp";
 
             // Use Path class to manipulate file and directory paths.
-            string sourceFile = System.IO.Path.Combine(sourcePath, "dsa.sdf");
+            string sourceFile = System.IO.Path.Combine(Settings.Default.Databasepath, "dsa.sdf");
             string destFile = System.IO.Path.Combine(targetPath, fileName);
 
             // To copy a folder's contents to a new location:

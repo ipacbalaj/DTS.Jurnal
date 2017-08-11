@@ -30,72 +30,68 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Data.v12.2, Version=12.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>E:\Potitehnica\ds\finalProject\References\DevExpress\v12.2\Framework\DevExpress.Data.v12.2.dll</HintPath>
+    <Reference Include="DevExpress.Data.v12.2">
+      <HintPath>..\..\resources\DevExpress.Data.v12.2.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Printing.v12.2.Core">
-      <HintPath>E:\Potitehnica\ds\finalProject\References\DevExpress\v12.2\Framework\DevExpress.Printing.v12.2.Core.dll</HintPath>
+      <HintPath>..\..\resources\DevExpress.Printing.v12.2.Core.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Utils.v12.2">
-      <HintPath>E:\Potitehnica\ds\finalProject\References\DevExpress\v12.2\Framework\DevExpress.Utils.v12.2.dll</HintPath>
+      <HintPath>..\..\resources\DevExpress.Utils.v12.2.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Utils.v12.2.UI">
-      <HintPath>E:\Potitehnica\ds\finalProject\References\DevExpress\v12.2\Framework\DevExpress.Utils.v12.2.UI.dll</HintPath>
+      <HintPath>..\..\resources\DevExpress.Utils.v12.2.UI.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Xpf.Core.v12.2, Version=12.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>E:\Potitehnica\ds\finalProject\References\DevExpress\v12.2\Framework\DevExpress.Xpf.Core.v12.2.dll</HintPath>
+    <Reference Include="DevExpress.Xpf.Core.v12.2">
+      <HintPath>..\..\resources\DevExpress.Xpf.Core.v12.2.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Xpf.Core.v12.2.Extensions, Version=12.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>E:\Potitehnica\ds\finalProject\References\DevExpress\v12.2\Framework\DevExpress.Xpf.Core.v12.2.Extensions.dll</HintPath>
+    <Reference Include="DevExpress.Xpf.Core.v12.2.Extensions">
+      <HintPath>..\..\resources\DevExpress.Xpf.Core.v12.2.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Xpf.Grid.v12.2">
-      <HintPath>E:\Potitehnica\ds\finalProject\References\DevExpress\v12.2\Framework\DevExpress.Xpf.Grid.v12.2.dll</HintPath>
+      <HintPath>..\..\resources\DevExpress.Xpf.Grid.v12.2.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Xpf.Grid.v12.2.Core">
-      <HintPath>E:\Potitehnica\ds\finalProject\References\DevExpress\v12.2\Framework\DevExpress.Xpf.Grid.v12.2.Core.dll</HintPath>
+      <HintPath>..\..\resources\DevExpress.Xpf.Grid.v12.2.Core.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Xpf.Grid.v12.2.Extensions">
-      <HintPath>E:\Potitehnica\ds\finalProject\References\DevExpress\v12.2\Framework\DevExpress.Xpf.Grid.v12.2.Extensions.dll</HintPath>
+      <HintPath>..\..\resources\DevExpress.Xpf.Grid.v12.2.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Xpf.Printing.v12.2">
-      <HintPath>E:\Potitehnica\ds\finalProject\References\DevExpress\v12.2\Framework\DevExpress.Xpf.Printing.v12.2.dll</HintPath>
+      <HintPath>..\..\resources\DevExpress.Xpf.Printing.v12.2.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Xpf.Scheduler.v12.2">
-      <HintPath>E:\Potitehnica\ds\finalProject\References\DevExpress\v12.2\Framework\DevExpress.Xpf.Scheduler.v12.2.dll</HintPath>
+      <HintPath>..\..\resources\DevExpress.Xpf.Scheduler.v12.2.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Xpf.Themes.DXStyle.v12.2">
-      <HintPath>E:\Potitehnica\ds\finalProject\References\DevExpress\v12.2\Framework\DevExpress.Xpf.Themes.DXStyle.v12.2.dll</HintPath>
+      <HintPath>..\..\resources\DevExpress.Xpf.Themes.DXStyle.v12.2.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Xpf.Themes.MetropolisDark.v12.2">
-      <HintPath>E:\Potitehnica\ds\finalProject\References\DevExpress\v12.2\Framework\DevExpress.Xpf.Themes.MetropolisDark.v12.2.dll</HintPath>
+      <HintPath>..\..\resources\DevExpress.Xpf.Themes.MetropolisDark.v12.2.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Xpf.Themes.MetropolisLight.v12.2">
-      <HintPath>E:\Potitehnica\ds\finalProject\References\DevExpress\v12.2\Framework\DevExpress.Xpf.Themes.MetropolisLight.v12.2.dll</HintPath>
+      <HintPath>..\..\resources\DevExpress.Xpf.Themes.MetropolisLight.v12.2.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraBars.v12.2">
-      <HintPath>E:\Potitehnica\ds\finalProject\References\DevExpress\v12.2\Framework\DevExpress.XtraBars.v12.2.dll</HintPath>
+      <HintPath>..\..\resources\DevExpress.XtraBars.v12.2.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraEditors.v12.2">
-      <HintPath>E:\Potitehnica\ds\finalProject\References\DevExpress\v12.2\Framework\DevExpress.XtraEditors.v12.2.dll</HintPath>
+      <HintPath>..\..\resources\DevExpress.XtraEditors.v12.2.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraGrid.v12.2">
-      <HintPath>E:\Potitehnica\ds\finalProject\References\DevExpress\v12.2\Framework\DevExpress.XtraGrid.v12.2.dll</HintPath>
+      <HintPath>..\..\resources\DevExpress.XtraGrid.v12.2.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraLayout.v12.2">
-      <HintPath>E:\Potitehnica\ds\finalProject\References\DevExpress\v12.2\Framework\DevExpress.XtraLayout.v12.2.dll</HintPath>
+      <HintPath>..\..\resources\DevExpress.XtraLayout.v12.2.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Practices.Prism">
-      <HintPath>..\..\..\..\..\References\Microsoft\Microsoft.Practices.Prism\Desktop\Microsoft.Practices.Prism.dll</HintPath>
+      <HintPath>..\..\resources\Microsoft.Practices.Prism.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\References\Microsoft\Microsoft.Practices.Prism\Desktop\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\..\resources\Microsoft.Practices.ServiceLocation.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Practices.Unity">
-      <HintPath>..\..\..\..\..\References\Microsoft\Microsoft.Practices.Prism\Desktop\Microsoft.Practices.Unity.dll</HintPath>
+      <HintPath>..\..\resources\Microsoft.Practices.Unity.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />

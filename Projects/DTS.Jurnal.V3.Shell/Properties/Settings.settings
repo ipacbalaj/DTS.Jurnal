@@ -2,9 +2,6 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="DTS.Jurnal.V3.Shell.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="Databasepath" Type="System.String" Scope="User">
-      <Value Profile="(Default)">C:\Users\Pac-Balaj ionutzela2\Desktop\dtstest</Value>
-    </Setting>
     <Setting Name="NetworkPath" Type="System.String" Scope="User">
       <Value Profile="(Default)">C:\Users\Pac-Balaj ionutzela2\Desktop\dtstest</Value>
     </Setting>
@@ -19,6 +16,9 @@
     </Setting>
     <Setting Name="FtpPassword" Type="System.String" Scope="User">
       <Value Profile="(Default)">pbi</Value>
+    </Setting>
+    <Setting Name="Databasepath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Users\ionutbal\Desktop\DTS</Value>
     </Setting>
   </Settings>
 </SettingsFile>

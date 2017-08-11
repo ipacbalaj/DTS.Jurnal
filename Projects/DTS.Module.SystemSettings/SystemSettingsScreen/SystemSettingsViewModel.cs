@@ -16,7 +16,6 @@ namespace DTS.Module.SystemSettings.SystemSettingsScreen
     
         #endregion Constructor
 
-
         #region Properties
 
         private Brush contentBackground = BackgroundColors.JurnalColor;
@@ -46,7 +45,6 @@ namespace DTS.Module.SystemSettings.SystemSettingsScreen
         }
 
         #endregion Properties
-
 
         #region Methods
 

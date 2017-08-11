@@ -31,22 +31,22 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.Data.v12.2">
-      <HintPath>E:\work\TULIP-tora\trunk\References\DevExpress\v12.2\Framework\DevExpress.Data.v12.2.dll</HintPath>
+      <HintPath>..\..\resources\DevExpress.Data.v12.2.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Xpf.Core.v12.2">
-      <HintPath>E:\Potitehnica\ds\finalProject\References\DevExpress\v12.2\Framework\DevExpress.Xpf.Core.v12.2.dll</HintPath>
+      <HintPath>..\..\resources\DevExpress.Xpf.Core.v12.2.dll</HintPath>
     </Reference>
     <Reference Include="log4net">
       <HintPath>..\DSA.Database.Model\bin\Debug\log4net.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Practices.Prism">
-      <HintPath>E:\Potitehnica\ds\finalProject\References\Microsoft\Microsoft.Practices.Prism\Desktop\Microsoft.Practices.Prism.dll</HintPath>
+      <HintPath>..\..\resources\Microsoft.Practices.Prism.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Practices.ServiceLocation">
-      <HintPath>E:\Potitehnica\ds\finalProject\References\Microsoft\Microsoft.Practices.Prism\Desktop\Microsoft.Practices.ServiceLocation.dll</HintPath>
+      <HintPath>..\..\resources\Microsoft.Practices.ServiceLocation.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Practices.Unity">
-      <HintPath>E:\Potitehnica\ds\finalProject\References\Microsoft\Microsoft.Practices.Prism\Desktop\Microsoft.Practices.Unity.dll</HintPath>
+      <HintPath>..\..\resources\Microsoft.Practices.Unity.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />

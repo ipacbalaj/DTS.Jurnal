@@ -131,3 +131,13 @@ E:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\obj\Deb
 E:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\obj\Debug\DSA.Login.g.resources
 E:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\obj\Debug\DSA.Login.dll
 E:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\obj\Debug\DSA.Login.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\bin\Debug\DevExpress.Data.v12.2.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\bin\Debug\DevExpress.Xpf.Core.v12.2.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\bin\Debug\Microsoft.Practices.Prism.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\bin\Debug\Microsoft.Practices.Unity.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\bin\Debug\DSA.Common.Controls.dll.config
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\bin\Debug\DSA.Common.Infrastructure.dll.config
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\bin\Debug\DTS.Jurnal.Database.SQLServer.Module.dll.config
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\bin\Debug\DSA.Database.Model.dll.config
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Login\obj\Debug\DSA.Login.csproj.CoreCompileInputs.cache

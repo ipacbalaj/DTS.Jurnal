@@ -233,3 +233,9 @@ E:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.FileUpload\bi
 E:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.FileUpload\obj\Debug\DSA.FileUpload.csprojResolveAssemblyReference.cache
 E:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.FileUpload\obj\Debug\DSA.FileUpload.dll
 E:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.FileUpload\obj\Debug\DSA.FileUpload.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.FileUpload\bin\Debug\DocX.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.FileUpload\bin\Debug\log4net.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.FileUpload\bin\Debug\DSA.Common.Infrastructure.dll.config
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.FileUpload\bin\Debug\DTS.Jurnal.Database.SQLServer.Module.dll.config
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.FileUpload\bin\Debug\DSA.Database.Model.dll.config
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.FileUpload\obj\Debug\DSA.FileUpload.csproj.CoreCompileInputs.cache

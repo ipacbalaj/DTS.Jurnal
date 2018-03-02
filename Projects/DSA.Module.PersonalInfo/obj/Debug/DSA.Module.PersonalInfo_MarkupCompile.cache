@@ -4,7 +4,7 @@
 library
 C#
 .cs
-E:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\obj\Debug\
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Module.PersonalInfo\obj\Debug\
 DSA.Module.PersonalInfo
 none
 false
@@ -13,7 +13,7 @@ DEBUG;TRACE
 31207919562
 
 82026066280
-401280292852
+401076646081
 PatientInformation\EditPatient\EditPatientView.xaml;PatientInformation\PatientInformationView.xaml;PersonalInfoScreen\PersonalInfoScreenView.xaml;
 
 False

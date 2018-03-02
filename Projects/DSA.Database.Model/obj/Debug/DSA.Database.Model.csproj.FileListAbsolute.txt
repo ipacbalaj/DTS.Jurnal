@@ -91,3 +91,17 @@ E:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Database.Mode
 E:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Database.Model\obj\Debug\DSA.Database.Model.csproj.ResolveComReference.cache
 E:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Database.Model\obj\Debug\DSA.Database.Model.dll
 E:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Database.Model\obj\Debug\DSA.Database.Model.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Database.Model\bin\Debug\DevExpress.XtraBars.v12.2.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Database.Model\bin\Debug\log4net.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Database.Model\bin\Debug\Microsoft.Practices.Prism.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Database.Model\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Database.Model\bin\Debug\Newtonsoft.Json.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Database.Model\bin\Debug\System.Net.Http.Formatting.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Database.Model\bin\Debug\System.Web.Http.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Database.Model\bin\Debug\System.Web.Http.SelfHost.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Database.Model\bin\Debug\DevExpress.Utils.v12.2.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Database.Model\bin\Debug\DevExpress.XtraEditors.v12.2.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Database.Model\bin\Debug\DevExpress.Data.v12.2.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Database.Model\bin\Debug\DevExpress.Printing.v12.2.Core.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Database.Model\bin\Debug\DSA.Common.Infrastructure.dll.config
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Database.Model\obj\Debug\DSA.Database.Model.csproj.CoreCompileInputs.cache

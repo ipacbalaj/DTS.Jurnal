@@ -17,11 +17,12 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
             InitializeComponent();
             DataContext = new JurnalViewModel(this);
 
-            gridControlInt.Columns["Start"].SortOrder = DevExpress.Data.ColumnSortOrder.Ascending;
+         //   gridControlInt.Columns["Start"].SortOrder = DevExpress.Data.ColumnSortOrder.Ascending;
             gridControlInt.Columns["Revenue"].Width = 35;
             gridControlInt.Columns["Percent"].Width = 35;
             gridControlInt.Columns["Remainder"].Width = 35;
             gridControlInt.Columns["Date"].Width = 55;
+            gridControlInt.Columns["Date"].SortOrder = DevExpress.Data.ColumnSortOrder.Ascending;
             gridControlInt.Columns["MaterialCost"].Width = 35;
             gridControlInt.Columns["End"].Width = 35;
             gridControlInt.Columns["DurataString"].Width = 35;
@@ -29,6 +30,7 @@ namespace DTS_Jurnal.Jurnal.JurnalScreen
             gridControlInt.Columns["IsSelected"].Width = 35;
             gridControlInt.Columns["WasPayed"].Width = 35;
             gridControlInt.Columns["Delete"].Width = 25;
+            
         }
 
         public ShellState RegionToken { get; set; }

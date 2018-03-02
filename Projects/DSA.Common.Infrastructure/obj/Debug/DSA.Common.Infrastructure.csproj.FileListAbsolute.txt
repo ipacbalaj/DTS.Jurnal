@@ -290,3 +290,12 @@ E:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Common.Infras
 E:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Common.Infrastructure\obj\Debug\DSA.Common.Infrastructure.g.resources
 E:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Common.Infrastructure\obj\Debug\DSA.Common.Infrastructure.dll
 E:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Common.Infrastructure\obj\Debug\DSA.Common.Infrastructure.pdb
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Common.Infrastructure\bin\Debug\DevExpress.XtraBars.v12.2.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Common.Infrastructure\bin\Debug\Microsoft.Practices.Prism.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Common.Infrastructure\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Common.Infrastructure\bin\Debug\Microsoft.Practices.Unity.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Common.Infrastructure\bin\Debug\DevExpress.Utils.v12.2.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Common.Infrastructure\bin\Debug\DevExpress.XtraEditors.v12.2.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Common.Infrastructure\bin\Debug\DevExpress.Data.v12.2.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Common.Infrastructure\bin\Debug\DevExpress.Printing.v12.2.Core.dll
+D:\ipacbalaj\Personal\projects\Dental Tracking System\Projects\DSA.Common.Infrastructure\obj\Debug\DSA.Common.Infrastructure.csproj.CoreCompileInputs.cache
